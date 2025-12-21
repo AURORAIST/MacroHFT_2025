@@ -33,17 +33,11 @@ from model.net import *
 #     return 1 / (squared_distance + 1e-3)
 
 def custom_kernel(query_hidden_state, hidden_states):
-    """相似性建模
-    自定义核函数：计算两个向量之间的平方距离倒数
-    
-    Args:
-        h (np.array): 当前向量
-        hi (np.array): 比较向量
-    
-    Returns:
-        float: 相似度得分
-    """
-    # 使用向量化操作计算所有核函数值
+    # 保证输入都是 numpy array
+    if isinstance(query_hidden_state, torch.Tensor):
+        query_hidden_state = query_hidden_state.detach().cpu().numpy()
+    if isinstance(hidden_states, torch.Tensor):
+        hidden_states = hidden_states.detach().cpu().numpy()
     squared_distances = np.sum((hidden_states - query_hidden_state) ** 2, axis=1)
     return 1 / (squared_distances + 1e-3)
 
@@ -78,21 +72,21 @@ class episodicmemory():
         添加新经验到缓冲区
         
         Args:
-            hidden_state (np.array): 隐藏状态
+            hidden_state (np.array or torch.Tensor): 隐藏状态
             action (int): 执行的动作
             q_value (float): 对应Q值
-            single_state (np.array): 单一状态
-            trend_state (np.array): 趋势状态
+            single_state (np.array or torch.Tensor): 单一状态
+            trend_state (np.array or torch.Tensor): 趋势状态
             previous_action (int): 前一个动作
         """
-        self.buffer["single_state"][self.count] = single_state
-        self.buffer["trend_state"][self.count] = trend_state
+        def to_numpy(x):
+            if isinstance(x, torch.Tensor):
+                return x.detach().cpu().numpy()
+            return x
+        self.buffer["single_state"][self.count] = to_numpy(single_state)
+        self.buffer["trend_state"][self.count] = to_numpy(trend_state)
         self.buffer["previous_action"][self.count] = previous_action
-        
-        # 确保 hidden_state 在 CPU 上
-        if isinstance(hidden_state, torch.Tensor):
-            hidden_state = hidden_state.detach().cpu().numpy()
-        self.buffer["hidden_state"][self.count] = hidden_state
+        self.buffer["hidden_state"][self.count] = to_numpy(hidden_state)
         self.buffer["action"][self.count] = action
         self.buffer["q_value"][self.count] = q_value
         self.count = (self.count + 1) % self.capacity
@@ -149,7 +143,9 @@ class episodicmemory():
             previous_actions_batch = torch.tensor(self.buffer["previous_action"][i:batch_end], dtype=torch.long).to(self.device)
             # 使用模型进行编码
             with torch.no_grad():
-                updated_hidden_states = model.encode(single_states_batch, trend_states_batch, previous_actions_batch).cpu().numpy()
-            # 更新缓冲区
+                updated_hidden_states = model.encode(single_states_batch, trend_states_batch, previous_actions_batch)
+            # 更新缓冲区（numpy buffer 需要 CPU numpy）
+            if isinstance(updated_hidden_states, torch.Tensor):
+                updated_hidden_states = updated_hidden_states.detach().cpu().numpy()
             self.buffer["hidden_state"][i:batch_end] = updated_hidden_states
 

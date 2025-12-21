@@ -131,8 +131,9 @@ class DQN(object):
         if torch.cuda.is_available():
             self.device = torch.device(args.device)
         else:
-            self.device = torch.device("cpu") 
-        self.epsilon_device = torch.device("cpu") 
+            self.device = torch.device("cpu")
+        # 将 epsilon_device 从 CPU 改为与训练一致的 device（通常是 GPU）
+        self.epsilon_device = self.device
         log.info(self.device)
         self.result_path = os.path.join("./result/low_level", '{}'.format(args.dataset), args.exp, '{}'.format(args.clf), args.label, str(int(args.alpha)))
         self.label = int(args.label.split('_')[1])
@@ -302,6 +303,7 @@ class DQN(object):
         self.epsilon_net.eval() 
         self.epsilon_net.load_state_dict(self.eval_net.state_dict())
         self.target_net.load_state_dict(self.eval_net.state_dict())
+        # 确保 epsilon_net 始终在 epsilon_device 上
         self.epsilon_net.to(self.epsilon_device)
 
     def select_action(self, state, state_trend, info):
@@ -324,13 +326,13 @@ class DQN(object):
         Returns:
             int: 选择的动作编号 / Selected action number
         """
-        x1 = torch.FloatTensor(state).to(self.epsilon_device)
-        x2 = torch.FloatTensor(state_trend).to(self.epsilon_device)
-        previous_action = torch.unsqueeze(torch.tensor(info["previous_action"]).long().to(self.epsilon_device), 0).to(self.epsilon_device)
+        x1 = torch.as_tensor(state, dtype=torch.float32, device=self.epsilon_device)
+        x2 = torch.as_tensor(state_trend, dtype=torch.float32, device=self.epsilon_device)
+        previous_action = torch.as_tensor(info["previous_action"], dtype=torch.long, device=self.epsilon_device).unsqueeze(0)
         if np.random.uniform() < (1-self.epsilon):
             actions_value = self.epsilon_net(x1, x2, previous_action)
-            action = torch.max(actions_value, 1)[1].data.cpu().numpy()
-            action = action[0]
+            # 只取标量动作，避免 numpy 往返
+            action = int(actions_value.argmax(dim=1).item())
         else:
             action_choice = list(range(int(self.n_action))) 
             action = random.choice(action_choice)
@@ -426,11 +428,11 @@ class DQN(object):
                     
                     # 定期记录日志 / Periodically log metrics
                     if self.update_counter % self.q_value_memorize_freq == 1:
-                        self.writer.add_scalar(tag="loss", scalar_value=loss.cpu(), global_step=self.update_counter, walltime=None)
-                        self.writer.add_scalar(tag="td_error", scalar_value=td_error.cpu(), global_step=self.update_counter, walltime=None)
-                        self.writer.add_scalar(tag="KL_loss", scalar_value=KL_loss.cpu(), global_step=self.update_counter, walltime=None)
-                        self.writer.add_scalar(tag="q_eval", scalar_value=q_eval.cpu(), global_step=self.update_counter, walltime=None)
-                        self.writer.add_scalar(tag="q_target", scalar_value=q_target.cpu(), global_step=self.update_counter, walltime=None)
+                        self.writer.add_scalar(tag="loss", scalar_value=float(loss.detach().item()), global_step=self.update_counter, walltime=None)
+                        self.writer.add_scalar(tag="td_error", scalar_value=float(td_error.detach().item()), global_step=self.update_counter, walltime=None)
+                        self.writer.add_scalar(tag="KL_loss", scalar_value=float(KL_loss.detach().item()), global_step=self.update_counter, walltime=None)
+                        self.writer.add_scalar(tag="q_eval", scalar_value=float(q_eval.detach().item()), global_step=self.update_counter, walltime=None)
+                        self.writer.add_scalar(tag="q_target", scalar_value=float(q_target.detach().item()), global_step=self.update_counter, walltime=None)
                 self.epsilon_net.load_state_dict(self.eval_net.state_dict())
                 self.epsilon_net.to(self.epsilon_device)
             # 判断回合结束 / Check if episode is done
@@ -600,7 +602,7 @@ class DQN(object):
             var_df_list = self.val_index[self.label]
             if len(var_df_list) >0:
                 for initial_action in range(0,self.n_action):
-                    dqn_eval = DQN_EVAL(self.n_state_1,self.n_state_2,self.n_action,"cpu",
+                    dqn_eval = DQN_EVAL(self.n_state_1, self.n_state_2, self.n_action, str(self.device),
                         self.val_data_path,
                         self.tech_indicator_list,
                         self.tech_indicator_list_trend,

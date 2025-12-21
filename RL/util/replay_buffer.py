@@ -37,17 +37,21 @@ class ReplayBuffer(object):
                        }
 
     def store_transition(self, state, state_trend, previous_action, demo_action, action, reward, next_state, next_state_trend, next_previous_action, next_demo_action, terminal):
-        self.buffer["state"][self.count] = state
-        self.buffer["state_trend"][self.count] = state_trend
-        self.buffer["previous_action"][self.count] = previous_action
-        self.buffer["demo_action"][self.count] = demo_action
-        self.buffer["action"][self.count] = action
-        self.buffer["reward"][self.count] = reward
-        self.buffer["next_state"][self.count] = next_state
-        self.buffer["next_state_trend"][self.count] = next_state_trend
-        self.buffer["next_previous_action"][self.count] = next_previous_action
-        self.buffer["next_demo_action"][self.count] = next_demo_action
-        self.buffer["terminal"][self.count] = terminal
+        def to_numpy(x):
+            if isinstance(x, torch.Tensor):
+                return x.detach().cpu().numpy()
+            return x
+        self.buffer["state"][self.count] = to_numpy(state)
+        self.buffer["state_trend"][self.count] = to_numpy(state_trend)
+        self.buffer["previous_action"][self.count] = to_numpy(previous_action)
+        self.buffer["demo_action"][self.count] = to_numpy(demo_action)
+        self.buffer["action"][self.count] = to_numpy(action)
+        self.buffer["reward"][self.count] = to_numpy(reward)
+        self.buffer["next_state"][self.count] = to_numpy(next_state)
+        self.buffer["next_state_trend"][self.count] = to_numpy(next_state_trend)
+        self.buffer["next_previous_action"][self.count] = to_numpy(next_previous_action)
+        self.buffer["next_demo_action"][self.count] = to_numpy(next_demo_action)
+        self.buffer["terminal"][self.count] = to_numpy(terminal)
         self.count = (self.count + 1) % self.buffer_capacity  # When the 'count' reaches buffer_capacity, it will be reset to 0.
         self.current_size = min(self.current_size + 1, self.buffer_capacity)
 
@@ -91,21 +95,24 @@ class ReplayBuffer_High(object):
 
     def store_transition(self, state, state_trend, state_clf, previous_action, demo_action, action, reward, 
                                 next_state, next_state_trend, next_state_clf, next_previous_action, next_demo_action, terminal, q_memory):
-        self.buffer["state"][self.count] = state
-        self.buffer["state_trend"][self.count] = state_trend
-        self.buffer["state_clf"][self.count] = state_clf
-        self.buffer["previous_action"][self.count] = previous_action
-        self.buffer["demo_action"][self.count] = demo_action
-        self.buffer["action"][self.count] = action
-        self.buffer["reward"][self.count] = reward
-        self.buffer["next_state"][self.count] = next_state
-        self.buffer["next_state_trend"][self.count] = next_state_trend
-        self.buffer["next_state_clf"][self.count] = next_state_clf
-        self.buffer["next_previous_action"][
-            self.count] = next_previous_action
-        self.buffer["next_demo_action"][self.count] = next_demo_action
-        self.buffer["terminal"][self.count] = terminal
-        self.buffer["q_memory"][self.count] = q_memory
+        def to_numpy(x):
+            if isinstance(x, torch.Tensor):
+                return x.detach().cpu().numpy()
+            return x
+        self.buffer["state"][self.count] = to_numpy(state)
+        self.buffer["state_trend"][self.count] = to_numpy(state_trend)
+        self.buffer["state_clf"][self.count] = to_numpy(state_clf)
+        self.buffer["previous_action"][self.count] = to_numpy(previous_action)
+        self.buffer["demo_action"][self.count] = to_numpy(demo_action)
+        self.buffer["action"][self.count] = to_numpy(action)
+        self.buffer["reward"][self.count] = to_numpy(reward)
+        self.buffer["next_state"][self.count] = to_numpy(next_state)
+        self.buffer["next_state_trend"][self.count] = to_numpy(next_state_trend)
+        self.buffer["next_state_clf"][self.count] = to_numpy(next_state_clf)
+        self.buffer["next_previous_action"][self.count] = to_numpy(next_previous_action)
+        self.buffer["next_demo_action"][self.count] = to_numpy(next_demo_action)
+        self.buffer["terminal"][self.count] = to_numpy(terminal)
+        self.buffer["q_memory"][self.count] = to_numpy(q_memory)
         self.count = (self.count + 1) % self.buffer_capacity  # When the 'count' reaches buffer_capacity, it will be reset to 0.
         self.current_size = min(self.current_size + 1, self.buffer_capacity)
 

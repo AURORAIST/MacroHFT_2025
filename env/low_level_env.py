@@ -82,6 +82,8 @@ class Testing_Env(gym.Env):
         back_time_length=back_time_length,  #状态回溯时间步长
         max_holding_number=max_holding_number,  #最大持仓量
         initial_action=0,
+        device="cuda:0",
+        return_torch: bool = True,
     ):
         # 初始化交易环境参数
         # df: 原始金融数据DataFrame
@@ -119,12 +121,24 @@ class Testing_Env(gym.Env):
         self.previous_position = initial_action * self.max_holding_number
         self.position = initial_action * self.max_holding_number
         self.initial_action = initial_action
+        self.device = torch.device(device)
+        self.return_torch = return_torch
 
 
 
     def calculate_value(self, price_information, position):
         """计算当前持仓价值"""
         return price_information["close"] * position
+
+    def _maybe_to_torch(self, single_state, trend_state, info):
+        if not self.return_torch:
+            return single_state, trend_state, info
+        if self.device is None:
+            raise ValueError("return_torch=True 时必须传入 device，例如 'cuda:0' 或 'cpu'")
+        single_state_t = torch.as_tensor(single_state, dtype=torch.float32, device=self.device)
+        trend_state_t = torch.as_tensor(trend_state, dtype=torch.float32, device=self.device)
+        # info 里目前只有 int / numpy（q_value 在 Training_Env 中注入），保持原样
+        return single_state_t, trend_state_t, info
 
     def reset(self):
         """
@@ -171,9 +185,10 @@ class Testing_Env(gym.Env):
         self.needed_money_memory.append(self.position * self.data.iloc[-1]["close"])
         self.sell_money_memory.append(0)
         # 返回初始观测值和动作信息
-        return self.single_state, self.trend_state, {
+        single_state, trend_state, info = self.single_state, self.trend_state, {
             "previous_action": self.initial_action,
         }
+        return self._maybe_to_torch(single_state, trend_state, info)
 
     def step(self, action):
         """
@@ -299,9 +314,11 @@ class Testing_Env(gym.Env):
             log.info(f"the portfit return_margin:{return_margin},final_balance:{final_balance},required_money:{required_money},commission_fee:{commission_fee},final_balance:{self.final_balance},portfit_margine:{portfit_margine}")
             
         # 返回观测值和环境状态
-        return self.single_state, self.trend_state, self.reward, self.terminal, {
+        single_state, trend_state, info = self.single_state, self.trend_state, {
             "previous_action": action,
         }
+        single_state, trend_state, info = self._maybe_to_torch(single_state, trend_state, info)
+        return single_state, trend_state, self.reward, self.terminal, info
 
     def get_final_return_rate(self, slient=False):
         """
@@ -361,26 +378,23 @@ class Training_Env(Testing_Env):
         transcation_cost=transcation_cost,
         back_time_length=back_time_length,
         max_holding_number=max_holding_number,
-        num_action=2,        
-        initial_action = 0,
-       
+        num_action=2,
+        initial_action=0,
+        device="cuda:0",
+        return_torch: bool = True,
     ):
-        """
-        训练环境初始化
-        
-        参数：
-            df: 输入的历史金融数据 DataFrame
-            tech_indicator_list: 技术指标列名列表
-            tech_indicator_list_trend: 趋势特征列名列表
-            transcation_cost: 交易手续费率
-            back_time_length: 状态回溯时间步长
-            max_holding_number: 最大持仓量
-            initial_action: 初始动作（0-空仓，1-满仓）
-            alpha: Q 表奖励衰减系数（未使用）
-        """
-        super(Training_Env,
-              self).__init__(df, tech_indicator_list, tech_indicator_list_trend, transcation_cost,
-                             back_time_length, max_holding_number)
+        """训练环境初始化（默认直接使用 GPU 输出）"""
+        super(Training_Env, self).__init__(
+            df,
+            tech_indicator_list,
+            tech_indicator_list_trend,
+            transcation_cost,
+            back_time_length,
+            max_holding_number,
+            initial_action=initial_action,
+            device=device,
+            return_torch=return_torch,
+        )
         if q_table_dict.get(df_path,None) is None:            
             # 构建 Q 表（用于强化学习策略优化）
             q_table_dict[df_path] = make_q_table_reward(df,
@@ -396,39 +410,20 @@ class Training_Env(Testing_Env):
 
 
     def reset(self):
-        """
-        环境重置（带 Q 值初始化）
-        
-        返回：
-            observation: 初始状态观测值
-            info: 附加信息（包含 Q 值）
-        """
         single_state, trend_state, info = super(Training_Env, self).reset()
         # 初始化交易状态
         self.previous_action = self.initial_action
         self.previous_position = self.initial_action * self.max_holding_number
         self.position = self.initial_action * self.max_holding_number
         # 从 Q 表获取初始 Q 值
-        info['q_value'] = self.q_table[self.m - 1][self.previous_action][:]
+        qv = self.q_table[self.m - 1][self.previous_action][:]
+        info['q_value'] = torch.as_tensor(qv, dtype=torch.float32, device=self.device) if self.return_torch else qv
         return single_state, trend_state, info
 
     def step(self, action):
-        """
-        执行训练步骤（带 Q 值更新）
-        
-        参数：
-            action: 当前动作（0-卖出，1-买入）
-            
-        返回：
-            observation: 新的状态观测值
-            reward: 即时奖励
-            done: 是否终止
-            info: 附加信息（包含当前 Q 值）
-        """
-        # 执行基础环境步骤
         single_state, trend_state, reward, done, info = super(Training_Env, self).step(action)
-        # 更新 Q 值信息（基于当前时间步和动作）
-        info['q_value'] = self.q_table[self.m - 1][action][:]
+        qv = self.q_table[self.m - 1][action][:]
+        info['q_value'] = torch.as_tensor(qv, dtype=torch.float32, device=self.device) if self.return_torch else qv
         return single_state, trend_state, reward, done, info
 
 
