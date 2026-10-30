@@ -1,0 +1,48 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Namespace(buffer_size=1000000, dataset='ETHUSDT', q_value_memorize_freq=10, batch_size=512, eval_update_freq=100, lr=1e-05, epsilon_start=0.5, epsilon_end=0.1, decay_length=5, update_times=10, gamma=0.99, tau=0.005, transcation_cost=0.0002, back_time_length=1, seed=12345, n_step=1, epoch_number=15, label='label_3', clf='vol', alpha=0.0, device='cuda:0', n_action=2, exp='exp1', reward_scale=1000, checkpoint='/home/ustc1958/lxy/MacroHFT/result/low_level/ETHUSDT/pos_2/best_model/vol/3/best_model.pkl')
+
+============================================================
+多仓位配置信息:
+============================================================
+动作空间大小 (n_action): 2
+动作范围: [0, 1]
+仓位映射: 0→0.0%  1→100.0%
+
+状态空间维度:
+  - 单特征状态 (state): 36 个特征
+  - 趋势特征状态 (state_trend): 9 个特征
+  - 前一动作 (previous_action): 标量 ∈ [0, 1]
+
+网络输出维度: (batch_size, 2)
+ReplayBuffer demo_action 维度: (batch_size, 2)
+============================================================
+
+Using checkpoint for validation: /home/ustc1958/lxy/MacroHFT/result/low_level/ETHUSDT/pos_2/best_model/vol/3/best_model.pkl
+validating on df 13
+the portfit margine is  0.1557165365906027
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 4319
+Action distribution:
+  Action 0 (  0.0% position):    616 times (14.26%)
+  Action 1 (100.0% position):   3703 times (85.74%)
+Mean return rate: 0.1557
+------------------------------------------------------------
+
+validating on df 13
+the portfit margine is  0.14764968986830382
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 4319
+Action distribution:
+  Action 0 (  0.0% position):    133 times ( 3.08%)
+  Action 1 (100.0% position):   4186 times (96.92%)
+Mean return rate: 0.1476
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [np.float64(0.1557165365906027), np.float64(0.14764968986830382)]
+Average validation return rate: 0.15168311322945327
+happy end

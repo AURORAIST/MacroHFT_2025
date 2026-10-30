@@ -1,0 +1,176 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Namespace(buffer_size=1000000, dataset='ETHUSDT', q_value_memorize_freq=10, batch_size=512, eval_update_freq=100, lr=1e-05, epsilon_start=0.5, epsilon_end=0.1, decay_length=5, update_times=10, gamma=0.99, tau=0.005, transcation_cost=0.0002, back_time_length=1, seed=12345, n_step=1, epoch_number=15, label='label_1', clf='vol', alpha=0.0, device='cuda:0', n_action=2, exp='exp1', reward_scale=1000, checkpoint='/home/ustc1958/lxy/MacroHFT/result/low_level/ETHUSDT/pos_2/best_modelreward1000epo35/vol/1/best_model.pkl')
+
+============================================================
+多仓位配置信息:
+============================================================
+动作空间大小 (n_action): 2
+动作范围: [0, 1]
+仓位映射: 0→0.0%  1→100.0%
+
+状态空间维度:
+  - 单特征状态 (state): 36 个特征
+  - 趋势特征状态 (state_trend): 9 个特征
+  - 前一动作 (previous_action): 标量 ∈ [0, 1]
+
+网络输出维度: (batch_size, 2)
+ReplayBuffer demo_action 维度: (batch_size, 2)
+============================================================
+
+Using checkpoint for validation: /home/ustc1958/lxy/MacroHFT/result/low_level/ETHUSDT/pos_2/best_modelreward1000epo35/vol/1/best_model.pkl
+validating on df 1
+the portfit margine is  nan
+validating on df 2
+the portfit margine is  -0.029771112561374203
+validating on df 3
+the portfit margine is  nan
+validating on df 4
+the portfit margine is  0.03143392552543902
+validating on df 5
+the portfit margine is  0.0017031569130693527
+validating on df 6
+the portfit margine is  0.003075615881333054
+validating on df 7
+the portfit margine is  0.012291637834151022
+validating on df 8
+the portfit margine is  0.04402297273147384
+validating on df 9
+the portfit margine is  nan
+validating on df 10
+the portfit margine is  0.0026967851048586996
+validating on df 11
+the portfit margine is  -0.008013477106449897
+validating on df 17
+the portfit margine is  0.0209572711965853
+validating on df 18
+the portfit margine is  0.03293548051391423
+validating on df 19
+the portfit margine is  0.020137804885086347
+validating on df 20
+the portfit margine is  0.04267570805395937
+validating on df 21
+the portfit margine is  nan
+validating on df 22
+the portfit margine is  nan
+validating on df 23
+the portfit margine is  0.012988059197332286
+validating on df 24
+the portfit margine is  0.024882704565924844
+validating on df 25
+the portfit margine is  -0.021262264976777894
+validating on df 26
+the portfit margine is  0.006611340258006353
+validating on df 27
+the portfit margine is  0.024229851189935373
+validating on df 29
+the portfit margine is  -0.020533806161618078
+validating on df 30
+the portfit margine is  nan
+validating on df 31
+the portfit margine is  -0.03638603548065918
+validating on df 32
+the portfit margine is  0.007409861696197762
+validating on df 33
+the portfit margine is  0.023222235001462137
+validating on df 34
+the portfit margine is  nan
+validating on df 35
+the portfit margine is  nan
+validating on df 36
+the portfit margine is  nan
+validating on df 37
+the portfit margine is  nan
+validating on df 38
+the portfit margine is  nan
+validating on df 39
+the portfit margine is  nan
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 142527
+Action distribution:
+  Action 0 (  0.0% position):  97790 times (68.61%)
+  Action 1 (100.0% position):  44737 times (31.39%)
+Mean return rate: 0.0059
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.029798180135347917
+validating on df 2
+the portfit margine is  -0.04205332291918509
+validating on df 3
+the portfit margine is  -0.019467491618882494
+validating on df 4
+the portfit margine is  0.021821880985403972
+validating on df 5
+the portfit margine is  0.02039370068400757
+validating on df 6
+the portfit margine is  -0.01852070865955487
+validating on df 7
+the portfit margine is  -0.030903041481320805
+validating on df 8
+the portfit margine is  0.01588397360548788
+validating on df 9
+the portfit margine is  0.00900713345375486
+validating on df 10
+the portfit margine is  -0.050734134207013844
+validating on df 11
+the portfit margine is  -0.020311351213118896
+validating on df 17
+the portfit margine is  -0.006994540193457487
+validating on df 18
+the portfit margine is  -0.004499790885776273
+validating on df 19
+the portfit margine is  0.015340519380579854
+validating on df 20
+the portfit margine is  0.026135959400676794
+validating on df 21
+the portfit margine is  0.01671677314158956
+validating on df 22
+the portfit margine is  0.023927830636722186
+validating on df 23
+the portfit margine is  0.02065091308900523
+validating on df 24
+the portfit margine is  0.06218995988527309
+validating on df 25
+the portfit margine is  -0.0442813815174601
+validating on df 26
+the portfit margine is  0.0030156164199403074
+validating on df 27
+the portfit margine is  -0.004103981769568657
+validating on df 29
+the portfit margine is  -0.021762277019382263
+validating on df 30
+the portfit margine is  0.028036857864081954
+validating on df 31
+the portfit margine is  0.025618362835394124
+validating on df 32
+the portfit margine is  0.0032380400388854276
+validating on df 33
+the portfit margine is  -0.0287877562110113
+validating on df 34
+the portfit margine is  0.016454278502454504
+validating on df 35
+the portfit margine is  -0.006310929806669575
+validating on df 36
+the portfit margine is  0.002770052531673405
+validating on df 37
+the portfit margine is  -0.006738729818191789
+validating on df 38
+the portfit margine is  0.05413725739915261
+validating on df 39
+the portfit margine is  -0.019283313966270036
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 142527
+Action distribution:
+  Action 0 (  0.0% position):  23243 times (16.31%)
+  Action 1 (100.0% position): 119284 times (83.69%)
+Mean return rate: 0.0003
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [np.float64(0.005918415583692415), np.float64(0.00032691449793551355)]
+Average validation return rate: 0.0031226650408139644
+happy end

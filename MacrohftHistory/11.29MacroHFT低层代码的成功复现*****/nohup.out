@@ -1,0 +1,38 @@
+python: can't open file '/home/ustc1958/lxy/MacrohftHistory/MacroHFT2025.11.17高层实验，rewardhigh=1/MacroHFT-main/RL/agent/low_level.py': [Errno 2] No such file or directory
+python: can't open file '/home/ustc1958/lxy/MacrohftHistory/MacroHFT2025.11.17高层实验，rewardhigh=1/MacroHFT-main/RL/agent/low_level.py': [Errno 2] No such file or directory
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Namespace(buffer_size=1000000, dataset='ETHUSDT', q_value_memorize_freq=10, batch_size=512, eval_update_freq=100, lr=1e-05, epsilon_start=0.5, epsilon_end=0.1, decay_length=5, update_times=10, gamma=0.99, tau=0.005, transcation_cost=0.0002, back_time_length=1, seed=12345, n_step=1, epoch_number=15, label='label_1', clf='slope', alpha=1.0, device='cuda:0', num_actions=5, exp='exp1', reward_scale=1000)
+
+============================================================
+多仓位配置信息:
+============================================================
+动作空间大小 (num_actions): 5
+动作范围: [0, 4]
+仓位映射: 0→0.0%  1→25.0%  2→50.0%  3→75.0%  4→100.0%
+
+状态空间维度:
+  - 单特征状态 (state): 36 个特征
+  - 趋势特征状态 (state_trend): 9 个特征
+  - 前一动作 (previous_action): 标量 ∈ [0, 4]
+
+Q表维度: (时间步数, 5, 5)
+  - 第一维: 时间步数 (动态)
+  - 第二维: 前一动作 [0, 4]
+  - 第三维: 当前动作 [0, 4]
+
+网络输出维度: (batch_size, 5)
+ReplayBuffer demo_action 维度: (batch_size, 5)
+============================================================
+
+epoch  1
+[23, 77, 12, 27, 6, 97, 75, 65, 60, 33, 32, 26, 19, 35, 85, 7, 106, 45, 49, 91, 71, 44, 37, 76, 74, 11, 28, 13, 31, 38, 24, 29, 53, 40, 0, 68]
+training with df 23
+Traceback (most recent call last):
+  File "/home/ustc1958/lxy/MacrohftHistory/MacroHFT2025.11.17高层实验，rewardhigh=1/RL/agent/low_level.py", line 520, in <module>
+    agent.train()
+  File "/home/ustc1958/lxy/MacrohftHistory/MacroHFT2025.11.17高层实验，rewardhigh=1/RL/agent/low_level.py", line 282, in train
+    train_env = Training_Env(
+TypeError: __init__() got an unexpected keyword argument 'num_actions'

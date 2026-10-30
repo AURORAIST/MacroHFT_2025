@@ -1,0 +1,2255 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Namespace(buffer_size=1000000, dataset='ETHUSDT', q_value_memorize_freq=20, batch_size=512, eval_update_freq=50, lr=0.0001, epsilon_start=0.5, epsilon_end=0.1, decay_length=5, update_times=10, gamma=0.99, tau=0.005, transcation_cost=0.0002, back_time_length=1, seed=54321, n_step=1, epoch_number=20, label='label_3', clf='vol', alpha=1.0, device='cuda:0', exp='220', reward_scale=1.0, commission_fees=0.001)
+[train] pid=3718603
+epoch  1
+[60, 54, 79, 77, 68, 47, 56, 34, 74, 32, 55, 3, 51, 42, 43, 11, 67, 59, 6, 58, 48, 95, 0, 7, 57, 35, 66, 50, 76, 70, 9, 63, 38, 49, 8, 75]
+training with df 60
+the portfit margine is  -0.21631181569306118
+training with df 54
+the portfit margine is  -0.05808442171435259
+training with df 79
+the portfit margine is  -0.16597119730843005
+training with df 77
+the portfit margine is  -0.18582832461933788
+training with df 68
+the portfit margine is  -0.19746154420193102
+training with df 47
+the portfit margine is  -0.14217953767720629
+training with df 56
+the portfit margine is  -0.11242094112288999
+training with df 34
+the portfit margine is  -0.1587612744679036
+training with df 74
+the portfit margine is  -0.1937871749141396
+training with df 32
+the portfit margine is  -0.25123293122105617
+training with df 55
+the portfit margine is  -0.10768927057352158
+training with df 3
+the portfit margine is  -0.21761822684242155
+training with df 51
+the portfit margine is  -0.11952255588383598
+training with df 42
+the portfit margine is  -0.20733280763590572
+training with df 43
+the portfit margine is  -0.27963223056348835
+training with df 11
+the portfit margine is  -0.21002591374321355
+training with df 67
+the portfit margine is  -0.10170814904569174
+training with df 59
+the portfit margine is  -0.20503697221232492
+training with df 6
+the portfit margine is  -0.22239512679684473
+training with df 58
+the portfit margine is  -0.21563074868746632
+training with df 48
+the portfit margine is  -0.2109232134946884
+training with df 95
+the portfit margine is  -0.21425658809053855
+training with df 0
+the portfit margine is  -0.17961558144814724
+training with df 7
+the portfit margine is  -0.1763950335142642
+training with df 57
+the portfit margine is  -0.1493047960457816
+training with df 35
+the portfit margine is  -0.1619179514135941
+training with df 66
+the portfit margine is  -0.23716867125423508
+training with df 50
+the portfit margine is  -0.19398173838089833
+training with df 76
+the portfit margine is  -0.20755453318342934
+training with df 70
+the portfit margine is  -0.14766646307760511
+training with df 9
+the portfit margine is  -0.11896792103566893
+training with df 63
+the portfit margine is  -0.11954397310264477
+training with df 38
+the portfit margine is  -0.18181588559789885
+training with df 49
+the portfit margine is  -0.23225196429990744
+training with df 8
+the portfit margine is  -0.18658005730543764
+training with df 75
+the portfit margine is  -0.17031123098797532
+validating on df 13
+the portfit margine is  0.11368301577023937
+    type            datetime    price  position_before  position_after
+0    buy 2023-03-12 09:26:00  1464.00              0.0             0.2
+1   sell 2023-03-12 12:13:00  1451.69              0.2             0.0
+2    buy 2023-03-12 13:18:00  1464.48              0.0             0.2
+3   sell 2023-03-12 17:26:00  1511.83              0.2             0.0
+4    buy 2023-03-12 17:27:00  1508.09              0.0             0.2
+5   sell 2023-03-12 17:29:00  1506.99              0.2             0.0
+6    buy 2023-03-12 19:32:00  1514.35              0.0             0.2
+7   sell 2023-03-12 22:17:00  1558.04              0.2             0.0
+8    buy 2023-03-12 22:29:00  1579.46              0.0             0.2
+9   sell 2023-03-13 00:42:00  1609.87              0.2             0.0
+10   buy 2023-03-13 02:00:00  1599.65              0.0             0.2
+11  sell 2023-03-13 02:24:00  1591.14              0.2             0.0
+12   buy 2023-03-13 02:47:00  1588.10              0.0             0.2
+13  sell 2023-03-13 13:03:00  1590.31              0.2             0.0
+14   buy 2023-03-13 13:12:00  1591.76              0.0             0.2
+15  sell 2023-03-13 14:08:00  1626.60              0.2             0.0
+16   buy 2023-03-13 14:13:00  1622.74              0.0             0.2
+17  sell 2023-03-13 15:08:00  1689.77              0.2             0.0
+18   buy 2023-03-13 16:33:00  1649.34              0.0             0.2
+19  sell 2023-03-13 23:20:00  1665.53              0.2             0.0
+20   buy 2023-03-14 03:21:00  1673.43              0.0             0.2
+21  sell 2023-03-14 12:31:00  1715.95              0.2             0.0
+22   buy 2023-03-14 12:32:00  1713.94              0.0             0.2
+23  sell 2023-03-14 12:33:00  1702.76              0.2             0.0
+24   buy 2023-03-14 12:39:00  1695.42              0.0             0.2
+25  sell 2023-03-14 12:47:00  1719.79              0.2             0.0
+26   buy 2023-03-14 13:01:00  1758.37              0.0             0.2
+27  sell 2023-03-14 13:02:00  1763.33              0.2             0.0
+28   buy 2023-03-14 14:56:00  1770.63              0.0             0.2
+29  sell 2023-03-14 19:16:00  1699.15              0.2             0.0
+30   buy 2023-03-14 19:18:00  1707.80              0.0             0.2
+31  sell 2023-03-14 21:08:00  1680.74              0.2             0.0
+validating on df 13
+the portfit margine is  0.10894464610427154
+    type            datetime    price  position_before  position_after
+0   sell 2023-03-12 12:13:00  1451.69              0.2             0.0
+1    buy 2023-03-12 13:18:00  1464.48              0.0             0.2
+2   sell 2023-03-12 17:26:00  1511.83              0.2             0.0
+3    buy 2023-03-12 17:27:00  1508.09              0.0             0.2
+4   sell 2023-03-12 17:29:00  1506.99              0.2             0.0
+5    buy 2023-03-12 19:32:00  1514.35              0.0             0.2
+6   sell 2023-03-12 22:17:00  1558.04              0.2             0.0
+7    buy 2023-03-12 22:29:00  1579.46              0.0             0.2
+8   sell 2023-03-13 00:42:00  1609.87              0.2             0.0
+9    buy 2023-03-13 02:00:00  1599.65              0.0             0.2
+10  sell 2023-03-13 02:24:00  1591.14              0.2             0.0
+11   buy 2023-03-13 02:47:00  1588.10              0.0             0.2
+12  sell 2023-03-13 13:03:00  1590.31              0.2             0.0
+13   buy 2023-03-13 13:12:00  1591.76              0.0             0.2
+14  sell 2023-03-13 14:08:00  1626.60              0.2             0.0
+15   buy 2023-03-13 14:13:00  1622.74              0.0             0.2
+16  sell 2023-03-13 15:08:00  1689.77              0.2             0.0
+17   buy 2023-03-13 16:33:00  1649.34              0.0             0.2
+18  sell 2023-03-13 23:20:00  1665.53              0.2             0.0
+19   buy 2023-03-14 03:21:00  1673.43              0.0             0.2
+20  sell 2023-03-14 12:31:00  1715.95              0.2             0.0
+21   buy 2023-03-14 12:32:00  1713.94              0.0             0.2
+22  sell 2023-03-14 12:33:00  1702.76              0.2             0.0
+23   buy 2023-03-14 12:39:00  1695.42              0.0             0.2
+24  sell 2023-03-14 12:47:00  1719.79              0.2             0.0
+25   buy 2023-03-14 13:01:00  1758.37              0.0             0.2
+26  sell 2023-03-14 13:02:00  1763.33              0.2             0.0
+27   buy 2023-03-14 14:56:00  1770.63              0.0             0.2
+28  sell 2023-03-14 19:16:00  1699.15              0.2             0.0
+29   buy 2023-03-14 19:18:00  1707.80              0.0             0.2
+30  sell 2023-03-14 21:08:00  1680.74              0.2             0.0
+return_rate_eval  0.11131383093725546
+best model updated to epoch  1
+return_rate_eval  0.11131383093725546
+epoch  2
+[51, 8, 32, 77, 75, 58, 54, 56, 57, 3, 9, 50, 0, 79, 34, 47, 63, 6, 68, 11, 42, 43, 67, 76, 60, 7, 95, 38, 74, 35, 70, 48, 66, 55, 49, 59]
+training with df 51
+the portfit margine is  -0.09929206920563047
+training with df 8
+the portfit margine is  -0.2134930217168836
+training with df 32
+the portfit margine is  -0.07905024899461323
+training with df 77
+the portfit margine is  -0.1229683987223756
+training with df 75
+the portfit margine is  -0.13633102429173377
+training with df 58
+the portfit margine is  -0.12472727726921445
+training with df 54
+the portfit margine is  -0.08768596208877638
+training with df 56
+the portfit margine is  -0.15939526064002568
+training with df 57
+the portfit margine is  -0.1496240483836767
+training with df 3
+the portfit margine is  -0.22816240193150117
+training with df 9
+the portfit margine is  -0.0841442788923274
+training with df 50
+the portfit margine is  -0.14170302688567724
+training with df 0
+the portfit margine is  -0.11018054322426167
+training with df 79
+the portfit margine is  -0.11909363866046668
+training with df 34
+the portfit margine is  -0.13059098931711347
+training with df 47
+the portfit margine is  -0.10250440053435929
+training with df 63
+the portfit margine is  -0.16232387863828426
+training with df 6
+the portfit margine is  -0.19679198171054396
+training with df 68
+the portfit margine is  -0.2224595318509209
+training with df 11
+the portfit margine is  -0.1633347587778662
+training with df 42
+the portfit margine is  -0.1976478864446426
+training with df 43
+the portfit margine is  -0.25498004291284787
+training with df 67
+the portfit margine is  -0.12714004450772995
+training with df 76
+the portfit margine is  -0.16842419755516802
+training with df 60
+the portfit margine is  -0.13630222838649986
+training with df 7
+the portfit margine is  -0.11166514638527601
+training with df 95
+the portfit margine is  -0.15686473988493005
+training with df 38
+the portfit margine is  -0.19070670520287555
+training with df 74
+the portfit margine is  -0.16300163855744312
+training with df 35
+the portfit margine is  -0.11728818845513314
+training with df 70
+the portfit margine is  -0.15771820875394807
+training with df 48
+the portfit margine is  -0.13416918362038768
+training with df 66
+the portfit margine is  -0.23301627067775516
+training with df 55
+the portfit margine is  -0.005905597740550587
+training with df 49
+the portfit margine is  -0.16478256011743564
+training with df 59
+the portfit margine is  -0.16291506095916788
+validating on df 13
+the portfit margine is  -0.015217783709727605
+    type            datetime    price  position_before  position_after
+0    buy 2023-03-12 17:27:00  1508.09              0.0             0.2
+1   sell 2023-03-12 17:28:00  1512.89              0.2             0.0
+2    buy 2023-03-12 19:17:00  1532.73              0.0             0.2
+3   sell 2023-03-12 20:36:00  1536.29              0.2             0.0
+4    buy 2023-03-12 22:23:00  1575.43              0.0             0.2
+5   sell 2023-03-12 22:24:00  1589.24              0.2             0.0
+6    buy 2023-03-12 22:29:00  1579.46              0.0             0.2
+7   sell 2023-03-12 22:31:00  1573.35              0.2             0.0
+8    buy 2023-03-13 02:00:00  1599.65              0.0             0.2
+9   sell 2023-03-13 07:25:00  1607.93              0.2             0.0
+10   buy 2023-03-13 08:47:00  1591.31              0.0             0.2
+11  sell 2023-03-13 09:38:00  1566.30              0.2             0.0
+12   buy 2023-03-14 12:30:00  1701.12              0.0             0.2
+13  sell 2023-03-14 12:31:00  1715.95              0.2             0.0
+14   buy 2023-03-14 14:55:00  1771.72              0.0             0.2
+15  sell 2023-03-14 14:58:00  1767.27              0.2             0.0
+16   buy 2023-03-14 18:06:00  1739.73              0.0             0.2
+17  sell 2023-03-14 19:13:00  1714.81              0.2             0.0
+18   buy 2023-03-14 20:39:00  1698.27              0.0             0.2
+19  sell 2023-03-14 21:09:00  1678.95              0.2             0.0
+20   buy 2023-03-14 21:11:00  1684.99              0.0             0.2
+validating on df 13
+the portfit margine is  -0.021343989664705378
+    type            datetime    price  position_before  position_after
+0   sell 2023-03-12 08:03:00  1460.00              0.2             0.0
+1    buy 2023-03-12 17:27:00  1508.09              0.0             0.2
+2   sell 2023-03-12 17:28:00  1512.89              0.2             0.0
+3    buy 2023-03-12 19:17:00  1532.73              0.0             0.2
+4   sell 2023-03-12 20:36:00  1536.29              0.2             0.0
+5    buy 2023-03-12 22:23:00  1575.43              0.0             0.2
+6   sell 2023-03-12 22:24:00  1589.24              0.2             0.0
+7    buy 2023-03-12 22:29:00  1579.46              0.0             0.2
+8   sell 2023-03-12 22:31:00  1573.35              0.2             0.0
+9    buy 2023-03-13 02:00:00  1599.65              0.0             0.2
+10  sell 2023-03-13 07:25:00  1607.93              0.2             0.0
+11   buy 2023-03-13 08:47:00  1591.31              0.0             0.2
+12  sell 2023-03-13 09:38:00  1566.30              0.2             0.0
+13   buy 2023-03-14 12:30:00  1701.12              0.0             0.2
+14  sell 2023-03-14 12:31:00  1715.95              0.2             0.0
+15   buy 2023-03-14 14:55:00  1771.72              0.0             0.2
+16  sell 2023-03-14 14:58:00  1767.27              0.2             0.0
+17   buy 2023-03-14 18:06:00  1739.73              0.0             0.2
+18  sell 2023-03-14 19:13:00  1714.81              0.2             0.0
+19   buy 2023-03-14 20:39:00  1698.27              0.0             0.2
+20  sell 2023-03-14 21:09:00  1678.95              0.2             0.0
+21   buy 2023-03-14 21:11:00  1684.99              0.0             0.2
+return_rate_eval  -0.01828088668721649
+epoch  3
+[74, 3, 6, 43, 66, 0, 50, 9, 42, 59, 68, 60, 67, 76, 35, 8, 57, 32, 77, 75, 79, 95, 49, 11, 56, 48, 55, 7, 47, 58, 63, 38, 70, 51, 54, 34]
+training with df 74
+the portfit margine is  -0.097921151504522
+training with df 3
+the portfit margine is  -0.16892885336660116
+training with df 6
+the portfit margine is  -0.1407994541866873
+training with df 43
+the portfit margine is  -0.20083077555203704
+training with df 66
+the portfit margine is  -0.1920555851155635
+training with df 0
+the portfit margine is  -0.06498689860592119
+training with df 50
+the portfit margine is  -0.07717523284235728
+training with df 9
+the portfit margine is  0.00017031244395540558
+training with df 42
+the portfit margine is  -0.14055061848911835
+training with df 59
+the portfit margine is  -0.10034283551121696
+training with df 68
+the portfit margine is  -0.18382315514695863
+training with df 60
+the portfit margine is  -0.18524685468541086
+training with df 67
+the portfit margine is  -0.06094156263484912
+training with df 76
+the portfit margine is  -0.19484358872733246
+training with df 35
+the portfit margine is  -0.12228466692574703
+training with df 8
+the portfit margine is  -0.08451167302847354
+training with df 57
+the portfit margine is  -0.07419803408902717
+training with df 32
+the portfit margine is  -0.1495663800438323
+training with df 77
+the portfit margine is  -0.11743572049972954
+training with df 75
+the portfit margine is  -0.09387267906128823
+training with df 79
+the portfit margine is  -0.1356518215977315
+training with df 95
+the portfit margine is  -0.0706525973130741
+training with df 49
+the portfit margine is  -0.16061935187560478
+training with df 11
+the portfit margine is  -0.12338927864488351
+training with df 56
+the portfit margine is  -0.13646079576683245
+training with df 48
+the portfit margine is  -0.13247861555615068
+training with df 55
+the portfit margine is  -0.001576171700670519
+training with df 7
+the portfit margine is  -0.09318437980186052
+training with df 47
+the portfit margine is  -0.11877395275520408
+training with df 58
+the portfit margine is  -0.15037119738428598
+training with df 63
+the portfit margine is  -0.05656904264806501
+training with df 38
+the portfit margine is  -0.17473723083420065
+training with df 70
+the portfit margine is  -0.16630279632462458
+training with df 51
+the portfit margine is  -0.009016896328337107
+training with df 54
+the portfit margine is  -0.04450073832891559
+training with df 34
+the portfit margine is  -0.1171056678183077
+validating on df 13
+the portfit margine is  0.04324142062510116
+    type            datetime    price  position_before  position_after
+0    buy 2023-03-12 08:03:00  1460.00              0.0             0.2
+1   sell 2023-03-12 12:13:00  1451.69              0.2             0.0
+2    buy 2023-03-12 17:25:00  1479.32              0.0             0.2
+3   sell 2023-03-12 17:26:00  1511.83              0.2             0.0
+4    buy 2023-03-12 17:27:00  1508.09              0.0             0.2
+5   sell 2023-03-12 17:28:00  1512.89              0.2             0.0
+6    buy 2023-03-12 20:33:00  1539.80              0.0             0.2
+7   sell 2023-03-12 20:34:00  1538.14              0.2             0.0
+8    buy 2023-03-12 22:17:00  1558.04              0.0             0.2
+9   sell 2023-03-12 22:18:00  1575.19              0.2             0.0
+10   buy 2023-03-12 22:23:00  1575.43              0.0             0.2
+11  sell 2023-03-12 22:25:00  1583.10              0.2             0.0
+12   buy 2023-03-13 00:21:00  1592.09              0.0             0.2
+13  sell 2023-03-13 00:42:00  1609.87              0.2             0.0
+14   buy 2023-03-13 02:00:00  1599.65              0.0             0.2
+15  sell 2023-03-13 07:25:00  1607.93              0.2             0.0
+16   buy 2023-03-13 13:04:00  1592.68              0.0             0.2
+17  sell 2023-03-13 14:08:00  1626.60              0.2             0.0
+18   buy 2023-03-13 15:10:00  1680.17              0.0             0.2
+19  sell 2023-03-13 15:11:00  1676.20              0.2             0.0
+20   buy 2023-03-13 15:19:00  1683.44              0.0             0.2
+21  sell 2023-03-13 15:38:00  1667.22              0.2             0.0
+22   buy 2023-03-13 17:28:00  1661.56              0.0             0.2
+23  sell 2023-03-13 17:57:00  1670.22              0.2             0.0
+24   buy 2023-03-13 19:53:00  1680.43              0.0             0.2
+25  sell 2023-03-13 22:57:00  1680.41              0.2             0.0
+26   buy 2023-03-14 05:12:00  1686.81              0.0             0.2
+27  sell 2023-03-14 12:31:00  1715.95              0.2             0.0
+28   buy 2023-03-14 12:36:00  1696.14              0.0             0.2
+29  sell 2023-03-14 12:38:00  1694.44              0.2             0.0
+30   buy 2023-03-14 13:04:00  1762.31              0.0             0.2
+31  sell 2023-03-14 13:19:00  1736.10              0.2             0.0
+32   buy 2023-03-14 13:20:00  1743.74              0.0             0.2
+33  sell 2023-03-14 19:13:00  1714.81              0.2             0.0
+34   buy 2023-03-14 19:16:00  1699.15              0.0             0.2
+35  sell 2023-03-14 19:19:00  1715.69              0.2             0.0
+36   buy 2023-03-14 21:06:00  1680.34              0.0             0.2
+37  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+38   buy 2023-03-14 21:18:00  1677.55              0.0             0.2
+39  sell 2023-03-14 21:28:00  1686.31              0.2             0.0
+validating on df 13
+the portfit margine is  0.03668728502645321
+    type            datetime    price  position_before  position_after
+0   sell 2023-03-12 12:13:00  1451.69              0.2             0.0
+1    buy 2023-03-12 17:25:00  1479.32              0.0             0.2
+2   sell 2023-03-12 17:26:00  1511.83              0.2             0.0
+3    buy 2023-03-12 17:27:00  1508.09              0.0             0.2
+4   sell 2023-03-12 17:28:00  1512.89              0.2             0.0
+5    buy 2023-03-12 20:33:00  1539.80              0.0             0.2
+6   sell 2023-03-12 20:34:00  1538.14              0.2             0.0
+7    buy 2023-03-12 22:17:00  1558.04              0.0             0.2
+8   sell 2023-03-12 22:18:00  1575.19              0.2             0.0
+9    buy 2023-03-12 22:23:00  1575.43              0.0             0.2
+10  sell 2023-03-12 22:25:00  1583.10              0.2             0.0
+11   buy 2023-03-13 00:21:00  1592.09              0.0             0.2
+12  sell 2023-03-13 00:42:00  1609.87              0.2             0.0
+13   buy 2023-03-13 02:00:00  1599.65              0.0             0.2
+14  sell 2023-03-13 07:25:00  1607.93              0.2             0.0
+15   buy 2023-03-13 13:04:00  1592.68              0.0             0.2
+16  sell 2023-03-13 14:08:00  1626.60              0.2             0.0
+17   buy 2023-03-13 15:10:00  1680.17              0.0             0.2
+18  sell 2023-03-13 15:11:00  1676.20              0.2             0.0
+19   buy 2023-03-13 15:19:00  1683.44              0.0             0.2
+20  sell 2023-03-13 15:38:00  1667.22              0.2             0.0
+21   buy 2023-03-13 17:28:00  1661.56              0.0             0.2
+22  sell 2023-03-13 17:57:00  1670.22              0.2             0.0
+23   buy 2023-03-13 19:53:00  1680.43              0.0             0.2
+24  sell 2023-03-13 22:57:00  1680.41              0.2             0.0
+25   buy 2023-03-14 05:12:00  1686.81              0.0             0.2
+26  sell 2023-03-14 12:31:00  1715.95              0.2             0.0
+27   buy 2023-03-14 12:36:00  1696.14              0.0             0.2
+28  sell 2023-03-14 12:38:00  1694.44              0.2             0.0
+29   buy 2023-03-14 13:04:00  1762.31              0.0             0.2
+30  sell 2023-03-14 13:19:00  1736.10              0.2             0.0
+31   buy 2023-03-14 13:20:00  1743.74              0.0             0.2
+32  sell 2023-03-14 19:13:00  1714.81              0.2             0.0
+33   buy 2023-03-14 19:16:00  1699.15              0.0             0.2
+34  sell 2023-03-14 19:19:00  1715.69              0.2             0.0
+35   buy 2023-03-14 21:06:00  1680.34              0.0             0.2
+36  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+37   buy 2023-03-14 21:18:00  1677.55              0.0             0.2
+38  sell 2023-03-14 21:28:00  1686.31              0.2             0.0
+return_rate_eval  0.039964352825777184
+epoch  4
+[0, 74, 42, 70, 60, 7, 63, 6, 32, 49, 34, 35, 38, 68, 9, 54, 75, 66, 59, 43, 55, 57, 67, 48, 3, 79, 51, 77, 47, 58, 11, 76, 95, 56, 50, 8]
+training with df 0
+the portfit margine is  -0.08583740106953647
+training with df 74
+the portfit margine is  -0.0922634134608847
+training with df 42
+the portfit margine is  -0.07226859651531918
+training with df 70
+the portfit margine is  -0.09621687695345359
+training with df 60
+the portfit margine is  -0.08763460997125581
+training with df 7
+the portfit margine is  0.057768210141300756
+training with df 63
+the portfit margine is  -0.047419606587873954
+training with df 6
+the portfit margine is  -0.05741698637433026
+training with df 32
+the portfit margine is  -0.07976419587205162
+training with df 49
+the portfit margine is  -0.08446559805390175
+training with df 34
+the portfit margine is  0.0030518990606708696
+training with df 35
+the portfit margine is  -0.10461094963534387
+training with df 38
+the portfit margine is  -0.12470446661986585
+training with df 68
+the portfit margine is  -0.10808820780531224
+training with df 9
+the portfit margine is  0.024862915138816787
+training with df 54
+the portfit margine is  -0.04532302940489402
+training with df 75
+the portfit margine is  -0.14029389084322164
+training with df 66
+the portfit margine is  -0.11674003703003226
+training with df 59
+the portfit margine is  -0.031523024108650634
+training with df 43
+the portfit margine is  -0.11663696572985625
+training with df 55
+the portfit margine is  0.08090112998790373
+training with df 57
+the portfit margine is  -0.055903963198653935
+training with df 67
+the portfit margine is  -0.06561193480372897
+training with df 48
+the portfit margine is  -0.1389151244225178
+training with df 3
+the portfit margine is  -0.10897116851699754
+training with df 79
+the portfit margine is  -0.12679866993228364
+training with df 51
+the portfit margine is  -0.02675156918014501
+training with df 77
+the portfit margine is  -0.136278515847282
+training with df 47
+the portfit margine is  -0.06591616239469728
+training with df 58
+the portfit margine is  -0.046930674921384335
+training with df 11
+the portfit margine is  -0.09406589348563124
+training with df 76
+the portfit margine is  -0.06981172798925953
+training with df 95
+the portfit margine is  -0.07967685893632376
+training with df 56
+the portfit margine is  -0.03231454000136152
+training with df 50
+the portfit margine is  -0.10497068730768429
+training with df 8
+the portfit margine is  -0.06599167417878996
+validating on df 13
+the portfit margine is  0.07182492399195244
+    type            datetime    price  position_before  position_after
+0    buy 2023-03-12 17:25:00  1479.32              0.0             0.2
+1   sell 2023-03-12 17:26:00  1511.83              0.2             0.0
+2    buy 2023-03-12 17:31:00  1504.00              0.0             0.2
+3   sell 2023-03-12 18:27:00  1531.46              0.2             0.0
+4    buy 2023-03-12 20:31:00  1533.49              0.0             0.2
+..   ...                 ...      ...              ...             ...
+65  sell 2023-03-14 21:10:00  1684.07              0.2             0.0
+66   buy 2023-03-14 21:11:00  1684.99              0.0             0.2
+67  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+68   buy 2023-03-14 21:19:00  1677.24              0.0             0.2
+69  sell 2023-03-14 21:30:00  1691.49              0.2             0.0
+
+[70 rows x 5 columns]
+validating on df 13
+the portfit margine is  0.07282547804959266
+    type            datetime    price  position_before  position_after
+0   sell 2023-03-12 03:10:00  1472.56              0.2             0.0
+1    buy 2023-03-12 17:25:00  1479.32              0.0             0.2
+2   sell 2023-03-12 17:26:00  1511.83              0.2             0.0
+3    buy 2023-03-12 17:31:00  1504.00              0.0             0.2
+4   sell 2023-03-12 18:27:00  1531.46              0.2             0.0
+..   ...                 ...      ...              ...             ...
+66  sell 2023-03-14 21:10:00  1684.07              0.2             0.0
+67   buy 2023-03-14 21:11:00  1684.99              0.0             0.2
+68  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+69   buy 2023-03-14 21:19:00  1677.24              0.0             0.2
+70  sell 2023-03-14 21:30:00  1691.49              0.2             0.0
+
+[71 rows x 5 columns]
+return_rate_eval  0.07232520102077256
+epoch  5
+[63, 9, 8, 75, 57, 55, 34, 43, 68, 42, 70, 79, 60, 11, 47, 95, 3, 0, 76, 66, 32, 6, 35, 67, 51, 58, 54, 59, 56, 50, 74, 7, 38, 48, 77, 49]
+training with df 63
+the portfit margine is  -0.01732282664831443
+training with df 9
+the portfit margine is  0.004824225788030901
+training with df 8
+the portfit margine is  -0.019311363829515156
+training with df 75
+the portfit margine is  -0.06207864586967779
+training with df 57
+the portfit margine is  -0.027328564110919405
+training with df 55
+the portfit margine is  0.2581657345834787
+training with df 34
+the portfit margine is  -0.0776673785648365
+training with df 43
+the portfit margine is  -0.08055122016130525
+training with df 68
+the portfit margine is  -0.09658628724409703
+training with df 42
+the portfit margine is  -0.036616335911414374
+training with df 70
+the portfit margine is  -0.034784952232938225
+training with df 79
+the portfit margine is  -0.09812834717920221
+training with df 60
+the portfit margine is  -0.07904744743948716
+training with df 11
+the portfit margine is  0.0011823967578597932
+training with df 47
+the portfit margine is  0.08839862298457149
+training with df 95
+the portfit margine is  0.011929284639231486
+training with df 3
+the portfit margine is  -0.051446007703256344
+training with df 0
+the portfit margine is  0.039752026688654
+training with df 76
+the portfit margine is  -0.071353300329595
+training with df 66
+the portfit margine is  -0.13033026854878582
+training with df 32
+the portfit margine is  0.003065750273769199
+training with df 6
+the portfit margine is  -0.05559145850056217
+training with df 35
+the portfit margine is  -0.09922898685225255
+training with df 67
+the portfit margine is  -0.027009091476439866
+training with df 51
+the portfit margine is  -0.036860346271309644
+training with df 58
+the portfit margine is  0.012944370249457415
+training with df 54
+the portfit margine is  0.027174685601139694
+training with df 59
+the portfit margine is  0.0782142151223385
+training with df 56
+the portfit margine is  -0.07516305307397071
+training with df 50
+the portfit margine is  -0.015586691413533891
+training with df 74
+the portfit margine is  -0.08266541012470086
+training with df 7
+the portfit margine is  0.20452242772832363
+training with df 38
+the portfit margine is  -0.11466858943366623
+training with df 48
+the portfit margine is  -0.028713018087895538
+training with df 77
+the portfit margine is  0.004795307323733266
+training with df 49
+the portfit margine is  0.013399831773299127
+validating on df 13
+the portfit margine is  0.05030166322359514
+    type            datetime    price  position_before  position_after
+0    buy 2023-03-12 07:48:00  1454.92              0.0             0.2
+1   sell 2023-03-12 17:26:00  1511.83              0.2             0.0
+2    buy 2023-03-12 17:30:00  1510.10              0.0             0.2
+3   sell 2023-03-12 18:27:00  1531.46              0.2             0.0
+4    buy 2023-03-12 18:41:00  1542.88              0.0             0.2
+..   ...                 ...      ...              ...             ...
+75  sell 2023-03-14 21:10:00  1684.07              0.2             0.0
+76   buy 2023-03-14 21:16:00  1664.94              0.0             0.2
+77  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+78   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+79  sell 2023-03-14 21:28:00  1686.31              0.2             0.0
+
+[80 rows x 5 columns]
+validating on df 13
+the portfit margine is  0.040365182774689964
+    type            datetime    price  position_before  position_after
+0   sell 2023-03-12 17:26:00  1511.83              0.2             0.0
+1    buy 2023-03-12 17:30:00  1510.10              0.0             0.2
+2   sell 2023-03-12 18:27:00  1531.46              0.2             0.0
+3    buy 2023-03-12 18:41:00  1542.88              0.0             0.2
+4   sell 2023-03-12 19:20:00  1523.87              0.2             0.0
+..   ...                 ...      ...              ...             ...
+74  sell 2023-03-14 21:10:00  1684.07              0.2             0.0
+75   buy 2023-03-14 21:16:00  1664.94              0.0             0.2
+76  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+77   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+78  sell 2023-03-14 21:28:00  1686.31              0.2             0.0
+
+[79 rows x 5 columns]
+return_rate_eval  0.04533342299914255
+epoch  6
+[34, 47, 38, 0, 11, 63, 56, 9, 95, 66, 7, 58, 75, 50, 54, 6, 35, 76, 59, 74, 3, 49, 57, 77, 43, 79, 48, 60, 68, 51, 55, 32, 67, 42, 8, 70]
+training with df 34
+the portfit margine is  0.00425067753945488
+training with df 47
+the portfit margine is  0.014468523557556226
+training with df 38
+the portfit margine is  -0.07052447802338124
+training with df 0
+the portfit margine is  0.06297320725439952
+training with df 11
+the portfit margine is  0.043351521260758245
+training with df 63
+the portfit margine is  0.0405624930284911
+training with df 56
+the portfit margine is  0.004919452166487332
+training with df 9
+the portfit margine is  0.254742710034371
+training with df 95
+the portfit margine is  -0.05231036055126054
+training with df 66
+the portfit margine is  -0.07237516970232293
+training with df 7
+the portfit margine is  0.12000673491353472
+training with df 58
+the portfit margine is  0.13591559104367512
+training with df 75
+the portfit margine is  -0.06350726649919503
+training with df 50
+the portfit margine is  0.06890507759389172
+training with df 54
+the portfit margine is  0.021116351282095824
+training with df 6
+the portfit margine is  0.04493944238352167
+training with df 35
+the portfit margine is  0.07706384448915153
+training with df 76
+the portfit margine is  -0.02503988925936419
+training with df 59
+the portfit margine is  0.07463318505589941
+training with df 74
+the portfit margine is  -0.003865734792953471
+training with df 3
+the portfit margine is  0.07773223443690493
+training with df 49
+the portfit margine is  -0.03202262289089621
+training with df 57
+the portfit margine is  0.012704034249184207
+training with df 77
+the portfit margine is  0.011284306433959754
+training with df 43
+the portfit margine is  -0.08392724710794361
+training with df 79
+the portfit margine is  0.005057670246800268
+training with df 48
+the portfit margine is  -0.02394408018263304
+training with df 60
+the portfit margine is  -0.032743620436042856
+training with df 68
+the portfit margine is  -0.050239061519685116
+training with df 51
+the portfit margine is  0.061404103060116996
+training with df 55
+the portfit margine is  0.2459898120891934
+training with df 32
+the portfit margine is  0.19583432708021398
+training with df 67
+the portfit margine is  -0.03165516012109433
+training with df 42
+the portfit margine is  0.06821191425457605
+training with df 8
+the portfit margine is  0.16046616104120934
+training with df 70
+the portfit margine is  0.06167293033813625
+validating on df 13
+the portfit margine is  0.05949701149426409
+    type            datetime    price  position_before  position_after
+0    buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+1   sell 2023-03-12 13:12:00  1460.44              0.2             0.0
+2    buy 2023-03-12 17:25:00  1479.32              0.0             0.2
+3   sell 2023-03-12 17:26:00  1511.83              0.2             0.0
+4    buy 2023-03-12 17:28:00  1512.89              0.0             0.2
+..   ...                 ...      ...              ...             ...
+93  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+94   buy 2023-03-14 21:18:00  1677.55              0.0             0.2
+95  sell 2023-03-14 21:19:00  1677.24              0.2             0.0
+96   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+97  sell 2023-03-14 21:30:00  1691.49              0.2             0.0
+
+[98 rows x 5 columns]
+validating on df 13
+the portfit margine is  0.06047236446940874
+    type            datetime    price  position_before  position_after
+0   sell 2023-03-12 03:10:00  1472.56              0.2             0.0
+1    buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+2   sell 2023-03-12 13:12:00  1460.44              0.2             0.0
+3    buy 2023-03-12 17:25:00  1479.32              0.0             0.2
+4   sell 2023-03-12 17:26:00  1511.83              0.2             0.0
+..   ...                 ...      ...              ...             ...
+94  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+95   buy 2023-03-14 21:18:00  1677.55              0.0             0.2
+96  sell 2023-03-14 21:19:00  1677.24              0.2             0.0
+97   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+98  sell 2023-03-14 21:30:00  1691.49              0.2             0.0
+
+[99 rows x 5 columns]
+return_rate_eval  0.05998468798183641
+epoch  7
+[51, 48, 6, 55, 32, 75, 47, 77, 7, 56, 59, 38, 67, 68, 34, 95, 63, 49, 43, 0, 50, 11, 54, 58, 3, 74, 35, 57, 66, 70, 9, 8, 60, 79, 42, 76]
+training with df 51
+the portfit margine is  -0.02639110655154752
+training with df 48
+the portfit margine is  -0.03539420364586394
+training with df 6
+the portfit margine is  0.11954241660213583
+training with df 55
+the portfit margine is  0.1871886925191123
+training with df 32
+the portfit margine is  0.15670281020374688
+training with df 75
+the portfit margine is  0.029239206788720693
+training with df 47
+the portfit margine is  0.08720121601011623
+training with df 77
+the portfit margine is  -0.042546038166273205
+training with df 7
+the portfit margine is  0.2992503777002164
+training with df 56
+the portfit margine is  0.0632606899014537
+training with df 59
+the portfit margine is  0.10497114110071482
+training with df 38
+the portfit margine is  0.013594093418510849
+training with df 67
+the portfit margine is  0.015568804765429324
+training with df 68
+the portfit margine is  -0.002932462804668023
+training with df 34
+the portfit margine is  0.02764763336500667
+training with df 95
+the portfit margine is  0.03940347830578216
+training with df 63
+the portfit margine is  0.04475469286404965
+training with df 49
+the portfit margine is  -0.04254667926686553
+training with df 43
+the portfit margine is  -0.041247697268654474
+training with df 0
+the portfit margine is  0.19205209722407357
+training with df 50
+the portfit margine is  0.028722442374956112
+training with df 11
+the portfit margine is  0.03463857787888507
+training with df 54
+the portfit margine is  0.11207809855931304
+training with df 58
+the portfit margine is  0.15293796434706244
+training with df 3
+the portfit margine is  0.13773541811506904
+training with df 74
+the portfit margine is  -0.016039803453975945
+training with df 35
+the portfit margine is  0.04185227671496975
+training with df 57
+the portfit margine is  -0.01987208372570619
+training with df 66
+the portfit margine is  -0.06250711103088706
+training with df 70
+the portfit margine is  0.048909014003132426
+training with df 9
+the portfit margine is  0.3186736348090622
+training with df 8
+the portfit margine is  0.21846345325250469
+training with df 60
+the portfit margine is  -0.030203572708296825
+training with df 79
+the portfit margine is  -0.009231246733222462
+training with df 42
+the portfit margine is  0.05301028088408519
+training with df 76
+the portfit margine is  -0.00923659779809661
+validating on df 13
+the portfit margine is  0.05740661096287684
+     type            datetime    price  position_before  position_after
+0     buy 2023-03-12 12:13:00  1451.69              0.0             0.2
+1    sell 2023-03-12 13:12:00  1460.44              0.2             0.0
+2     buy 2023-03-12 17:25:00  1479.32              0.0             0.2
+3    sell 2023-03-12 17:26:00  1511.83              0.2             0.0
+4     buy 2023-03-12 17:27:00  1508.09              0.0             0.2
+..    ...                 ...      ...              ...             ...
+107  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+108   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+109  sell 2023-03-14 21:25:00  1683.50              0.2             0.0
+110   buy 2023-03-14 21:47:00  1696.25              0.0             0.2
+111  sell 2023-03-14 22:14:00  1709.13              0.2             0.0
+
+[112 rows x 5 columns]
+validating on df 13
+the portfit margine is  0.05552323506815058
+     type            datetime    price  position_before  position_after
+0    sell 2023-03-12 01:20:00  1468.02              0.2             0.0
+1     buy 2023-03-12 12:13:00  1451.69              0.0             0.2
+2    sell 2023-03-12 13:12:00  1460.44              0.2             0.0
+3     buy 2023-03-12 17:25:00  1479.32              0.0             0.2
+4    sell 2023-03-12 17:26:00  1511.83              0.2             0.0
+..    ...                 ...      ...              ...             ...
+108  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+109   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+110  sell 2023-03-14 21:25:00  1683.50              0.2             0.0
+111   buy 2023-03-14 21:47:00  1696.25              0.0             0.2
+112  sell 2023-03-14 22:14:00  1709.13              0.2             0.0
+
+[113 rows x 5 columns]
+return_rate_eval  0.05646492301551371
+epoch  8
+[63, 68, 56, 11, 3, 49, 67, 48, 55, 59, 54, 79, 66, 35, 51, 77, 95, 76, 42, 57, 0, 47, 50, 75, 9, 38, 60, 34, 7, 8, 70, 43, 32, 58, 74, 6]
+training with df 63
+the portfit margine is  0.028544198604111476
+training with df 68
+the portfit margine is  -0.02485686118179831
+training with df 56
+the portfit margine is  0.16323943299515717
+training with df 11
+the portfit margine is  -0.002471974183061236
+training with df 3
+the portfit margine is  0.10252012238129127
+training with df 49
+the portfit margine is  -0.026399349890806334
+training with df 67
+the portfit margine is  -0.01608230078843824
+training with df 48
+the portfit margine is  -0.03216260848710468
+training with df 55
+the portfit margine is  0.15331536911193505
+training with df 59
+the portfit margine is  0.16118754261709167
+training with df 54
+the portfit margine is  0.12932145231225992
+training with df 79
+the portfit margine is  -0.044745859045187346
+training with df 66
+the portfit margine is  -0.06657320837483384
+training with df 35
+the portfit margine is  0.003358709168233836
+training with df 51
+the portfit margine is  0.07719469457482313
+training with df 77
+the portfit margine is  0.026707511002036954
+training with df 95
+the portfit margine is  0.043643338244016214
+training with df 76
+the portfit margine is  0.00492941153080063
+training with df 42
+the portfit margine is  0.10521450311342265
+training with df 57
+the portfit margine is  0.06096618095693054
+training with df 0
+the portfit margine is  0.16084906521629824
+training with df 47
+the portfit margine is  0.07397709332316536
+training with df 50
+the portfit margine is  -0.020521955877639
+training with df 75
+the portfit margine is  -0.014174166296631116
+training with df 9
+the portfit margine is  0.263188905964488
+training with df 38
+the portfit margine is  0.09111695646718301
+training with df 60
+the portfit margine is  -0.016614261141529224
+training with df 34
+the portfit margine is  0.04433697646485354
+training with df 7
+the portfit margine is  0.41183823639364486
+training with df 8
+the portfit margine is  0.2338419740935393
+training with df 70
+the portfit margine is  0.13318806946415027
+training with df 43
+the portfit margine is  -0.027342824415050586
+training with df 32
+the portfit margine is  0.20310598005735628
+training with df 58
+the portfit margine is  0.08831250375075736
+training with df 74
+the portfit margine is  -0.00888146549824398
+training with df 6
+the portfit margine is  0.18594925130824808
+validating on df 13
+the portfit margine is  0.057325808504524546
+     type            datetime    price  position_before  position_after
+0     buy 2023-03-12 03:09:00  1470.64              0.0             0.2
+1    sell 2023-03-12 06:40:00  1460.58              0.2             0.0
+2     buy 2023-03-12 12:13:00  1451.69              0.0             0.2
+3    sell 2023-03-12 13:12:00  1460.44              0.2             0.0
+4     buy 2023-03-12 16:53:00  1463.99              0.0             0.2
+..    ...                 ...      ...              ...             ...
+115  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+116   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+117  sell 2023-03-14 21:25:00  1683.50              0.2             0.0
+118   buy 2023-03-14 21:47:00  1696.25              0.0             0.2
+119  sell 2023-03-14 21:53:00  1690.00              0.2             0.0
+
+[120 rows x 5 columns]
+validating on df 13
+the portfit margine is  0.057449896844800605
+     type            datetime    price  position_before  position_after
+0    sell 2023-03-12 06:40:00  1460.58              0.2             0.0
+1     buy 2023-03-12 12:13:00  1451.69              0.0             0.2
+2    sell 2023-03-12 13:12:00  1460.44              0.2             0.0
+3     buy 2023-03-12 16:53:00  1463.99              0.0             0.2
+4    sell 2023-03-12 17:26:00  1511.83              0.2             0.0
+..    ...                 ...      ...              ...             ...
+114  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+115   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+116  sell 2023-03-14 21:25:00  1683.50              0.2             0.0
+117   buy 2023-03-14 21:47:00  1696.25              0.0             0.2
+118  sell 2023-03-14 21:53:00  1690.00              0.2             0.0
+
+[119 rows x 5 columns]
+return_rate_eval  0.05738785267466258
+epoch  9
+[48, 63, 7, 70, 58, 43, 6, 67, 56, 66, 42, 38, 47, 32, 49, 34, 76, 79, 75, 3, 55, 35, 9, 74, 51, 77, 68, 8, 50, 60, 54, 0, 11, 57, 95, 59]
+training with df 48
+the portfit margine is  -0.016841052062856476
+training with df 63
+the portfit margine is  -0.03945020730131491
+training with df 7
+the portfit margine is  0.4112587556270324
+training with df 70
+the portfit margine is  0.0563264735455199
+training with df 58
+the portfit margine is  0.08871564187838428
+training with df 43
+the portfit margine is  -0.008364094754638752
+training with df 6
+the portfit margine is  0.12535656447769708
+training with df 67
+the portfit margine is  0.05024343688700292
+training with df 56
+the portfit margine is  0.23406920573285925
+training with df 66
+the portfit margine is  -0.05031846873987291
+training with df 42
+the portfit margine is  0.027054887776186393
+training with df 38
+the portfit margine is  0.06032707730174739
+training with df 47
+the portfit margine is  0.04983210671129569
+training with df 32
+the portfit margine is  0.26647804425137583
+training with df 49
+the portfit margine is  -0.018912293074818978
+training with df 34
+the portfit margine is  0.03873173823583179
+training with df 76
+the portfit margine is  -0.018432462341258626
+training with df 79
+the portfit margine is  0.016189176507735267
+training with df 75
+the portfit margine is  0.053343970576831136
+training with df 3
+the portfit margine is  0.14322859104084648
+training with df 55
+the portfit margine is  0.1929213626582854
+training with df 35
+the portfit margine is  0.0006042452148067268
+training with df 9
+the portfit margine is  0.27715140421476436
+training with df 74
+the portfit margine is  -0.012436447564207158
+training with df 51
+the portfit margine is  -0.040510305773231045
+training with df 77
+the portfit margine is  0.020658079539820663
+training with df 68
+the portfit margine is  -0.055804647437808705
+training with df 8
+the portfit margine is  0.25829256178998167
+training with df 50
+the portfit margine is  -0.02600944233969411
+training with df 60
+the portfit margine is  -0.038688485792415524
+training with df 54
+the portfit margine is  0.08740365238344318
+training with df 0
+the portfit margine is  0.13538334497174156
+training with df 11
+the portfit margine is  0.04273590492477467
+training with df 57
+the portfit margine is  0.07350487317155144
+training with df 95
+the portfit margine is  0.06321939144388712
+training with df 59
+the portfit margine is  0.15485684413435105
+validating on df 13
+the portfit margine is  0.012522028711722212
+     type            datetime    price  position_before  position_after
+0     buy 2023-03-12 03:09:00  1470.64              0.0             0.2
+1    sell 2023-03-12 03:16:00  1470.99              0.2             0.0
+2     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+3    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+4     buy 2023-03-12 17:25:00  1479.32              0.0             0.2
+..    ...                 ...      ...              ...             ...
+132   buy 2023-03-14 21:18:00  1677.55              0.0             0.2
+133  sell 2023-03-14 21:19:00  1677.24              0.2             0.0
+134   buy 2023-03-14 21:23:00  1679.27              0.0             0.2
+135  sell 2023-03-14 21:25:00  1683.50              0.2             0.0
+136   buy 2023-03-14 22:26:00  1697.79              0.0             0.2
+
+[137 rows x 5 columns]
+validating on df 13
+the portfit margine is  0.00896358552813671
+     type            datetime    price  position_before  position_after
+0    sell 2023-03-12 02:46:00  1465.04              0.2             0.0
+1     buy 2023-03-12 03:09:00  1470.64              0.0             0.2
+2    sell 2023-03-12 03:16:00  1470.99              0.2             0.0
+3     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+4    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+..    ...                 ...      ...              ...             ...
+133   buy 2023-03-14 21:18:00  1677.55              0.0             0.2
+134  sell 2023-03-14 21:19:00  1677.24              0.2             0.0
+135   buy 2023-03-14 21:23:00  1679.27              0.0             0.2
+136  sell 2023-03-14 21:25:00  1683.50              0.2             0.0
+137   buy 2023-03-14 22:26:00  1697.79              0.0             0.2
+
+[138 rows x 5 columns]
+return_rate_eval  0.01074280711992946
+epoch  10
+[35, 49, 38, 48, 55, 51, 66, 77, 9, 57, 56, 74, 63, 60, 54, 3, 58, 6, 76, 11, 79, 0, 59, 8, 67, 42, 75, 7, 95, 68, 32, 50, 34, 47, 43, 70]
+training with df 35
+the portfit margine is  -0.06125759473090272
+training with df 49
+the portfit margine is  -0.06153322997362957
+training with df 38
+the portfit margine is  0.00394604088881597
+training with df 48
+the portfit margine is  -0.06623243717937681
+training with df 55
+the portfit margine is  0.2980699848871423
+training with df 51
+the portfit margine is  0.08715619870865189
+training with df 66
+the portfit margine is  -0.03392369875466176
+training with df 77
+the portfit margine is  0.12734691360467393
+training with df 9
+the portfit margine is  0.31415157433074425
+training with df 57
+the portfit margine is  0.04380291267085348
+training with df 56
+the portfit margine is  0.2053627283191186
+training with df 74
+the portfit margine is  0.0049809369357294185
+training with df 63
+the portfit margine is  0.020617897459114996
+training with df 60
+the portfit margine is  -0.04841065672215831
+training with df 54
+the portfit margine is  0.037104833723560285
+training with df 3
+the portfit margine is  0.1591601414956419
+training with df 58
+the portfit margine is  0.12154109894524116
+training with df 6
+the portfit margine is  0.18013988531448208
+training with df 76
+the portfit margine is  0.018092992539344162
+training with df 11
+the portfit margine is  0.049094724544066035
+training with df 79
+the portfit margine is  -0.0292164732407214
+training with df 0
+the portfit margine is  0.1823399231902703
+training with df 59
+the portfit margine is  0.10499076412926533
+training with df 8
+the portfit margine is  0.27438035251632525
+training with df 67
+the portfit margine is  0.021644654992724187
+training with df 42
+the portfit margine is  0.06022308936089727
+training with df 75
+the portfit margine is  0.026374804098530567
+training with df 7
+the portfit margine is  0.3977677988681983
+training with df 95
+the portfit margine is  0.07158074474868541
+training with df 68
+the portfit margine is  0.020424836809319506
+training with df 32
+the portfit margine is  0.22311047708680076
+training with df 50
+the portfit margine is  0.058995395527789776
+training with df 34
+the portfit margine is  0.05174967603543872
+training with df 47
+the portfit margine is  0.15567691279314322
+training with df 43
+the portfit margine is  0.007463897016458742
+training with df 70
+the portfit margine is  0.07795069677421684
+validating on df 13
+the portfit margine is  0.0679499649644557
+     type            datetime    price  position_before  position_after
+0     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+1    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+2     buy 2023-03-12 17:25:00  1479.32              0.0             0.2
+3    sell 2023-03-12 17:26:00  1511.83              0.2             0.0
+4     buy 2023-03-12 17:28:00  1512.89              0.0             0.2
+..    ...                 ...      ...              ...             ...
+136   buy 2023-03-14 21:18:00  1677.55              0.0             0.2
+137  sell 2023-03-14 21:19:00  1677.24              0.2             0.0
+138   buy 2023-03-14 21:30:00  1691.49              0.0             0.2
+139  sell 2023-03-14 21:54:00  1690.00              0.2             0.0
+140   buy 2023-03-14 22:26:00  1697.79              0.0             0.2
+
+[141 rows x 5 columns]
+validating on df 13
+the portfit margine is  0.06836830589252221
+     type            datetime    price  position_before  position_after
+0    sell 2023-03-12 03:11:00  1471.68              0.2             0.0
+1     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+2    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+3     buy 2023-03-12 17:25:00  1479.32              0.0             0.2
+4    sell 2023-03-12 17:26:00  1511.83              0.2             0.0
+..    ...                 ...      ...              ...             ...
+137   buy 2023-03-14 21:18:00  1677.55              0.0             0.2
+138  sell 2023-03-14 21:19:00  1677.24              0.2             0.0
+139   buy 2023-03-14 21:30:00  1691.49              0.0             0.2
+140  sell 2023-03-14 21:54:00  1690.00              0.2             0.0
+141   buy 2023-03-14 22:26:00  1697.79              0.0             0.2
+
+[142 rows x 5 columns]
+return_rate_eval  0.06815913542848895
+epoch  11
+[48, 0, 9, 55, 59, 79, 50, 77, 49, 57, 58, 32, 51, 43, 34, 11, 56, 54, 74, 75, 66, 3, 8, 95, 67, 7, 70, 60, 6, 35, 42, 68, 47, 38, 76, 63]
+training with df 48
+the portfit margine is  -0.02649450938424364
+training with df 0
+the portfit margine is  0.17506301030727095
+training with df 9
+the portfit margine is  0.3694592826580307
+training with df 55
+the portfit margine is  0.24854982522659969
+training with df 59
+the portfit margine is  0.05466588502212466
+training with df 79
+the portfit margine is  0.00884995185797913
+training with df 50
+the portfit margine is  0.015418925174779077
+training with df 77
+the portfit margine is  0.03704593973281115
+training with df 49
+the portfit margine is  -0.01156928768587224
+training with df 57
+the portfit margine is  0.03439515912011201
+training with df 58
+the portfit margine is  0.12792031281257027
+training with df 32
+the portfit margine is  0.295599351726859
+training with df 51
+the portfit margine is  0.04928750828276136
+training with df 43
+the portfit margine is  -0.013283512058018965
+training with df 34
+the portfit margine is  0.0984640849212434
+training with df 11
+the portfit margine is  0.04042599819209117
+training with df 56
+the portfit margine is  0.2772899268829694
+training with df 54
+the portfit margine is  0.131550432729401
+training with df 74
+the portfit margine is  -0.05750630939222549
+training with df 75
+the portfit margine is  0.06312575426874617
+training with df 66
+the portfit margine is  0.01792556593941073
+training with df 3
+the portfit margine is  0.20752568621863773
+training with df 8
+the portfit margine is  0.28425131441612517
+training with df 95
+the portfit margine is  0.0839231639605197
+training with df 67
+the portfit margine is  0.03181030244035818
+training with df 7
+the portfit margine is  0.4904118168435955
+training with df 70
+the portfit margine is  0.06735414166546748
+training with df 60
+the portfit margine is  0.004630938188537646
+training with df 6
+the portfit margine is  0.20779812879620796
+training with df 35
+the portfit margine is  0.008100111837601967
+training with df 42
+the portfit margine is  0.06270080165712254
+training with df 68
+the portfit margine is  0.028415870296274133
+training with df 47
+the portfit margine is  -0.03790529807305931
+training with df 38
+the portfit margine is  0.050480860282309456
+training with df 76
+the portfit margine is  0.0051158692768971
+training with df 63
+the portfit margine is  0.07439360966930446
+validating on df 13
+the portfit margine is  0.07852368447401696
+     type            datetime    price  position_before  position_after
+0     buy 2023-03-12 09:01:00  1465.53              0.0             0.2
+1    sell 2023-03-12 09:26:00  1464.00              0.2             0.0
+2     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+3    sell 2023-03-12 12:13:00  1451.69              0.2             0.0
+4     buy 2023-03-12 15:02:00  1453.09              0.0             0.2
+..    ...                 ...      ...              ...             ...
+136   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+137  sell 2023-03-14 21:25:00  1683.50              0.2             0.0
+138   buy 2023-03-14 21:30:00  1691.49              0.0             0.2
+139  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+140   buy 2023-03-14 22:26:00  1697.79              0.0             0.2
+
+[141 rows x 5 columns]
+validating on df 13
+the portfit margine is  0.07171823615897599
+     type            datetime    price  position_before  position_after
+0    sell 2023-03-12 06:40:00  1460.58              0.2             0.0
+1     buy 2023-03-12 09:01:00  1465.53              0.0             0.2
+2    sell 2023-03-12 09:26:00  1464.00              0.2             0.0
+3     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+4    sell 2023-03-12 12:13:00  1451.69              0.2             0.0
+..    ...                 ...      ...              ...             ...
+137   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+138  sell 2023-03-14 21:25:00  1683.50              0.2             0.0
+139   buy 2023-03-14 21:30:00  1691.49              0.0             0.2
+140  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+141   buy 2023-03-14 22:26:00  1697.79              0.0             0.2
+
+[142 rows x 5 columns]
+return_rate_eval  0.07512096031649648
+epoch  12
+[7, 57, 34, 75, 43, 54, 76, 51, 0, 6, 32, 48, 11, 49, 55, 42, 8, 63, 79, 56, 60, 95, 77, 70, 9, 47, 3, 58, 67, 74, 35, 66, 59, 68, 50, 38]
+training with df 7
+the portfit margine is  0.47460180484655357
+training with df 57
+the portfit margine is  0.11727523380804507
+training with df 34
+the portfit margine is  0.05870262892544286
+training with df 75
+the portfit margine is  0.11336191221629517
+training with df 43
+the portfit margine is  -0.008931774706971193
+training with df 54
+the portfit margine is  0.13197854236936674
+training with df 76
+the portfit margine is  0.03474993631534829
+training with df 51
+the portfit margine is  0.05097360560286115
+training with df 0
+the portfit margine is  0.2008476464865793
+training with df 6
+the portfit margine is  0.17825476553405092
+training with df 32
+the portfit margine is  0.3367063777986866
+training with df 48
+the portfit margine is  -0.058209223211243895
+training with df 11
+the portfit margine is  0.0586471598020614
+training with df 49
+the portfit margine is  -0.08202666499820001
+training with df 55
+the portfit margine is  0.25598084214733535
+training with df 42
+the portfit margine is  0.041034201491660045
+training with df 8
+the portfit margine is  0.2890728382234209
+training with df 63
+the portfit margine is  0.010008565132729932
+training with df 79
+the portfit margine is  -0.009254703070583221
+training with df 56
+the portfit margine is  0.23252556377733913
+training with df 60
+the portfit margine is  -0.008508552690989572
+training with df 95
+the portfit margine is  0.03489990344975976
+training with df 77
+the portfit margine is  0.08714171415334467
+training with df 70
+the portfit margine is  0.06213988650062897
+training with df 9
+the portfit margine is  0.34414854030137004
+training with df 47
+the portfit margine is  0.010052533234451664
+training with df 3
+the portfit margine is  0.17703730207804483
+training with df 58
+the portfit margine is  0.15219469450608655
+training with df 67
+the portfit margine is  0.00894180288921853
+training with df 74
+the portfit margine is  -0.012975887871905109
+training with df 35
+the portfit margine is  0.021191894969209944
+training with df 66
+the portfit margine is  -0.04892276045792888
+training with df 59
+the portfit margine is  0.13893184488623225
+training with df 68
+the portfit margine is  -0.013964269762859546
+training with df 50
+the portfit margine is  -0.04657421302515926
+training with df 38
+the portfit margine is  0.07520164469402016
+validating on df 13
+the portfit margine is  0.06946163268521625
+     type            datetime    price  position_before  position_after
+0     buy 2023-03-12 08:03:00  1460.00              0.0             0.2
+1    sell 2023-03-12 09:26:00  1464.00              0.2             0.0
+2     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+3    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+4     buy 2023-03-12 15:02:00  1453.09              0.0             0.2
+..    ...                 ...      ...              ...             ...
+124   buy 2023-03-14 21:16:00  1664.94              0.0             0.2
+125  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+126   buy 2023-03-14 21:30:00  1691.49              0.0             0.2
+127  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+128   buy 2023-03-14 22:26:00  1697.79              0.0             0.2
+
+[129 rows x 5 columns]
+validating on df 13
+the portfit margine is  0.06268017625911808
+     type            datetime    price  position_before  position_after
+0    sell 2023-03-12 06:40:00  1460.58              0.2             0.0
+1     buy 2023-03-12 08:03:00  1460.00              0.0             0.2
+2    sell 2023-03-12 09:26:00  1464.00              0.2             0.0
+3     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+4    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+..    ...                 ...      ...              ...             ...
+125   buy 2023-03-14 21:16:00  1664.94              0.0             0.2
+126  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+127   buy 2023-03-14 21:30:00  1691.49              0.0             0.2
+128  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+129   buy 2023-03-14 22:26:00  1697.79              0.0             0.2
+
+[130 rows x 5 columns]
+return_rate_eval  0.06607090447216717
+epoch  13
+[54, 74, 63, 42, 75, 3, 66, 70, 76, 95, 58, 79, 51, 7, 55, 60, 47, 57, 48, 8, 56, 43, 9, 59, 49, 34, 67, 11, 38, 6, 77, 32, 0, 68, 50, 35]
+training with df 54
+the portfit margine is  0.13614098943018457
+training with df 74
+the portfit margine is  -0.002801796300134137
+training with df 63
+the portfit margine is  0.030026558550626668
+training with df 42
+the portfit margine is  0.09527099596893822
+training with df 75
+the portfit margine is  0.04214680610760721
+training with df 3
+the portfit margine is  0.19196800443726533
+training with df 66
+the portfit margine is  -0.04732707610042265
+training with df 70
+the portfit margine is  0.08190055517264859
+training with df 76
+the portfit margine is  -0.025872937761858405
+training with df 95
+the portfit margine is  0.062408337999703786
+training with df 58
+the portfit margine is  0.16429571164233245
+training with df 79
+the portfit margine is  0.005279775542926038
+training with df 51
+the portfit margine is  0.0008345983235141966
+training with df 7
+the portfit margine is  0.427635619875491
+training with df 55
+the portfit margine is  0.2819722510549924
+training with df 60
+the portfit margine is  -0.016287666543289624
+training with df 47
+the portfit margine is  0.07776510905495533
+training with df 57
+the portfit margine is  0.12081308850257541
+training with df 48
+the portfit margine is  -0.0026862770476209696
+training with df 8
+the portfit margine is  0.3074398187414742
+training with df 56
+the portfit margine is  0.29640698021165346
+training with df 43
+the portfit margine is  0.032367974847136154
+training with df 9
+the portfit margine is  0.32006910446331815
+training with df 59
+the portfit margine is  0.15434971598044464
+training with df 49
+the portfit margine is  -0.027458432801374652
+training with df 34
+the portfit margine is  0.02208445999001098
+training with df 67
+the portfit margine is  0.015478498288410955
+training with df 11
+the portfit margine is  0.06203575184978592
+training with df 38
+the portfit margine is  0.005603676689097939
+training with df 6
+the portfit margine is  0.15347277511561416
+training with df 77
+the portfit margine is  0.10107072139069206
+training with df 32
+the portfit margine is  0.3329765030073706
+training with df 0
+the portfit margine is  0.2280419076967218
+training with df 68
+the portfit margine is  -0.01112881566926692
+training with df 50
+the portfit margine is  0.09553332583695824
+training with df 35
+the portfit margine is  0.05306912543672943
+validating on df 13
+the portfit margine is  0.11049553081660685
+     type            datetime    price  position_before  position_after
+0     buy 2023-03-12 08:03:00  1460.00              0.0             0.2
+1    sell 2023-03-12 09:26:00  1464.00              0.2             0.0
+2     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+3    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+4     buy 2023-03-12 12:13:00  1451.69              0.0             0.2
+..    ...                 ...      ...              ...             ...
+154   buy 2023-03-14 21:18:00  1677.55              0.0             0.2
+155  sell 2023-03-14 21:19:00  1677.24              0.2             0.0
+156   buy 2023-03-14 21:30:00  1691.49              0.0             0.2
+157  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+158   buy 2023-03-14 22:26:00  1697.79              0.0             0.2
+
+[159 rows x 5 columns]
+validating on df 13
+the portfit margine is  0.10393688837360149
+     type            datetime    price  position_before  position_after
+0    sell 2023-03-12 04:29:00  1461.63              0.2             0.0
+1     buy 2023-03-12 08:03:00  1460.00              0.0             0.2
+2    sell 2023-03-12 09:26:00  1464.00              0.2             0.0
+3     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+4    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+..    ...                 ...      ...              ...             ...
+155   buy 2023-03-14 21:18:00  1677.55              0.0             0.2
+156  sell 2023-03-14 21:19:00  1677.24              0.2             0.0
+157   buy 2023-03-14 21:30:00  1691.49              0.0             0.2
+158  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+159   buy 2023-03-14 22:26:00  1697.79              0.0             0.2
+
+[160 rows x 5 columns]
+return_rate_eval  0.10721620959510417
+epoch  14
+[0, 77, 59, 66, 9, 6, 57, 95, 7, 54, 51, 74, 58, 34, 38, 63, 35, 43, 79, 70, 76, 47, 11, 60, 32, 68, 48, 67, 3, 49, 8, 75, 56, 42, 50, 55]
+training with df 0
+the portfit margine is  0.2642776097615427
+training with df 77
+the portfit margine is  0.12876882918221202
+training with df 59
+the portfit margine is  0.17639217687946995
+training with df 66
+the portfit margine is  -0.04538159172915958
+training with df 9
+the portfit margine is  0.3722339288238116
+training with df 6
+the portfit margine is  0.22199271469451687
+training with df 57
+the portfit margine is  0.1436859100955778
+training with df 95
+the portfit margine is  0.07151669628403282
+training with df 7
+the portfit margine is  0.4593973310222986
+training with df 54
+the portfit margine is  0.1633691986906449
+training with df 51
+the portfit margine is  -0.008832921766949393
+training with df 74
+the portfit margine is  0.016580126319355706
+training with df 58
+the portfit margine is  0.10450402994021321
+training with df 34
+the portfit margine is  0.041091967296224184
+training with df 38
+the portfit margine is  0.043085578237617765
+training with df 63
+the portfit margine is  0.007495541408969472
+training with df 35
+the portfit margine is  0.08829186732350272
+training with df 43
+the portfit margine is  -0.011485746105919025
+training with df 79
+the portfit margine is  -0.025360798546313817
+training with df 70
+the portfit margine is  0.11261594102571847
+training with df 76
+the portfit margine is  -0.0710642892455942
+training with df 47
+the portfit margine is  0.053033426641604375
+training with df 11
+the portfit margine is  0.07458483879338333
+training with df 60
+the portfit margine is  -0.023100823963398517
+training with df 32
+the portfit margine is  0.34567423980612755
+training with df 68
+the portfit margine is  0.016556220831998265
+training with df 48
+the portfit margine is  -0.06447059228083447
+training with df 67
+the portfit margine is  -0.019497753098278472
+training with df 3
+the portfit margine is  0.2344033287379932
+training with df 49
+the portfit margine is  -0.04725651998195013
+training with df 8
+the portfit margine is  0.27509515688903824
+training with df 75
+the portfit margine is  0.09448511907506872
+training with df 56
+the portfit margine is  0.3416932455427531
+training with df 42
+the portfit margine is  0.032204896723464174
+training with df 50
+the portfit margine is  -0.035193879403119195
+training with df 55
+the portfit margine is  0.2812994486039882
+validating on df 13
+the portfit margine is  0.10561753626448145
+     type            datetime    price  position_before  position_after
+0     buy 2023-03-12 02:46:00  1465.04              0.0             0.2
+1    sell 2023-03-12 07:48:00  1454.92              0.2             0.0
+2     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+3    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+4     buy 2023-03-12 13:10:00  1459.96              0.0             0.2
+..    ...                 ...      ...              ...             ...
+156   buy 2023-03-14 21:30:00  1691.49              0.0             0.2
+157  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+158   buy 2023-03-14 21:53:00  1690.00              0.0             0.2
+159  sell 2023-03-14 21:54:00  1690.00              0.2             0.0
+160   buy 2023-03-14 22:26:00  1697.79              0.0             0.2
+
+[161 rows x 5 columns]
+validating on df 13
+the portfit margine is  0.10188815444851727
+     type            datetime    price  position_before  position_after
+0    sell 2023-03-12 07:48:00  1454.92              0.2             0.0
+1     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+2    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+3     buy 2023-03-12 13:10:00  1459.96              0.0             0.2
+4    sell 2023-03-12 13:18:00  1464.48              0.2             0.0
+..    ...                 ...      ...              ...             ...
+155   buy 2023-03-14 21:30:00  1691.49              0.0             0.2
+156  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+157   buy 2023-03-14 21:53:00  1690.00              0.0             0.2
+158  sell 2023-03-14 21:54:00  1690.00              0.2             0.0
+159   buy 2023-03-14 22:26:00  1697.79              0.0             0.2
+
+[160 rows x 5 columns]
+return_rate_eval  0.10375284535649937
+epoch  15
+[66, 7, 63, 55, 43, 8, 9, 50, 68, 59, 51, 56, 38, 42, 34, 95, 3, 79, 6, 47, 75, 49, 32, 11, 74, 54, 77, 58, 67, 70, 0, 48, 76, 60, 57, 35]
+training with df 66
+the portfit margine is  0.0054243296301397246
+training with df 7
+the portfit margine is  0.49371873317720744
+training with df 63
+the portfit margine is  0.09093714048398943
+training with df 55
+the portfit margine is  0.24760192644949192
+training with df 43
+the portfit margine is  -0.003520780823580467
+training with df 8
+the portfit margine is  0.25121231577491193
+training with df 9
+the portfit margine is  0.3532682685639376
+training with df 50
+the portfit margine is  -0.008081984599807652
+training with df 68
+the portfit margine is  0.007797971682204
+training with df 59
+the portfit margine is  0.1464099017843813
+training with df 51
+the portfit margine is  0.04681610651481494
+training with df 56
+the portfit margine is  0.19965383223930444
+training with df 38
+the portfit margine is  0.0844388500152894
+training with df 42
+the portfit margine is  0.07554178352724411
+training with df 34
+the portfit margine is  0.09449180990371868
+training with df 95
+the portfit margine is  0.08359089914535472
+training with df 3
+the portfit margine is  0.1975180669306009
+training with df 79
+the portfit margine is  -0.02044604170070869
+training with df 6
+the portfit margine is  0.21649613824101893
+training with df 47
+the portfit margine is  -0.004590168911141551
+training with df 75
+the portfit margine is  0.02600439642781655
+training with df 49
+the portfit margine is  -0.0707082314710351
+training with df 32
+the portfit margine is  0.30136880650446446
+training with df 11
+the portfit margine is  0.08012721582344874
+training with df 74
+the portfit margine is  -0.011137627713984242
+training with df 54
+the portfit margine is  0.14697174621645478
+training with df 77
+the portfit margine is  0.06642161630486816
+training with df 58
+the portfit margine is  0.15934740448090487
+training with df 67
+the portfit margine is  -0.04912796589259616
+training with df 70
+the portfit margine is  0.15154037387187466
+training with df 0
+the portfit margine is  0.23943347491009703
+training with df 48
+the portfit margine is  -0.012652720159332888
+training with df 76
+the portfit margine is  -0.02532444371580596
+training with df 60
+the portfit margine is  0.058090370653482756
+training with df 57
+the portfit margine is  0.12594285847987638
+training with df 35
+the portfit margine is  0.003678628360526839
+validating on df 13
+the portfit margine is  0.041190195846367045
+     type            datetime    price  position_before  position_after
+0     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+1    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+2     buy 2023-03-12 17:25:00  1479.32              0.0             0.2
+3    sell 2023-03-12 17:31:00  1504.00              0.2             0.0
+4     buy 2023-03-12 17:32:00  1506.23              0.0             0.2
+..    ...                 ...      ...              ...             ...
+127  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+128   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+129  sell 2023-03-14 21:25:00  1683.50              0.2             0.0
+130   buy 2023-03-14 21:28:00  1686.31              0.0             0.2
+131  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+
+[132 rows x 5 columns]
+validating on df 13
+the portfit margine is  0.037536321606252226
+     type            datetime    price  position_before  position_after
+0    sell 2023-03-12 02:46:00  1465.04              0.2             0.0
+1     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+2    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+3     buy 2023-03-12 17:25:00  1479.32              0.0             0.2
+4    sell 2023-03-12 17:31:00  1504.00              0.2             0.0
+..    ...                 ...      ...              ...             ...
+128  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+129   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+130  sell 2023-03-14 21:25:00  1683.50              0.2             0.0
+131   buy 2023-03-14 21:28:00  1686.31              0.0             0.2
+132  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+
+[133 rows x 5 columns]
+return_rate_eval  0.039363258726309636
+epoch  16
+[35, 59, 79, 47, 32, 0, 7, 11, 63, 66, 70, 77, 3, 76, 67, 95, 43, 58, 42, 60, 51, 74, 34, 9, 56, 38, 8, 50, 57, 6, 48, 75, 54, 49, 68, 55]
+training with df 35
+the portfit margine is  0.07294729476045436
+training with df 59
+the portfit margine is  0.1869582624225092
+training with df 79
+the portfit margine is  0.024166983729825998
+training with df 47
+the portfit margine is  0.12528152453788646
+training with df 32
+the portfit margine is  0.35099060284570616
+training with df 0
+the portfit margine is  0.26307229936352333
+training with df 7
+the portfit margine is  0.52179313219032
+training with df 11
+the portfit margine is  0.045303346278123276
+training with df 63
+the portfit margine is  -0.009834354841842856
+training with df 66
+the portfit margine is  -0.05548501082625609
+training with df 70
+the portfit margine is  0.061728059664837354
+training with df 77
+the portfit margine is  0.16281516136470411
+training with df 3
+the portfit margine is  0.23891557564833496
+training with df 76
+the portfit margine is  -0.008174994795622052
+training with df 67
+the portfit margine is  0.028598974781950597
+training with df 95
+the portfit margine is  0.0813200952858781
+training with df 43
+the portfit margine is  0.011886638768820628
+training with df 58
+the portfit margine is  0.10942283581717119
+training with df 42
+the portfit margine is  0.04412457892528354
+training with df 60
+the portfit margine is  -0.0320551226204831
+training with df 51
+the portfit margine is  -0.010048204073992128
+training with df 74
+the portfit margine is  0.04407460186841185
+training with df 34
+the portfit margine is  0.059782696485243134
+training with df 9
+the portfit margine is  0.37873442696708187
+training with df 56
+the portfit margine is  0.28278115761670974
+training with df 38
+the portfit margine is  0.1148567903008739
+training with df 8
+the portfit margine is  0.28434877830766003
+training with df 50
+the portfit margine is  0.007508559330499957
+training with df 57
+the portfit margine is  0.1198378573677083
+training with df 6
+the portfit margine is  0.1785130571220109
+training with df 48
+the portfit margine is  -0.06762566341281545
+training with df 75
+the portfit margine is  0.08300539178543148
+training with df 54
+the portfit margine is  0.16565287098012513
+training with df 49
+the portfit margine is  0.0012507381976363187
+training with df 68
+the portfit margine is  -0.021130853612365913
+training with df 55
+the portfit margine is  0.3331162864037658
+validating on df 13
+the portfit margine is  0.05148070444548078
+     type            datetime    price  position_before  position_after
+0     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+1    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+2     buy 2023-03-12 17:25:00  1479.32              0.0             0.2
+3    sell 2023-03-12 17:26:00  1511.83              0.2             0.0
+4     buy 2023-03-12 17:27:00  1508.09              0.0             0.2
+..    ...                 ...      ...              ...             ...
+157  sell 2023-03-14 21:19:00  1677.24              0.2             0.0
+158   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+159  sell 2023-03-14 21:24:00  1682.59              0.2             0.0
+160   buy 2023-03-14 21:28:00  1686.31              0.0             0.2
+161  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+
+[162 rows x 5 columns]
+validating on df 13
+the portfit margine is  0.04514250903329247
+     type            datetime    price  position_before  position_after
+0    sell 2023-03-12 06:34:00  1460.82              0.2             0.0
+1     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+2    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+3     buy 2023-03-12 17:25:00  1479.32              0.0             0.2
+4    sell 2023-03-12 17:26:00  1511.83              0.2             0.0
+..    ...                 ...      ...              ...             ...
+158  sell 2023-03-14 21:19:00  1677.24              0.2             0.0
+159   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+160  sell 2023-03-14 21:24:00  1682.59              0.2             0.0
+161   buy 2023-03-14 21:28:00  1686.31              0.0             0.2
+162  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+
+[163 rows x 5 columns]
+return_rate_eval  0.04831160673938663
+epoch  17
+[6, 95, 58, 59, 42, 55, 57, 43, 48, 50, 7, 74, 67, 0, 75, 63, 76, 66, 3, 70, 79, 54, 49, 32, 51, 56, 11, 34, 9, 35, 8, 77, 68, 38, 47, 60]
+training with df 6
+the portfit margine is  0.21704678718961615
+training with df 95
+the portfit margine is  0.06853503525981182
+training with df 58
+the portfit margine is  0.07141661561006292
+training with df 59
+the portfit margine is  0.1093587148423964
+training with df 42
+the portfit margine is  0.046221066978642165
+training with df 55
+the portfit margine is  0.29808753160766893
+training with df 57
+the portfit margine is  -0.010507503827822718
+training with df 43
+the portfit margine is  -0.004157559642399469
+training with df 48
+the portfit margine is  -0.036952317150176335
+training with df 50
+the portfit margine is  -0.028530464098939556
+training with df 7
+the portfit margine is  0.511102094669926
+training with df 74
+the portfit margine is  0.02553926934669388
+training with df 67
+the portfit margine is  0.07212240389319956
+training with df 0
+the portfit margine is  0.2399125793773489
+training with df 75
+the portfit margine is  0.06721249375938222
+training with df 63
+the portfit margine is  0.049244699377365087
+training with df 76
+the portfit margine is  0.00614170954996375
+training with df 66
+the portfit margine is  0.028209839582098613
+training with df 3
+the portfit margine is  0.2286565956620984
+training with df 70
+the portfit margine is  0.09006442311922262
+training with df 79
+the portfit margine is  -0.01711521870898616
+training with df 54
+the portfit margine is  0.10218737377590968
+training with df 49
+the portfit margine is  -0.1145539346799251
+training with df 32
+the portfit margine is  0.2893006871549156
+training with df 51
+the portfit margine is  0.023435293063184842
+training with df 56
+the portfit margine is  0.23634735215448827
+training with df 11
+the portfit margine is  0.11669819951124213
+training with df 34
+the portfit margine is  0.06605662651485555
+training with df 9
+the portfit margine is  0.3333070752804747
+training with df 35
+the portfit margine is  0.050359512449548026
+training with df 8
+the portfit margine is  0.25186692849787945
+training with df 77
+the portfit margine is  0.025395706804437645
+training with df 68
+the portfit margine is  -0.056043443883160834
+training with df 38
+the portfit margine is  0.06395382598347242
+training with df 47
+the portfit margine is  0.07453821744017775
+training with df 60
+the portfit margine is  -0.015141576230377575
+validating on df 13
+the portfit margine is  0.01438726930054419
+     type            datetime    price  position_before  position_after
+0     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+1    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+2     buy 2023-03-12 17:25:00  1479.32              0.0             0.2
+3    sell 2023-03-12 17:31:00  1504.00              0.2             0.0
+4     buy 2023-03-12 17:32:00  1506.23              0.0             0.2
+..    ...                 ...      ...              ...             ...
+133  sell 2023-03-14 21:19:00  1677.24              0.2             0.0
+134   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+135  sell 2023-03-14 21:21:00  1678.62              0.2             0.0
+136   buy 2023-03-14 21:28:00  1686.31              0.0             0.2
+137  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+
+[138 rows x 5 columns]
+validating on df 13
+the portfit margine is  0.010903297502310446
+     type            datetime    price  position_before  position_after
+0    sell 2023-03-12 02:46:00  1465.04              0.2             0.0
+1     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+2    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+3     buy 2023-03-12 17:25:00  1479.32              0.0             0.2
+4    sell 2023-03-12 17:31:00  1504.00              0.2             0.0
+..    ...                 ...      ...              ...             ...
+134  sell 2023-03-14 21:19:00  1677.24              0.2             0.0
+135   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+136  sell 2023-03-14 21:21:00  1678.62              0.2             0.0
+137   buy 2023-03-14 21:28:00  1686.31              0.0             0.2
+138  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+
+[139 rows x 5 columns]
+return_rate_eval  0.012645283401427319
+epoch  18
+[51, 75, 49, 0, 68, 11, 63, 74, 9, 7, 77, 66, 6, 57, 43, 60, 35, 8, 55, 38, 34, 59, 50, 56, 67, 3, 95, 58, 70, 47, 32, 54, 48, 76, 42, 79]
+training with df 51
+the portfit margine is  0.0721061148629489
+training with df 75
+the portfit margine is  0.0830120230308113
+training with df 49
+the portfit margine is  -0.07136259872434016
+training with df 0
+the portfit margine is  0.26240700481260937
+training with df 68
+the portfit margine is  0.04481709720777135
+training with df 11
+the portfit margine is  0.04803142928461026
+training with df 63
+the portfit margine is  -0.003371397416427063
+training with df 74
+the portfit margine is  0.02808170953168233
+training with df 9
+the portfit margine is  0.3652502398642922
+training with df 7
+the portfit margine is  0.5198438532915528
+training with df 77
+the portfit margine is  0.13290741385922686
+training with df 66
+the portfit margine is  0.006518376289478801
+training with df 6
+the portfit margine is  0.2604936138484295
+training with df 57
+the portfit margine is  0.12734876533423578
+training with df 43
+the portfit margine is  0.03475728263971517
+training with df 60
+the portfit margine is  0.04643193392082607
+training with df 35
+the portfit margine is  0.020574858506341043
+training with df 8
+the portfit margine is  0.243499271910478
+training with df 55
+the portfit margine is  0.3007508466981867
+training with df 38
+the portfit margine is  0.024839730628643756
+training with df 34
+the portfit margine is  0.10331089267789374
+training with df 59
+the portfit margine is  0.2346291903291813
+training with df 50
+the portfit margine is  0.01244755681578516
+training with df 56
+the portfit margine is  0.3082832162926394
+training with df 67
+the portfit margine is  0.055140635697486715
+training with df 3
+the portfit margine is  0.21494248452982231
+training with df 95
+the portfit margine is  0.10029763137097426
+training with df 58
+the portfit margine is  0.1742104736604242
+training with df 70
+the portfit margine is  0.09422618116128216
+training with df 47
+the portfit margine is  0.06589121750471527
+training with df 32
+the portfit margine is  0.40443785908375196
+training with df 54
+the portfit margine is  0.1482606189330513
+training with df 48
+the portfit margine is  -0.05624490332797144
+training with df 76
+the portfit margine is  0.0005945063411751157
+training with df 42
+the portfit margine is  0.05412523695721386
+training with df 79
+the portfit margine is  0.033754143678891804
+validating on df 13
+the portfit margine is  0.10822612134214954
+     type            datetime    price  position_before  position_after
+0     buy 2023-03-12 06:41:00  1460.59              0.0             0.2
+1    sell 2023-03-12 09:00:00  1464.58              0.2             0.0
+2     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+3    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+4     buy 2023-03-12 16:51:00  1462.93              0.0             0.2
+..    ...                 ...      ...              ...             ...
+147  sell 2023-03-14 21:19:00  1677.24              0.2             0.0
+148   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+149  sell 2023-03-14 21:21:00  1678.62              0.2             0.0
+150   buy 2023-03-14 21:30:00  1691.49              0.0             0.2
+151  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+
+[152 rows x 5 columns]
+validating on df 13
+the portfit margine is  0.10867400373224946
+     type            datetime    price  position_before  position_after
+0    sell 2023-03-12 03:11:00  1471.68              0.2             0.0
+1     buy 2023-03-12 06:41:00  1460.59              0.0             0.2
+2    sell 2023-03-12 09:00:00  1464.58              0.2             0.0
+3     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+4    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+..    ...                 ...      ...              ...             ...
+148  sell 2023-03-14 21:19:00  1677.24              0.2             0.0
+149   buy 2023-03-14 21:20:00  1680.46              0.0             0.2
+150  sell 2023-03-14 21:21:00  1678.62              0.2             0.0
+151   buy 2023-03-14 21:30:00  1691.49              0.0             0.2
+152  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+
+[153 rows x 5 columns]
+return_rate_eval  0.1084500625371995
+epoch  19
+[57, 63, 8, 51, 49, 74, 42, 3, 0, 54, 67, 48, 76, 70, 6, 38, 66, 58, 59, 79, 35, 68, 60, 34, 75, 9, 50, 56, 47, 32, 11, 95, 77, 43, 7, 55]
+training with df 57
+the portfit margine is  0.07777982938586372
+training with df 63
+the portfit margine is  -0.01803176903266402
+training with df 8
+the portfit margine is  0.32947999151056157
+training with df 51
+the portfit margine is  0.06265618712833741
+training with df 49
+the portfit margine is  -0.02550336246818725
+training with df 74
+the portfit margine is  0.04449674118025404
+training with df 42
+the portfit margine is  0.07919748269962182
+training with df 3
+the portfit margine is  0.2313956402429589
+training with df 0
+the portfit margine is  0.2362436487469323
+training with df 54
+the portfit margine is  0.14178177280726803
+training with df 67
+the portfit margine is  0.023094199636246163
+training with df 48
+the portfit margine is  -0.03432959232959824
+training with df 76
+the portfit margine is  -0.0023765527960921094
+training with df 70
+the portfit margine is  0.0967257387160417
+training with df 6
+the portfit margine is  0.27387861802410746
+training with df 38
+the portfit margine is  0.038759300934503894
+training with df 66
+the portfit margine is  -0.04704260878067548
+training with df 58
+the portfit margine is  0.09764183586718035
+training with df 59
+the portfit margine is  0.11324906401123819
+training with df 79
+the portfit margine is  -0.02401702618736692
+training with df 35
+the portfit margine is  0.04626078688562034
+training with df 68
+the portfit margine is  0.012076566059850549
+training with df 60
+the portfit margine is  0.02395462092476843
+training with df 34
+the portfit margine is  0.06709286734011874
+training with df 75
+the portfit margine is  0.04703581229278725
+training with df 9
+the portfit margine is  0.3570403822882628
+training with df 50
+the portfit margine is  0.060131595791286366
+training with df 56
+the portfit margine is  0.2244443503327206
+training with df 47
+the portfit margine is  0.07164565551239777
+training with df 32
+the portfit margine is  0.39775393679370014
+training with df 11
+the portfit margine is  0.13596781837050076
+training with df 95
+the portfit margine is  0.12780121399642724
+training with df 77
+the portfit margine is  0.18220282149771114
+training with df 43
+the portfit margine is  0.05475262913503992
+training with df 7
+the portfit margine is  0.5265836978517433
+training with df 55
+the portfit margine is  0.2548463833962448
+validating on df 13
+the portfit margine is  0.07689240040566378
+     type            datetime    price  position_before  position_after
+0     buy 2023-03-12 03:09:00  1470.64              0.0             0.2
+1    sell 2023-03-12 06:34:00  1460.82              0.2             0.0
+2     buy 2023-03-12 06:40:00  1460.58              0.0             0.2
+3    sell 2023-03-12 09:00:00  1464.58              0.2             0.0
+4     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+..    ...                 ...      ...              ...             ...
+145  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+146   buy 2023-03-14 21:18:00  1677.55              0.0             0.2
+147  sell 2023-03-14 21:21:00  1678.62              0.2             0.0
+148   buy 2023-03-14 21:28:00  1686.31              0.0             0.2
+149  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+
+[150 rows x 5 columns]
+validating on df 13
+the portfit margine is  0.07701924239973938
+     type            datetime    price  position_before  position_after
+0    sell 2023-03-12 06:34:00  1460.82              0.2             0.0
+1     buy 2023-03-12 06:40:00  1460.58              0.0             0.2
+2    sell 2023-03-12 09:00:00  1464.58              0.2             0.0
+3     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+4    sell 2023-03-12 12:05:00  1462.01              0.2             0.0
+..    ...                 ...      ...              ...             ...
+144  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+145   buy 2023-03-14 21:18:00  1677.55              0.0             0.2
+146  sell 2023-03-14 21:21:00  1678.62              0.2             0.0
+147   buy 2023-03-14 21:28:00  1686.31              0.0             0.2
+148  sell 2023-03-14 21:34:00  1698.51              0.2             0.0
+
+[149 rows x 5 columns]
+return_rate_eval  0.07695582140270157
+epoch  20
+[34, 47, 38, 7, 57, 3, 68, 54, 9, 56, 63, 35, 59, 76, 42, 58, 49, 55, 66, 6, 70, 43, 8, 79, 11, 67, 50, 74, 0, 48, 95, 77, 51, 60, 32, 75]
+training with df 34
+the portfit margine is  0.16082666454848182
+training with df 47
+the portfit margine is  0.07662082376573849
+training with df 38
+the portfit margine is  0.06208465447585994
+training with df 7
+the portfit margine is  0.4894268300234488
+training with df 57
+the portfit margine is  0.024908634056259375
+training with df 3
+the portfit margine is  0.23573470207232122
+training with df 68
+the portfit margine is  -0.022459177247874607
+training with df 54
+the portfit margine is  0.06413848814557492
+training with df 9
+the portfit margine is  0.39967337431476607
+training with df 56
+the portfit margine is  0.17696657235358332
+training with df 63
+the portfit margine is  0.007310139976977432
+training with df 35
+the portfit margine is  0.06651163207451093
+training with df 59
+the portfit margine is  0.1679513699591592
+training with df 76
+the portfit margine is  -0.04477028927654378
+training with df 42
+the portfit margine is  0.030491664603901816
+training with df 58
+the portfit margine is  0.026296607105392323
+training with df 49
+the portfit margine is  -0.06129058535868017
+training with df 55
+the portfit margine is  0.2518759143309502
+training with df 66
+the portfit margine is  -0.0263909473793548
+training with df 6
+the portfit margine is  0.2155563190226767
+training with df 70
+the portfit margine is  0.056315174043298034
+training with df 43
+the portfit margine is  -0.031529319992432366
+training with df 8
+the portfit margine is  0.36383649373716365
+training with df 79
+the portfit margine is  0.03434653491421577
+training with df 11
+the portfit margine is  0.12764794131739618
+training with df 67
+the portfit margine is  0.05854441142599963
+training with df 50
+the portfit margine is  0.07620327392367145
+training with df 74
+the portfit margine is  0.0006916053954295514
+training with df 0
+the portfit margine is  0.23750552506319017
+training with df 48
+the portfit margine is  -0.058874925060676375
+training with df 95
+the portfit margine is  0.0987557164076163
+training with df 77
+the portfit margine is  0.10041506026820154
+training with df 51
+the portfit margine is  -0.005109569384456282
+training with df 60
+the portfit margine is  0.0001663404284723016
+training with df 32
+the portfit margine is  0.3986241881234503
+training with df 75
+the portfit margine is  0.17511515182220214
+validating on df 13
+the portfit margine is  0.07596752628959692
+     type            datetime    price  position_before  position_after
+0     buy 2023-03-12 03:09:00  1470.64              0.0             0.2
+1    sell 2023-03-12 06:34:00  1460.82              0.2             0.0
+2     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+3    sell 2023-03-12 12:07:00  1461.17              0.2             0.0
+4     buy 2023-03-12 12:13:00  1451.69              0.0             0.2
+..    ...                 ...      ...              ...             ...
+157  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+158   buy 2023-03-14 21:18:00  1677.55              0.0             0.2
+159  sell 2023-03-14 21:19:00  1677.24              0.2             0.0
+160   buy 2023-03-14 21:28:00  1686.31              0.0             0.2
+161  sell 2023-03-14 21:39:00  1700.61              0.2             0.0
+
+[162 rows x 5 columns]
+validating on df 13
+the portfit margine is  0.07609583197337118
+     type            datetime    price  position_before  position_after
+0    sell 2023-03-12 06:34:00  1460.82              0.2             0.0
+1     buy 2023-03-12 10:59:00  1463.70              0.0             0.2
+2    sell 2023-03-12 12:07:00  1461.17              0.2             0.0
+3     buy 2023-03-12 12:13:00  1451.69              0.0             0.2
+4    sell 2023-03-12 13:18:00  1464.48              0.2             0.0
+..    ...                 ...      ...              ...             ...
+156  sell 2023-03-14 21:17:00  1666.65              0.2             0.0
+157   buy 2023-03-14 21:18:00  1677.55              0.0             0.2
+158  sell 2023-03-14 21:19:00  1677.24              0.2             0.0
+159   buy 2023-03-14 21:28:00  1686.31              0.0             0.2
+160  sell 2023-03-14 21:39:00  1700.61              0.2             0.0
+
+[161 rows x 5 columns]
+return_rate_eval  0.07603167913148405

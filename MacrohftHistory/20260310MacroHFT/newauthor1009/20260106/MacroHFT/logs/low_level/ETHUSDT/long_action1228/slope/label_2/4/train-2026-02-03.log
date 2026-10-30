@@ -1,0 +1,1029 @@
+2026-02-03 01:15:27,913 INFO: Namespace(buffer_size=1300000, dataset='ETHUSDT', q_value_memorize_freq=20, batch_size=256, eval_update_freq=50, lr=0.0001, epsilon_start=0.7, epsilon_end=0.1, decay_length=15, update_times=20, gamma=0.99, tau=0.005, transcation_cost=0.0002, back_time_length=1, seed=6234571, n_step=1, epoch_number=15, label='label_2', clf='slope', alpha=4.0, exp='long_action1228', device='cuda:0', action_mode='long', action_size=1, reward_no_action='False')
+2026-02-03 01:15:27,913 INFO: train_data_path:/home/ustc1958/lxy/newauthor1009/20260106/MacroHFT/data/ETHUSDT/train
+2026-02-03 01:15:27,913 INFO: ==slope==
+2026-02-03 01:15:27,913 INFO: self.train_index:[[3, 5, 10, 21, 43, 66, 93], [0, 6, 7, 11, 12, 13, 19, 23, 24, 26, 27, 28, 29, 31, 32, 33, 35, 37, 38, 40, 44, 45, 49, 53, 60, 65, 68, 71, 74, 75, 76, 77, 85, 91, 97, 106], [20, 22, 34, 36, 48, 50, 56, 57, 58, 69, 70, 72, 78, 79, 80, 82, 83, 84, 86, 87, 89, 90, 95, 96, 101, 102, 104, 105, 108, 109, 110, 111, 113, 117, 118, 119], [2, 4, 8, 15, 16, 17, 25, 30, 41, 42, 46, 47, 51, 52, 54, 59, 61, 62, 63, 64, 67, 73, 81, 88, 92, 94, 98, 99, 100, 103, 107, 112, 114, 115, 116, 120], [1, 9, 14, 18, 39, 55]]
+2026-02-03 01:15:27,914 INFO: self.actions:[[0, 0], [1, 0]]
+2026-02-03 01:15:27,914 INFO: self.n_action:2
+2026-02-03 01:15:27,914 INFO: self.action_type_desc:多头动作模式
+2026-02-03 01:15:29,205 INFO: start training 1770052529.2059186
+2026-02-03 01:15:29,206 INFO: 验证消费者线程启动
+2026-02-03 01:15:29,206 INFO: 验证消费者线程已启动
+2026-02-03 01:15:29,207 INFO: epoch 1
+2026-02-03 01:15:29,207 INFO: random_list:[104, 89, 72, 109, 95, 78, 117, 69, 20, 48, 57, 102, 110, 108, 86, 70, 111, 90, 34, 80, 118, 119, 87, 84, 58, 96, 105, 56, 83, 82, 113, 50, 22, 101, 79, 36]
+2026-02-03 01:15:29,316 INFO: epoch 1 start files
+2026-02-03 01:15:29,316 INFO: training with df 104 4320 1770052529.3165476
+2026-02-03 01:16:03,393 INFO: training with df 89 4320 1770052563.3933947
+2026-02-03 01:16:39,313 INFO: training with df 72 4320 1770052599.313635
+2026-02-03 01:17:14,462 INFO: training with df 109 4320 1770052634.4623632
+2026-02-03 01:17:49,011 INFO: training with df 95 4320 1770052669.0112185
+2026-02-03 01:18:23,568 INFO: training with df 78 4320 1770052703.5685613
+2026-02-03 01:18:58,519 INFO: training with df 117 4320 1770052738.5191627
+2026-02-03 01:19:33,537 INFO: training with df 69 4320 1770052773.537486
+2026-02-03 01:20:09,749 INFO: training with df 20 4320 1770052809.7491581
+2026-02-03 01:20:44,939 INFO: training with df 48 4320 1770052844.9390838
+2026-02-03 01:21:19,338 INFO: training with df 57 4320 1770052879.3381417
+2026-02-03 01:21:55,392 INFO: training with df 102 4320 1770052915.3927479
+2026-02-03 01:22:30,871 INFO: training with df 110 4320 1770052950.8710253
+2026-02-03 01:23:05,376 INFO: training with df 108 4320 1770052985.3760996
+2026-02-03 01:23:41,094 INFO: training with df 86 4320 1770053021.0940058
+2026-02-03 01:24:19,581 INFO: training with df 70 4320 1770053059.5817575
+2026-02-03 01:24:59,434 INFO: training with df 111 4320 1770053099.4349174
+2026-02-03 01:25:37,237 INFO: training with df 90 4320 1770053137.237613
+2026-02-03 01:26:15,104 INFO: training with df 34 4320 1770053175.1047788
+2026-02-03 01:26:54,041 INFO: training with df 80 4320 1770053214.041577
+2026-02-03 01:27:32,119 INFO: training with df 118 4320 1770053252.1194284
+2026-02-03 01:28:09,768 INFO: training with df 119 4320 1770053289.7685184
+2026-02-03 01:28:47,781 INFO: training with df 87 4320 1770053327.7811108
+2026-02-03 01:29:25,822 INFO: training with df 84 4320 1770053365.8228567
+2026-02-03 01:30:03,592 INFO: training with df 58 4320 1770053403.5926137
+2026-02-03 01:30:40,567 INFO: training with df 96 4320 1770053440.5678616
+2026-02-03 01:31:17,241 INFO: training with df 105 4320 1770053477.2416644
+2026-02-03 01:31:54,227 INFO: training with df 56 4320 1770053514.2270267
+2026-02-03 01:32:32,070 INFO: training with df 83 4320 1770053552.0700576
+2026-02-03 01:33:09,321 INFO: training with df 82 4320 1770053589.3218832
+2026-02-03 01:33:46,573 INFO: training with df 113 4320 1770053626.5734591
+2026-02-03 01:34:24,449 INFO: training with df 50 4320 1770053664.4492998
+2026-02-03 01:35:02,557 INFO: training with df 22 4320 1770053702.5578666
+2026-02-03 01:35:39,375 INFO: training with df 101 4320 1770053739.3751128
+2026-02-03 01:36:15,348 INFO: training with df 79 4320 1770053775.3480325
+2026-02-03 01:36:52,042 INFO: training with df 36 4320 1770053812.0421546
+2026-02-03 01:37:28,501 INFO: start val epoch 1
+2026-02-03 01:37:28,501 INFO: 验证任务已加入队列: epoch 1
+2026-02-03 01:37:28,501 INFO: epoch 2
+2026-02-03 01:37:28,501 INFO: random_list:[102, 90, 72, 78, 83, 101, 113, 118, 57, 58, 110, 50, 117, 111, 70, 20, 56, 109, 48, 89, 79, 36, 87, 119, 80, 69, 95, 22, 105, 108, 96, 84, 82, 104, 34, 86]
+2026-02-03 01:37:28,501 INFO: epoch 2 start files
+2026-02-03 01:37:28,501 INFO: training with df 102 4320 1770053848.501657
+2026-02-03 01:37:30,396 INFO: 验证消费者处理任务: epoch 1
+2026-02-03 01:37:30,396 INFO: 异步验证开始: epoch 1
+2026-02-03 01:37:30,396 INFO: Using 3 processes for parallel validation df_list:[3, 5, 6, 7, 9, 10, 11, 16, 22, 24, 28, 31, 32, 33, 34, 35, 36]
+2026-02-03 01:38:01,858 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: -11.35582039999997, required_money: 314.45686679999994, commission_fee: 2.1898204000000003, step_times: 4319, trade_id_counter: 36
+2026-02-03 01:38:01,982 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: -12.6484087999998, required_money: 347.5524291999999, commission_fee: 2.6964088000000004, step_times: 4319, trade_id_counter: 40
+2026-02-03 01:38:02,033 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: -6.083688799999663, required_money: 347.43423319999965, commission_fee: 3.4996888000000004, step_times: 4319, trade_id_counter: 52
+2026-02-03 01:38:24,183 INFO: training with df 90 4320 1770053904.183819
+2026-02-03 01:38:29,093 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: -5.201767599999414, required_money: 338.1034471999997, commission_fee: 3.3837676, step_times: 4319, trade_id_counter: 51
+2026-02-03 01:38:29,171 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: -14.899665999999684, required_money: 327.3591615999997, commission_fee: 1.3856660000000003, step_times: 4319, trade_id_counter: 22
+2026-02-03 01:38:29,194 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 0.24014360000012402, required_money: 335.30031679999996, commission_fee: 1.9658564000000003, step_times: 4319, trade_id_counter: 30
+2026-02-03 01:39:07,673 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: -1.3725372000001812, required_money: 312.6205116, commission_fee: 1.1185372, step_times: 4319, trade_id_counter: 17
+2026-02-03 01:39:07,813 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 15.734113600000512, required_money: 360.9585751999998, commission_fee: 6.0978864, step_times: 4319, trade_id_counter: 85
+2026-02-03 01:39:07,816 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: -0.2142599999997401, required_money: 383.15765599999975, commission_fee: 1.34226, step_times: 4319, trade_id_counter: 18
+2026-02-03 01:39:43,345 INFO: training with df 72 4320 1770053983.3456953
+2026-02-03 01:39:48,714 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: -11.308924799999488, required_money: 434.11574719999965, commission_fee: 2.1809248000000006, step_times: 4319, trade_id_counter: 26
+2026-02-03 01:39:48,848 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 3.6573532000010687, required_money: 385.19495759999984, commission_fee: 5.3046468, step_times: 4319, trade_id_counter: 69
+2026-02-03 01:39:48,855 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: -24.58731839999956, required_money: 398.70048079999964, commission_fee: 2.1673184, step_times: 4319, trade_id_counter: 27
+2026-02-03 01:40:21,395 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 7.468576000000496, required_money: 373.4606772, commission_fee: 3.691424, step_times: 4319, trade_id_counter: 50
+2026-02-03 01:40:21,511 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 3.2711788000003708, required_money: 366.47328000000005, commission_fee: 2.2748212000000003, step_times: 4319, trade_id_counter: 31
+2026-02-03 01:40:21,582 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 3.268798800000013, required_money: 365.1384624, commission_fee: 1.3092012000000002, step_times: 4319, trade_id_counter: 17
+2026-02-03 01:40:47,708 INFO: training with df 78 4320 1770054047.7081344
+2026-02-03 01:40:50,293 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: -8.495495599999856, required_money: 373.0285743999999, commission_fee: 1.5934956, step_times: 4319, trade_id_counter: 22
+2026-02-03 01:40:50,370 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 3.6499572000001876, required_money: 363.2684988000001, commission_fee: 1.1600428, step_times: 4319, trade_id_counter: 16
+2026-02-03 01:40:50,728 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 return_rate_mean:-0.97
+2026-02-03 01:40:50,731 INFO: 异步验证结束: epoch 1, 验证收益率: -0.9684332593611724 best:-inf
+2026-02-03 01:40:50,732 INFO: best model updated to epoch 1.best_return_rate:-0.9684332593611724
+2026-02-03 01:41:35,351 INFO: training with df 83 4320 1770054095.3518918
+2026-02-03 01:42:22,820 INFO: training with df 101 4320 1770054142.8200428
+2026-02-03 01:43:09,418 INFO: training with df 113 4320 1770054189.4184864
+2026-02-03 01:43:50,664 INFO: training with df 118 4320 1770054230.6644652
+2026-02-03 01:44:27,686 INFO: training with df 57 4320 1770054267.686683
+2026-02-03 01:45:05,189 INFO: training with df 58 4320 1770054305.1896353
+2026-02-03 01:45:41,938 INFO: training with df 110 4320 1770054341.9382331
+2026-02-03 01:46:18,550 INFO: training with df 50 4320 1770054378.5506947
+2026-02-03 01:46:55,455 INFO: training with df 117 4320 1770054415.4557285
+2026-02-03 01:47:32,276 INFO: training with df 111 4320 1770054452.2762094
+2026-02-03 01:49:46,107 INFO: Namespace(buffer_size=1000000, dataset='ETHUSDT', q_value_memorize_freq=20, batch_size=256, eval_update_freq=50, lr=1e-05, epsilon_start=0.7, epsilon_end=0.1, decay_length=15, update_times=20, gamma=0.99, tau=0.005, transcation_cost=0.0002, back_time_length=1, seed=6234571, n_step=1, epoch_number=15, label='label_2', clf='slope', alpha=4.0, exp='long_action1228', device='cuda:0', action_mode='long', action_size=1, reward_no_action='False')
+2026-02-03 01:49:46,107 INFO: train_data_path:/home/ustc1958/lxy/newauthor1009/20260106/MacroHFT/data/ETHUSDT/train
+2026-02-03 01:49:46,107 INFO: ==slope==
+2026-02-03 01:49:46,107 INFO: self.train_index:[[3, 5, 10, 21, 43, 66, 93], [0, 6, 7, 11, 12, 13, 19, 23, 24, 26, 27, 28, 29, 31, 32, 33, 35, 37, 38, 40, 44, 45, 49, 53, 60, 65, 68, 71, 74, 75, 76, 77, 85, 91, 97, 106], [20, 22, 34, 36, 48, 50, 56, 57, 58, 69, 70, 72, 78, 79, 80, 82, 83, 84, 86, 87, 89, 90, 95, 96, 101, 102, 104, 105, 108, 109, 110, 111, 113, 117, 118, 119], [2, 4, 8, 15, 16, 17, 25, 30, 41, 42, 46, 47, 51, 52, 54, 59, 61, 62, 63, 64, 67, 73, 81, 88, 92, 94, 98, 99, 100, 103, 107, 112, 114, 115, 116, 120], [1, 9, 14, 18, 39, 55]]
+2026-02-03 01:49:46,108 INFO: self.actions:[[0, 0], [1, 0]]
+2026-02-03 01:49:46,108 INFO: self.n_action:2
+2026-02-03 01:49:46,108 INFO: self.action_type_desc:多头动作模式
+2026-02-03 01:49:47,396 INFO: start training 1770054587.3962612
+2026-02-03 01:49:47,396 INFO: 验证消费者线程启动
+2026-02-03 01:49:47,396 INFO: 验证消费者线程已启动
+2026-02-03 01:49:47,397 INFO: epoch 1
+2026-02-03 01:49:47,397 INFO: random_list:[104, 89, 72, 109, 95, 78, 117, 69, 20, 48, 57, 102, 110, 108, 86, 70, 111, 90, 34, 80, 118, 119, 87, 84, 58, 96, 105, 56, 83, 82, 113, 50, 22, 101, 79, 36]
+2026-02-03 01:49:47,556 INFO: epoch 1 start files
+2026-02-03 01:49:47,556 INFO: training with df 104 4320 1770054587.55623
+2026-02-03 01:50:23,239 INFO: training with df 89 4320 1770054623.2391334
+2026-02-03 01:51:00,075 INFO: training with df 72 4320 1770054660.0756326
+2026-02-03 01:51:35,898 INFO: training with df 109 4320 1770054695.898645
+2026-02-03 01:52:11,624 INFO: training with df 95 4320 1770054731.624542
+2026-02-03 01:52:47,597 INFO: training with df 78 4320 1770054767.5977597
+2026-02-03 01:53:24,608 INFO: training with df 117 4320 1770054804.608734
+2026-02-03 01:54:01,140 INFO: training with df 69 4320 1770054841.140291
+2026-02-03 01:54:38,051 INFO: training with df 20 4320 1770054878.0514657
+2026-02-03 01:55:15,022 INFO: training with df 48 4320 1770054915.021991
+2026-02-03 01:55:51,657 INFO: training with df 57 4320 1770054951.6577191
+2026-02-03 01:56:28,901 INFO: training with df 102 4320 1770054988.9015799
+2026-02-03 01:57:05,300 INFO: training with df 110 4320 1770055025.300249
+2026-02-03 01:57:41,483 INFO: training with df 108 4320 1770055061.483295
+2026-02-03 01:58:18,304 INFO: training with df 86 4320 1770055098.3044224
+2026-02-03 01:58:54,900 INFO: training with df 70 4320 1770055134.9008157
+2026-02-03 01:59:31,851 INFO: training with df 111 4320 1770055171.8519344
+2026-02-03 02:00:08,606 INFO: training with df 90 4320 1770055208.6061926
+2026-02-03 02:00:45,083 INFO: training with df 34 4320 1770055245.083679
+2026-02-03 02:01:21,111 INFO: training with df 80 4320 1770055281.111528
+2026-02-03 02:01:56,500 INFO: training with df 118 4320 1770055316.50056
+2026-02-03 02:02:31,527 INFO: training with df 119 4320 1770055351.5273778
+2026-02-03 02:03:06,624 INFO: training with df 87 4320 1770055386.6247082
+2026-02-03 02:03:44,664 INFO: training with df 84 4320 1770055424.664438
+2026-02-03 02:04:22,900 INFO: training with df 58 4320 1770055462.9009182
+2026-02-03 02:05:00,207 INFO: training with df 96 4320 1770055500.2069743
+2026-02-03 02:05:38,139 INFO: training with df 105 4320 1770055538.1398046
+2026-02-03 02:06:16,504 INFO: training with df 56 4320 1770055576.5041244
+2026-02-03 02:06:54,082 INFO: training with df 83 4320 1770055614.0824373
+2026-02-03 02:07:32,120 INFO: training with df 82 4320 1770055652.1206374
+2026-02-03 02:08:09,730 INFO: training with df 113 4320 1770055689.7309372
+2026-02-03 02:08:47,074 INFO: training with df 50 4320 1770055727.0744052
+2026-02-03 02:09:24,159 INFO: training with df 22 4320 1770055764.1599288
+2026-02-03 02:10:01,611 INFO: training with df 101 4320 1770055801.6113825
+2026-02-03 02:10:39,117 INFO: training with df 79 4320 1770055839.117342
+2026-02-03 02:11:16,409 INFO: training with df 36 4320 1770055876.4090183
+2026-02-03 02:11:53,365 INFO: start val epoch 1
+2026-02-03 02:11:53,365 INFO: 验证任务已加入队列: epoch 1
+2026-02-03 02:11:53,365 INFO: epoch 2
+2026-02-03 02:11:53,365 INFO: random_list:[102, 90, 72, 78, 83, 101, 113, 118, 57, 58, 110, 50, 117, 111, 70, 20, 56, 109, 48, 89, 79, 36, 87, 119, 80, 69, 95, 22, 105, 108, 96, 84, 82, 104, 34, 86]
+2026-02-03 02:11:53,365 INFO: epoch 2 start files
+2026-02-03 02:11:53,365 INFO: training with df 102 4320 1770055913.365376
+2026-02-03 02:12:31,106 INFO: training with df 90 4320 1770055951.106962
+2026-02-03 02:12:48,518 INFO: 验证消费者处理任务: epoch 1
+2026-02-03 02:12:48,518 INFO: 异步验证开始: epoch 1
+2026-02-03 02:12:48,518 INFO: Using 3 processes for parallel validation df_list:[3, 5, 6, 7, 9, 10, 11, 16, 22, 24, 28, 31, 32, 33, 34, 35, 36]
+2026-02-03 02:13:29,068 INFO: training with df 72 4320 1770056009.0689151
+2026-02-03 02:13:36,323 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 0.8094644000000244, required_money: 330.9341736, commission_fee: 0.1325356, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:13:36,390 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 0.5709103999999456, required_money: 302.43847560000006, commission_fee: 0.12108960000000002, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:13:36,418 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 5.516336000000024, required_money: 336.40126680000003, commission_fee: 0.135664, step_times: 4319, trade_id_counter: 2
+2026-02-03 02:14:18,157 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: -7.484130799999946, required_money: 329.0698008, commission_fee: 0.13013080000000002, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:14:18,183 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: -9.727067999999974, required_money: 322.534494, commission_fee: 0.12706800000000001, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:14:18,186 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-03 02:14:49,497 INFO: training with df 78 4320 1770056089.4976804
+2026-02-03 02:14:54,814 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: -2.4890828000000624, required_money: 308.95177800000005, commission_fee: 0.1230828, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:14:54,831 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 16.538499200000047, required_money: 365.4810816, commission_fee: 0.14950080000000002, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:14:54,855 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 9.478471600000034, required_money: 359.5178892, commission_fee: 0.43152840000000003, step_times: 4319, trade_id_counter: 5
+2026-02-03 02:15:29,850 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 10.082578000000069, required_money: 413.51268600000003, commission_fee: 0.16742200000000002, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:15:29,881 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: -2.9850559999998723, required_money: 385.5991044, commission_fee: 0.305056, step_times: 4319, trade_id_counter: 3
+2026-02-03 02:15:29,886 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: -14.102465199999926, required_money: 388.2156276, commission_fee: 0.15246520000000002, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:15:54,781 INFO: training with df 83 4320 1770056154.7811716
+2026-02-03 02:15:57,001 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 2.9694364000000633, required_money: 371.83435199999997, commission_fee: 0.44456360000000006, step_times: 4319, trade_id_counter: 5
+2026-02-03 02:15:57,010 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 1.604435599999988, required_money: 363.10860720000005, commission_fee: 0.14556440000000004, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:15:57,020 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: -4.044390399999941, required_money: 362.99858520000004, commission_fee: 0.14439040000000003, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:16:22,008 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 2.483555200000012, required_money: 359.8699596, commission_fee: 0.14444480000000004, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:16:22,027 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 _validate_worker  final_balance: 2.535162400000047, required_money: 360.8261508, commission_fee: 0.1448376, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:16:22,396 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_1 return_rate_mean:0.16
+2026-02-03 02:16:22,399 INFO: 异步验证结束: epoch 1, 验证收益率: 0.15820363231712514 best:-inf
+2026-02-03 02:16:22,399 INFO: best model updated to epoch 1.best_return_rate:0.15820363231712514
+2026-02-03 02:16:45,349 INFO: training with df 101 4320 1770056205.3492649
+2026-02-03 02:17:31,887 INFO: training with df 113 4320 1770056251.8879387
+2026-02-03 02:18:17,813 INFO: training with df 118 4320 1770056297.8136044
+2026-02-03 02:18:55,645 INFO: training with df 57 4320 1770056335.6452065
+2026-02-03 02:19:33,196 INFO: training with df 58 4320 1770056373.196381
+2026-02-03 02:20:10,738 INFO: training with df 110 4320 1770056410.7385495
+2026-02-03 02:20:47,888 INFO: training with df 50 4320 1770056447.8888602
+2026-02-03 02:21:25,630 INFO: training with df 117 4320 1770056485.6307614
+2026-02-03 02:22:02,949 INFO: training with df 111 4320 1770056522.9496648
+2026-02-03 02:22:39,822 INFO: training with df 70 4320 1770056559.822859
+2026-02-03 02:23:16,483 INFO: training with df 20 4320 1770056596.4830172
+2026-02-03 02:23:54,029 INFO: training with df 56 4320 1770056634.0294936
+2026-02-03 02:24:30,223 INFO: training with df 109 4320 1770056670.2230532
+2026-02-03 02:25:06,441 INFO: training with df 48 4320 1770056706.441848
+2026-02-03 02:25:42,076 INFO: training with df 89 4320 1770056742.076811
+2026-02-03 02:26:18,569 INFO: training with df 79 4320 1770056778.5696225
+2026-02-03 02:26:54,586 INFO: training with df 36 4320 1770056814.5867445
+2026-02-03 02:27:31,926 INFO: training with df 87 4320 1770056851.926227
+2026-02-03 02:28:08,917 INFO: training with df 119 4320 1770056888.9170556
+2026-02-03 02:28:46,198 INFO: training with df 80 4320 1770056926.1983197
+2026-02-03 02:29:23,210 INFO: training with df 69 4320 1770056963.210736
+2026-02-03 02:30:00,044 INFO: training with df 95 4320 1770057000.044268
+2026-02-03 02:30:36,304 INFO: training with df 22 4320 1770057036.3043997
+2026-02-03 02:31:13,188 INFO: training with df 105 4320 1770057073.1885474
+2026-02-03 02:31:49,718 INFO: training with df 108 4320 1770057109.717982
+2026-02-03 02:32:26,074 INFO: training with df 96 4320 1770057146.074005
+2026-02-03 02:33:02,065 INFO: training with df 84 4320 1770057182.0652475
+2026-02-03 02:33:38,339 INFO: training with df 82 4320 1770057218.339672
+2026-02-03 02:34:15,202 INFO: training with df 104 4320 1770057255.2028413
+2026-02-03 02:34:50,998 INFO: training with df 34 4320 1770057290.9989657
+2026-02-03 02:35:26,475 INFO: training with df 86 4320 1770057326.4752939
+2026-02-03 02:36:02,140 INFO: start val epoch 2
+2026-02-03 02:36:02,140 INFO: 验证任务已加入队列: epoch 2
+2026-02-03 02:36:02,141 INFO: epoch 3
+2026-02-03 02:36:02,141 INFO: random_list:[108, 69, 96, 20, 105, 110, 87, 36, 22, 82, 118, 78, 72, 117, 111, 79, 83, 89, 48, 86, 34, 50, 95, 56, 109, 70, 113, 90, 80, 119, 102, 104, 101, 84, 58, 57]
+2026-02-03 02:36:02,141 INFO: epoch 3 start files
+2026-02-03 02:36:02,141 INFO: training with df 108 4320 1770057362.1412468
+2026-02-03 02:36:23,238 INFO: 验证消费者处理任务: epoch 2
+2026-02-03 02:36:23,238 INFO: 异步验证开始: epoch 2
+2026-02-03 02:36:23,238 INFO: Using 3 processes for parallel validation df_list:[3, 5, 6, 7, 9, 10, 11, 16, 22, 24, 28, 31, 32, 33, 34, 35, 36]
+2026-02-03 02:36:53,380 INFO: training with df 69 4320 1770057413.380827
+2026-02-03 02:36:59,167 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 _validate_worker  final_balance: 0.5709103999999456, required_money: 302.43847560000006, commission_fee: 0.12108960000000002, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:36:59,367 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 _validate_worker  final_balance: 10.001232800000025, required_money: 331.91637000000003, commission_fee: 0.13476720000000003, step_times: 4319, trade_id_counter: 2
+2026-02-03 02:36:59,403 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 _validate_worker  final_balance: 0.8094644000000244, required_money: 330.9341736, commission_fee: 0.1325356, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:37:38,068 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 _validate_worker  final_balance: 6.5838064000000145, required_money: 328.1136096, commission_fee: 0.2601936, step_times: 4319, trade_id_counter: 3
+2026-02-03 02:37:38,298 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-03 02:37:38,340 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 _validate_worker  final_balance: -9.727067999999974, required_money: 322.534494, commission_fee: 0.12706800000000001, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:38:14,823 INFO: training with df 96 4320 1770057494.8234367
+2026-02-03 02:38:18,669 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 _validate_worker  final_balance: -2.4890828000000624, required_money: 308.95177800000005, commission_fee: 0.1230828, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:38:18,895 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 _validate_worker  final_balance: 11.81723199999999, required_money: 351.010188, commission_fee: 0.142768, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:38:18,939 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 _validate_worker  final_balance: 16.538499200000047, required_money: 365.4810816, commission_fee: 0.14950080000000002, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:38:56,546 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 _validate_worker  final_balance: 10.082578000000069, required_money: 413.51268600000003, commission_fee: 0.16742200000000002, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:38:56,762 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 _validate_worker  final_balance: -5.565344799999764, required_money: 392.46064319999994, commission_fee: 0.6093448, step_times: 4319, trade_id_counter: 7
+2026-02-03 02:38:56,800 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 _validate_worker  final_balance: -24.408383999999955, required_money: 398.84775360000003, commission_fee: 0.304384, step_times: 4319, trade_id_counter: 3
+2026-02-03 02:39:24,552 INFO: training with df 20 4320 1770057564.5529697
+2026-02-03 02:39:25,865 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 _validate_worker  final_balance: 8.648572000000058, required_money: 371.83435199999997, commission_fee: 0.44342800000000004, step_times: 4319, trade_id_counter: 5
+2026-02-03 02:39:26,021 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 _validate_worker  final_balance: 3.309080000000108, required_money: 355.6451148, commission_fee: 0.14292000000000002, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:39:26,042 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 _validate_worker  final_balance: 1.604435599999988, required_money: 363.10860720000005, commission_fee: 0.14556440000000004, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:39:50,928 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-03 02:39:51,098 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 _validate_worker  final_balance: 2.535162400000047, required_money: 360.8261508, commission_fee: 0.1448376, step_times: 4319, trade_id_counter: 1
+2026-02-03 02:39:51,436 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_2 return_rate_mean:0.52
+2026-02-03 02:39:51,437 INFO: 异步验证结束: epoch 2, 验证收益率: 0.5191007139665981 best:0.15820363231712514
+2026-02-03 02:39:51,437 INFO: best model updated to epoch 2.best_return_rate:0.5191007139665981
+2026-02-03 02:40:14,453 INFO: training with df 105 4320 1770057614.4539223
+2026-02-03 02:41:00,559 INFO: training with df 110 4320 1770057660.559357
+2026-02-03 02:41:43,508 INFO: training with df 87 4320 1770057703.5085924
+2026-02-03 02:42:19,496 INFO: training with df 36 4320 1770057739.4965272
+2026-02-03 02:42:55,373 INFO: training with df 22 4320 1770057775.3737922
+2026-02-03 02:43:31,487 INFO: training with df 82 4320 1770057811.487649
+2026-02-03 02:44:08,201 INFO: training with df 118 4320 1770057848.2017956
+2026-02-03 02:44:43,915 INFO: training with df 78 4320 1770057883.915089
+2026-02-03 02:45:19,671 INFO: training with df 72 4320 1770057919.6714416
+2026-02-03 02:45:56,262 INFO: training with df 117 4320 1770057956.262635
+2026-02-03 02:46:32,956 INFO: training with df 111 4320 1770057992.9563975
+2026-02-03 02:47:09,671 INFO: training with df 79 4320 1770058029.6717222
+2026-02-03 02:47:46,047 INFO: training with df 83 4320 1770058066.0473647
+2026-02-03 02:48:22,301 INFO: training with df 89 4320 1770058102.30151
+2026-02-03 02:48:59,609 INFO: training with df 48 4320 1770058139.6095467
+2026-02-03 02:49:35,747 INFO: training with df 86 4320 1770058175.747355
+2026-02-03 02:50:12,052 INFO: training with df 34 4320 1770058212.0527651
+2026-02-03 02:50:49,285 INFO: training with df 50 4320 1770058249.285902
+2026-02-03 02:51:25,594 INFO: training with df 95 4320 1770058285.594671
+2026-02-03 02:52:01,875 INFO: training with df 56 4320 1770058321.8757737
+2026-02-03 02:52:37,907 INFO: training with df 109 4320 1770058357.9075243
+2026-02-03 02:53:14,462 INFO: training with df 70 4320 1770058394.462426
+2026-02-03 02:53:51,177 INFO: training with df 113 4320 1770058431.1770504
+2026-02-03 02:54:26,814 INFO: training with df 90 4320 1770058466.814163
+2026-02-03 02:55:03,968 INFO: training with df 80 4320 1770058503.9685166
+2026-02-03 02:55:40,412 INFO: training with df 119 4320 1770058540.4123104
+2026-02-03 02:56:16,114 INFO: training with df 102 4320 1770058576.1140969
+2026-02-03 02:56:52,024 INFO: training with df 104 4320 1770058612.0249722
+2026-02-03 02:57:27,043 INFO: training with df 101 4320 1770058647.04311
+2026-02-03 02:58:02,562 INFO: training with df 84 4320 1770058682.562171
+2026-02-03 02:58:38,734 INFO: training with df 58 4320 1770058718.734709
+2026-02-03 02:59:14,176 INFO: training with df 57 4320 1770058754.176223
+2026-02-03 02:59:49,783 INFO: start val epoch 3
+2026-02-03 02:59:49,783 INFO: 验证任务已加入队列: epoch 3
+2026-02-03 02:59:49,783 INFO: epoch 4
+2026-02-03 02:59:49,783 INFO: random_list:[80, 83, 101, 86, 56, 109, 48, 118, 102, 104, 69, 57, 119, 117, 89, 113, 111, 108, 50, 58, 70, 90, 82, 20, 105, 95, 36, 22, 79, 84, 110, 87, 78, 96, 34, 72]
+2026-02-03 02:59:49,783 INFO: epoch 4 start files
+2026-02-03 02:59:49,783 INFO: training with df 80 4320 1770058789.783762
+2026-02-03 02:59:52,440 INFO: 验证消费者处理任务: epoch 3
+2026-02-03 02:59:52,440 INFO: 异步验证开始: epoch 3
+2026-02-03 02:59:52,440 INFO: Using 3 processes for parallel validation df_list:[3, 5, 6, 7, 9, 10, 11, 16, 22, 24, 28, 31, 32, 33, 34, 35, 36]
+2026-02-03 03:00:17,307 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 _validate_worker  final_balance: 0.5709103999999456, required_money: 302.43847560000006, commission_fee: 0.12108960000000002, step_times: 4319, trade_id_counter: 1
+2026-02-03 03:00:17,457 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 _validate_worker  final_balance: 10.001232800000025, required_money: 331.91637000000003, commission_fee: 0.13476720000000003, step_times: 4319, trade_id_counter: 2
+2026-02-03 03:00:17,495 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 _validate_worker  final_balance: 0.8094644000000244, required_money: 330.9341736, commission_fee: 0.1325356, step_times: 4319, trade_id_counter: 1
+2026-02-03 03:00:45,820 INFO: training with df 83 4320 1770058845.8200123
+2026-02-03 03:00:52,811 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 _validate_worker  final_balance: 6.5838064000000145, required_money: 328.1136096, commission_fee: 0.2601936, step_times: 4319, trade_id_counter: 3
+2026-02-03 03:00:53,079 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-03 03:00:53,171 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 _validate_worker  final_balance: -10.447212000000036, required_money: 323.25463800000006, commission_fee: 0.127212, step_times: 4319, trade_id_counter: 1
+2026-02-03 03:01:33,419 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 _validate_worker  final_balance: -2.4890828000000624, required_money: 308.95177800000005, commission_fee: 0.1230828, step_times: 4319, trade_id_counter: 1
+2026-02-03 03:01:33,651 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 _validate_worker  final_balance: 29.02982000000003, required_money: 349.9219704, commission_fee: 0.28618000000000005, step_times: 4319, trade_id_counter: 4
+2026-02-03 03:01:33,721 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 _validate_worker  final_balance: 16.538499200000047, required_money: 365.4810816, commission_fee: 0.14950080000000002, step_times: 4319, trade_id_counter: 1
+2026-02-03 03:02:08,255 INFO: training with df 101 4320 1770058928.2553449
+2026-02-03 03:02:13,207 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 _validate_worker  final_balance: 9.241643600000145, required_money: 418.10360399999996, commission_fee: 0.3363564, step_times: 4319, trade_id_counter: 3
+2026-02-03 03:02:13,392 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 _validate_worker  final_balance: -1.2297407999998882, required_money: 386.6993244, commission_fee: 0.45774080000000006, step_times: 4319, trade_id_counter: 5
+2026-02-03 03:02:13,448 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 _validate_worker  final_balance: -29.475272399999938, required_money: 403.5884348, commission_fee: 0.4572724, step_times: 4319, trade_id_counter: 5
+2026-02-03 03:02:46,343 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 _validate_worker  final_balance: 8.648572000000058, required_money: 371.83435199999997, commission_fee: 0.44342800000000004, step_times: 4319, trade_id_counter: 5
+2026-02-03 03:02:46,476 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 _validate_worker  final_balance: -15.808595599999933, required_money: 374.76279040000003, commission_fee: 0.2865956, step_times: 4319, trade_id_counter: 3
+2026-02-03 03:02:46,553 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 _validate_worker  final_balance: 0.03874880000000758, required_money: 363.10860720000005, commission_fee: 0.14525120000000002, step_times: 4319, trade_id_counter: 2
+2026-02-03 03:03:09,418 INFO: training with df 86 4320 1770058989.4188921
+2026-02-03 03:03:10,525 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 _validate_worker  final_balance: 2.9394640000000436, required_money: 359.8699596, commission_fee: 0.14453600000000003, step_times: 4319, trade_id_counter: 2
+2026-02-03 03:03:10,694 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 _validate_worker  final_balance: 2.535162400000047, required_money: 360.8261508, commission_fee: 0.1448376, step_times: 4319, trade_id_counter: 1
+2026-02-03 03:03:11,043 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_3 return_rate_mean:0.50
+2026-02-03 03:03:11,044 INFO: 异步验证结束: epoch 3, 验证收益率: 0.49785656010179863 best:0.5191007139665981
+2026-02-03 03:03:53,680 INFO: training with df 56 4320 1770059033.6807044
+2026-02-03 03:04:40,655 INFO: training with df 109 4320 1770059080.655619
+2026-02-03 03:05:27,180 INFO: training with df 48 4320 1770059127.1802616
+2026-02-03 03:06:06,078 INFO: training with df 118 4320 1770059166.0783927
+2026-02-03 03:06:43,298 INFO: training with df 102 4320 1770059203.2983785
+2026-02-03 03:07:20,337 INFO: training with df 104 4320 1770059240.3370833
+2026-02-03 03:07:57,826 INFO: training with df 69 4320 1770059277.8261485
+2026-02-03 03:08:35,482 INFO: training with df 57 4320 1770059315.482551
+2026-02-03 03:09:12,472 INFO: training with df 119 4320 1770059352.472237
+2026-02-03 03:09:48,675 INFO: training with df 117 4320 1770059388.6750004
+2026-02-03 03:10:24,973 INFO: training with df 89 4320 1770059424.9732254
+2026-02-03 03:11:01,699 INFO: training with df 113 4320 1770059461.6993597
+2026-02-03 03:11:37,731 INFO: training with df 111 4320 1770059497.731309
+2026-02-03 03:12:13,718 INFO: training with df 108 4320 1770059533.718943
+2026-02-03 03:12:50,141 INFO: training with df 50 4320 1770059570.1409879
+2026-02-03 03:13:27,234 INFO: training with df 58 4320 1770059607.2341893
+2026-02-03 03:14:04,024 INFO: training with df 70 4320 1770059644.0241697
+2026-02-03 03:14:41,731 INFO: training with df 90 4320 1770059681.7317183
+2026-02-03 03:15:19,756 INFO: training with df 82 4320 1770059719.7560635
+2026-02-03 03:15:56,781 INFO: training with df 20 4320 1770059756.781677
+2026-02-03 03:16:34,606 INFO: training with df 105 4320 1770059794.6068466
+2026-02-03 03:17:11,623 INFO: training with df 95 4320 1770059831.623491
+2026-02-03 03:17:48,704 INFO: training with df 36 4320 1770059868.7047625
+2026-02-03 03:18:26,424 INFO: training with df 22 4320 1770059906.4241512
+2026-02-03 03:19:03,779 INFO: training with df 79 4320 1770059943.7791433
+2026-02-03 03:19:41,430 INFO: training with df 84 4320 1770059981.4306402
+2026-02-03 03:20:18,671 INFO: training with df 110 4320 1770060018.6711674
+2026-02-03 03:20:55,994 INFO: training with df 87 4320 1770060055.9941657
+2026-02-03 03:21:32,766 INFO: training with df 78 4320 1770060092.7664204
+2026-02-03 03:22:09,645 INFO: training with df 96 4320 1770060129.6459
+2026-02-03 03:22:46,398 INFO: training with df 34 4320 1770060166.3983796
+2026-02-03 03:23:24,134 INFO: training with df 72 4320 1770060204.1349657
+2026-02-03 03:24:01,050 INFO: start val epoch 4
+2026-02-03 03:24:01,050 INFO: 验证任务已加入队列: epoch 4
+2026-02-03 03:24:01,050 INFO: epoch 5
+2026-02-03 03:24:01,050 INFO: random_list:[96, 101, 48, 80, 90, 84, 20, 108, 57, 118, 105, 78, 86, 36, 69, 58, 119, 22, 50, 95, 104, 56, 117, 72, 34, 87, 113, 82, 102, 83, 110, 70, 109, 89, 111, 79]
+2026-02-03 03:24:01,050 INFO: epoch 5 start files
+2026-02-03 03:24:01,050 INFO: training with df 96 4320 1770060241.0509708
+2026-02-03 03:24:12,187 INFO: 验证消费者处理任务: epoch 4
+2026-02-03 03:24:12,188 INFO: 异步验证开始: epoch 4
+2026-02-03 03:24:12,188 INFO: Using 3 processes for parallel validation df_list:[3, 5, 6, 7, 9, 10, 11, 16, 22, 24, 28, 31, 32, 33, 34, 35, 36]
+2026-02-03 03:24:36,539 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 _validate_worker  final_balance: 3.7382767999999373, required_money: 302.43847560000006, commission_fee: 0.12172320000000002, step_times: 4319, trade_id_counter: 2
+2026-02-03 03:24:36,740 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 _validate_worker  final_balance: 6.959841199999971, required_money: 331.91637000000003, commission_fee: 0.13415880000000002, step_times: 4319, trade_id_counter: 2
+2026-02-03 03:24:36,784 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 _validate_worker  final_balance: 2.5331196000000205, required_money: 330.9341736, commission_fee: 0.1328804, step_times: 4319, trade_id_counter: 2
+2026-02-03 03:24:49,720 INFO: training with df 101 4320 1770060289.7203703
+2026-02-03 03:25:09,063 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 _validate_worker  final_balance: 6.5838064000000145, required_money: 328.1136096, commission_fee: 0.2601936, step_times: 4319, trade_id_counter: 3
+2026-02-03 03:25:09,398 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-03 03:25:09,545 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 _validate_worker  final_balance: -10.673166800000047, required_money: 323.25463800000006, commission_fee: 0.12716680000000002, step_times: 4319, trade_id_counter: 2
+2026-02-03 03:25:49,197 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 _validate_worker  final_balance: 4.423534399999994, required_money: 308.95177800000005, commission_fee: 0.12446560000000001, step_times: 4319, trade_id_counter: 2
+2026-02-03 03:25:49,651 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 _validate_worker  final_balance: 33.28067000000004, required_money: 345.6711204, commission_fee: 0.2853300000000001, step_times: 4319, trade_id_counter: 4
+2026-02-03 03:25:49,905 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 _validate_worker  final_balance: 16.538499200000047, required_money: 365.4810816, commission_fee: 0.14950080000000002, step_times: 4319, trade_id_counter: 1
+2026-02-03 03:26:09,948 INFO: training with df 48 4320 1770060369.9485915
+2026-02-03 03:26:30,247 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 _validate_worker  final_balance: 2.244181600000104, required_money: 422.93857080000004, commission_fee: 0.5078184000000001, step_times: 4319, trade_id_counter: 5
+2026-02-03 03:26:30,597 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 _validate_worker  final_balance: -4.38068399999986, required_money: 389.2237992, commission_fee: 1.352684, step_times: 4319, trade_id_counter: 17
+2026-02-03 03:26:30,789 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 _validate_worker  final_balance: -16.639126399999896, required_money: 399.1496892, commission_fee: 0.6151264000000001, step_times: 4319, trade_id_counter: 7
+2026-02-03 03:27:06,076 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 _validate_worker  final_balance: 4.924087200000088, required_money: 371.83435199999997, commission_fee: 0.5879128, step_times: 4319, trade_id_counter: 7
+2026-02-03 03:27:06,311 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 _validate_worker  final_balance: -14.430501599999843, required_money: 375.9601811999999, commission_fee: 0.4265016000000001, step_times: 4319, trade_id_counter: 6
+2026-02-03 03:27:06,510 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 _validate_worker  final_balance: 0.03874880000000758, required_money: 363.10860720000005, commission_fee: 0.14525120000000002, step_times: 4319, trade_id_counter: 2
+2026-02-03 03:27:23,226 INFO: training with df 80 4320 1770060443.2261634
+2026-02-03 03:27:34,260 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-03 03:27:34,461 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 _validate_worker  final_balance: -1.2440816000000154, required_money: 360.8261508, commission_fee: 0.1440816, step_times: 4319, trade_id_counter: 2
+2026-02-03 03:27:34,805 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_4 return_rate_mean:0.63
+2026-02-03 03:27:34,807 INFO: 异步验证结束: epoch 4, 验证收益率: 0.6338956791059576 best:0.5191007139665981
+2026-02-03 03:27:34,807 INFO: best model updated to epoch 4.best_return_rate:0.6338956791059576
+2026-02-03 03:28:11,255 INFO: training with df 90 4320 1770060491.2555172
+2026-02-03 03:28:57,178 INFO: training with df 84 4320 1770060537.1780524
+2026-02-03 03:29:43,787 INFO: training with df 20 4320 1770060583.7878153
+2026-02-03 03:30:20,911 INFO: training with df 108 4320 1770060620.9118552
+2026-02-03 03:30:57,829 INFO: training with df 57 4320 1770060657.8297713
+2026-02-03 03:31:36,155 INFO: training with df 118 4320 1770060696.1551929
+2026-02-03 03:32:13,202 INFO: training with df 105 4320 1770060733.2021754
+2026-02-03 03:32:51,502 INFO: training with df 78 4320 1770060771.5021155
+2026-02-03 03:33:29,085 INFO: training with df 86 4320 1770060809.0849974
+2026-02-03 03:34:06,066 INFO: training with df 36 4320 1770060846.066443
+2026-02-03 03:34:43,879 INFO: training with df 69 4320 1770060883.8795927
+2026-02-03 03:35:21,166 INFO: training with df 58 4320 1770060921.1665494
+2026-02-03 03:35:58,465 INFO: training with df 119 4320 1770060958.4657986
+2026-02-03 03:36:36,675 INFO: training with df 22 4320 1770060996.6751282
+2026-02-03 03:37:13,844 INFO: training with df 50 4320 1770061033.8444352
+2026-02-03 03:37:51,591 INFO: training with df 95 4320 1770061071.591279
+2026-02-03 03:38:28,726 INFO: training with df 104 4320 1770061108.726141
+2026-02-03 03:39:06,035 INFO: training with df 56 4320 1770061146.035701
+2026-02-03 03:39:44,279 INFO: training with df 117 4320 1770061184.279303
+2026-02-03 03:40:21,588 INFO: training with df 72 4320 1770061221.5882082
+2026-02-03 03:40:58,657 INFO: training with df 34 4320 1770061258.657137
+2026-02-03 03:41:35,981 INFO: training with df 87 4320 1770061295.9817784
+2026-02-03 03:42:12,547 INFO: training with df 113 4320 1770061332.5475223
+2026-02-03 03:42:49,577 INFO: training with df 82 4320 1770061369.577086
+2026-02-03 03:43:27,245 INFO: training with df 102 4320 1770061407.2452056
+2026-02-03 03:44:03,498 INFO: training with df 83 4320 1770061443.498182
+2026-02-03 03:44:39,994 INFO: training with df 110 4320 1770061479.994727
+2026-02-03 03:45:17,317 INFO: training with df 70 4320 1770061517.3173568
+2026-02-03 03:45:54,289 INFO: training with df 109 4320 1770061554.2892246
+2026-02-03 03:46:31,801 INFO: training with df 89 4320 1770061591.8018765
+2026-02-03 03:47:08,393 INFO: training with df 111 4320 1770061628.3931527
+2026-02-03 03:47:45,316 INFO: training with df 79 4320 1770061665.3160603
+2026-02-03 03:48:21,801 INFO: start val epoch 5
+2026-02-03 03:48:21,801 INFO: 验证任务已加入队列: epoch 5
+2026-02-03 03:48:21,801 INFO: epoch 6
+2026-02-03 03:48:21,801 INFO: random_list:[111, 56, 118, 50, 58, 108, 69, 101, 119, 80, 84, 105, 102, 110, 36, 70, 86, 83, 79, 96, 57, 117, 95, 34, 48, 82, 104, 22, 113, 72, 89, 20, 109, 78, 90, 87]
+2026-02-03 03:48:21,801 INFO: epoch 6 start files
+2026-02-03 03:48:21,801 INFO: training with df 111 4320 1770061701.801851
+2026-02-03 03:48:35,910 INFO: 验证消费者处理任务: epoch 5
+2026-02-03 03:48:35,911 INFO: 异步验证开始: epoch 5
+2026-02-03 03:48:35,911 INFO: Using 3 processes for parallel validation df_list:[3, 5, 6, 7, 9, 10, 11, 16, 22, 24, 28, 31, 32, 33, 34, 35, 36]
+2026-02-03 03:49:08,113 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 _validate_worker  final_balance: -5.635313199999985, required_money: 306.101208, commission_fee: 0.12131320000000001, step_times: 4319, trade_id_counter: 2
+2026-02-03 03:49:08,348 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 _validate_worker  final_balance: 3.917341600000043, required_money: 342.7705404, commission_fee: 0.2706584000000001, step_times: 4319, trade_id_counter: 4
+2026-02-03 03:49:08,365 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 _validate_worker  final_balance: 5.065315600000076, required_money: 330.9341736, commission_fee: 0.26868440000000005, step_times: 4319, trade_id_counter: 4
+2026-02-03 03:49:20,721 INFO: training with df 56 4320 1770061760.7213473
+2026-02-03 03:49:42,330 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 _validate_worker  final_balance: 5.627615200000037, required_money: 329.0698008, commission_fee: 0.2603848, step_times: 4319, trade_id_counter: 3
+2026-02-03 03:49:42,559 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-03 03:49:42,649 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 _validate_worker  final_balance: -10.678290800000013, required_money: 323.48571680000003, commission_fee: 0.25229080000000004, step_times: 4319, trade_id_counter: 3
+2026-02-03 03:50:22,897 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 _validate_worker  final_balance: 4.423534399999994, required_money: 308.95177800000005, commission_fee: 0.12446560000000001, step_times: 4319, trade_id_counter: 2
+2026-02-03 03:50:23,250 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 _validate_worker  final_balance: 30.595002000000136, required_money: 345.6711204, commission_fee: 0.430998, step_times: 4319, trade_id_counter: 5
+2026-02-03 03:50:23,357 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 _validate_worker  final_balance: 7.156376000000023, required_money: 365.4810816, commission_fee: 0.14762400000000003, step_times: 4319, trade_id_counter: 2
+2026-02-03 03:50:41,259 INFO: training with df 118 4320 1770061841.2597876
+2026-02-03 03:51:00,318 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 _validate_worker  final_balance: 9.322100000000091, required_money: 418.10360399999996, commission_fee: 0.5059, step_times: 4319, trade_id_counter: 5
+2026-02-03 03:51:00,522 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 _validate_worker  final_balance: 3.4483964000003198, required_money: 386.7827096, commission_fee: 1.8016036000000002, step_times: 4319, trade_id_counter: 23
+2026-02-03 03:51:00,596 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 _validate_worker  final_balance: -12.200380799999891, required_money: 399.1496892, commission_fee: 0.4643808, step_times: 4319, trade_id_counter: 5
+2026-02-03 03:51:30,887 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 _validate_worker  final_balance: -0.7550483999999074, required_money: 374.34168439999996, commission_fee: 0.5890484, step_times: 4319, trade_id_counter: 7
+2026-02-03 03:51:31,140 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 _validate_worker  final_balance: -9.622316000000012, required_money: 371.1519956000001, commission_fee: 0.286316, step_times: 4319, trade_id_counter: 4
+2026-02-03 03:51:31,162 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-03 03:51:45,812 INFO: training with df 50 4320 1770061905.8120263
+2026-02-03 03:51:57,052 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-03 03:51:57,334 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 _validate_worker  final_balance: -1.2440816000000154, required_money: 360.8261508, commission_fee: 0.1440816, step_times: 4319, trade_id_counter: 2
+2026-02-03 03:51:57,676 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_5 return_rate_mean:0.49
+2026-02-03 03:51:57,677 INFO: 异步验证结束: epoch 5, 验证收益率: 0.49458283424992133 best:0.6338956791059576
+2026-02-03 03:52:34,723 INFO: training with df 58 4320 1770061954.7233427
+2026-02-03 03:53:21,678 INFO: training with df 108 4320 1770062001.678826
+2026-02-03 03:54:05,671 INFO: training with df 69 4320 1770062045.6710684
+2026-02-03 03:54:42,563 INFO: training with df 101 4320 1770062082.563812
+2026-02-03 03:55:18,880 INFO: training with df 119 4320 1770062118.8800814
+2026-02-03 03:55:56,639 INFO: training with df 80 4320 1770062156.6393774
+2026-02-03 03:56:33,468 INFO: training with df 84 4320 1770062193.4681385
+2026-02-03 03:57:10,281 INFO: training with df 105 4320 1770062230.2811127
+2026-02-03 03:57:47,482 INFO: training with df 102 4320 1770062267.4820838
+2026-02-03 03:58:24,383 INFO: training with df 110 4320 1770062304.383071
+2026-02-03 03:59:01,391 INFO: training with df 36 4320 1770062341.391695
+2026-02-03 03:59:39,157 INFO: training with df 70 4320 1770062379.1575353
+2026-02-03 04:00:16,252 INFO: training with df 86 4320 1770062416.2521625
+2026-02-03 04:00:53,227 INFO: training with df 83 4320 1770062453.227335
+2026-02-03 04:01:30,489 INFO: training with df 79 4320 1770062490.4898252
+2026-02-03 04:02:07,419 INFO: training with df 96 4320 1770062527.4196205
+2026-02-03 04:02:45,312 INFO: training with df 57 4320 1770062565.3125992
+2026-02-03 04:03:22,459 INFO: training with df 117 4320 1770062602.459805
+2026-02-03 04:03:59,687 INFO: training with df 95 4320 1770062639.6870546
+2026-02-03 04:04:36,915 INFO: training with df 34 4320 1770062676.915727
+2026-02-03 04:05:13,529 INFO: training with df 48 4320 1770062713.5290332
+2026-02-03 04:05:50,285 INFO: training with df 82 4320 1770062750.2853057
+2026-02-03 04:06:27,235 INFO: training with df 104 4320 1770062787.2351336
+2026-02-03 04:07:03,927 INFO: training with df 22 4320 1770062823.9270384
+2026-02-03 04:07:41,403 INFO: training with df 113 4320 1770062861.4034145
+2026-02-03 04:08:17,848 INFO: training with df 72 4320 1770062897.8489249
+2026-02-03 04:08:54,048 INFO: training with df 89 4320 1770062934.04896
+2026-02-03 04:09:29,983 INFO: training with df 20 4320 1770062969.9837365
+2026-02-03 04:10:06,004 INFO: training with df 109 4320 1770063006.0041902
+2026-02-03 04:10:42,179 INFO: training with df 78 4320 1770063042.1795123
+2026-02-03 04:11:18,473 INFO: training with df 90 4320 1770063078.4735377
+2026-02-03 04:11:55,790 INFO: training with df 87 4320 1770063115.7906203
+2026-02-03 04:12:32,587 INFO: start val epoch 6
+2026-02-03 04:12:32,587 INFO: 验证任务已加入队列: epoch 6
+2026-02-03 04:12:32,587 INFO: epoch 7
+2026-02-03 04:12:32,587 INFO: random_list:[102, 36, 78, 57, 111, 87, 56, 34, 22, 101, 82, 80, 50, 95, 108, 90, 109, 113, 105, 20, 96, 89, 86, 83, 118, 48, 104, 69, 110, 117, 70, 119, 84, 79, 58, 72]
+2026-02-03 04:12:32,587 INFO: epoch 7 start files
+2026-02-03 04:12:32,587 INFO: training with df 102 4320 1770063152.5878057
+2026-02-03 04:12:58,824 INFO: 验证消费者处理任务: epoch 6
+2026-02-03 04:12:58,824 INFO: 异步验证开始: epoch 6
+2026-02-03 04:12:58,825 INFO: Using 3 processes for parallel validation df_list:[3, 5, 6, 7, 9, 10, 11, 16, 22, 24, 28, 31, 32, 33, 34, 35, 36]
+2026-02-03 04:13:32,974 INFO: training with df 36 4320 1770063212.974787
+2026-02-03 04:13:37,113 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 _validate_worker  final_balance: -5.635313199999985, required_money: 306.101208, commission_fee: 0.12131320000000001, step_times: 4319, trade_id_counter: 2
+2026-02-03 04:13:37,258 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 _validate_worker  final_balance: 3.917341600000043, required_money: 342.7705404, commission_fee: 0.2706584000000001, step_times: 4319, trade_id_counter: 4
+2026-02-03 04:13:37,287 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 _validate_worker  final_balance: 5.065315600000076, required_money: 330.9341736, commission_fee: 0.26868440000000005, step_times: 4319, trade_id_counter: 4
+2026-02-03 04:14:13,377 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 _validate_worker  final_balance: 6.5838064000000145, required_money: 328.1136096, commission_fee: 0.2601936, step_times: 4319, trade_id_counter: 3
+2026-02-03 04:14:13,569 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-03 04:14:13,612 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 _validate_worker  final_balance: -3.12751320000001, required_money: 322.534494, commission_fee: 0.2535132, step_times: 4319, trade_id_counter: 4
+2026-02-03 04:14:50,361 INFO: training with df 78 4320 1770063290.3612113
+2026-02-03 04:14:52,053 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 _validate_worker  final_balance: 5.712088799999947, required_money: 308.95177800000005, commission_fee: 0.2479112, step_times: 4319, trade_id_counter: 4
+2026-02-03 04:14:52,207 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 _validate_worker  final_balance: 22.113156400000207, required_money: 351.16613199999995, commission_fee: 0.8528436, step_times: 4319, trade_id_counter: 11
+2026-02-03 04:14:52,229 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 _validate_worker  final_balance: 5.784650400000032, required_money: 365.4810816, commission_fee: 0.14734960000000003, step_times: 4319, trade_id_counter: 2
+2026-02-03 04:15:23,091 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 _validate_worker  final_balance: 17.742969600000094, required_money: 418.10360399999996, commission_fee: 0.6730304, step_times: 4319, trade_id_counter: 7
+2026-02-03 04:15:23,193 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 _validate_worker  final_balance: 16.783658400000377, required_money: 385.5991044, commission_fee: 1.9603416, step_times: 4319, trade_id_counter: 25
+2026-02-03 04:15:23,207 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 _validate_worker  final_balance: -11.874173599999892, required_money: 399.1496892, commission_fee: 0.6141736, step_times: 4319, trade_id_counter: 7
+2026-02-03 04:15:48,672 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 _validate_worker  final_balance: -3.518092799999863, required_money: 375.4110675999999, commission_fee: 0.7380928, step_times: 4319, trade_id_counter: 9
+2026-02-03 04:15:48,741 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-03 04:15:48,760 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 _validate_worker  final_balance: -9.833160399999826, required_money: 371.3628399999999, commission_fee: 0.5671604, step_times: 4319, trade_id_counter: 8
+2026-02-03 04:15:50,985 INFO: training with df 57 4320 1770063350.9851372
+2026-02-03 04:16:12,530 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-03 04:16:12,626 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 _validate_worker  final_balance: -1.2440816000000154, required_money: 360.8261508, commission_fee: 0.1440816, step_times: 4319, trade_id_counter: 2
+2026-02-03 04:16:12,953 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_6 return_rate_mean:0.78
+2026-02-03 04:16:12,955 INFO: 异步验证结束: epoch 6, 验证收益率: 0.7817461379695565 best:0.6338956791059576
+2026-02-03 04:16:12,955 INFO: best model updated to epoch 6.best_return_rate:0.7817461379695565
+2026-02-03 04:16:38,440 INFO: training with df 111 4320 1770063398.4408236
+2026-02-03 04:17:22,705 INFO: training with df 87 4320 1770063442.7052789
+2026-02-03 04:18:05,147 INFO: training with df 56 4320 1770063485.1474874
+2026-02-03 04:18:39,737 INFO: training with df 34 4320 1770063519.7372415
+2026-02-03 04:19:14,639 INFO: training with df 22 4320 1770063554.639089
+2026-02-03 04:19:50,117 INFO: training with df 101 4320 1770063590.1171167
+2026-02-03 04:20:24,660 INFO: training with df 82 4320 1770063624.6603901
+2026-02-03 04:20:59,584 INFO: training with df 80 4320 1770063659.5843306
+2026-02-03 04:21:34,493 INFO: training with df 50 4320 1770063694.4939544
+2026-02-03 04:22:09,496 INFO: training with df 95 4320 1770063729.4964366
+2026-02-03 04:22:44,113 INFO: training with df 108 4320 1770063764.113505
+2026-02-03 04:23:18,804 INFO: training with df 90 4320 1770063798.8043587
+2026-02-03 04:23:54,065 INFO: training with df 109 4320 1770063834.0651462
+2026-02-03 04:24:28,734 INFO: training with df 113 4320 1770063868.734487
+2026-02-03 04:25:03,412 INFO: training with df 105 4320 1770063903.412554
+2026-02-03 04:25:38,208 INFO: training with df 20 4320 1770063938.2088363
+2026-02-03 04:26:12,409 INFO: training with df 96 4320 1770063972.409697
+2026-02-03 04:26:46,789 INFO: training with df 89 4320 1770064006.789614
+2026-02-03 04:27:21,206 INFO: training with df 86 4320 1770064041.2060645
+2026-02-03 04:27:55,874 INFO: training with df 83 4320 1770064075.8748782
+2026-02-03 04:28:31,174 INFO: training with df 118 4320 1770064111.174361
+2026-02-03 04:29:05,390 INFO: training with df 48 4320 1770064145.3905163
+2026-02-03 04:29:39,466 INFO: training with df 104 4320 1770064179.4664068
+2026-02-03 04:30:13,928 INFO: training with df 69 4320 1770064213.928375
+2026-02-03 04:30:49,370 INFO: training with df 110 4320 1770064249.3704457
+2026-02-03 04:31:24,677 INFO: training with df 117 4320 1770064284.6773822
+2026-02-03 04:31:59,852 INFO: training with df 70 4320 1770064319.852244
+2026-02-03 04:32:34,728 INFO: training with df 119 4320 1770064354.7284305
+2026-02-03 04:33:09,383 INFO: training with df 84 4320 1770064389.3834183
+2026-02-03 04:33:44,170 INFO: training with df 79 4320 1770064424.1707191
+2026-02-03 04:34:19,267 INFO: training with df 58 4320 1770064459.2673223
+2026-02-03 04:34:53,220 INFO: training with df 72 4320 1770064493.2202926
+2026-02-03 04:35:27,389 INFO: start val epoch 7
+2026-02-03 04:35:27,389 INFO: 验证任务已加入队列: epoch 7
+2026-02-03 04:35:27,389 INFO: epoch 8
+2026-02-03 04:35:27,389 INFO: random_list:[78, 108, 79, 20, 101, 56, 118, 36, 89, 72, 82, 58, 86, 117, 111, 110, 102, 84, 104, 69, 90, 113, 119, 105, 87, 96, 95, 80, 34, 83, 57, 48, 22, 70, 50, 109]
+2026-02-03 04:35:27,389 INFO: epoch 8 start files
+2026-02-03 04:35:27,389 INFO: training with df 78 4320 1770064527.389975
+2026-02-03 04:36:05,713 INFO: training with df 108 4320 1770064565.7133782
+2026-02-03 04:36:14,029 INFO: 验证消费者处理任务: epoch 7
+2026-02-03 04:36:14,030 INFO: 异步验证开始: epoch 7
+2026-02-03 04:36:14,030 INFO: Using 3 processes for parallel validation df_list:[3, 5, 6, 7, 9, 10, 11, 16, 22, 24, 28, 31, 32, 33, 34, 35, 36]
+2026-02-03 04:36:55,076 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-03 04:36:55,355 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 _validate_worker  final_balance: -6.228227199999992, required_money: 344.77573760000007, commission_fee: 0.4042272, step_times: 4319, trade_id_counter: 6
+2026-02-03 04:36:55,363 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 _validate_worker  final_balance: 2.5331196000000205, required_money: 330.9341736, commission_fee: 0.1328804, step_times: 4319, trade_id_counter: 2
+2026-02-03 04:37:22,818 INFO: training with df 79 4320 1770064642.8184514
+2026-02-03 04:37:34,495 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 _validate_worker  final_balance: 3.6332012000000304, required_money: 332.98858440000004, commission_fee: 0.3927988, step_times: 4319, trade_id_counter: 5
+2026-02-03 04:37:34,840 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 _validate_worker  final_balance: -11.90108719999995, required_money: 325.1264296, commission_fee: 0.37708719999999996, step_times: 4319, trade_id_counter: 6
+2026-02-03 04:37:34,855 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 _validate_worker  final_balance: -3.93575119999997, required_money: 331.34625600000004, commission_fee: 0.1317512, step_times: 4319, trade_id_counter: 2
+2026-02-03 04:38:09,460 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 _validate_worker  final_balance: 5.71008919999997, required_money: 308.95177800000005, commission_fee: 0.24791080000000004, step_times: 4319, trade_id_counter: 4
+2026-02-03 04:38:09,732 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 _validate_worker  final_balance: 33.5849616000001, required_money: 345.6711204, commission_fee: 0.9950384, step_times: 4319, trade_id_counter: 13
+2026-02-03 04:38:09,740 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 _validate_worker  final_balance: 5.784650400000032, required_money: 365.4810816, commission_fee: 0.14734960000000003, step_times: 4319, trade_id_counter: 2
+2026-02-03 04:38:33,760 INFO: training with df 20 4320 1770064713.76021
+2026-02-03 04:38:39,765 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 _validate_worker  final_balance: 10.573210400000278, required_money: 418.10360399999996, commission_fee: 0.8427896, step_times: 4319, trade_id_counter: 9
+2026-02-03 04:38:39,943 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 _validate_worker  final_balance: 2.9473420000001624, required_money: 379.9899828, commission_fee: 0.7706580000000001, step_times: 4319, trade_id_counter: 9
+2026-02-03 04:38:39,951 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 _validate_worker  final_balance: 26.269263200000523, required_money: 374.84695439999996, commission_fee: 2.5507368, step_times: 4319, trade_id_counter: 33
+2026-02-03 04:39:05,308 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 _validate_worker  final_balance: -3.276044399999819, required_money: 373.09969599999994, commission_fee: 0.7380443999999999, step_times: 4319, trade_id_counter: 9
+2026-02-03 04:39:05,462 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 _validate_worker  final_balance: -4.186095999999907, required_money: 367.33345199999997, commission_fee: 0.146096, step_times: 4319, trade_id_counter: 2
+2026-02-03 04:39:05,469 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 _validate_worker  final_balance: -10.06678879999987, required_money: 371.95295799999997, commission_fee: 0.7107888, step_times: 4319, trade_id_counter: 9
+2026-02-03 04:39:27,749 INFO: training with df 101 4320 1770064767.749502
+2026-02-03 04:39:29,197 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 _validate_worker  final_balance: -4.885711199999946, required_money: 366.7213296, commission_fee: 0.1457112, step_times: 4319, trade_id_counter: 2
+2026-02-03 04:39:29,307 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-03 04:39:29,655 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_7 return_rate_mean:0.74
+2026-02-03 04:39:29,658 INFO: 异步验证结束: epoch 7, 验证收益率: 0.7414559551502942 best:0.7817461379695565
+2026-02-03 04:40:12,549 INFO: training with df 56 4320 1770064812.549767
+2026-02-03 04:40:56,369 INFO: training with df 118 4320 1770064856.3695629
+2026-02-03 04:41:31,155 INFO: training with df 36 4320 1770064891.155472
+2026-02-03 04:42:05,992 INFO: training with df 89 4320 1770064925.9925942
+2026-02-03 04:42:40,972 INFO: training with df 72 4320 1770064960.9720492
+2026-02-03 04:43:15,960 INFO: training with df 82 4320 1770064995.9602776
+2026-02-03 04:43:50,523 INFO: training with df 58 4320 1770065030.5233614
+2026-02-03 04:44:25,924 INFO: training with df 86 4320 1770065065.9246497
+2026-02-03 04:45:00,564 INFO: training with df 117 4320 1770065100.5646558
+2026-02-03 04:45:36,288 INFO: training with df 111 4320 1770065136.2888422
+2026-02-03 04:46:11,365 INFO: training with df 110 4320 1770065171.365403
+2026-02-03 04:46:47,075 INFO: training with df 102 4320 1770065207.0750065
+2026-02-03 04:47:22,713 INFO: training with df 84 4320 1770065242.7136147
+2026-02-03 04:47:58,048 INFO: training with df 104 4320 1770065278.0487928
+2026-02-03 04:48:33,627 INFO: training with df 69 4320 1770065313.627176
+2026-02-03 04:49:09,285 INFO: training with df 90 4320 1770065349.2851207
+2026-02-03 04:49:43,871 INFO: training with df 113 4320 1770065383.871404
+2026-02-03 04:50:19,131 INFO: training with df 119 4320 1770065419.13142
+2026-02-03 04:50:53,189 INFO: training with df 105 4320 1770065453.189643
+2026-02-03 04:51:27,601 INFO: training with df 87 4320 1770065487.6013775
+2026-02-03 04:52:02,042 INFO: training with df 96 4320 1770065522.0422325
+2026-02-03 04:52:36,220 INFO: training with df 95 4320 1770065556.220396
+2026-02-03 04:53:10,825 INFO: training with df 80 4320 1770065590.8257313
+2026-02-03 04:53:45,518 INFO: training with df 34 4320 1770065625.518957
+2026-02-03 04:54:20,197 INFO: training with df 83 4320 1770065660.1978416
+2026-02-03 04:54:54,958 INFO: training with df 57 4320 1770065694.9587507
+2026-02-03 04:55:30,803 INFO: training with df 48 4320 1770065730.803766
+2026-02-03 04:56:07,329 INFO: training with df 22 4320 1770065767.3296392
+2026-02-03 04:56:44,206 INFO: training with df 70 4320 1770065804.2068083
+2026-02-03 04:57:20,569 INFO: training with df 50 4320 1770065840.569323
+2026-02-03 04:57:57,351 INFO: training with df 109 4320 1770065877.351952
+2026-02-03 04:58:33,717 INFO: start val epoch 8
+2026-02-03 04:58:33,717 INFO: 验证任务已加入队列: epoch 8
+2026-02-03 04:58:33,717 INFO: epoch 9
+2026-02-03 04:58:33,717 INFO: random_list:[78, 118, 69, 82, 87, 104, 57, 102, 89, 109, 117, 70, 96, 86, 84, 50, 108, 111, 119, 101, 58, 34, 48, 20, 56, 22, 36, 105, 72, 113, 110, 79, 83, 80, 90, 95]
+2026-02-03 04:58:33,717 INFO: epoch 9 start files
+2026-02-03 04:58:33,717 INFO: training with df 78 4320 1770065913.7178493
+2026-02-03 04:59:15,528 INFO: training with df 118 4320 1770065955.528286
+2026-02-03 04:59:30,827 INFO: 验证消费者处理任务: epoch 8
+2026-02-03 04:59:30,827 INFO: 异步验证开始: epoch 8
+2026-02-03 04:59:30,827 INFO: Using 3 processes for parallel validation df_list:[3, 5, 6, 7, 9, 10, 11, 16, 22, 24, 28, 31, 32, 33, 34, 35, 36]
+2026-02-03 05:00:10,866 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-03 05:00:11,143 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 _validate_worker  final_balance: -6.1263616000000525, required_money: 347.63004720000004, commission_fee: 0.5423616, step_times: 4319, trade_id_counter: 8
+2026-02-03 05:00:11,154 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 _validate_worker  final_balance: 2.5331196000000205, required_money: 330.9341736, commission_fee: 0.1328804, step_times: 4319, trade_id_counter: 2
+2026-02-03 05:00:27,332 INFO: training with df 69 4320 1770066027.3325975
+2026-02-03 05:00:51,798 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 _validate_worker  final_balance: -1.3271699999999669, required_money: 327.1074084, commission_fee: 0.39317, step_times: 4319, trade_id_counter: 6
+2026-02-03 05:00:52,092 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 _validate_worker  final_balance: -5.510903599999892, required_money: 318.3183295999999, commission_fee: 0.3769036000000001, step_times: 4319, trade_id_counter: 5
+2026-02-03 05:00:52,095 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 _validate_worker  final_balance: 0.40311640000004445, required_money: 327.0073884, commission_fee: 0.13088360000000002, step_times: 4319, trade_id_counter: 2
+2026-02-03 05:01:28,845 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 _validate_worker  final_balance: 4.033753999999931, required_money: 309.3415584000001, commission_fee: 0.24824600000000002, step_times: 4319, trade_id_counter: 4
+2026-02-03 05:01:29,149 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 _validate_worker  final_balance: 0.44371880000005604, required_money: 365.4810816, commission_fee: 0.1462812, step_times: 4319, trade_id_counter: 2
+2026-02-03 05:01:29,169 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 _validate_worker  final_balance: 10.745827200000178, required_money: 365.6991252, commission_fee: 1.1381728, step_times: 4319, trade_id_counter: 15
+2026-02-03 05:01:46,356 INFO: training with df 82 4320 1770066106.3561487
+2026-02-03 05:02:02,489 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 _validate_worker  final_balance: 4.364062000000274, required_money: 423.57594239999986, commission_fee: 1.009938, step_times: 4319, trade_id_counter: 11
+2026-02-03 05:02:02,770 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 _validate_worker  final_balance: 23.978227200000617, required_money: 375.53505639999986, commission_fee: 2.8577728, step_times: 4319, trade_id_counter: 37
+2026-02-03 05:02:02,779 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 _validate_worker  final_balance: -10.740926399999864, required_money: 384.85408879999994, commission_fee: 0.6129264000000001, step_times: 4319, trade_id_counter: 7
+2026-02-03 05:02:29,805 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 _validate_worker  final_balance: 1.6772284000002742, required_money: 371.83435199999997, commission_fee: 1.0327716000000002, step_times: 4319, trade_id_counter: 13
+2026-02-03 05:02:30,067 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 _validate_worker  final_balance: -14.664129999999886, required_money: 376.5502992, commission_fee: 0.5701300000000001, step_times: 4319, trade_id_counter: 7
+2026-02-03 05:02:30,082 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 _validate_worker  final_balance: 0.07675640000002204, required_money: 363.07059960000004, commission_fee: 0.1452436, step_times: 4319, trade_id_counter: 2
+2026-02-03 05:02:44,883 INFO: training with df 87 4320 1770066164.8830535
+2026-02-03 05:02:54,655 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 _validate_worker  final_balance: -13.261854799999867, required_money: 375.6153695999999, commission_fee: 0.43585480000000004, step_times: 4319, trade_id_counter: 5
+2026-02-03 05:02:54,897 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-03 05:02:55,235 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_8 return_rate_mean:-0.06
+2026-02-03 05:02:55,236 INFO: 异步验证结束: epoch 8, 验证收益率: -0.05736040780699855 best:0.7817461379695565
+2026-02-03 05:03:32,804 INFO: training with df 104 4320 1770066212.8042688
+2026-02-03 05:04:18,410 INFO: training with df 57 4320 1770066258.410229
+2026-02-03 05:04:55,251 INFO: training with df 102 4320 1770066295.251235
+2026-02-03 05:05:33,144 INFO: training with df 89 4320 1770066333.1449707
+2026-02-03 05:06:10,315 INFO: training with df 109 4320 1770066370.3150063
+2026-02-03 05:06:48,097 INFO: training with df 117 4320 1770066408.097781
+2026-02-03 05:07:25,891 INFO: training with df 70 4320 1770066445.891598
+2026-02-03 05:08:02,929 INFO: training with df 96 4320 1770066482.9296613
+2026-02-03 05:08:38,890 INFO: training with df 86 4320 1770066518.8900754
+2026-02-03 05:09:15,606 INFO: training with df 84 4320 1770066555.6067226
+2026-02-03 05:09:52,617 INFO: training with df 50 4320 1770066592.6175103
+2026-02-03 05:10:30,058 INFO: training with df 108 4320 1770066630.0580366
+2026-02-03 05:11:06,721 INFO: training with df 111 4320 1770066666.7217662
+2026-02-03 05:11:44,318 INFO: training with df 119 4320 1770066704.3187706
+2026-02-03 05:12:21,485 INFO: training with df 101 4320 1770066741.4854121
+2026-02-03 05:12:58,716 INFO: training with df 58 4320 1770066778.7160149
+2026-02-03 05:13:35,390 INFO: training with df 34 4320 1770066815.3901792
+2026-02-03 05:14:12,111 INFO: training with df 48 4320 1770066852.1110854
+2026-02-03 05:14:49,348 INFO: training with df 20 4320 1770066889.3486505
+2026-02-03 05:15:26,283 INFO: training with df 56 4320 1770066926.2839704
+2026-02-03 05:16:04,211 INFO: training with df 22 4320 1770066964.2119434
+2026-02-03 05:16:40,233 INFO: training with df 36 4320 1770067000.2334492
+2026-02-03 05:17:17,007 INFO: training with df 105 4320 1770067037.0077581
+2026-02-03 05:17:54,913 INFO: training with df 72 4320 1770067074.9134333
+2026-02-03 05:18:32,283 INFO: training with df 113 4320 1770067112.2836175
+2026-02-03 05:19:10,103 INFO: training with df 110 4320 1770067150.1033394
+2026-02-03 05:19:48,241 INFO: training with df 79 4320 1770067188.2416193
+2026-02-03 05:20:25,376 INFO: training with df 83 4320 1770067225.3761373
+2026-02-03 05:21:03,112 INFO: training with df 80 4320 1770067263.1128447
+2026-02-03 05:21:40,656 INFO: training with df 90 4320 1770067300.6566532
+2026-02-03 05:22:18,559 INFO: training with df 95 4320 1770067338.5593765
+2026-02-03 05:22:56,137 INFO: start val epoch 9
+2026-02-03 05:22:56,137 INFO: 验证任务已加入队列: epoch 9
+2026-02-03 05:22:56,137 INFO: epoch 10
+2026-02-03 05:22:56,137 INFO: random_list:[110, 82, 117, 70, 102, 95, 111, 84, 90, 96, 89, 34, 108, 113, 36, 72, 118, 56, 87, 86, 104, 48, 109, 105, 22, 57, 69, 79, 50, 80, 119, 58, 101, 83, 78, 20]
+2026-02-03 05:22:56,137 INFO: epoch 10 start files
+2026-02-03 05:22:56,137 INFO: training with df 110 4320 1770067376.1375759
+2026-02-03 05:22:56,209 INFO: 验证消费者处理任务: epoch 9
+2026-02-03 05:22:56,209 INFO: 异步验证开始: epoch 9
+2026-02-03 05:22:56,209 INFO: Using 3 processes for parallel validation df_list:[3, 5, 6, 7, 9, 10, 11, 16, 22, 24, 28, 31, 32, 33, 34, 35, 36]
+2026-02-03 05:23:24,587 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 _validate_worker  final_balance: -0.1230399999999463, required_money: 307.66152, commission_fee: 0.12304000000000001, step_times: 4319, trade_id_counter: 2
+2026-02-03 05:23:24,845 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 _validate_worker  final_balance: 8.646925200000055, required_money: 338.99578560000003, commission_fee: 0.9470748000000001, step_times: 4319, trade_id_counter: 13
+2026-02-03 05:23:24,860 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 _validate_worker  final_balance: 0.8094644000000244, required_money: 330.9341736, commission_fee: 0.1325356, step_times: 4319, trade_id_counter: 1
+2026-02-03 05:23:51,816 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 _validate_worker  final_balance: -4.673054799999932, required_money: 332.0049828, commission_fee: 0.5230548, step_times: 4319, trade_id_counter: 7
+2026-02-03 05:23:52,090 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 _validate_worker  final_balance: 2.2620064000000184, required_money: 327.0073884, commission_fee: 0.26199360000000005, step_times: 4319, trade_id_counter: 4
+2026-02-03 05:23:52,105 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 _validate_worker  final_balance: 2.8317972000000964, required_money: 312.81255, commission_fee: 0.2502028, step_times: 4319, trade_id_counter: 3
+2026-02-03 05:23:53,908 INFO: training with df 82 4320 1770067433.908306
+2026-02-03 05:24:19,202 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 _validate_worker  final_balance: -0.3311188000000129, required_money: 313.70643120000005, commission_fee: 0.24911880000000003, step_times: 4319, trade_id_counter: 4
+2026-02-03 05:24:19,478 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 _validate_worker  final_balance: 19.301954000000137, required_money: 346.4067456, commission_fee: 1.428046, step_times: 4319, trade_id_counter: 19
+2026-02-03 05:24:19,481 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 _validate_worker  final_balance: 10.915227200000118, required_money: 368.94878479999994, commission_fee: 0.4487728000000001, step_times: 4319, trade_id_counter: 6
+2026-02-03 05:24:54,859 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 _validate_worker  final_balance: -1.412932799999794, required_money: 425.0081967999999, commission_fee: 0.6729328, step_times: 4319, trade_id_counter: 7
+2026-02-03 05:24:55,278 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 _validate_worker  final_balance: 12.348443600000508, required_money: 380.6500771999999, commission_fee: 3.0095564000000006, step_times: 4319, trade_id_counter: 39
+2026-02-03 05:24:55,280 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 _validate_worker  final_balance: -8.435387599999899, required_money: 383.0344527999999, commission_fee: 0.6133876, step_times: 4319, trade_id_counter: 8
+2026-02-03 05:25:02,299 INFO: training with df 117 4320 1770067502.2995412
+2026-02-03 05:25:29,690 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 _validate_worker  final_balance: 6.530406800000208, required_money: 371.83435199999997, commission_fee: 1.1755932, step_times: 4319, trade_id_counter: 15
+2026-02-03 05:25:29,933 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 _validate_worker  final_balance: -2.61761719999987, required_money: 367.33345199999997, commission_fee: 0.2916172, step_times: 4319, trade_id_counter: 4
+2026-02-03 05:25:29,936 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 _validate_worker  final_balance: -12.654503999999974, required_money: 374.54067320000007, commission_fee: 0.43050400000000005, step_times: 4319, trade_id_counter: 5
+2026-02-03 05:26:03,620 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 _validate_worker  final_balance: -3.8137459999999237, required_money: 366.16726079999995, commission_fee: 0.28774600000000006, step_times: 4319, trade_id_counter: 3
+2026-02-03 05:26:03,838 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 _validate_worker  final_balance: 2.751499200000012, required_money: 359.87596080000003, commission_fee: 0.1445008, step_times: 4319, trade_id_counter: 2
+2026-02-03 05:26:04,192 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_9 return_rate_mean:0.56
+2026-02-03 05:26:04,193 INFO: 异步验证结束: epoch 9, 验证收益率: 0.5568921263698449 best:0.7817461379695565
+2026-02-03 05:26:13,707 INFO: training with df 70 4320 1770067573.707611
+2026-02-03 05:27:01,948 INFO: training with df 102 4320 1770067621.9488432
+2026-02-03 05:27:49,448 INFO: training with df 95 4320 1770067669.4482298
+2026-02-03 05:28:36,474 INFO: training with df 111 4320 1770067716.4748726
+2026-02-03 05:29:18,832 INFO: training with df 84 4320 1770067758.8322225
+2026-02-03 05:29:56,410 INFO: training with df 90 4320 1770067796.4108567
+2026-02-03 05:30:34,268 INFO: training with df 96 4320 1770067834.2689576
+2026-02-03 05:31:11,113 INFO: training with df 89 4320 1770067871.113662
+2026-02-03 05:31:49,222 INFO: training with df 34 4320 1770067909.2221727
+2026-02-03 05:32:26,384 INFO: training with df 108 4320 1770067946.3844767
+2026-02-03 05:33:04,042 INFO: training with df 113 4320 1770067984.0426383
+2026-02-03 05:33:40,906 INFO: training with df 36 4320 1770068020.9062357
+2026-02-03 05:34:18,303 INFO: training with df 72 4320 1770068058.3035374
+2026-02-03 05:34:55,995 INFO: training with df 118 4320 1770068095.9958076
+2026-02-03 05:35:33,692 INFO: training with df 56 4320 1770068133.6928518
+2026-02-03 05:36:10,990 INFO: training with df 87 4320 1770068170.9906464
+2026-02-03 05:36:50,018 INFO: training with df 86 4320 1770068210.0188332
+2026-02-03 05:37:27,828 INFO: training with df 104 4320 1770068247.8286107
+2026-02-03 05:38:05,128 INFO: training with df 48 4320 1770068285.1280465
+2026-02-03 05:38:42,012 INFO: training with df 109 4320 1770068322.012348
+2026-02-03 05:39:17,957 INFO: training with df 105 4320 1770068357.9578223
+2026-02-03 05:39:54,184 INFO: training with df 22 4320 1770068394.1846209
+2026-02-03 05:40:31,063 INFO: training with df 57 4320 1770068431.063201
+2026-02-03 05:41:09,289 INFO: training with df 69 4320 1770068469.2892423
+2026-02-03 05:41:47,151 INFO: training with df 79 4320 1770068507.1516151
+2026-02-03 05:42:23,104 INFO: training with df 50 4320 1770068543.1040368
+2026-02-03 05:42:59,631 INFO: training with df 80 4320 1770068579.6317239
+2026-02-03 05:43:36,591 INFO: training with df 119 4320 1770068616.5915875
+2026-02-03 05:44:13,409 INFO: training with df 58 4320 1770068653.40984
+2026-02-03 05:44:51,338 INFO: training with df 101 4320 1770068691.3381622
+2026-02-03 05:45:28,542 INFO: training with df 83 4320 1770068728.5425158
+2026-02-03 05:46:05,407 INFO: training with df 78 4320 1770068765.4075625
+2026-02-03 05:46:42,644 INFO: training with df 20 4320 1770068802.6448834
+2026-02-03 05:47:20,254 INFO: start val epoch 10
+2026-02-03 05:47:20,254 INFO: 验证任务已加入队列: epoch 10
+2026-02-03 05:47:20,254 INFO: epoch 11
+2026-02-03 05:47:20,254 INFO: random_list:[117, 84, 111, 95, 83, 50, 79, 101, 119, 89, 118, 105, 90, 69, 80, 113, 104, 70, 109, 72, 82, 87, 34, 22, 58, 57, 20, 56, 78, 36, 110, 86, 48, 96, 108, 102]
+2026-02-03 05:47:20,254 INFO: epoch 11 start files
+2026-02-03 05:47:20,254 INFO: training with df 117 4320 1770068840.2543912
+2026-02-03 05:47:57,845 INFO: training with df 84 4320 1770068877.8456776
+2026-02-03 05:48:05,456 INFO: 验证消费者处理任务: epoch 10
+2026-02-03 05:48:05,456 INFO: 异步验证开始: epoch 10
+2026-02-03 05:48:05,457 INFO: Using 3 processes for parallel validation df_list:[3, 5, 6, 7, 9, 10, 11, 16, 22, 24, 28, 31, 32, 33, 34, 35, 36]
+2026-02-03 05:48:43,512 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 _validate_worker  final_balance: 1.437272000000064, required_money: 306.101208, commission_fee: 0.122728, step_times: 4319, trade_id_counter: 2
+2026-02-03 05:48:43,653 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 _validate_worker  final_balance: 4.206304400000022, required_money: 337.46748, commission_fee: 0.9476956000000001, step_times: 4319, trade_id_counter: 14
+2026-02-03 05:48:43,709 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 _validate_worker  final_balance: -1.5063855999999305, required_money: 333.25002359999996, commission_fee: 0.2663856, step_times: 4319, trade_id_counter: 3
+2026-02-03 05:49:11,385 INFO: training with df 111 4320 1770068951.385532
+2026-02-03 05:49:24,126 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 _validate_worker  final_balance: -5.641246799999976, required_money: 332.0049828, commission_fee: 0.5192468, step_times: 4319, trade_id_counter: 7
+2026-02-03 05:49:24,254 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 _validate_worker  final_balance: 6.890652400000022, required_money: 326.5673004, commission_fee: 0.2633476, step_times: 4319, trade_id_counter: 4
+2026-02-03 05:49:24,400 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 _validate_worker  final_balance: -3.1684351999999194, required_money: 318.8127824, commission_fee: 0.3764352000000001, step_times: 4319, trade_id_counter: 5
+2026-02-03 05:50:01,580 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 _validate_worker  final_balance: -0.3311188000000129, required_money: 313.70643120000005, commission_fee: 0.24911880000000003, step_times: 4319, trade_id_counter: 4
+2026-02-03 05:50:01,826 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 _validate_worker  final_balance: 17.526152800000204, required_money: 352.48900679999997, commission_fee: 1.5618472, step_times: 4319, trade_id_counter: 21
+2026-02-03 05:50:01,827 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 _validate_worker  final_balance: 10.915227200000118, required_money: 368.94878479999994, commission_fee: 0.4487728000000001, step_times: 4319, trade_id_counter: 6
+2026-02-03 05:50:29,936 INFO: training with df 95 4320 1770069029.9368954
+2026-02-03 05:50:35,891 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 _validate_worker  final_balance: -1.2975047999996718, required_money: 424.8927687999998, commission_fee: 1.0095048, step_times: 4319, trade_id_counter: 11
+2026-02-03 05:50:35,975 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 _validate_worker  final_balance: 10.858464000000197, required_money: 383.3113435999999, commission_fee: 3.6175360000000008, step_times: 4319, trade_id_counter: 47
+2026-02-03 05:50:36,092 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 _validate_worker  final_balance: -13.60169279999991, required_money: 388.2007579999999, commission_fee: 0.6136928, step_times: 4319, trade_id_counter: 8
+2026-02-03 05:51:04,275 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 _validate_worker  final_balance: -2.295287599999824, required_money: 375.5679863999999, commission_fee: 1.3252876000000002, step_times: 4319, trade_id_counter: 17
+2026-02-03 05:51:04,360 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 _validate_worker  final_balance: -9.807934799999941, required_money: 371.69410400000004, commission_fee: 0.42993480000000006, step_times: 4319, trade_id_counter: 5
+2026-02-03 05:51:04,434 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 _validate_worker  final_balance: -0.2526979999998389, required_money: 364.9657407999999, commission_fee: 0.290698, step_times: 4319, trade_id_counter: 3
+2026-02-03 05:51:28,319 INFO: training with df 83 4320 1770069088.3195648
+2026-02-03 05:51:29,027 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 _validate_worker  final_balance: -7.652329599999916, required_money: 370.00584439999994, commission_fee: 0.4323296000000001, step_times: 4319, trade_id_counter: 5
+2026-02-03 05:51:29,160 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 _validate_worker  final_balance: 1.8013092000000483, required_money: 360.8261508, commission_fee: 0.1446908, step_times: 4319, trade_id_counter: 2
+2026-02-03 05:51:29,501 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_10 return_rate_mean:0.16
+2026-02-03 05:51:29,504 INFO: 异步验证结束: epoch 10, 验证收益率: 0.15539052378958915 best:0.7817461379695565
+2026-02-03 05:52:15,802 INFO: training with df 50 4320 1770069135.8022318
+2026-02-03 05:53:03,295 INFO: training with df 79 4320 1770069183.2958817
+2026-02-03 05:53:43,267 INFO: training with df 101 4320 1770069223.2677476
+2026-02-03 05:54:20,801 INFO: training with df 119 4320 1770069260.801436
+2026-02-03 05:54:57,919 INFO: training with df 89 4320 1770069297.9193137
+2026-02-03 05:55:35,989 INFO: training with df 118 4320 1770069335.9894254
+2026-02-03 05:56:13,428 INFO: training with df 105 4320 1770069373.4289117
+2026-02-03 05:56:50,537 INFO: training with df 90 4320 1770069410.5372932
+2026-02-03 05:57:26,774 INFO: training with df 69 4320 1770069446.7746766
+2026-02-03 05:58:03,945 INFO: training with df 80 4320 1770069483.945817
+2026-02-03 05:58:41,091 INFO: training with df 113 4320 1770069521.0917056
+2026-02-03 05:59:17,729 INFO: training with df 104 4320 1770069557.7294278
+2026-02-03 05:59:54,596 INFO: training with df 70 4320 1770069594.5961723
+2026-02-03 06:00:31,228 INFO: training with df 109 4320 1770069631.2285304
+2026-02-03 06:01:08,519 INFO: training with df 72 4320 1770069668.5197568
+2026-02-03 06:01:45,677 INFO: training with df 82 4320 1770069705.677181
+2026-02-03 06:02:22,816 INFO: training with df 87 4320 1770069742.8168774
+2026-02-03 06:03:00,160 INFO: training with df 34 4320 1770069780.1599963
+2026-02-03 06:03:37,660 INFO: training with df 22 4320 1770069817.6600606
+2026-02-03 06:04:14,267 INFO: training with df 58 4320 1770069854.2678125
+2026-02-03 06:04:50,409 INFO: training with df 57 4320 1770069890.4098294
+2026-02-03 06:05:27,918 INFO: training with df 20 4320 1770069927.918546
+2026-02-03 06:06:04,976 INFO: training with df 56 4320 1770069964.9761791
+2026-02-03 06:06:42,143 INFO: training with df 78 4320 1770070002.1434765
+2026-02-03 06:07:18,845 INFO: training with df 36 4320 1770070038.8454587
+2026-02-03 06:07:56,999 INFO: training with df 110 4320 1770070076.9992037
+2026-02-03 06:08:34,526 INFO: training with df 86 4320 1770070114.526782
+2026-02-03 06:09:11,811 INFO: training with df 48 4320 1770070151.8110898
+2026-02-03 06:09:50,153 INFO: training with df 96 4320 1770070190.1534705
+2026-02-03 06:10:26,907 INFO: training with df 108 4320 1770070226.907788
+2026-02-03 06:11:04,719 INFO: training with df 102 4320 1770070264.7193918
+2026-02-03 06:11:44,568 INFO: start val epoch 11
+2026-02-03 06:11:44,569 INFO: 验证任务已加入队列: epoch 11
+2026-02-03 06:11:44,569 INFO: epoch 12
+2026-02-03 06:11:44,569 INFO: random_list:[72, 111, 79, 78, 118, 83, 70, 113, 69, 101, 96, 108, 102, 105, 56, 80, 119, 117, 90, 109, 82, 58, 87, 89, 95, 104, 36, 84, 20, 57, 34, 86, 50, 22, 110, 48]
+2026-02-03 06:11:44,569 INFO: epoch 12 start files
+2026-02-03 06:11:44,569 INFO: training with df 72 4320 1770070304.569271
+2026-02-03 06:12:30,516 INFO: 验证消费者处理任务: epoch 11
+2026-02-03 06:12:30,516 INFO: 异步验证开始: epoch 11
+2026-02-03 06:12:30,517 INFO: Using 3 processes for parallel validation df_list:[3, 5, 6, 7, 9, 10, 11, 16, 22, 24, 28, 31, 32, 33, 34, 35, 36]
+2026-02-03 06:12:33,951 INFO: training with df 111 4320 1770070353.950998
+2026-02-03 06:13:02,412 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 _validate_worker  final_balance: -3.6429475999999568, required_money: 307.66152, commission_fee: 0.24494760000000002, step_times: 4319, trade_id_counter: 3
+2026-02-03 06:13:02,668 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 _validate_worker  final_balance: 2.5065272000001073, required_money: 339.6222664, commission_fee: 1.0814728, step_times: 4319, trade_id_counter: 16
+2026-02-03 06:13:02,700 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 _validate_worker  final_balance: -12.307665599999837, required_money: 344.76171919999996, commission_fee: 0.6676656000000001, step_times: 4319, trade_id_counter: 9
+2026-02-03 06:13:37,656 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 _validate_worker  final_balance: 15.79696320000005, required_money: 327.6195108, commission_fee: 0.9110368, step_times: 4319, trade_id_counter: 13
+2026-02-03 06:13:37,888 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 _validate_worker  final_balance: 6.274252800000056, required_money: 326.5673004, commission_fee: 0.39374719999999996, step_times: 4319, trade_id_counter: 6
+2026-02-03 06:13:37,907 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 _validate_worker  final_balance: 0.6443272000000775, required_money: 315.00002, commission_fee: 0.3756728000000001, step_times: 4319, trade_id_counter: 5
+2026-02-03 06:13:45,632 INFO: training with df 79 4320 1770070425.6329417
+2026-02-03 06:14:10,370 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 _validate_worker  final_balance: -2.768033600000024, required_money: 309.3415584000001, commission_fee: 0.3720336, step_times: 4319, trade_id_counter: 6
+2026-02-03 06:14:10,573 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 _validate_worker  final_balance: 5.53830280000011, required_money: 374.32570919999995, commission_fee: 0.4476972000000001, step_times: 4319, trade_id_counter: 6
+2026-02-03 06:14:10,576 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 _validate_worker  final_balance: 25.303565200000264, required_money: 348.94044840000004, commission_fee: 1.9984348, step_times: 4319, trade_id_counter: 27
+2026-02-03 06:14:41,216 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 _validate_worker  final_balance: 3.6688968000002546, required_money: 421.9628427999999, commission_fee: 1.1791032000000001, step_times: 4319, trade_id_counter: 13
+2026-02-03 06:14:41,413 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 _validate_worker  final_balance: -11.703002799999808, required_money: 389.2710887999998, commission_fee: 1.0690027999999998, step_times: 4319, trade_id_counter: 14
+2026-02-03 06:14:41,417 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 _validate_worker  final_balance: 7.334841200000312, required_money: 380.53678879999995, commission_fee: 3.1591588, step_times: 4319, trade_id_counter: 41
+2026-02-03 06:14:51,669 INFO: training with df 78 4320 1770070491.6695538
+2026-02-03 06:15:10,432 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 _validate_worker  final_balance: -2.2847839999998314, required_money: 374.85162399999984, commission_fee: 1.320784, step_times: 4319, trade_id_counter: 17
+2026-02-03 06:15:10,570 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 _validate_worker  final_balance: 2.9326648000001114, required_money: 361.7803779999999, commission_fee: 0.2913352, step_times: 4319, trade_id_counter: 3
+2026-02-03 06:15:10,588 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 _validate_worker  final_balance: -17.06286639999996, required_money: 378.94903560000006, commission_fee: 0.5708664, step_times: 4319, trade_id_counter: 7
+2026-02-03 06:15:34,722 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 _validate_worker  final_balance: -10.45590999999996, required_money: 372.8094248, commission_fee: 0.5819100000000001, step_times: 4319, trade_id_counter: 7
+2026-02-03 06:15:34,847 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 _validate_worker  final_balance: 2.751499200000012, required_money: 359.87596080000003, commission_fee: 0.1445008, step_times: 4319, trade_id_counter: 2
+2026-02-03 06:15:35,191 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_11 return_rate_mean:0.25
+2026-02-03 06:15:35,193 INFO: 异步验证结束: epoch 11, 验证收益率: 0.24804956577131618 best:0.7817461379695565
+2026-02-03 06:15:46,706 INFO: training with df 118 4320 1770070546.7065225
+2026-02-03 06:16:34,780 INFO: training with df 83 4320 1770070594.7803943
+2026-02-03 06:17:22,314 INFO: training with df 70 4320 1770070642.3143954
+2026-02-03 06:18:07,181 INFO: training with df 113 4320 1770070687.1811047
+2026-02-03 06:18:45,119 INFO: training with df 69 4320 1770070725.119501
+2026-02-03 06:19:23,356 INFO: training with df 101 4320 1770070763.3566797
+2026-02-03 06:20:01,628 INFO: training with df 96 4320 1770070801.6286707
+2026-02-03 06:20:39,927 INFO: training with df 108 4320 1770070839.9276378
+2026-02-03 06:21:18,279 INFO: training with df 102 4320 1770070878.279665
+2026-02-03 06:21:56,149 INFO: training with df 105 4320 1770070916.149117
+2026-02-03 06:22:34,110 INFO: training with df 56 4320 1770070954.1101727
+2026-02-03 06:23:11,499 INFO: training with df 80 4320 1770070991.4990926
+2026-02-03 06:23:49,394 INFO: training with df 119 4320 1770071029.3940394
+2026-02-03 06:24:27,589 INFO: training with df 117 4320 1770071067.5893674
+2026-02-03 06:25:05,862 INFO: training with df 90 4320 1770071105.862831
+2026-02-03 06:25:42,469 INFO: training with df 109 4320 1770071142.4697888
+2026-02-03 06:26:19,785 INFO: training with df 82 4320 1770071179.7853599
+2026-02-03 06:26:56,097 INFO: training with df 58 4320 1770071216.0970385
+2026-02-03 06:27:32,440 INFO: training with df 87 4320 1770071252.4404962
+2026-02-03 06:28:08,879 INFO: training with df 89 4320 1770071288.8792613
+2026-02-03 06:28:45,182 INFO: training with df 95 4320 1770071325.1825225
+2026-02-03 06:29:22,934 INFO: training with df 104 4320 1770071362.9346044
+2026-02-03 06:30:00,415 INFO: training with df 36 4320 1770071400.4155056
+2026-02-03 06:30:37,996 INFO: training with df 84 4320 1770071437.996111
+2026-02-03 06:31:15,735 INFO: training with df 20 4320 1770071475.735431
+2026-02-03 06:31:53,610 INFO: training with df 57 4320 1770071513.6103258
+2026-02-03 06:32:31,656 INFO: training with df 34 4320 1770071551.65679
+2026-02-03 06:33:09,732 INFO: training with df 86 4320 1770071589.7326117
+2026-02-03 06:33:47,850 INFO: training with df 50 4320 1770071627.850235
+2026-02-03 06:34:26,191 INFO: training with df 22 4320 1770071666.191036
+2026-02-03 06:35:04,241 INFO: training with df 110 4320 1770071704.2411048
+2026-02-03 06:35:42,604 INFO: training with df 48 4320 1770071742.6041949
+2026-02-03 06:36:21,212 INFO: start val epoch 12
+2026-02-03 06:36:21,212 INFO: 验证任务已加入队列: epoch 12
+2026-02-03 06:36:21,212 INFO: epoch 13
+2026-02-03 06:36:21,212 INFO: random_list:[110, 96, 70, 111, 36, 69, 102, 90, 101, 104, 87, 34, 119, 89, 108, 117, 95, 80, 72, 84, 48, 86, 50, 79, 113, 20, 57, 58, 22, 78, 56, 105, 118, 109, 82, 83]
+2026-02-03 06:36:21,212 INFO: epoch 13 start files
+2026-02-03 06:36:21,212 INFO: training with df 110 4320 1770071781.2128031
+2026-02-03 06:36:36,063 INFO: 验证消费者处理任务: epoch 12
+2026-02-03 06:36:36,064 INFO: 异步验证开始: epoch 12
+2026-02-03 06:36:36,064 INFO: Using 3 processes for parallel validation df_list:[3, 5, 6, 7, 9, 10, 11, 16, 22, 24, 28, 31, 32, 33, 34, 35, 36]
+2026-02-03 06:37:07,319 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 _validate_worker  final_balance: -1.8740627999998765, required_money: 314.39624, commission_fee: 0.4880628, step_times: 4319, trade_id_counter: 7
+2026-02-03 06:37:07,521 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 _validate_worker  final_balance: 1.1185448000001088, required_money: 330.9341736, commission_fee: 0.4014552, step_times: 4319, trade_id_counter: 6
+2026-02-03 06:37:07,548 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 _validate_worker  final_balance: -1.5448203999999919, required_money: 343.4624232, commission_fee: 0.9468204, step_times: 4319, trade_id_counter: 14
+2026-02-03 06:37:20,627 INFO: training with df 96 4320 1770071840.62753
+2026-02-03 06:37:42,448 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 _validate_worker  final_balance: 0.20502160000000913, required_money: 328.28841800000004, commission_fee: 0.7829784000000001, step_times: 4319, trade_id_counter: 11
+2026-02-03 06:37:42,590 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 _validate_worker  final_balance: -5.636866399999747, required_money: 318.44429239999977, commission_fee: 0.5008664, step_times: 4319, trade_id_counter: 7
+2026-02-03 06:37:42,647 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 _validate_worker  final_balance: 6.824654000000066, required_money: 331.815312, commission_fee: 0.5253460000000001, step_times: 4319, trade_id_counter: 8
+2026-02-03 06:38:21,479 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 _validate_worker  final_balance: 6.319567199999938, required_money: 313.3166508, commission_fee: 0.6244328000000001, step_times: 4319, trade_id_counter: 10
+2026-02-03 06:38:21,663 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 _validate_worker  final_balance: 7.269506000000433, required_money: 356.29014039999987, commission_fee: 2.840494, step_times: 4319, trade_id_counter: 39
+2026-02-03 06:38:21,714 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 _validate_worker  final_balance: 6.2498204000001465, required_money: 373.6141915999999, commission_fee: 0.4481796, step_times: 4319, trade_id_counter: 6
+2026-02-03 06:38:39,447 INFO: training with df 70 4320 1770071919.4473248
+2026-02-03 06:38:57,378 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 _validate_worker  final_balance: 13.889757200000474, required_money: 418.10360399999996, commission_fee: 1.3482428, step_times: 4319, trade_id_counter: 15
+2026-02-03 06:38:57,554 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 _validate_worker  final_balance: 6.945970000000386, required_money: 380.88285799999994, commission_fee: 3.4600299999999997, step_times: 4319, trade_id_counter: 45
+2026-02-03 06:38:57,603 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 _validate_worker  final_balance: -2.0252927999999883, required_money: 384.69035919999993, commission_fee: 1.0692928, step_times: 4319, trade_id_counter: 14
+2026-02-03 06:39:28,770 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 _validate_worker  final_balance: -5.415623599999833, required_money: 378.6883223999999, commission_fee: 1.4696236, step_times: 4319, trade_id_counter: 19
+2026-02-03 06:39:28,912 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 _validate_worker  final_balance: -12.927314399999773, required_money: 371.88150919999987, commission_fee: 0.8513144000000001, step_times: 4319, trade_id_counter: 11
+2026-02-03 06:39:28,966 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 _validate_worker  final_balance: 4.347174400000142, required_money: 361.7803779999999, commission_fee: 0.43682560000000004, step_times: 4319, trade_id_counter: 5
+2026-02-03 06:39:44,692 INFO: training with df 111 4320 1770071984.6929662
+2026-02-03 06:39:53,838 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 _validate_worker  final_balance: -4.130631600000072, required_money: 366.7273308, commission_fee: 0.8726316000000001, step_times: 4319, trade_id_counter: 11
+2026-02-03 06:39:53,953 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 _validate_worker  final_balance: 1.4573840000001042, required_money: 361.90392919999994, commission_fee: 0.43461600000000006, step_times: 4319, trade_id_counter: 5
+2026-02-03 06:39:54,300 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_12 return_rate_mean:0.33
+2026-02-03 06:39:54,303 INFO: 异步验证结束: epoch 12, 验证收益率: 0.32719244976337825 best:0.7817461379695565
+2026-02-03 06:40:32,361 INFO: training with df 36 4320 1770072032.3618102
+2026-02-03 06:41:19,434 INFO: training with df 69 4320 1770072079.4341176
+2026-02-03 06:42:04,131 INFO: training with df 102 4320 1770072124.1314025
+2026-02-03 06:42:40,956 INFO: training with df 90 4320 1770072160.956318
+2026-02-03 06:43:18,394 INFO: training with df 101 4320 1770072198.3943937
+2026-02-03 06:43:55,925 INFO: training with df 104 4320 1770072235.9250896
+2026-02-03 06:44:33,403 INFO: training with df 87 4320 1770072273.4032798
+2026-02-03 06:45:10,690 INFO: training with df 34 4320 1770072310.690506
+2026-02-03 06:45:47,594 INFO: training with df 119 4320 1770072347.5941796
+2026-02-03 06:46:25,725 INFO: training with df 89 4320 1770072385.7251353
+2026-02-03 06:47:03,703 INFO: training with df 108 4320 1770072423.7037756
+2026-02-03 06:47:41,588 INFO: training with df 117 4320 1770072461.5887706
+2026-02-03 06:48:19,747 INFO: training with df 95 4320 1770072499.7477837
+2026-02-03 06:48:57,692 INFO: training with df 80 4320 1770072537.692143
+2026-02-03 06:49:34,999 INFO: training with df 72 4320 1770072574.9992895
+2026-02-03 06:50:12,576 INFO: training with df 84 4320 1770072612.5762453
+2026-02-03 06:50:49,109 INFO: training with df 48 4320 1770072649.109491
+2026-02-03 06:51:25,581 INFO: training with df 86 4320 1770072685.5811436
+2026-02-03 06:52:03,399 INFO: training with df 50 4320 1770072723.399198
+2026-02-03 06:52:41,519 INFO: training with df 79 4320 1770072761.5198476
+2026-02-03 06:53:19,581 INFO: training with df 113 4320 1770072799.5810673
+2026-02-03 06:53:57,731 INFO: training with df 20 4320 1770072837.7315285
+2026-02-03 06:54:35,682 INFO: training with df 57 4320 1770072875.6823952
+2026-02-03 06:55:13,226 INFO: training with df 58 4320 1770072913.2262955
+2026-02-03 06:55:51,309 INFO: training with df 22 4320 1770072951.309075
+2026-02-03 06:56:29,470 INFO: training with df 78 4320 1770072989.4706128
+2026-02-03 06:57:06,926 INFO: training with df 56 4320 1770073026.9268587
+2026-02-03 06:57:44,965 INFO: training with df 105 4320 1770073064.9658847
+2026-02-03 06:58:22,334 INFO: training with df 118 4320 1770073102.3341532
+2026-02-03 06:59:00,405 INFO: training with df 109 4320 1770073140.4050539
+2026-02-03 06:59:38,626 INFO: training with df 82 4320 1770073178.6266034
+2026-02-03 07:00:15,309 INFO: training with df 83 4320 1770073215.3097196
+2026-02-03 07:00:58,483 INFO: start val epoch 13
+2026-02-03 07:00:58,483 INFO: 验证任务已加入队列: epoch 13
+2026-02-03 07:00:58,483 INFO: epoch 14
+2026-02-03 07:00:58,483 INFO: random_list:[70, 57, 118, 90, 72, 83, 105, 104, 34, 86, 95, 82, 79, 69, 101, 87, 96, 84, 50, 102, 80, 36, 58, 113, 111, 22, 109, 48, 78, 117, 20, 108, 89, 119, 56, 110]
+2026-02-03 07:00:58,484 INFO: epoch 14 start files
+2026-02-03 07:00:58,484 INFO: training with df 70 4320 1770073258.484063
+2026-02-03 07:01:50,554 INFO: training with df 57 4320 1770073310.5545948
+2026-02-03 07:01:55,306 INFO: 验证消费者处理任务: epoch 13
+2026-02-03 07:01:55,306 INFO: 异步验证开始: epoch 13
+2026-02-03 07:01:55,306 INFO: Using 3 processes for parallel validation df_list:[3, 5, 6, 7, 9, 10, 11, 16, 22, 24, 28, 31, 32, 33, 34, 35, 36]
+2026-02-03 07:02:30,816 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 _validate_worker  final_balance: -10.908811199999946, required_money: 314.39624, commission_fee: 0.36481120000000006, step_times: 4319, trade_id_counter: 5
+2026-02-03 07:02:30,899 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 _validate_worker  final_balance: -3.149076399999842, required_money: 342.03728519999987, commission_fee: 1.2150764, step_times: 4319, trade_id_counter: 18
+2026-02-03 07:02:30,943 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 _validate_worker  final_balance: -4.4607983999999306, required_money: 338.9017668000001, commission_fee: 0.6727984, step_times: 4319, trade_id_counter: 10
+2026-02-03 07:03:02,511 INFO: training with df 118 4320 1770073382.5110512
+2026-02-03 07:03:06,362 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 _validate_worker  final_balance: -2.996989999999869, required_money: 331.03419360000004, commission_fee: 1.03899, step_times: 4319, trade_id_counter: 15
+2026-02-03 07:03:06,539 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 _validate_worker  final_balance: 6.651128400000005, required_money: 326.45823640000003, commission_fee: 0.26287160000000004, step_times: 4319, trade_id_counter: 4
+2026-02-03 07:03:06,569 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 _validate_worker  final_balance: -3.1684351999999194, required_money: 318.8127824, commission_fee: 0.3764352000000001, step_times: 4319, trade_id_counter: 5
+2026-02-03 07:03:38,432 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 _validate_worker  final_balance: -5.248863999999855, required_money: 313.3166508, commission_fee: 0.49686400000000003, step_times: 4319, trade_id_counter: 8
+2026-02-03 07:03:38,604 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 _validate_worker  final_balance: 6.2498204000001465, required_money: 373.6141915999999, commission_fee: 0.4481796, step_times: 4319, trade_id_counter: 6
+2026-02-03 07:03:38,609 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 _validate_worker  final_balance: 2.5044240000001423, required_money: 365.63882999999987, commission_fee: 2.703576, step_times: 4319, trade_id_counter: 37
+2026-02-03 07:04:05,166 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 _validate_worker  final_balance: 5.975710800000286, required_money: 418.92396279999986, commission_fee: 1.3462892, step_times: 4319, trade_id_counter: 15
+2026-02-03 07:04:05,329 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 _validate_worker  final_balance: 2.648092800000313, required_money: 381.46320639999993, commission_fee: 1.5359072000000003, step_times: 4319, trade_id_counter: 19
+2026-02-03 07:04:05,333 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 _validate_worker  final_balance: 8.829405200000963, required_money: 383.5965015999998, commission_fee: 4.9965948000000004, step_times: 4319, trade_id_counter: 65
+2026-02-03 07:04:06,157 INFO: training with df 90 4320 1770073446.1575677
+2026-02-03 07:04:30,976 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 _validate_worker  final_balance: -9.616120799999578, required_money: 378.9520323999998, commission_fee: 1.9121208000000005, step_times: 4319, trade_id_counter: 25
+2026-02-03 07:04:31,125 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 _validate_worker  final_balance: 4.426030800000035, required_money: 360.287012, commission_fee: 0.43596920000000006, step_times: 4319, trade_id_counter: 5
+2026-02-03 07:04:31,138 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 _validate_worker  final_balance: -14.661316399999805, required_money: 376.06173319999994, commission_fee: 1.2833164, step_times: 4319, trade_id_counter: 17
+2026-02-03 07:04:55,604 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 _validate_worker  final_balance: -10.087057200000004, required_money: 372.44057200000003, commission_fee: 1.0170572, step_times: 4319, trade_id_counter: 13
+2026-02-03 07:04:55,758 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 _validate_worker  final_balance: -0.9330939999999259, required_money: 364.29440719999997, commission_fee: 0.43509400000000004, step_times: 4319, trade_id_counter: 5
+2026-02-03 07:04:56,103 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_13 return_rate_mean:-0.51
+2026-02-03 07:04:56,105 INFO: 异步验证结束: epoch 13, 验证收益率: -0.5079923846717538 best:0.7817461379695565
+2026-02-03 07:05:01,639 INFO: training with df 72 4320 1770073501.6394265
+2026-02-03 07:05:48,822 INFO: training with df 83 4320 1770073548.8224843
+2026-02-03 07:06:36,165 INFO: training with df 105 4320 1770073596.16584
+2026-02-03 07:07:14,832 INFO: training with df 104 4320 1770073634.8323603
+2026-02-03 07:07:51,928 INFO: training with df 34 4320 1770073671.9280035
+2026-02-03 07:08:29,566 INFO: training with df 86 4320 1770073709.5660212
+2026-02-03 07:09:07,341 INFO: training with df 95 4320 1770073747.3418436
+2026-02-03 07:09:45,748 INFO: training with df 82 4320 1770073785.7486746
+2026-02-03 07:10:24,231 INFO: training with df 79 4320 1770073824.2312832
+2026-02-03 07:11:02,501 INFO: training with df 69 4320 1770073862.5009751
+2026-02-03 07:11:40,415 INFO: training with df 101 4320 1770073900.4151018
+2026-02-03 07:12:19,151 INFO: training with df 87 4320 1770073939.1518939
+2026-02-03 07:12:57,163 INFO: training with df 96 4320 1770073977.1636539
+2026-02-03 07:13:34,503 INFO: training with df 84 4320 1770074014.5033386
+2026-02-03 07:14:11,809 INFO: training with df 50 4320 1770074051.8093684
+2026-02-03 07:14:49,405 INFO: training with df 102 4320 1770074089.4056296
+2026-02-03 07:15:26,751 INFO: training with df 80 4320 1770074126.7515094
+2026-02-03 07:16:04,255 INFO: training with df 36 4320 1770074164.255399
+2026-02-03 07:16:42,235 INFO: training with df 58 4320 1770074202.235736
+2026-02-03 07:17:20,946 INFO: training with df 113 4320 1770074240.9467795
+2026-02-03 07:17:58,822 INFO: training with df 111 4320 1770074278.8222957
+2026-02-03 07:18:36,011 INFO: training with df 22 4320 1770074316.0112498
+2026-02-03 07:19:13,623 INFO: training with df 109 4320 1770074353.623934
+2026-02-03 07:19:51,495 INFO: training with df 48 4320 1770074391.495201
+2026-02-03 07:20:30,013 INFO: training with df 78 4320 1770074430.0130146
+2026-02-03 07:21:07,100 INFO: training with df 117 4320 1770074467.1006398
+2026-02-03 07:21:44,494 INFO: training with df 20 4320 1770074504.4944105
+2026-02-03 07:22:21,338 INFO: training with df 108 4320 1770074541.3387294
+2026-02-03 07:22:58,519 INFO: training with df 89 4320 1770074578.5192776
+2026-02-03 07:23:35,274 INFO: training with df 119 4320 1770074615.274565
+2026-02-03 07:24:12,657 INFO: training with df 56 4320 1770074652.6574066
+2026-02-03 07:24:50,234 INFO: training with df 110 4320 1770074690.2342358
+2026-02-03 07:25:33,641 INFO: start val epoch 14
+2026-02-03 07:25:33,641 INFO: 验证任务已加入队列: epoch 14
+2026-02-03 07:25:33,641 INFO: epoch 15
+2026-02-03 07:25:33,641 INFO: random_list:[110, 90, 104, 80, 72, 58, 82, 96, 84, 117, 113, 102, 83, 48, 101, 111, 87, 79, 34, 56, 95, 108, 69, 22, 89, 78, 57, 86, 70, 36, 119, 20, 118, 50, 105, 109]
+2026-02-03 07:25:33,641 INFO: epoch 15 start files
+2026-02-03 07:25:33,641 INFO: training with df 110 4320 1770074733.6418276
+2026-02-03 07:25:57,279 INFO: 验证消费者处理任务: epoch 14
+2026-02-03 07:25:57,279 INFO: 异步验证开始: epoch 14
+2026-02-03 07:25:57,279 INFO: Using 3 processes for parallel validation df_list:[3, 5, 6, 7, 9, 10, 11, 16, 22, 24, 28, 31, 32, 33, 34, 35, 36]
+2026-02-03 07:26:25,862 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 _validate_worker  final_balance: -11.654943999999887, required_money: 315.1787827999999, commission_fee: 0.730944, step_times: 4319, trade_id_counter: 12
+2026-02-03 07:26:26,112 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 _validate_worker  final_balance: -1.5166887999998266, required_money: 340.94018679999994, commission_fee: 1.7526888, step_times: 4319, trade_id_counter: 26
+2026-02-03 07:26:26,120 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 _validate_worker  final_balance: -3.281066799999792, required_money: 343.6347132, commission_fee: 0.8070668000000001, step_times: 4319, trade_id_counter: 11
+2026-02-03 07:26:28,099 INFO: training with df 90 4320 1770074788.0995045
+2026-02-03 07:26:49,678 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 _validate_worker  final_balance: 3.4327032000001054, required_money: 327.8895648, commission_fee: 1.5632968, step_times: 4319, trade_id_counter: 23
+2026-02-03 07:26:50,058 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 _validate_worker  final_balance: -1.861738399999922, required_money: 331.26984359999994, commission_fee: 0.5257384, step_times: 4319, trade_id_counter: 7
+2026-02-03 07:26:50,109 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 _validate_worker  final_balance: 2.228558400000111, required_money: 314.4107111999999, commission_fee: 0.6274416000000002, step_times: 4319, trade_id_counter: 9
+2026-02-03 07:27:20,451 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 _validate_worker  final_balance: -3.752241599999934, required_money: 313.3166508, commission_fee: 0.6202416000000001, step_times: 4319, trade_id_counter: 9
+2026-02-03 07:27:20,693 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 _validate_worker  final_balance: 3.1063076000006618, required_money: 362.3257079999997, commission_fee: 3.6956924000000004, step_times: 4319, trade_id_counter: 51
+2026-02-03 07:27:20,703 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 _validate_worker  final_balance: 3.3023624000003338, required_money: 376.5616495999997, commission_fee: 0.8936376000000001, step_times: 4319, trade_id_counter: 12
+2026-02-03 07:27:30,117 INFO: training with df 104 4320 1770074850.1172993
+2026-02-03 07:27:54,741 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 _validate_worker  final_balance: 6.064089200000296, required_money: 421.1511211999999, commission_fee: 1.5139108000000001, step_times: 4319, trade_id_counter: 17
+2026-02-03 07:27:55,104 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 _validate_worker  final_balance: 20.4688316000005, required_money: 383.5965015999998, commission_fee: 4.5291684000000005, step_times: 4319, trade_id_counter: 60
+2026-02-03 07:27:55,114 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 _validate_worker  final_balance: 8.092899200000318, required_money: 381.2812428, commission_fee: 1.9951008000000001, step_times: 4319, trade_id_counter: 25
+2026-02-03 07:28:30,662 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 _validate_worker  final_balance: -2.6067731999999637, required_money: 371.83435199999997, commission_fee: 2.0607732, step_times: 4319, trade_id_counter: 27
+2026-02-03 07:28:30,878 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 _validate_worker  final_balance: -7.329499999999939, required_money: 371.5019232, commission_fee: 1.2815, step_times: 4319, trade_id_counter: 17
+2026-02-03 07:28:30,893 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 _validate_worker  final_balance: -0.08106759999998303, required_money: 363.22842360000004, commission_fee: 0.43506760000000005, step_times: 4319, trade_id_counter: 6
+2026-02-03 07:28:45,033 INFO: training with df 80 4320 1770074925.0335393
+2026-02-03 07:28:59,380 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 _validate_worker  final_balance: -10.182331199999851, required_money: 372.5358459999999, commission_fee: 1.1623312000000001, step_times: 4319, trade_id_counter: 15
+2026-02-03 07:28:59,582 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 _validate_worker  final_balance: 2.999763600000108, required_money: 361.4633292, commission_fee: 0.2902364, step_times: 4319, trade_id_counter: 4
+2026-02-03 07:28:59,931 INFO: val ./result/low_level/ETHUSDT/long_action1228/slope/label_2/4/seed_6234571/epoch_14 return_rate_mean:0.05
+2026-02-03 07:28:59,934 INFO: 异步验证结束: epoch 14, 验证收益率: 0.05480463870697656 best:0.7817461379695565
+2026-02-03 07:29:35,672 INFO: training with df 72 4320 1770074975.6726618
+2026-02-03 07:30:23,361 INFO: training with df 58 4320 1770075023.361779
+2026-02-03 07:31:11,539 INFO: training with df 82 4320 1770075071.5397246
+2026-02-03 07:31:52,989 INFO: training with df 96 4320 1770075112.989813
+2026-02-03 07:32:31,583 INFO: training with df 84 4320 1770075151.5829751
+2026-02-03 07:33:08,708 INFO: training with df 117 4320 1770075188.7083013
+2026-02-03 07:33:47,084 INFO: training with df 113 4320 1770075227.084262
+2026-02-03 07:34:23,743 INFO: training with df 102 4320 1770075263.7435172
+2026-02-03 07:35:00,837 INFO: training with df 83 4320 1770075300.8371422
+2026-02-03 07:35:37,258 INFO: training with df 48 4320 1770075337.2585592
+2026-02-03 07:36:15,740 INFO: training with df 101 4320 1770075375.7404222
+2026-02-03 07:36:53,542 INFO: training with df 111 4320 1770075413.542044
+2026-02-03 07:37:29,841 INFO: training with df 87 4320 1770075449.8416839
+2026-02-03 07:38:06,699 INFO: training with df 79 4320 1770075486.6990027
+2026-02-03 07:38:44,429 INFO: training with df 34 4320 1770075524.4298823
+2026-02-03 07:39:21,900 INFO: training with df 56 4320 1770075561.900731
+2026-02-03 07:39:58,743 INFO: training with df 95 4320 1770075598.7438502
+2026-02-03 07:40:36,691 INFO: training with df 108 4320 1770075636.6919608
+2026-02-03 07:41:14,997 INFO: training with df 69 4320 1770075674.9977615
+2026-02-03 07:41:53,139 INFO: training with df 22 4320 1770075713.139454
+2026-02-03 07:42:31,425 INFO: training with df 89 4320 1770075751.4250343
+2026-02-03 07:43:08,301 INFO: training with df 78 4320 1770075788.3010228
+2026-02-03 07:43:45,293 INFO: training with df 57 4320 1770075825.2939565
+2026-02-03 07:44:23,679 INFO: training with df 86 4320 1770075863.6798193
+2026-02-03 07:45:02,442 INFO: training with df 70 4320 1770075902.442917
+2026-02-03 07:45:39,866 INFO: training with df 36 4320 1770075939.8668456
+2026-02-03 07:46:16,392 INFO: training with df 119 4320 1770075976.3927524
+2026-02-03 07:46:52,916 INFO: training with df 20 4320 1770076012.9163132
+2026-02-03 07:47:29,545 INFO: training with df 118 4320 1770076049.5455313
+2026-02-03 07:48:06,366 INFO: training with df 50 4320 1770076086.3667052
+2026-02-03 07:48:43,073 INFO: training with df 105 4320 1770076123.073593
+2026-02-03 07:49:18,419 INFO: training with df 109 4320 1770076158.419759
+2026-02-03 07:49:48,813 INFO: start val epoch 15
+2026-02-03 07:49:48,813 INFO: 验证任务已加入队列: epoch 15
+2026-02-03 07:49:48,814 INFO: done, 1770076188.8144557 total time: 21601.42 seconds

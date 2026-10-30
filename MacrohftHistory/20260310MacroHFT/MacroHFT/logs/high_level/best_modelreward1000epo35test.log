@@ -1,0 +1,30 @@
+nohup: 忽略输入
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Namespace(buffer_size=1000000, dataset='ETHUSDT', q_value_memorize_freq=10, batch_size=512, eval_update_freq=512, lr=0.0001, epsilon_start=0.7, epsilon_end=0.3, decay_length=5, update_times=10, gamma=0.99, tau=0.005, transcation_cost=0.0002, back_time_length=1, seed=12345, n_step=1, epoch_number=1, device='cuda:0', alpha=0.5, beta=3, exp='best_modelreward1000epo35test', num_step=10, n_actions=2)
+[INFO] model_list_slope:
+./result/low_level/ETHUSDT/best_modelreward1000epo35/slope/1/best_model.pkl
+./result/low_level/ETHUSDT/best_modelreward1000epo35/slope/2/best_model.pkl
+./result/low_level/ETHUSDT/best_modelreward1000epo35/slope/3/best_model.pkl
+[INFO] model_list_vol:
+./result/low_level/ETHUSDT/best_modelreward1000epo35/vol/1/best_model.pkl
+./result/low_level/ETHUSDT/best_modelreward1000epo35/vol/2/best_model.pkl
+./result/low_level/ETHUSDT/best_modelreward1000epo35/vol/3/best_model.pkl
+[test] load model: ./result/high_level/ETHUSDT/2/best_modelreward1000epo35/seed_12345/epoch_1/trained_model.pkl
+[test] df.shape=(219960, 74) back_time_length=1 max_holding=0.2 fee=0.0002
+[test] env: n_actions=2 initial_action=0
+[test] step=0 action=0 prev_pos=0.0 pos=0.0 reward=0.0
+[test] step=1 action=0 prev_pos=0.0 pos=0.0 reward=0.0
+[test] step=2 action=0 prev_pos=0.0 pos=0.0 reward=0.0
+[test] step=3 action=0 prev_pos=0.0 pos=0.0 reward=0.0
+[test] step=4 action=0 prev_pos=0.0 pos=0.0 reward=0.0
+the portfit margine is  0.07204762613476917
+[test] step=219958 action=1 prev_pos=0.2 pos=0.2 reward=-0.25
+[test] final_balance=-336.6715675999997 required_money=364.5148884 margin=-0.9236154086264744
+Traceback (most recent call last):
+  File "/home/ustc1958/lxy/MacroHFT/RL/agent/high1.py", line 637, in <module>
+  File "/home/ustc1958/lxy/MacroHFT/RL/agent/high1.py", line 525, in train
+  File "/home/ustc1958/lxy/MacroHFT/RL/agent/high1.py", line 617, in test_cluster
+UnboundLocalError: local variable 'action_list' referenced before assignment

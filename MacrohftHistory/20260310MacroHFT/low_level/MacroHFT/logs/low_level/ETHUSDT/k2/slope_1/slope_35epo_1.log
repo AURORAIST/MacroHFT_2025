@@ -1,0 +1,5004 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Namespace(buffer_size=1000000, dataset='ETHUSDT', q_value_memorize_freq=10, batch_size=512, eval_update_freq=100, lr=0.0001, epsilon_start=0.5, epsilon_end=0.1, decay_length=5, update_times=10, gamma=0.99, tau=0.005, transcation_cost=0.0002, back_time_length=1, seed=12345, n_step=1, epoch_number=35, label='label_1', clf='slope', alpha=1.0, device='cuda:0', num_actions=2)
+
+============================================================
+多仓位配置信息:
+============================================================
+动作空间大小 (num_actions): 2
+动作范围: [0, 1]
+仓位映射: 0→0.0%  1→100.0%
+
+状态空间维度:
+  - 单特征状态 (state): 36 个特征
+  - 趋势特征状态 (state_trend): 9 个特征
+  - 前一动作 (previous_action): 标量 ∈ [0, 1]
+
+Q表维度: (时间步数, 2, 2)
+  - 第一维: 时间步数 (动态)
+  - 第二维: 前一动作 [0, 1]
+  - 第三维: 当前动作 [0, 1]
+
+网络输出维度: (batch_size, 2)
+ReplayBuffer demo_action 维度: (batch_size, 2)
+============================================================
+
+epoch  1
+[23, 77, 12, 27, 6, 97, 75, 65, 60, 33, 32, 26, 19, 35, 85, 7, 106, 45, 49, 91, 71, 44, 37, 76, 74, 11, 28, 13, 31, 38, 24, 29, 53, 40, 0, 68]
+training with df 23
+the portfit margine is  -0.23234286969055598
+training with df 77
+the portfit margine is  -0.2063435475974668
+training with df 12
+the portfit margine is  -0.1809952252698897
+training with df 27
+the portfit margine is  -0.1830329895723797
+training with df 6
+the portfit margine is  -0.18509816509992416
+training with df 97
+the portfit margine is  -0.22231008533369961
+training with df 75
+the portfit margine is  -0.22589103799448806
+training with df 65
+the portfit margine is  -0.17355614212030337
+training with df 60
+the portfit margine is  -0.1724525273307362
+training with df 33
+the portfit margine is  -0.13762392742826426
+training with df 32
+the portfit margine is  -0.21416505204383737
+training with df 26
+the portfit margine is  -0.21483799834938247
+training with df 19
+the portfit margine is  -0.15469294645656584
+training with df 35
+the portfit margine is  -0.15675958590558645
+training with df 85
+the portfit margine is  -0.1784197718280219
+training with df 7
+the portfit margine is  -0.13899331161993997
+training with df 106
+the portfit margine is  -0.20052070622921217
+training with df 45
+the portfit margine is  -0.29162254989842556
+training with df 49
+the portfit margine is  -0.24339368381332024
+training with df 91
+the portfit margine is  -0.22169795482403148
+training with df 71
+the portfit margine is  -0.2080883761119318
+training with df 44
+the portfit margine is  -0.21605013361801245
+training with df 37
+the portfit margine is  -0.1829150875056328
+training with df 76
+the portfit margine is  -0.15173261014337353
+training with df 74
+the portfit margine is  -0.20160219854747133
+training with df 11
+the portfit margine is  -0.20693226949182517
+training with df 28
+the portfit margine is  -0.1869763788882502
+training with df 13
+the portfit margine is  -0.17621499444671107
+training with df 31
+the portfit margine is  -0.20831630167217102
+training with df 38
+the portfit margine is  -0.22589266929040822
+training with df 24
+the portfit margine is  -0.1778339756179979
+training with df 29
+the portfit margine is  -0.20523650610742863
+training with df 53
+the portfit margine is  -0.22401689558365792
+training with df 40
+the portfit margine is  -0.21370590768107228
+training with df 0
+the portfit margine is  -0.15663389809623737
+training with df 68
+the portfit margine is  -0.20875016561114668
+validating on df 1
+the portfit margine is  -0.004406455557489645
+validating on df 2
+the portfit margine is  -0.033672834402987704
+validating on df 12
+the portfit margine is  -0.018638821974482203
+validating on df 15
+the portfit margine is  -0.015959419224759474
+validating on df 17
+the portfit margine is  nan
+validating on df 21
+the portfit margine is  0.0074577089371689895
+validating on df 25
+the portfit margine is  -0.012212226558729116
+validating on df 26
+the portfit margine is  0.015682727361840308
+validating on df 27
+the portfit margine is  nan
+validating on df 29
+the portfit margine is  -0.005499920424078304
+validating on df 37
+the portfit margine is  nan
+validating on df 39
+the portfit margine is  nan
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  47174 times (91.02%)
+  Action 1 (100.0% position):   4654 times ( 8.98%)
+Mean return rate: -0.0056
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.008056540814731991
+validating on df 2
+the portfit margine is  -0.023747470539738115
+validating on df 12
+the portfit margine is  -0.014957482543014721
+validating on df 15
+the portfit margine is  -0.0020830763724617955
+validating on df 17
+the portfit margine is  -0.027063752859150685
+validating on df 21
+the portfit margine is  0.011949730435222196
+validating on df 25
+the portfit margine is  -0.01841680402541364
+validating on df 26
+the portfit margine is  0.02526012233775781
+validating on df 27
+the portfit margine is  -0.004911431910726477
+validating on df 29
+the portfit margine is  -0.005405156972010281
+validating on df 37
+the portfit margine is  0.0026544500371318827
+validating on df 39
+the portfit margine is  0.0068126147629366035
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  44778 times (86.40%)
+  Action 1 (100.0% position):   7050 times (13.60%)
+Mean return rate: -0.0048
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.005604103486959763, -0.004830399872016601]
+Average validation return rate: -0.005217251679488182
+best model updated to epoch  1
+epoch  2
+[71, 53, 33, 6, 44, 97, 76, 74, 60, 106, 12, 24, 77, 32, 28, 35, 38, 23, 40, 68, 45, 0, 31, 29, 11, 49, 13, 75, 85, 7, 27, 65, 19, 37, 26, 91]
+training with df 71
+the portfit margine is  -0.1720198250819235
+training with df 53
+the portfit margine is  -0.244161648806426
+training with df 33
+the portfit margine is  -0.07730816447056206
+training with df 6
+the portfit margine is  -0.1311355092073003
+training with df 44
+the portfit margine is  -0.17398478182911734
+training with df 97
+the portfit margine is  -0.2118988109373853
+training with df 76
+the portfit margine is  -0.22281632296344125
+training with df 74
+the portfit margine is  -0.2205039879758628
+training with df 60
+the portfit margine is  -0.16198784871325936
+training with df 106
+the portfit margine is  -0.1925931393828536
+training with df 12
+the portfit margine is  -0.1338857561181854
+training with df 24
+the portfit margine is  -0.1857227839935796
+training with df 77
+the portfit margine is  -0.16496792612963723
+training with df 32
+the portfit margine is  -0.2512261220208304
+training with df 28
+the portfit margine is  -0.17392787656181993
+training with df 35
+the portfit margine is  -0.19960777115927408
+training with df 38
+the portfit margine is  -0.17789057927724208
+training with df 23
+the portfit margine is  -0.17136843553375278
+training with df 40
+the portfit margine is  -0.2016382803973921
+training with df 68
+the portfit margine is  -0.20493417494740834
+training with df 45
+the portfit margine is  -0.22520792018504895
+training with df 0
+the portfit margine is  -0.17429612664527183
+training with df 31
+the portfit margine is  -0.20772938013414113
+training with df 29
+the portfit margine is  -0.185691400508428
+training with df 11
+the portfit margine is  -0.11127722469655801
+training with df 49
+the portfit margine is  -0.20613012381724974
+training with df 13
+the portfit margine is  -0.14218881310695008
+training with df 75
+the portfit margine is  -0.2092536400630516
+training with df 85
+the portfit margine is  -0.1379951809580802
+training with df 7
+the portfit margine is  -0.12057020136770916
+training with df 27
+the portfit margine is  -0.16734267762640007
+training with df 65
+the portfit margine is  -0.21191139846961557
+training with df 19
+the portfit margine is  -0.12634576084524246
+training with df 37
+the portfit margine is  -0.1665434272340908
+training with df 26
+the portfit margine is  -0.17281445209028573
+training with df 91
+the portfit margine is  -0.14819521063773058
+validating on df 1
+the portfit margine is  0.0022082456815889677
+validating on df 2
+the portfit margine is  -0.022974019445225615
+validating on df 12
+the portfit margine is  -0.012721057321102491
+validating on df 15
+the portfit margine is  0.006527261221449238
+validating on df 17
+the portfit margine is  0.0018727811802803874
+validating on df 21
+the portfit margine is  nan
+validating on df 25
+the portfit margine is  -0.00978606006996481
+validating on df 26
+the portfit margine is  0.021113584254986547
+validating on df 27
+the portfit margine is  -0.0028473513022512316
+validating on df 29
+the portfit margine is  -0.006538249449545601
+validating on df 37
+the portfit margine is  0.0011075132825314514
+validating on df 39
+the portfit margine is  -0.0034232683596070995
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  43367 times (83.67%)
+  Action 1 (100.0% position):   8461 times (16.33%)
+Mean return rate: -0.0021
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  0.0016510283317106244
+validating on df 2
+the portfit margine is  -0.01306188855621466
+validating on df 12
+the portfit margine is  -0.007530037750118737
+validating on df 15
+the portfit margine is  0.02032544052432346
+validating on df 17
+the portfit margine is  -0.025283741284757598
+validating on df 21
+the portfit margine is  0.01671677314158956
+validating on df 25
+the portfit margine is  -0.015799379761533793
+validating on df 26
+the portfit margine is  0.031000275078981978
+validating on df 27
+the portfit margine is  -0.005444352889064193
+validating on df 29
+the portfit margine is  0.0012637446997494448
+validating on df 37
+the portfit margine is  0.01241039249663072
+validating on df 39
+the portfit margine is  -0.006080770076316797
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  38247 times (73.80%)
+  Action 1 (100.0% position):  13581 times (26.20%)
+Mean return rate: 0.0008
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.0021217183605716883, 0.0008472903295816675]
+Average validation return rate: -0.0006372140154950103
+best model updated to epoch  2
+epoch  3
+[29, 65, 77, 12, 106, 71, 7, 45, 19, 85, 91, 33, 44, 27, 68, 38, 32, 60, 97, 49, 0, 24, 74, 75, 23, 28, 53, 37, 31, 13, 76, 40, 26, 11, 6, 35]
+training with df 29
+the portfit margine is  -0.15616597992759293
+training with df 65
+the portfit margine is  -0.1356009871145344
+training with df 77
+the portfit margine is  -0.12190425362180046
+training with df 12
+the portfit margine is  -0.1251639871047319
+training with df 106
+the portfit margine is  -0.12299422228228388
+training with df 71
+the portfit margine is  -0.0790935144235632
+training with df 7
+the portfit margine is  -0.1503109804671489
+training with df 45
+the portfit margine is  -0.21612432624950506
+training with df 19
+the portfit margine is  -0.11251075250963707
+training with df 85
+the portfit margine is  -0.11902085232484826
+training with df 91
+the portfit margine is  -0.12109686124100223
+training with df 33
+the portfit margine is  0.0014690834397525394
+training with df 44
+the portfit margine is  -0.13426796339546757
+training with df 27
+the portfit margine is  -0.14237812744177314
+training with df 68
+the portfit margine is  -0.10230371804649074
+training with df 38
+the portfit margine is  -0.13348678225812086
+training with df 32
+the portfit margine is  -0.05465102161936376
+training with df 60
+the portfit margine is  -0.13397842156174236
+training with df 97
+the portfit margine is  -0.14479460000814898
+training with df 49
+the portfit margine is  -0.16063277529898295
+training with df 0
+the portfit margine is  -0.10118209521664681
+training with df 24
+the portfit margine is  -0.11727637925193261
+training with df 74
+the portfit margine is  -0.1969880606547475
+training with df 75
+the portfit margine is  -0.14843000521034222
+training with df 23
+the portfit margine is  -0.10642893542163033
+training with df 28
+the portfit margine is  -0.11843437599030246
+training with df 53
+the portfit margine is  -0.2249409481834446
+training with df 37
+the portfit margine is  -0.15695055423783255
+training with df 31
+the portfit margine is  -0.19788979714744848
+training with df 13
+the portfit margine is  -0.12573204146759637
+training with df 76
+the portfit margine is  -0.12179087298774764
+training with df 40
+the portfit margine is  -0.19117425277026706
+training with df 26
+the portfit margine is  -0.12474277543325143
+training with df 11
+the portfit margine is  -0.15404442546545638
+training with df 6
+the portfit margine is  -0.1376168577049093
+training with df 35
+the portfit margine is  -0.15472686066316846
+validating on df 1
+the portfit margine is  -0.0009170499209428836
+validating on df 2
+the portfit margine is  -0.0011430589415238079
+validating on df 12
+the portfit margine is  0.019569776218193103
+validating on df 15
+the portfit margine is  -0.0005424926586401396
+validating on df 17
+the portfit margine is  0.0018727811802803874
+validating on df 21
+the portfit margine is  nan
+validating on df 25
+the portfit margine is  -0.010592587018905685
+validating on df 26
+the portfit margine is  nan
+validating on df 27
+the portfit margine is  -0.004980820417451543
+validating on df 29
+the portfit margine is  -0.009589048319940173
+validating on df 37
+the portfit margine is  0.023262839197480435
+validating on df 39
+the portfit margine is  -0.007665024435662229
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  49116 times (94.77%)
+  Action 1 (100.0% position):   2712 times ( 5.23%)
+Mean return rate: 0.0008
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.0016181048886324161
+validating on df 2
+the portfit margine is  0.029968036003198657
+validating on df 12
+the portfit margine is  0.016134732065433748
+validating on df 15
+the portfit margine is  0.013998483286012338
+validating on df 17
+the portfit margine is  -0.025283741284757598
+validating on df 21
+the portfit margine is  0.019832880168934232
+validating on df 25
+the portfit margine is  -0.024681639242119573
+validating on df 26
+the portfit margine is  -0.0033483006633952357
+validating on df 27
+the portfit margine is  -0.00560361572649899
+validating on df 29
+the portfit margine is  -0.0021863605122075893
+validating on df 37
+the portfit margine is  0.03482622971926271
+validating on df 39
+the portfit margine is  -0.014457565976721539
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  42813 times (82.61%)
+  Action 1 (100.0% position):   9015 times (17.39%)
+Mean return rate: 0.0031
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [0.0007729429069072887, 0.003131752745709062]
+Average validation return rate: 0.0019523478263081754
+best model updated to epoch  3
+epoch  4
+[7, 24, 6, 97, 49, 77, 91, 60, 33, 45, 27, 38, 40, 31, 65, 13, 85, 76, 35, 19, 23, 74, 68, 37, 53, 12, 0, 26, 71, 11, 32, 28, 106, 44, 29, 75]
+training with df 7
+the portfit margine is  -0.1401483234813318
+training with df 24
+the portfit margine is  -0.1101110391609711
+training with df 6
+the portfit margine is  -0.1238312247442406
+training with df 97
+the portfit margine is  -0.1684762597350464
+training with df 49
+the portfit margine is  -0.1611112450645106
+training with df 77
+the portfit margine is  -0.056889381633936975
+training with df 91
+the portfit margine is  -0.12006034277871167
+training with df 60
+the portfit margine is  -0.13603231790448164
+training with df 33
+the portfit margine is  0.08119718275028232
+training with df 45
+the portfit margine is  -0.21153376883485686
+training with df 27
+the portfit margine is  -0.10969423281035766
+training with df 38
+the portfit margine is  -0.1489386514076984
+training with df 40
+the portfit margine is  -0.10451225436842897
+training with df 31
+the portfit margine is  -0.11632365657712655
+training with df 65
+the portfit margine is  -0.13692704370699277
+training with df 13
+the portfit margine is  -0.0365049277924803
+training with df 85
+the portfit margine is  -0.08290243945073111
+training with df 76
+the portfit margine is  -0.07910924106843116
+training with df 35
+the portfit margine is  -0.08407493761477101
+training with df 19
+the portfit margine is  -0.0997707104518249
+training with df 23
+the portfit margine is  -0.13576669270524944
+training with df 74
+the portfit margine is  -0.1693222079204916
+training with df 68
+the portfit margine is  -0.15758571589909956
+training with df 37
+the portfit margine is  -0.10584223868648827
+training with df 53
+the portfit margine is  -0.15327878802323053
+training with df 12
+the portfit margine is  -0.07932188521583038
+training with df 0
+the portfit margine is  -0.132397623954102
+training with df 26
+the portfit margine is  -0.13887940821652606
+training with df 71
+the portfit margine is  -0.10754291904260445
+training with df 11
+the portfit margine is  -0.07533603836598375
+training with df 32
+the portfit margine is  -0.1329929374610682
+training with df 28
+the portfit margine is  -0.12578666668718785
+training with df 106
+the portfit margine is  -0.14502639309401472
+training with df 44
+the portfit margine is  0.010745757865514016
+training with df 29
+the portfit margine is  -0.09899767238508754
+training with df 75
+the portfit margine is  -0.0766238233574431
+validating on df 1
+the portfit margine is  -0.0009170499209428836
+validating on df 2
+the portfit margine is  -0.021231345711140305
+validating on df 12
+the portfit margine is  0.031288633922784734
+validating on df 15
+the portfit margine is  -0.029434840700417467
+validating on df 17
+the portfit margine is  0.0015665577548164792
+validating on df 21
+the portfit margine is  nan
+validating on df 25
+the portfit margine is  -0.005853737465816329
+validating on df 26
+the portfit margine is  -0.040228260259978096
+validating on df 27
+the portfit margine is  -0.011590728751756013
+validating on df 29
+the portfit margine is  -0.013218001213179882
+validating on df 37
+the portfit margine is  0.022393155868603652
+validating on df 39
+the portfit margine is  -0.01582821610205935
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  42759 times (82.50%)
+  Action 1 (100.0% position):   9069 times (17.50%)
+Mean return rate: -0.0069
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.0016181048886324161
+validating on df 2
+the portfit margine is  -0.008519478741243527
+validating on df 12
+the portfit margine is  0.006459736466354976
+validating on df 15
+the portfit margine is  -0.016143860572632673
+validating on df 17
+the portfit margine is  -0.025554120208338867
+validating on df 21
+the portfit margine is  0.01671677314158956
+validating on df 25
+the portfit margine is  -0.03149753603897021
+validating on df 26
+the portfit margine is  -0.021190286402721695
+validating on df 27
+the portfit margine is  -0.012205279646273081
+validating on df 29
+the portfit margine is  -0.012869317232555239
+validating on df 37
+the portfit margine is  0.03396944375764305
+validating on df 39
+the portfit margine is  -0.022564880525142345
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  37130 times (71.64%)
+  Action 1 (100.0% position):  14698 times (28.36%)
+Mean return rate: -0.0079
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.00692115271492379, -0.007918075907576873]
+Average validation return rate: -0.007419614311250332
+epoch  5
+[85, 37, 13, 35, 74, 53, 77, 6, 71, 68, 26, 11, 12, 33, 49, 7, 19, 44, 24, 106, 32, 31, 40, 23, 76, 29, 0, 60, 27, 65, 28, 97, 45, 38, 91, 75]
+training with df 85
+the portfit margine is  -0.08482636604584935
+training with df 37
+the portfit margine is  -0.081979900413242
+training with df 13
+the portfit margine is  -0.08838491271563058
+training with df 35
+the portfit margine is  -0.06374999820632223
+training with df 74
+the portfit margine is  -0.12043169158990565
+training with df 53
+the portfit margine is  -0.12729586403272924
+training with df 77
+the portfit margine is  -0.07202332030361137
+training with df 6
+the portfit margine is  -0.021579071503674916
+training with df 71
+the portfit margine is  -0.02690336308698062
+training with df 68
+the portfit margine is  -0.1352508094342526
+training with df 26
+the portfit margine is  -0.06274208848731679
+training with df 11
+the portfit margine is  -0.11726296726677973
+training with df 12
+the portfit margine is  0.006058159313297305
+training with df 33
+the portfit margine is  0.2685851488838929
+training with df 49
+the portfit margine is  -0.0718420774842869
+training with df 7
+the portfit margine is  0.008406688038194617
+training with df 19
+the portfit margine is  -0.09030035735905191
+training with df 44
+the portfit margine is  0.19470496357077519
+training with df 24
+the portfit margine is  -0.08902432016686963
+training with df 106
+the portfit margine is  -0.10939829792907758
+training with df 32
+the portfit margine is  -0.13163294685494295
+training with df 31
+the portfit margine is  -0.12056369852647837
+training with df 40
+the portfit margine is  -0.11404827379582606
+training with df 23
+the portfit margine is  -0.018842381035977348
+training with df 76
+the portfit margine is  -0.10398679853076466
+training with df 29
+the portfit margine is  -0.11730851562832713
+training with df 0
+the portfit margine is  -0.04219714230377296
+training with df 60
+the portfit margine is  -0.07451177914505462
+training with df 27
+the portfit margine is  -0.04686479832626472
+training with df 65
+the portfit margine is  -0.12734483704140637
+training with df 28
+the portfit margine is  -0.070806291311106
+training with df 97
+the portfit margine is  -0.12332866802532766
+training with df 45
+the portfit margine is  -0.054950537938269144
+training with df 38
+the portfit margine is  -0.11529237812767824
+training with df 91
+the portfit margine is  -0.09291100748190774
+training with df 75
+the portfit margine is  -0.11771874837160108
+validating on df 1
+the portfit margine is  -0.0036095782670346683
+validating on df 2
+the portfit margine is  0.0035552939984819626
+validating on df 12
+the portfit margine is  -0.04238593746825257
+validating on df 15
+the portfit margine is  -0.031275177956317374
+validating on df 17
+the portfit margine is  -0.01157746754354351
+validating on df 21
+the portfit margine is  0.0008738989061395339
+validating on df 25
+the portfit margine is  -0.012179917640220889
+validating on df 26
+the portfit margine is  0.013039745807968057
+validating on df 27
+the portfit margine is  -0.013426101995188467
+validating on df 29
+the portfit margine is  0.0023937623994640376
+validating on df 37
+the portfit margine is  0.005598840165969246
+validating on df 39
+the portfit margine is  -0.007665024435662229
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  43436 times (83.81%)
+  Action 1 (100.0% position):   8392 times (16.19%)
+Mean return rate: -0.0081
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.003907534287740397
+validating on df 2
+the portfit margine is  0.016725996485264
+validating on df 12
+the portfit margine is  -0.03705735279735411
+validating on df 15
+the portfit margine is  -0.022829654502970635
+validating on df 17
+the portfit margine is  -0.011100757847162347
+validating on df 21
+the portfit margine is  0.020712409939516434
+validating on df 25
+the portfit margine is  -0.018667423791856548
+validating on df 26
+the portfit margine is  0.012114533817919267
+validating on df 27
+the portfit margine is  -0.014033944948588353
+validating on df 29
+the portfit margine is  0.0026091353387909
+validating on df 37
+the portfit margine is  0.008223854271281545
+validating on df 39
+the portfit margine is  -0.00040891198978261825
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  42036 times (81.11%)
+  Action 1 (100.0% position):   9792 times (18.89%)
+Mean return rate: -0.0040
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.008054805335683072, -0.003968304192723572]
+Average validation return rate: -0.006011554764203322
+epoch  6
+[65, 60, 85, 12, 32, 35, 27, 31, 49, 45, 29, 71, 76, 40, 106, 68, 53, 23, 75, 11, 26, 19, 44, 0, 77, 33, 7, 97, 37, 13, 38, 91, 28, 24, 6, 74]
+training with df 65
+the portfit margine is  -0.04243865546685209
+training with df 60
+the portfit margine is  -0.04225351400054769
+training with df 85
+the portfit margine is  -0.03662582062082888
+training with df 12
+the portfit margine is  0.02758008951624093
+training with df 32
+the portfit margine is  -0.043639718659460584
+training with df 35
+the portfit margine is  -0.027585616864912586
+training with df 27
+the portfit margine is  -0.04760071209259487
+training with df 31
+the portfit margine is  -0.10699201026755628
+training with df 49
+the portfit margine is  -0.08652290758859488
+training with df 45
+the portfit margine is  -0.0914835918336175
+training with df 29
+the portfit margine is  -0.07850619175056857
+training with df 71
+the portfit margine is  -0.03805046693349571
+training with df 76
+the portfit margine is  -0.01709205874750501
+training with df 40
+the portfit margine is  -0.058904907526284314
+training with df 106
+the portfit margine is  -0.031705155062554516
+training with df 68
+the portfit margine is  -0.05861416495852824
+training with df 53
+the portfit margine is  -0.1387302204124397
+training with df 23
+the portfit margine is  -0.002366088402966322
+training with df 75
+the portfit margine is  -0.10644456175078898
+training with df 11
+the portfit margine is  -0.041378171525310675
+training with df 26
+the portfit margine is  -0.02626634111828257
+training with df 19
+the portfit margine is  -0.021319114763382253
+training with df 44
+the portfit margine is  0.3755664231642307
+training with df 0
+the portfit margine is  -0.011700482993192393
+training with df 77
+the portfit margine is  -0.06547710770919729
+training with df 33
+the portfit margine is  0.5702849274874363
+training with df 7
+the portfit margine is  0.034126636484918385
+training with df 97
+the portfit margine is  -0.08754816663350348
+training with df 37
+the portfit margine is  -0.11686505475589386
+training with df 13
+the portfit margine is  -0.0480401233036418
+training with df 38
+the portfit margine is  -0.014133339552610225
+training with df 91
+the portfit margine is  -0.01890182837386558
+training with df 28
+the portfit margine is  -0.030004400171980892
+training with df 24
+the portfit margine is  -0.04345734897679502
+training with df 6
+the portfit margine is  -0.04572534321890633
+training with df 74
+the portfit margine is  -0.05966085730996525
+validating on df 1
+the portfit margine is  -0.0092837395077332
+validating on df 2
+the portfit margine is  -0.02339841879182558
+validating on df 12
+the portfit margine is  -0.03311139203064478
+validating on df 15
+the portfit margine is  0.04811611437479264
+validating on df 17
+the portfit margine is  0.0004437837960608841
+validating on df 21
+the portfit margine is  0.002249104510805179
+validating on df 25
+the portfit margine is  -0.05560162721816202
+validating on df 26
+the portfit margine is  -0.0013034511205542404
+validating on df 27
+the portfit margine is  0.00044656665597545816
+validating on df 29
+the portfit margine is  -0.002823810406613609
+validating on df 37
+the portfit margine is  0.019703210212951093
+validating on df 39
+the portfit margine is  -0.02205891561605131
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  30280 times (58.42%)
+  Action 1 (100.0% position):  21548 times (41.58%)
+Mean return rate: -0.0064
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.009975449716655978
+validating on df 2
+the portfit margine is  0.0036397572511606066
+validating on df 12
+the portfit margine is  -0.03500586528618901
+validating on df 15
+the portfit margine is  0.041623790032325386
+validating on df 17
+the portfit margine is  -0.00412512359798225
+validating on df 21
+the portfit margine is  0.01894161426882211
+validating on df 25
+the portfit margine is  -0.06339376834990129
+validating on df 26
+the portfit margine is  -0.0022130145450595137
+validating on df 27
+the portfit margine is  -0.00017975690422054755
+validating on df 29
+the portfit margine is  0.00277416368624183
+validating on df 37
+the portfit margine is  0.03122637511675525
+validating on df 39
+the portfit margine is  -0.016290762009269745
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  26894 times (51.89%)
+  Action 1 (100.0% position):  24934 times (48.11%)
+Mean return rate: -0.0027
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.006385214595083291, -0.002748170004497763]
+Average validation return rate: -0.004566692299790527
+epoch  7
+[7, 40, 49, 75, 106, 13, 6, 31, 24, 11, 12, 37, 65, 77, 0, 74, 97, 68, 23, 44, 29, 32, 35, 45, 53, 27, 26, 91, 33, 19, 38, 60, 85, 71, 76, 28]
+training with df 7
+the portfit margine is  0.08553164753137332
+training with df 40
+the portfit margine is  -0.07565957490931058
+training with df 49
+the portfit margine is  -0.07518711328639284
+training with df 75
+the portfit margine is  -0.12963574341229556
+training with df 106
+the portfit margine is  -0.0839070700118906
+training with df 13
+the portfit margine is  -0.022982544441225952
+training with df 6
+the portfit margine is  0.02195131653534881
+training with df 31
+the portfit margine is  -0.10134786266425808
+training with df 24
+the portfit margine is  -0.04831000277157459
+training with df 11
+the portfit margine is  -0.0653687976006358
+training with df 12
+the portfit margine is  -0.06539036654751777
+training with df 37
+the portfit margine is  -0.02754840478330566
+training with df 65
+the portfit margine is  -0.046901120512514174
+training with df 77
+the portfit margine is  0.01964467324287195
+training with df 0
+the portfit margine is  0.047408955606666955
+training with df 74
+the portfit margine is  -0.057929017857207075
+training with df 97
+the portfit margine is  -0.07111189476918633
+training with df 68
+the portfit margine is  -0.06882693886951692
+training with df 23
+the portfit margine is  -0.048399154377965485
+training with df 44
+the portfit margine is  0.5174805187419897
+training with df 29
+the portfit margine is  0.004982707177394476
+training with df 32
+the portfit margine is  0.02313727907152611
+training with df 35
+the portfit margine is  -0.01037388429174119
+training with df 45
+the portfit margine is  0.027008585726391362
+training with df 53
+the portfit margine is  -0.12420917564202034
+training with df 27
+the portfit margine is  0.02832023546996565
+training with df 26
+the portfit margine is  -0.08935171042848536
+training with df 91
+the portfit margine is  -0.025891023807828522
+training with df 33
+the portfit margine is  0.6807308361971242
+training with df 19
+the portfit margine is  -0.001039167535444757
+training with df 38
+the portfit margine is  -0.1236205030150493
+training with df 60
+the portfit margine is  -0.01711184850612392
+training with df 85
+the portfit margine is  -0.05674282488770963
+training with df 71
+the portfit margine is  0.038335628671162414
+training with df 76
+the portfit margine is  -0.030755304924118397
+training with df 28
+the portfit margine is  -0.01955341612670577
+validating on df 1
+the portfit margine is  0.00927809573450415
+validating on df 2
+the portfit margine is  -0.03510521799393191
+validating on df 12
+the portfit margine is  -0.012136205017059499
+validating on df 15
+the portfit margine is  0.0020528390621287864
+validating on df 17
+the portfit margine is  0.018664005137704772
+validating on df 21
+the portfit margine is  0.004484478581785948
+validating on df 25
+the portfit margine is  0.011746135996351499
+validating on df 26
+the portfit margine is  0.01810532073561775
+validating on df 27
+the portfit margine is  0.020726967993287167
+validating on df 29
+the portfit margine is  -0.01812832543687965
+validating on df 37
+the portfit margine is  -0.0015254098508913382
+validating on df 39
+the portfit margine is  -0.0003476347548327809
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  44245 times (85.37%)
+  Action 1 (100.0% position):   7583 times (14.63%)
+Mean return rate: 0.0015
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  0.007809803915975175
+validating on df 2
+the portfit margine is  -0.02203381069657876
+validating on df 12
+the portfit margine is  -0.006026421171360494
+validating on df 15
+the portfit margine is  -0.007842130964007972
+validating on df 17
+the portfit margine is  0.016542413536528303
+validating on df 21
+the portfit margine is  0.008953271554763213
+validating on df 25
+the portfit margine is  0.0033983148772265682
+validating on df 26
+the portfit margine is  0.017149090739869578
+validating on df 27
+the portfit margine is  0.020087997995355045
+validating on df 29
+the portfit margine is  -0.017679709915115874
+validating on df 37
+the portfit margine is  -0.000250816396167952
+validating on df 39
+the portfit margine is  0.006909493001685458
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  42295 times (81.61%)
+  Action 1 (100.0% position):   9533 times (18.39%)
+Mean return rate: 0.0023
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [0.0014845875156487415, 0.0022514580398476907]
+Average validation return rate: 0.001868022777748216
+epoch  8
+[49, 76, 45, 19, 35, 85, 28, 24, 40, 60, 65, 53, 68, 74, 13, 0, 23, 91, 97, 26, 27, 11, 7, 71, 12, 32, 106, 33, 31, 37, 75, 77, 6, 38, 29, 44]
+training with df 49
+the portfit margine is  -0.09127542734592799
+training with df 76
+the portfit margine is  -0.0167106121031912
+training with df 45
+the portfit margine is  -0.015294871297369533
+training with df 19
+the portfit margine is  -0.03889753983657659
+training with df 35
+the portfit margine is  -0.014364743931881231
+training with df 85
+the portfit margine is  -0.03948031774485369
+training with df 28
+the portfit margine is  -0.013656217062449391
+training with df 24
+the portfit margine is  -0.018777736417979394
+training with df 40
+the portfit margine is  -0.035341328494281433
+training with df 60
+the portfit margine is  -0.03809284007407471
+training with df 65
+the portfit margine is  -0.06933269657982188
+training with df 53
+the portfit margine is  -0.10260825545696618
+training with df 68
+the portfit margine is  -0.09445269236643847
+training with df 74
+the portfit margine is  -0.07739965784929685
+training with df 13
+the portfit margine is  -0.05176489330824295
+training with df 0
+the portfit margine is  0.011916757364524534
+training with df 23
+the portfit margine is  -0.032944126144760166
+training with df 91
+the portfit margine is  -0.022819773661595027
+training with df 97
+the portfit margine is  -0.10830212234156707
+training with df 26
+the portfit margine is  -0.050492629729873326
+training with df 27
+the portfit margine is  0.008792104005007417
+training with df 11
+the portfit margine is  -0.050529424773441065
+training with df 7
+the portfit margine is  0.11822701568174335
+training with df 71
+the portfit margine is  -0.0036425124827786297
+training with df 12
+the portfit margine is  0.0427781566404399
+training with df 32
+the portfit margine is  -0.04326047341981526
+training with df 106
+the portfit margine is  -0.06564280780354115
+training with df 33
+the portfit margine is  0.7589974175199521
+training with df 31
+the portfit margine is  -0.06379640804277562
+training with df 37
+the portfit margine is  -0.08243897483760056
+training with df 75
+the portfit margine is  -0.09498798591321382
+training with df 77
+the portfit margine is  0.08955313199004503
+training with df 6
+the portfit margine is  0.05348764014778263
+training with df 38
+the portfit margine is  -0.07980328560499014
+training with df 29
+the portfit margine is  -0.041132632246838406
+training with df 44
+the portfit margine is  0.37962143208849974
+validating on df 1
+the portfit margine is  -0.007519152345087991
+validating on df 2
+the portfit margine is  -0.025202231888769185
+validating on df 12
+the portfit margine is  -0.06869826304184491
+validating on df 15
+the portfit margine is  0.0024763456060973026
+validating on df 17
+the portfit margine is  -0.01787741049146893
+validating on df 21
+the portfit margine is  -0.006331967622872717
+validating on df 25
+the portfit margine is  -0.020607996612270002
+validating on df 26
+the portfit margine is  0.002870690968917513
+validating on df 27
+the portfit margine is  -0.022954567481631265
+validating on df 29
+the portfit margine is  -0.01644817409362517
+validating on df 37
+the portfit margine is  0.0004902855757108298
+validating on df 39
+the portfit margine is  -0.0002922933317743412
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  31770 times (61.30%)
+  Action 1 (100.0% position):  20058 times (38.70%)
+Mean return rate: -0.0150
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.008215574627672372
+validating on df 2
+the portfit margine is  -0.012102921116745862
+validating on df 12
+the portfit margine is  -0.06413211584320795
+validating on df 15
+the portfit margine is  0.0036759867155190923
+validating on df 17
+the portfit margine is  -0.021595171824619848
+validating on df 21
+the portfit margine is  0.010117634972326511
+validating on df 25
+the portfit margine is  -0.028688866861140073
+validating on df 26
+the portfit margine is  0.0019488156608874934
+validating on df 27
+the portfit margine is  -0.03547352934243721
+validating on df 29
+the portfit margine is  -0.009036883399773883
+validating on df 37
+the portfit margine is  0.011818573044704963
+validating on df 39
+the portfit margine is  -0.005058524348370315
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  28945 times (55.85%)
+  Action 1 (100.0% position):  22883 times (44.15%)
+Mean return rate: -0.0131
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.015007894563218238, -0.013061881414210786]
+Average validation return rate: -0.014034887988714512
+epoch  9
+[106, 7, 6, 35, 28, 0, 24, 60, 29, 12, 45, 75, 19, 23, 33, 49, 68, 11, 53, 26, 97, 13, 31, 44, 71, 65, 91, 37, 27, 40, 38, 32, 74, 76, 77, 85]
+training with df 106
+the portfit margine is  -0.0083439771898656
+training with df 7
+the portfit margine is  0.08406928910089331
+training with df 6
+the portfit margine is  -0.0012680493404629168
+training with df 35
+the portfit margine is  0.009728657554120813
+training with df 28
+the portfit margine is  0.019480930542145298
+training with df 0
+the portfit margine is  0.1122581127088288
+training with df 24
+the portfit margine is  -0.06327867283365263
+training with df 60
+the portfit margine is  -0.0017944678024957915
+training with df 29
+the portfit margine is  -0.03817633137496697
+training with df 12
+the portfit margine is  -0.02878285151214667
+training with df 45
+the portfit margine is  -0.03510651737789274
+training with df 75
+the portfit margine is  -0.1027423237841626
+training with df 19
+the portfit margine is  -0.05730194678593306
+training with df 23
+the portfit margine is  -0.039120661397817356
+training with df 33
+the portfit margine is  0.9422867215027366
+training with df 49
+the portfit margine is  -0.05287751448419856
+training with df 68
+the portfit margine is  -0.07042123054550616
+training with df 11
+the portfit margine is  -0.027518371218350386
+training with df 53
+the portfit margine is  -0.12141867232457706
+training with df 26
+the portfit margine is  -0.08129587829119074
+training with df 97
+the portfit margine is  -0.09663626076091741
+training with df 13
+the portfit margine is  -0.010447649868297328
+training with df 31
+the portfit margine is  -0.07404571073722932
+training with df 44
+the portfit margine is  0.46329488176291983
+training with df 71
+the portfit margine is  -0.028890362184461317
+training with df 65
+the portfit margine is  -0.08344400195046144
+training with df 91
+the portfit margine is  -0.048603832866620345
+training with df 37
+the portfit margine is  -0.08584750787038473
+training with df 27
+the portfit margine is  -0.030915735882897973
+training with df 40
+the portfit margine is  -0.03611551707376914
+training with df 38
+the portfit margine is  0.0038779156219204084
+training with df 32
+the portfit margine is  -0.002348829678392455
+training with df 74
+the portfit margine is  -0.0687119861055135
+training with df 76
+the portfit margine is  -0.025548989420934403
+training with df 77
+the portfit margine is  0.02583251024918619
+training with df 85
+the portfit margine is  -0.037341280545977976
+validating on df 1
+the portfit margine is  -0.0217500436651814
+validating on df 2
+the portfit margine is  -0.004394402741516384
+validating on df 12
+the portfit margine is  -0.03438153887457619
+validating on df 15
+the portfit margine is  -0.02137297176356338
+validating on df 17
+the portfit margine is  -0.029034169725551878
+validating on df 21
+the portfit margine is  0.005927135756844598
+validating on df 25
+the portfit margine is  0.001906391848114549
+validating on df 26
+the portfit margine is  -0.0017290430525025021
+validating on df 27
+the portfit margine is  0.011853047312219327
+validating on df 29
+the portfit margine is  0.0032504346679892407
+validating on df 37
+the portfit margine is  -0.02198794902390583
+validating on df 39
+the portfit margine is  0.0037782578511182043
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  36617 times (70.65%)
+  Action 1 (100.0% position):  15211 times (29.35%)
+Mean return rate: -0.0090
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.022434072433312822
+validating on df 2
+the portfit margine is  0.009055985965695281
+validating on df 12
+the portfit margine is  -0.029386747687070513
+validating on df 15
+the portfit margine is  -0.030988916788181352
+validating on df 17
+the portfit margine is  -0.0544934363399686
+validating on df 21
+the portfit margine is  0.022731573376497883
+validating on df 25
+the portfit margine is  -0.006280015324588572
+validating on df 26
+the portfit margine is  0.0020610064025466143
+validating on df 27
+the portfit margine is  -0.0012304088805155438
+validating on df 29
+the portfit margine is  0.01066069090947553
+validating on df 37
+the portfit margine is  -0.01095085121176234
+validating on df 39
+the portfit margine is  0.0037320205604932373
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  33448 times (64.54%)
+  Action 1 (100.0% position):  18380 times (35.46%)
+Mean return rate: -0.0090
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.00899457095087597, -0.0089602642875576]
+Average validation return rate: -0.008977417619216785
+epoch  10
+[74, 37, 23, 65, 27, 44, 91, 33, 7, 60, 106, 71, 12, 26, 31, 75, 40, 35, 0, 24, 45, 49, 13, 19, 38, 85, 53, 97, 6, 68, 77, 76, 32, 29, 28, 11]
+training with df 74
+the portfit margine is  -0.07965747425648749
+training with df 37
+the portfit margine is  -0.039048857069607534
+training with df 23
+the portfit margine is  -0.04966601001880809
+training with df 65
+the portfit margine is  -0.09205274208865041
+training with df 27
+the portfit margine is  0.004420031133732492
+training with df 44
+the portfit margine is  0.36761335278229446
+training with df 91
+the portfit margine is  -0.05531862365251899
+training with df 33
+the portfit margine is  0.8750168206341498
+training with df 7
+the portfit margine is  0.08347962634457286
+training with df 60
+the portfit margine is  0.008897202086752995
+training with df 106
+the portfit margine is  -0.01764733150391839
+training with df 71
+the portfit margine is  0.012696907161261177
+training with df 12
+the portfit margine is  0.02446662751622204
+training with df 26
+the portfit margine is  -0.07053205705400484
+training with df 31
+the portfit margine is  -0.051970674673544666
+training with df 75
+the portfit margine is  -0.06979343399011521
+training with df 40
+the portfit margine is  -0.09737793891509729
+training with df 35
+the portfit margine is  -0.00849014986846692
+training with df 0
+the portfit margine is  0.0463622995793524
+training with df 24
+the portfit margine is  -0.0359864464362354
+training with df 45
+the portfit margine is  0.015086854573214107
+training with df 49
+the portfit margine is  -0.05850436229450821
+training with df 13
+the portfit margine is  -0.027843513520830383
+training with df 19
+the portfit margine is  -0.04485873029626989
+training with df 38
+the portfit margine is  0.02186700589854466
+training with df 85
+the portfit margine is  -0.04307187804086544
+training with df 53
+the portfit margine is  -0.10670476539452696
+training with df 97
+the portfit margine is  -0.07287139598710682
+training with df 6
+the portfit margine is  -0.00890046819366796
+training with df 68
+the portfit margine is  -0.06340085450292364
+training with df 77
+the portfit margine is  -0.0026350482061335695
+training with df 76
+the portfit margine is  -0.017374408071429565
+training with df 32
+the portfit margine is  0.04151033614465788
+training with df 29
+the portfit margine is  -0.04910396929842698
+training with df 28
+the portfit margine is  -0.002886542240968646
+training with df 11
+the portfit margine is  -0.05753038663775621
+validating on df 1
+the portfit margine is  -0.0058887916280231925
+validating on df 2
+the portfit margine is  -0.030998736452286214
+validating on df 12
+the portfit margine is  -0.01997505544383238
+validating on df 15
+the portfit margine is  -0.03597892370659988
+validating on df 17
+the portfit margine is  -0.03465593571452336
+validating on df 21
+the portfit margine is  0.02417537823465319
+validating on df 25
+the portfit margine is  -0.024254364618283637
+validating on df 26
+the portfit margine is  -0.005360033609112397
+validating on df 27
+the portfit margine is  0.011633355098310615
+validating on df 29
+the portfit margine is  -0.0009028313390645917
+validating on df 37
+the portfit margine is  -0.008917962352198473
+validating on df 39
+the portfit margine is  -0.010371886138974613
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  33665 times (64.96%)
+  Action 1 (100.0% position):  18163 times (35.04%)
+Mean return rate: -0.0118
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.006241599096821359
+validating on df 2
+the portfit margine is  -0.018212892840919905
+validating on df 12
+the portfit margine is  -0.014657802669239658
+validating on df 15
+the portfit margine is  -0.04169317273555727
+validating on df 17
+the portfit margine is  -0.03898169844586787
+validating on df 21
+the portfit margine is  0.031363162698002475
+validating on df 25
+the portfit margine is  -0.03228872726372156
+validating on df 26
+the portfit margine is  -0.006250334169254466
+validating on df 27
+the portfit margine is  0.0020188262302913936
+validating on df 29
+the portfit margine is  0.00023928341796877465
+validating on df 37
+the portfit margine is  0.002683275269592035
+validating on df 39
+the portfit margine is  -0.010411967204059857
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  32127 times (61.99%)
+  Action 1 (100.0% position):  19701 times (38.01%)
+Mean return rate: -0.0110
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.011791315639161243, -0.01103613723413227]
+Average validation return rate: -0.011413726436646756
+epoch  11
+[7, 85, 38, 0, 65, 31, 24, 26, 77, 32, 60, 12, 97, 40, 76, 13, 49, 27, 23, 35, 33, 6, 106, 29, 53, 37, 28, 71, 11, 19, 44, 68, 75, 74, 91, 45]
+training with df 7
+the portfit margine is  0.1824223721618705
+training with df 85
+the portfit margine is  -0.03685267985048487
+training with df 38
+the portfit margine is  0.018789704716408367
+training with df 0
+the portfit margine is  0.10808770019357357
+training with df 65
+the portfit margine is  -0.019978598261894222
+training with df 31
+the portfit margine is  -0.08204768588867557
+training with df 24
+the portfit margine is  -0.04220907884963027
+training with df 26
+the portfit margine is  -0.06926432516612725
+training with df 77
+the portfit margine is  0.0283757803705856
+training with df 32
+the portfit margine is  0.013696521387065166
+training with df 60
+the portfit margine is  -0.02087244973807297
+training with df 12
+the portfit margine is  0.01335140512107211
+training with df 97
+the portfit margine is  -0.12121599927614281
+training with df 40
+the portfit margine is  -0.01370411133244023
+training with df 76
+the portfit margine is  -0.04999802795638896
+training with df 13
+the portfit margine is  -0.04781953312523887
+training with df 49
+the portfit margine is  -0.12131973462484637
+training with df 27
+the portfit margine is  -0.008552360561932329
+training with df 23
+the portfit margine is  -0.022627557384209303
+training with df 35
+the portfit margine is  0.0387115921618957
+training with df 33
+the portfit margine is  1.0185324972722543
+training with df 6
+the portfit margine is  0.007808491124952241
+training with df 106
+the portfit margine is  -0.06023410164600508
+training with df 29
+the portfit margine is  -0.018117039305652977
+training with df 53
+the portfit margine is  -0.10353636707448013
+training with df 37
+the portfit margine is  -0.03342928327856206
+training with df 28
+the portfit margine is  -0.05093323664997903
+training with df 71
+the portfit margine is  0.0002082527576432042
+training with df 11
+the portfit margine is  -0.042697715632022265
+training with df 19
+the portfit margine is  -0.04033207487645848
+training with df 44
+the portfit margine is  0.5713428301952339
+training with df 68
+the portfit margine is  -0.05185138463451216
+training with df 75
+the portfit margine is  -0.006851418806948452
+training with df 74
+the portfit margine is  -0.10075230501585877
+training with df 91
+the portfit margine is  -0.058099093505380305
+training with df 45
+the portfit margine is  0.09162167146345668
+validating on df 1
+the portfit margine is  -0.008267128559374245
+validating on df 2
+the portfit margine is  0.017851873339290152
+validating on df 12
+the portfit margine is  -0.036716905429378346
+validating on df 15
+the portfit margine is  -0.012517964009782334
+validating on df 17
+the portfit margine is  -0.019018905708061598
+validating on df 21
+the portfit margine is  0.002418433169924545
+validating on df 25
+the portfit margine is  -0.0064546554897943415
+validating on df 26
+the portfit margine is  0.01423389164171421
+validating on df 27
+the portfit margine is  0.02966330945034746
+validating on df 29
+the portfit margine is  -0.016639361798554242
+validating on df 37
+the portfit margine is  -0.007846049562162227
+validating on df 39
+the portfit margine is  -0.0011504964335455408
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  41677 times (80.41%)
+  Action 1 (100.0% position):  10151 times (19.59%)
+Mean return rate: -0.0037
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.008619297498523014
+validating on df 2
+the portfit margine is  0.024288168668145742
+validating on df 12
+the portfit margine is  -0.031630055353800354
+validating on df 15
+the portfit margine is  -0.011370174658464377
+validating on df 17
+the portfit margine is  -0.021376763858640083
+validating on df 21
+the portfit margine is  0.019174045066959685
+validating on df 25
+the portfit margine is  -0.014647464587668333
+validating on df 26
+the portfit margine is  0.018530837284577634
+validating on df 27
+the portfit margine is  0.016129163223974462
+validating on df 29
+the portfit margine is  -0.014053993699299874
+validating on df 37
+the portfit margine is  0.003728287037275319
+validating on df 39
+the portfit margine is  0.003688116998000775
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  40823 times (78.77%)
+  Action 1 (100.0% position):  11005 times (21.23%)
+Mean return rate: -0.0013
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.0037036632824480422, -0.0013465942814552016]
+Average validation return rate: -0.002525128781951622
+epoch  12
+[26, 76, 0, 11, 71, 37, 60, 49, 97, 75, 32, 85, 40, 28, 6, 35, 24, 7, 77, 19, 12, 45, 53, 38, 31, 27, 106, 74, 91, 44, 29, 68, 23, 33, 13, 65]
+training with df 26
+the portfit margine is  -0.05033017098878028
+training with df 76
+the portfit margine is  0.005194095039531799
+training with df 0
+the portfit margine is  0.05801578330237759
+training with df 11
+the portfit margine is  -0.02780709577475163
+training with df 71
+the portfit margine is  -0.028569726872732893
+training with df 37
+the portfit margine is  -0.07661032775456371
+training with df 60
+the portfit margine is  -0.07708767802881836
+training with df 49
+the portfit margine is  -0.10481049872252367
+training with df 97
+the portfit margine is  -0.11435823000081881
+training with df 75
+the portfit margine is  -0.05785179822995676
+training with df 32
+the portfit margine is  0.09834600535177024
+training with df 85
+the portfit margine is  -0.0576384642740193
+training with df 40
+the portfit margine is  -0.044936088594685494
+training with df 28
+the portfit margine is  -0.03978919727444802
+training with df 6
+the portfit margine is  0.07631402011015583
+training with df 35
+the portfit margine is  -0.051916755617157286
+training with df 24
+the portfit margine is  -0.04876418703423773
+training with df 7
+the portfit margine is  0.21598994156914245
+training with df 77
+the portfit margine is  0.020129261526707617
+training with df 19
+the portfit margine is  -0.04461350072680891
+training with df 12
+the portfit margine is  -0.003071557768930005
+training with df 45
+the portfit margine is  0.08836192152629287
+training with df 53
+the portfit margine is  -0.12261918429747602
+training with df 38
+the portfit margine is  -0.04693578475529806
+training with df 31
+the portfit margine is  -0.0893551177994849
+training with df 27
+the portfit margine is  -0.035635202329789076
+training with df 106
+the portfit margine is  -0.021160234394090607
+training with df 74
+the portfit margine is  -0.046090186562170815
+training with df 91
+the portfit margine is  -0.03425077244401464
+training with df 44
+the portfit margine is  0.6142853959526968
+training with df 29
+the portfit margine is  -0.009948969159880925
+training with df 68
+the portfit margine is  -0.05320430683972861
+training with df 23
+the portfit margine is  -0.013939429007459531
+training with df 33
+the portfit margine is  1.0664916472311652
+training with df 13
+the portfit margine is  0.036132999334418874
+training with df 65
+the portfit margine is  -0.07907952476478455
+validating on df 1
+the portfit margine is  -0.01890625634261993
+validating on df 2
+the portfit margine is  0.00444809652228907
+validating on df 12
+the portfit margine is  -0.07633780264795366
+validating on df 15
+the portfit margine is  -0.03622937510331361
+validating on df 17
+the portfit margine is  -0.04802222351141897
+validating on df 21
+the portfit margine is  0.007895537701219382
+validating on df 25
+the portfit margine is  -0.019094129418459907
+validating on df 26
+the portfit margine is  -0.005080916489558213
+validating on df 27
+the portfit margine is  0.01578610084770978
+validating on df 29
+the portfit margine is  -0.030730808389526316
+validating on df 37
+the portfit margine is  -0.01122848496960494
+validating on df 39
+the portfit margine is  -0.012091675351284425
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  33441 times (64.52%)
+  Action 1 (100.0% position):  18387 times (35.48%)
+Mean return rate: -0.0191
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.019251867439866
+validating on df 2
+the portfit margine is  0.013540611488889737
+validating on df 12
+the portfit margine is  -0.07101219311962918
+validating on df 15
+the portfit margine is  -0.042129518708571546
+validating on df 17
+the portfit margine is  -0.05025645492083711
+validating on df 21
+the portfit margine is  0.02466101063209004
+validating on df 25
+the portfit margine is  -0.027187490441529568
+validating on df 26
+the portfit margine is  -0.0007270006566730263
+validating on df 27
+the portfit margine is  0.006179494929103674
+validating on df 29
+the portfit margine is  -0.029909861682153635
+validating on df 37
+the portfit margine is  0.00043210606922586834
+validating on df 39
+the portfit margine is  -0.004833673565529127
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  32473 times (62.66%)
+  Action 1 (100.0% position):  19355 times (37.34%)
+Mean return rate: -0.0167
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.01913266142937681, -0.016707903117956658]
+Average validation return rate: -0.017920282273666734
+epoch  13
+[40, 31, 77, 49, 7, 76, 37, 65, 6, 60, 28, 74, 106, 11, 53, 68, 45, 19, 24, 71, 32, 12, 97, 85, 33, 75, 35, 44, 29, 91, 26, 27, 38, 23, 0, 13]
+training with df 40
+the portfit margine is  0.002115052430357951
+training with df 31
+the portfit margine is  -0.07213728280390865
+training with df 77
+the portfit margine is  -0.015017707226700979
+training with df 49
+the portfit margine is  -0.06266109076945656
+training with df 7
+the portfit margine is  0.2110559067701671
+training with df 76
+the portfit margine is  0.010998611471696658
+training with df 37
+the portfit margine is  -0.03824541178372821
+training with df 65
+the portfit margine is  -0.07986386254936831
+training with df 6
+the portfit margine is  0.051739166195333294
+training with df 60
+the portfit margine is  -0.07726679528716543
+training with df 28
+the portfit margine is  -0.03509043435271343
+training with df 74
+the portfit margine is  -0.0626436807468997
+training with df 106
+the portfit margine is  -0.04182229968286867
+training with df 11
+the portfit margine is  -0.05715790824456343
+training with df 53
+the portfit margine is  -0.12362247760736729
+training with df 68
+the portfit margine is  -0.06013993901557673
+training with df 45
+the portfit margine is  0.10302633598751787
+training with df 19
+the portfit margine is  -0.02991165255742892
+training with df 24
+the portfit margine is  -0.06270004159754246
+training with df 71
+the portfit margine is  -0.037444609432610985
+training with df 32
+the portfit margine is  -0.016489914845190603
+training with df 12
+the portfit margine is  0.01952370668854898
+training with df 97
+the portfit margine is  -0.09302680662905033
+training with df 85
+the portfit margine is  -0.025322305693717774
+training with df 33
+the portfit margine is  1.1715718012968166
+training with df 75
+the portfit margine is  0.008322734240314196
+training with df 35
+the portfit margine is  -0.028811208480028654
+training with df 44
+the portfit margine is  0.6452674316895426
+training with df 29
+the portfit margine is  -0.08357928310063334
+training with df 91
+the portfit margine is  -0.006006686945321315
+training with df 26
+the portfit margine is  -0.03337929994169441
+training with df 27
+the portfit margine is  -0.02131795182540934
+training with df 38
+the portfit margine is  -0.06558254461827914
+training with df 23
+the portfit margine is  -0.0919559233695863
+training with df 0
+the portfit margine is  0.10734776661998273
+training with df 13
+the portfit margine is  -0.010683018965776296
+validating on df 1
+the portfit margine is  -0.019619535340604875
+validating on df 2
+the portfit margine is  0.0026721948755107344
+validating on df 12
+the portfit margine is  -0.0556248201583432
+validating on df 15
+the portfit margine is  -0.03944954326092007
+validating on df 17
+the portfit margine is  -0.03298353622581856
+validating on df 21
+the portfit margine is  -0.010148240313273164
+validating on df 25
+the portfit margine is  -0.06839088258371177
+validating on df 26
+the portfit margine is  -0.01578972042790832
+validating on df 27
+the portfit margine is  -0.02339285960312176
+validating on df 29
+the portfit margine is  -0.007018103221778876
+validating on df 37
+the portfit margine is  -0.0077179700975734756
+validating on df 39
+the portfit margine is  -0.040916841199555305
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  22999 times (44.38%)
+  Action 1 (100.0% position):  28829 times (55.62%)
+Mean return rate: -0.0265
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.023048339064598317
+validating on df 2
+the portfit margine is  0.01589923711051923
+validating on df 12
+the portfit margine is  -0.052260806450648935
+validating on df 15
+the portfit margine is  -0.03499950775922002
+validating on df 17
+the portfit margine is  -0.03529215144987065
+validating on df 21
+the portfit margine is  -0.003247190564851615
+validating on df 25
+the portfit margine is  -0.07403446079112984
+validating on df 26
+the portfit margine is  -0.010643879556834943
+validating on df 27
+the portfit margine is  -0.03250624014292167
+validating on df 29
+the portfit margine is  -0.00949439536604892
+validating on df 37
+the portfit margine is  -0.006025058740000037
+validating on df 39
+the portfit margine is  -0.03561226659383526
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  21826 times (42.11%)
+  Action 1 (100.0% position):  30002 times (57.89%)
+Mean return rate: -0.0251
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.026531654796424883, -0.02510542161412008]
+Average validation return rate: -0.02581853820527248
+epoch  14
+[76, 27, 44, 60, 106, 75, 0, 32, 24, 38, 85, 45, 28, 12, 6, 68, 23, 11, 26, 49, 37, 77, 53, 74, 65, 35, 31, 40, 33, 29, 71, 97, 13, 7, 91, 19]
+training with df 76
+the portfit margine is  4.774906763556469e-05
+training with df 27
+the portfit margine is  -0.008383384232786695
+training with df 44
+the portfit margine is  0.6481866236693496
+training with df 60
+the portfit margine is  -0.07784469396940927
+training with df 106
+the portfit margine is  -0.030176549981281865
+training with df 75
+the portfit margine is  0.02313119694630999
+training with df 0
+the portfit margine is  0.07970113660640288
+training with df 32
+the portfit margine is  0.08472269962381838
+training with df 24
+the portfit margine is  -0.04449460358576219
+training with df 38
+the portfit margine is  -0.08358189529214834
+training with df 85
+the portfit margine is  -0.0661359780086964
+training with df 45
+the portfit margine is  0.027967085779562174
+training with df 28
+the portfit margine is  -0.03717121201296712
+training with df 12
+the portfit margine is  0.029182063922394107
+training with df 6
+the portfit margine is  0.07377432405526656
+training with df 68
+the portfit margine is  -0.07084345852592558
+training with df 23
+the portfit margine is  -0.09262869784670774
+training with df 11
+the portfit margine is  -0.026669692742998793
+training with df 26
+the portfit margine is  -0.07422878256285571
+training with df 49
+the portfit margine is  -0.12180977172109084
+training with df 37
+the portfit margine is  -0.08825126402373103
+training with df 77
+the portfit margine is  -0.013852633155002429
+training with df 53
+the portfit margine is  -0.12116229601065823
+training with df 74
+the portfit margine is  -0.06437796184845218
+training with df 65
+the portfit margine is  -0.04328797930833028
+training with df 35
+the portfit margine is  -0.039674461010022276
+training with df 31
+the portfit margine is  -0.04227676325321385
+training with df 40
+the portfit margine is  -0.007164880687702724
+training with df 33
+the portfit margine is  1.1431960711749243
+training with df 29
+the portfit margine is  -0.06771063324193011
+training with df 71
+the portfit margine is  -0.009354146625870145
+training with df 97
+the portfit margine is  -0.06986936856841537
+training with df 13
+the portfit margine is  -0.01524390577930104
+training with df 7
+the portfit margine is  0.2535355728063284
+training with df 91
+the portfit margine is  0.012377531945611827
+training with df 19
+the portfit margine is  -0.0007206601861592635
+validating on df 1
+the portfit margine is  0.012161386912096155
+validating on df 2
+the portfit margine is  0.008542152205256394
+validating on df 12
+the portfit margine is  -0.057020213579563994
+validating on df 15
+the portfit margine is  -0.025260125092083908
+validating on df 17
+the portfit margine is  -0.017017117760803325
+validating on df 21
+the portfit margine is  0.0126585636398919
+validating on df 25
+the portfit margine is  -0.026883028323696705
+validating on df 26
+the portfit margine is  -0.016512708007300488
+validating on df 27
+the portfit margine is  -0.0015352776331694366
+validating on df 29
+the portfit margine is  0.003696180430560504
+validating on df 37
+the portfit margine is  -0.013056615162210376
+validating on df 39
+the portfit margine is  -0.01519293318782534
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  40906 times (78.93%)
+  Action 1 (100.0% position):  10922 times (21.07%)
+Mean return rate: -0.0113
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  0.011802935613158792
+validating on df 2
+the portfit margine is  0.02215542577318241
+validating on df 12
+the portfit margine is  -0.051453650251462826
+validating on df 15
+the portfit margine is  -0.03452835771794014
+validating on df 17
+the portfit margine is  -0.01937347057375405
+validating on df 21
+the portfit margine is  0.016189793017365655
+validating on df 25
+the portfit margine is  -0.034885836734493206
+validating on df 26
+the portfit margine is  -0.014120414192249995
+validating on df 27
+the portfit margine is  -0.010962248400658384
+validating on df 29
+the portfit margine is  0.0012044475785252735
+validating on df 37
+the portfit margine is  -0.01049252917772334
+validating on df 39
+the portfit margine is  -0.009974204118379895
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  39921 times (77.03%)
+  Action 1 (100.0% position):  11907 times (22.97%)
+Mean return rate: -0.0112
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.011284977963237386, -0.011203175765369144]
+Average validation return rate: -0.011244076864303265
+epoch  15
+[45, 53, 35, 65, 6, 33, 31, 40, 75, 32, 76, 13, 68, 0, 12, 23, 19, 37, 71, 28, 85, 24, 49, 29, 11, 27, 97, 38, 7, 60, 77, 26, 91, 44, 106, 74]
+training with df 45
+the portfit margine is  0.04814904795848123
+training with df 53
+the portfit margine is  -0.10637624226881867
+training with df 35
+the portfit margine is  -0.04228518228272092
+training with df 65
+the portfit margine is  -0.07388314036376137
+training with df 6
+the portfit margine is  0.05249696287971128
+training with df 33
+the portfit margine is  1.0723366889091666
+training with df 31
+the portfit margine is  -0.0861914661550333
+training with df 40
+the portfit margine is  -0.09024424417481608
+training with df 75
+the portfit margine is  -0.043961459852567115
+training with df 32
+the portfit margine is  0.11993148354673505
+training with df 76
+the portfit margine is  -0.06250797954614565
+training with df 13
+the portfit margine is  -0.015210846319892795
+training with df 68
+the portfit margine is  -0.12546400128783852
+training with df 0
+the portfit margine is  0.13501293209742185
+training with df 12
+the portfit margine is  0.006276641771236076
+training with df 23
+the portfit margine is  -0.03912586316219869
+training with df 19
+the portfit margine is  -0.004053684821358818
+training with df 37
+the portfit margine is  -0.05610407615483549
+training with df 71
+the portfit margine is  -0.04443604429891678
+training with df 28
+the portfit margine is  -0.03254044249170439
+training with df 85
+the portfit margine is  -0.021951684911915015
+training with df 24
+the portfit margine is  -0.04280245272460529
+training with df 49
+the portfit margine is  -0.0674502445859156
+training with df 29
+the portfit margine is  -0.04022749924454411
+training with df 11
+the portfit margine is  -0.07032051881591973
+training with df 27
+the portfit margine is  -0.011183585416227408
+training with df 97
+the portfit margine is  -0.06970570078294362
+training with df 38
+the portfit margine is  -0.06029892930093402
+training with df 7
+the portfit margine is  0.20941399609553002
+training with df 60
+the portfit margine is  -0.05146575891332419
+training with df 77
+the portfit margine is  -0.07208702040155579
+training with df 26
+the portfit margine is  -0.06757193767119907
+training with df 91
+the portfit margine is  -0.057023804690342496
+training with df 44
+the portfit margine is  0.7092285647515958
+training with df 106
+the portfit margine is  -0.04877818136529304
+training with df 74
+the portfit margine is  -0.024107862590434768
+validating on df 1
+the portfit margine is  0.009744058819006113
+validating on df 2
+the portfit margine is  0.04642562233192881
+validating on df 12
+the portfit margine is  -0.007604885577090183
+validating on df 15
+the portfit margine is  -0.03386422075594323
+validating on df 17
+the portfit margine is  -0.0075923740464065945
+validating on df 21
+the portfit margine is  0.010963938324160235
+validating on df 25
+the portfit margine is  -0.018726329438048236
+validating on df 26
+the portfit margine is  -0.005626345569049814
+validating on df 27
+the portfit margine is  -0.01777523077833054
+validating on df 29
+the portfit margine is  -0.010115281816226177
+validating on df 37
+the portfit margine is  0.0020987060488939667
+validating on df 39
+the portfit margine is  -0.005438881942172346
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  40043 times (77.26%)
+  Action 1 (100.0% position):  11785 times (22.74%)
+Mean return rate: -0.0031
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  0.009386477476541638
+validating on df 2
+the portfit margine is  0.06046901456710406
+validating on df 12
+the portfit margine is  -0.0018458412930218893
+validating on df 15
+the portfit margine is  -0.043039249162542745
+validating on df 17
+the portfit margine is  -0.009975467798383538
+validating on df 21
+the portfit margine is  0.02785678650664321
+validating on df 25
+the portfit margine is  -0.022738832403446218
+validating on df 26
+the portfit margine is  -0.005660697590187382
+validating on df 27
+the portfit margine is  -0.026891113006795954
+validating on df 29
+the portfit margine is  -0.010160764660643187
+validating on df 37
+the portfit margine is  0.0005696726293886311
+validating on df 39
+the portfit margine is  -0.005879236446139867
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  38842 times (74.94%)
+  Action 1 (100.0% position):  12986 times (25.06%)
+Mean return rate: -0.0023
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.0031259353666064998, -0.00232577093179027]
+Average validation return rate: -0.002725853149198385
+epoch  16
+[60, 27, 7, 35, 33, 13, 19, 53, 0, 32, 68, 31, 37, 91, 75, 40, 106, 24, 97, 49, 65, 28, 29, 77, 44, 11, 6, 26, 38, 12, 45, 76, 71, 85, 23, 74]
+training with df 60
+the portfit margine is  -0.03356516586671479
+training with df 27
+the portfit margine is  -0.05338826220084504
+training with df 7
+the portfit margine is  0.29777745203445055
+training with df 35
+the portfit margine is  -0.02786747754333855
+training with df 33
+the portfit margine is  1.1116023956756662
+training with df 13
+the portfit margine is  0.015060387094960248
+training with df 19
+the portfit margine is  -0.010574806819852508
+training with df 53
+the portfit margine is  -0.13661338206565274
+training with df 0
+the portfit margine is  0.05966150061654595
+training with df 32
+the portfit margine is  0.22074835387551314
+training with df 68
+the portfit margine is  -0.07098346122938873
+training with df 31
+the portfit margine is  -0.054303981842706336
+training with df 37
+the portfit margine is  -0.058847786835990366
+training with df 91
+the portfit margine is  0.002195934765030019
+training with df 75
+the portfit margine is  -0.038879803771250186
+training with df 40
+the portfit margine is  -0.057334125423988906
+training with df 106
+the portfit margine is  -0.03735430863445087
+training with df 24
+the portfit margine is  -0.02201704625459205
+training with df 97
+the portfit margine is  -0.11236707440104912
+training with df 49
+the portfit margine is  -0.09137931081942792
+training with df 65
+the portfit margine is  -0.020721179740686272
+training with df 28
+the portfit margine is  -0.062301248231780744
+training with df 29
+the portfit margine is  -0.05684533959679297
+training with df 77
+the portfit margine is  0.06157201462349701
+training with df 44
+the portfit margine is  0.5911192823826789
+training with df 11
+the portfit margine is  -0.04684359398891576
+training with df 6
+the portfit margine is  0.04333529623546674
+training with df 26
+the portfit margine is  0.0008069528377518821
+training with df 38
+the portfit margine is  -0.026809135694236142
+training with df 12
+the portfit margine is  0.00959442916364823
+training with df 45
+the portfit margine is  0.05596835110449522
+training with df 76
+the portfit margine is  -0.06596420812346261
+training with df 71
+the portfit margine is  -0.03180443915368234
+training with df 85
+the portfit margine is  -0.023949448539816526
+training with df 23
+the portfit margine is  -0.047775717585698145
+training with df 74
+the portfit margine is  -0.033135616043890675
+validating on df 1
+the portfit margine is  -0.00821215842973987
+validating on df 2
+the portfit margine is  0.004678606599105355
+validating on df 12
+the portfit margine is  -0.06388460075695074
+validating on df 15
+the portfit margine is  -0.054193919164119114
+validating on df 17
+the portfit margine is  -0.005353959519927312
+validating on df 21
+the portfit margine is  -0.011438345616896108
+validating on df 25
+the portfit margine is  -0.045226381112699596
+validating on df 26
+the portfit margine is  0.0024594883652498396
+validating on df 27
+the portfit margine is  0.009270813878037439
+validating on df 29
+the portfit margine is  -0.013417979608589087
+validating on df 37
+the portfit margine is  0.010420141455650293
+validating on df 39
+the portfit margine is  -0.02760905468676
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  34778 times (67.10%)
+  Action 1 (100.0% position):  17050 times (32.90%)
+Mean return rate: -0.0169
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.008908094431021737
+validating on df 2
+the portfit margine is  0.014332305086117785
+validating on df 12
+the portfit margine is  -0.059128467106029335
+validating on df 15
+the portfit margine is  -0.053463801422620194
+validating on df 17
+the portfit margine is  -0.009092433102763751
+validating on df 21
+the portfit margine is  -0.00706758917146153
+validating on df 25
+the portfit margine is  -0.05097034032387032
+validating on df 26
+the portfit margine is  0.0024252242089125918
+validating on df 27
+the portfit margine is  -0.00018089263389757705
+validating on df 29
+the portfit margine is  -0.005641341547902949
+validating on df 37
+the portfit margine is  0.018388956312324175
+validating on df 39
+the portfit margine is  -0.020415944705519527
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  32539 times (62.78%)
+  Action 1 (100.0% position):  19289 times (37.22%)
+Mean return rate: -0.0150
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.016875612383136576, -0.014976868236477698]
+Average validation return rate: -0.015926240309807136
+epoch  17
+[53, 13, 76, 97, 106, 74, 68, 37, 6, 45, 27, 19, 24, 40, 29, 32, 75, 91, 60, 77, 85, 35, 12, 71, 38, 65, 33, 49, 26, 23, 0, 7, 44, 28, 31, 11]
+training with df 53
+the portfit margine is  -0.1729701366272429
+training with df 13
+the portfit margine is  0.0059839716873706416
+training with df 76
+the portfit margine is  0.004367527878581962
+training with df 97
+the portfit margine is  -0.035974080022357136
+training with df 106
+the portfit margine is  -0.02801940476867616
+training with df 74
+the portfit margine is  -0.04452468434234156
+training with df 68
+the portfit margine is  -0.12766115921359028
+training with df 37
+the portfit margine is  -0.06975781611191877
+training with df 6
+the portfit margine is  0.11512192127476999
+training with df 45
+the portfit margine is  0.009248342224531206
+training with df 27
+the portfit margine is  -0.042260514411460115
+training with df 19
+the portfit margine is  0.01834628937018524
+training with df 24
+the portfit margine is  -0.03376144677621722
+training with df 40
+the portfit margine is  -0.05808714984018809
+training with df 29
+the portfit margine is  -0.06125777050714511
+training with df 32
+the portfit margine is  0.10055859564223761
+training with df 75
+the portfit margine is  0.00395790984005242
+training with df 91
+the portfit margine is  -0.007221573426683454
+training with df 60
+the portfit margine is  -0.010909567701922319
+training with df 77
+the portfit margine is  0.0016239006664018664
+training with df 85
+the portfit margine is  -0.05744841559452556
+training with df 35
+the portfit margine is  0.016093976295364555
+training with df 12
+the portfit margine is  0.038224572050593764
+training with df 71
+the portfit margine is  -0.04135743859535516
+training with df 38
+the portfit margine is  -0.06393841900520586
+training with df 65
+the portfit margine is  -0.014602848340815206
+training with df 33
+the portfit margine is  1.1256886626829072
+training with df 49
+the portfit margine is  -0.03951235802748795
+training with df 26
+the portfit margine is  -0.08420877312195985
+training with df 23
+the portfit margine is  0.009524057808659154
+training with df 0
+the portfit margine is  0.13833294969763765
+training with df 7
+the portfit margine is  0.21156005416733006
+training with df 44
+the portfit margine is  0.8010354321721387
+training with df 28
+the portfit margine is  -0.02843440426794149
+training with df 31
+the portfit margine is  -0.05142107894538335
+training with df 11
+the portfit margine is  0.02047201223946436
+validating on df 1
+the portfit margine is  -0.02310203556974331
+validating on df 2
+the portfit margine is  0.03133425714472564
+validating on df 12
+the portfit margine is  -0.05483916288200401
+validating on df 15
+the portfit margine is  -0.029476706642467817
+validating on df 17
+the portfit margine is  -0.011177399346207375
+validating on df 21
+the portfit margine is  0.010301515617433499
+validating on df 25
+the portfit margine is  -0.009804272151371212
+validating on df 26
+the portfit margine is  0.003647018597200721
+validating on df 27
+the portfit margine is  -0.005868887606192457
+validating on df 29
+the portfit margine is  -0.035080905179737935
+validating on df 37
+the portfit margine is  0.011175001002944674
+validating on df 39
+the portfit margine is  -0.018175661805309454
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  37849 times (73.03%)
+  Action 1 (100.0% position):  13979 times (26.97%)
+Mean return rate: -0.0109
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.023445525666909602
+validating on df 2
+the portfit margine is  0.04047460219601894
+validating on df 12
+the portfit margine is  -0.05693069145910122
+validating on df 15
+the portfit margine is  -0.03878593588432282
+validating on df 17
+the portfit margine is  -0.014904698709571583
+validating on df 21
+the portfit margine is  0.013605149749657047
+validating on df 25
+the portfit margine is  -0.015770704352996205
+validating on df 26
+the portfit margine is  0.0036127390902985575
+validating on df 27
+the portfit margine is  -0.015267698573394063
+validating on df 29
+the portfit margine is  -0.03309631203428527
+validating on df 37
+the portfit margine is  0.019160698627500552
+validating on df 39
+the portfit margine is  -0.01297947719397317
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  36215 times (69.88%)
+  Action 1 (100.0% position):  15613 times (30.12%)
+Mean return rate: -0.0112
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.01092226990172742, -0.011193987850923235]
+Average validation return rate: -0.011058128876325329
+epoch  18
+[27, 40, 77, 13, 74, 97, 33, 31, 85, 0, 26, 32, 68, 45, 91, 6, 76, 71, 60, 29, 106, 49, 37, 23, 38, 11, 35, 75, 28, 7, 24, 65, 53, 19, 12, 44]
+training with df 27
+the portfit margine is  -0.010917587066199575
+training with df 40
+the portfit margine is  -0.01370954749710198
+training with df 77
+the portfit margine is  0.032637336343532615
+training with df 13
+the portfit margine is  -0.022487322712952708
+training with df 74
+the portfit margine is  -0.047216186035708936
+training with df 97
+the portfit margine is  -0.05769576434643572
+training with df 33
+the portfit margine is  1.1613242835471322
+training with df 31
+the portfit margine is  -0.05788495139613619
+training with df 85
+the portfit margine is  -0.07357501713127203
+training with df 0
+the portfit margine is  0.15233842558251898
+training with df 26
+the portfit margine is  -0.09399372846121955
+training with df 32
+the portfit margine is  0.15309557840012106
+training with df 68
+the portfit margine is  -0.019565666970302525
+training with df 45
+the portfit margine is  -0.031204477044723115
+training with df 91
+the portfit margine is  -0.002536185602403609
+training with df 6
+the portfit margine is  0.10073116971750488
+training with df 76
+the portfit margine is  -0.055285836272350904
+training with df 71
+the portfit margine is  -0.01167488741037315
+training with df 60
+the portfit margine is  -0.10293759443632187
+training with df 29
+the portfit margine is  -0.03143497694677097
+training with df 106
+the portfit margine is  -0.045710077470339325
+training with df 49
+the portfit margine is  -0.06207669757722816
+training with df 37
+the portfit margine is  -0.06530362192117002
+training with df 23
+the portfit margine is  -0.05234630776677887
+training with df 38
+the portfit margine is  -0.03341441220681812
+training with df 11
+the portfit margine is  0.0403127782636732
+training with df 35
+the portfit margine is  0.04852918198674393
+training with df 75
+the portfit margine is  -0.0959031462781549
+training with df 28
+the portfit margine is  -0.047187325994776846
+training with df 7
+the portfit margine is  0.205722076524706
+training with df 24
+the portfit margine is  -0.033387173678471306
+training with df 65
+the portfit margine is  -0.05335857422188464
+training with df 53
+the portfit margine is  -0.1563322877604222
+training with df 19
+the portfit margine is  -0.030756123370839657
+training with df 12
+the portfit margine is  0.015100836886704728
+training with df 44
+the portfit margine is  0.6336434543948477
+validating on df 1
+the portfit margine is  -0.017478418408399057
+validating on df 2
+the portfit margine is  0.026123357182717227
+validating on df 12
+the portfit margine is  -0.01232738839270113
+validating on df 15
+the portfit margine is  -0.018624803369258376
+validating on df 17
+the portfit margine is  0.005007979241641523
+validating on df 21
+the portfit margine is  0.01111767584437367
+validating on df 25
+the portfit margine is  -0.026643251282531255
+validating on df 26
+the portfit margine is  -0.0026022529699408596
+validating on df 27
+the portfit margine is  0.003931506057306428
+validating on df 29
+the portfit margine is  -0.010482498850867624
+validating on df 37
+the portfit margine is  -0.005796081496609925
+validating on df 39
+the portfit margine is  -0.002225914961402203
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  38146 times (73.60%)
+  Action 1 (100.0% position):  13682 times (26.40%)
+Mean return rate: -0.0042
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.017825761218431515
+validating on df 2
+the portfit margine is  0.03536066350030679
+validating on df 12
+the portfit margine is  -0.012258669813595496
+validating on df 15
+the portfit margine is  -0.028046707307727077
+validating on df 17
+the portfit margine is  0.003520564389451557
+validating on df 21
+the portfit margine is  0.014423978778674027
+validating on df 25
+the portfit margine is  -0.032286483144050436
+validating on df 26
+the portfit margine is  -0.0026363190333276738
+validating on df 27
+the portfit margine is  -0.005573581550133405
+validating on df 29
+the portfit margine is  -0.012920749783891653
+validating on df 37
+the portfit margine is  0.0019345118686295102
+validating on df 39
+the portfit margine is  0.003017074421867615
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  36864 times (71.13%)
+  Action 1 (100.0% position):  14964 times (28.87%)
+Mean return rate: -0.0044
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.004166674283805964, -0.004440956574352314]
+Average validation return rate: -0.004303815429079139
+epoch  19
+[27, 45, 23, 26, 40, 33, 65, 35, 19, 12, 29, 24, 68, 106, 49, 74, 97, 85, 44, 31, 37, 6, 28, 11, 13, 60, 38, 32, 77, 0, 76, 53, 91, 71, 7, 75]
+training with df 27
+the portfit margine is  0.016296066703983734
+training with df 45
+the portfit margine is  -0.010059822555725262
+training with df 23
+the portfit margine is  -0.04754021538835402
+training with df 26
+the portfit margine is  -0.05843449417827198
+training with df 40
+the portfit margine is  -0.09219706235575498
+training with df 33
+the portfit margine is  1.095821018386742
+training with df 65
+the portfit margine is  -0.018967482172145552
+training with df 35
+the portfit margine is  -0.002683728395993951
+training with df 19
+the portfit margine is  -0.05820943130907765
+training with df 12
+the portfit margine is  0.014141332412401135
+training with df 29
+the portfit margine is  -0.05283202054510911
+training with df 24
+the portfit margine is  -0.07399392073628622
+training with df 68
+the portfit margine is  -0.061343630891794385
+training with df 106
+the portfit margine is  -0.0457384278903442
+training with df 49
+the portfit margine is  -0.11725388998190542
+training with df 74
+the portfit margine is  -0.013254622525199013
+training with df 97
+the portfit margine is  -0.043228822594399315
+training with df 85
+the portfit margine is  -0.059934690813976246
+training with df 44
+the portfit margine is  0.6861081576067364
+training with df 31
+the portfit margine is  -0.048814727657838265
+training with df 37
+the portfit margine is  -0.02500205023007947
+training with df 6
+the portfit margine is  0.0851688207829757
+training with df 28
+the portfit margine is  -0.04929376433073008
+training with df 11
+the portfit margine is  -0.05690367268212126
+training with df 13
+the portfit margine is  -0.008052142142610241
+training with df 60
+the portfit margine is  0.011439215766512746
+training with df 38
+the portfit margine is  -0.00791948111104098
+training with df 32
+the portfit margine is  0.11775130173896575
+training with df 77
+the portfit margine is  -0.006564955968927223
+training with df 0
+the portfit margine is  0.11782661005558437
+training with df 76
+the portfit margine is  -0.059680280513623084
+training with df 53
+the portfit margine is  -0.12233111206705131
+training with df 91
+the portfit margine is  0.0022854384703967913
+training with df 71
+the portfit margine is  -0.012117168138111194
+training with df 7
+the portfit margine is  0.35611860605636403
+training with df 75
+the portfit margine is  -0.05828814771238669
+validating on df 1
+the portfit margine is  -0.011028290785739473
+validating on df 2
+the portfit margine is  0.04684651322342976
+validating on df 12
+the portfit margine is  -0.0011393040809916245
+validating on df 15
+the portfit margine is  -0.04051291693794314
+validating on df 17
+the portfit margine is  -0.008362200493527726
+validating on df 21
+the portfit margine is  0.0015711312521464668
+validating on df 25
+the portfit margine is  -0.02928338576163625
+validating on df 26
+the portfit margine is  -0.01621073634186154
+validating on df 27
+the portfit margine is  -0.009255690591804491
+validating on df 29
+the portfit margine is  0.002071308095849417
+validating on df 37
+the portfit margine is  -0.019816521022830876
+validating on df 39
+the portfit margine is  -0.0134946046706826
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  42627 times (82.25%)
+  Action 1 (100.0% position):   9201 times (17.75%)
+Mean return rate: -0.0082
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.011376848662805875
+validating on df 2
+the portfit margine is  0.05620649379748203
+validating on df 12
+the portfit margine is  0.003177991485034897
+validating on df 15
+the portfit margine is  -0.03618336771727446
+validating on df 17
+the portfit margine is  -0.009820632182324056
+validating on df 21
+the portfit margine is  0.004830043501910235
+validating on df 25
+the portfit margine is  -0.034882846677427054
+validating on df 26
+the portfit margine is  -0.016244337608271896
+validating on df 27
+the portfit margine is  -0.01866192633340493
+validating on df 29
+the portfit margine is  0.0020252672930069684
+validating on df 37
+the portfit margine is  -0.008909768673534952
+validating on df 39
+the portfit margine is  -0.008305591323554812
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  41620 times (80.30%)
+  Action 1 (100.0% position):  10208 times (19.70%)
+Mean return rate: -0.0065
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.008217891509632674, -0.006512126925096992]
+Average validation return rate: -0.007365009217364833
+epoch  20
+[45, 71, 53, 38, 75, 23, 26, 65, 85, 24, 68, 12, 37, 77, 13, 6, 44, 35, 19, 29, 49, 28, 7, 33, 40, 97, 60, 11, 31, 32, 76, 74, 91, 106, 27, 0]
+training with df 45
+the portfit margine is  0.020770311085249536
+training with df 71
+the portfit margine is  -0.030344333655028546
+training with df 53
+the portfit margine is  -0.14181423260351292
+training with df 38
+the portfit margine is  -0.05123991624799526
+training with df 75
+the portfit margine is  -0.027462923154126878
+training with df 23
+the portfit margine is  -0.03724428055607893
+training with df 26
+the portfit margine is  -0.05458631663618342
+training with df 65
+the portfit margine is  -0.09715770197455785
+training with df 85
+the portfit margine is  -0.020749625921337757
+training with df 24
+the portfit margine is  -0.05575554353446289
+training with df 68
+the portfit margine is  -0.05427074855679474
+training with df 12
+the portfit margine is  0.03484404570581066
+training with df 37
+the portfit margine is  -0.042738123884284135
+training with df 77
+the portfit margine is  0.0028960844793514706
+training with df 13
+the portfit margine is  -0.005680014998714661
+training with df 6
+the portfit margine is  0.06568965069587787
+training with df 44
+the portfit margine is  0.6807379589390292
+training with df 35
+the portfit margine is  0.0024231330517159437
+training with df 19
+the portfit margine is  -0.05679577302958336
+training with df 29
+the portfit margine is  -0.047250833159987765
+training with df 49
+the portfit margine is  -0.07523358510713796
+training with df 28
+the portfit margine is  0.007056867376142537
+training with df 7
+the portfit margine is  0.2893504997873082
+training with df 33
+the portfit margine is  1.1889711412493236
+training with df 40
+the portfit margine is  -0.07997273280672539
+training with df 97
+the portfit margine is  -0.05053706201077935
+training with df 60
+the portfit margine is  -0.01964858589282661
+training with df 11
+the portfit margine is  0.03847441720483717
+training with df 31
+the portfit margine is  -0.04253091911162762
+training with df 32
+the portfit margine is  0.15129944918787844
+training with df 76
+the portfit margine is  -0.022370285224603423
+training with df 74
+the portfit margine is  -0.07857870398660487
+training with df 91
+the portfit margine is  -0.0651586592645627
+training with df 106
+the portfit margine is  -0.04730724154039146
+training with df 27
+the portfit margine is  -0.04797975052416188
+training with df 0
+the portfit margine is  0.11125355826673003
+validating on df 1
+the portfit margine is  -0.02837406592868794
+validating on df 2
+the portfit margine is  0.0291825799751673
+validating on df 12
+the portfit margine is  -0.07546735538926674
+validating on df 15
+the portfit margine is  -0.027889491553267653
+validating on df 17
+the portfit margine is  -0.015719631601436454
+validating on df 21
+the portfit margine is  0.00390555294852239
+validating on df 25
+the portfit margine is  -0.021513736618973357
+validating on df 26
+the portfit margine is  0.01283104173693087
+validating on df 27
+the portfit margine is  -0.01388109991316415
+validating on df 29
+the portfit margine is  -0.0020297891410681673
+validating on df 37
+the portfit margine is  -0.024414815888882332
+validating on df 39
+the portfit margine is  -0.009407041300984813
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  42304 times (81.62%)
+  Action 1 (100.0% position):   9524 times (18.38%)
+Mean return rate: -0.0144
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.028713989315304847
+validating on df 2
+the portfit margine is  0.03842197045193825
+validating on df 12
+the portfit margine is  -0.07272749204057626
+validating on df 15
+the portfit margine is  -0.03717156062241262
+validating on df 17
+the portfit margine is  -0.017165274913345605
+validating on df 21
+the portfit margine is  0.007154700667155903
+validating on df 25
+the portfit margine is  -0.02724201100757912
+validating on df 26
+the portfit margine is  0.0152361594423968
+validating on df 27
+the portfit margine is  -0.02320008187692178
+validating on df 29
+the portfit margine is  -0.001816135542099499
+validating on df 37
+the portfit margine is  -0.02284289797336586
+validating on df 39
+the portfit margine is  -0.007283286747693938
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  41481 times (80.04%)
+  Action 1 (100.0% position):  10347 times (19.96%)
+Mean return rate: -0.0148
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.014398154389592589, -0.01477915828981738]
+Average validation return rate: -0.014588656339704985
+epoch  21
+[12, 106, 19, 24, 76, 53, 65, 71, 97, 35, 49, 44, 7, 85, 13, 0, 27, 37, 31, 23, 68, 28, 29, 60, 40, 77, 11, 75, 38, 45, 26, 33, 91, 6, 32, 74]
+training with df 12
+the portfit margine is  0.015549274163456797
+training with df 106
+the portfit margine is  -0.023580638767426908
+training with df 19
+the portfit margine is  -0.05595848086679231
+training with df 24
+the portfit margine is  -0.04430578144827671
+training with df 76
+the portfit margine is  -0.0249262975789796
+training with df 53
+the portfit margine is  -0.1558393714405796
+training with df 65
+the portfit margine is  0.045189232407926584
+training with df 71
+the portfit margine is  -0.05688738002034162
+training with df 97
+the portfit margine is  -0.11072429617798399
+training with df 35
+the portfit margine is  -0.010529055728079204
+training with df 49
+the portfit margine is  -0.11321445234207193
+training with df 44
+the portfit margine is  0.7740237931608535
+training with df 7
+the portfit margine is  0.23500661066192607
+training with df 85
+the portfit margine is  -0.010823266429120553
+training with df 13
+the portfit margine is  -0.03784742791814138
+training with df 0
+the portfit margine is  0.1554723755843138
+training with df 27
+the portfit margine is  -0.02316657335260308
+training with df 37
+the portfit margine is  -0.03095620382769563
+training with df 31
+the portfit margine is  -0.06798784909631025
+training with df 23
+the portfit margine is  -0.022104273540081293
+training with df 68
+the portfit margine is  -0.06868932260208077
+training with df 28
+the portfit margine is  -0.08327508565587138
+training with df 29
+the portfit margine is  -0.04005329370282044
+training with df 60
+the portfit margine is  -0.01569827619579734
+training with df 40
+the portfit margine is  -0.00015425067789492667
+training with df 77
+the portfit margine is  0.029689368060058705
+training with df 11
+the portfit margine is  -0.010931904195449132
+training with df 75
+the portfit margine is  0.023027891941354062
+training with df 38
+the portfit margine is  -0.06979932140156267
+training with df 45
+the portfit margine is  0.08149691497530925
+training with df 26
+the portfit margine is  0.0096986197588332
+training with df 33
+the portfit margine is  1.1615072004128055
+training with df 91
+the portfit margine is  -0.011124448554495191
+training with df 6
+the portfit margine is  0.07792727339130978
+training with df 32
+the portfit margine is  0.1689343801361206
+training with df 74
+the portfit margine is  -0.05870753773916342
+validating on df 1
+the portfit margine is  -0.029021665817849714
+validating on df 2
+the portfit margine is  0.0371850181528566
+validating on df 12
+the portfit margine is  -0.06144336590377567
+validating on df 15
+the portfit margine is  -0.048596541057498936
+validating on df 17
+the portfit margine is  -0.0019049160125578272
+validating on df 21
+the portfit margine is  -0.008209945965552728
+validating on df 25
+the portfit margine is  -0.030202192757221174
+validating on df 26
+the portfit margine is  0.009846361401556262
+validating on df 27
+the portfit margine is  0.0059994706543402285
+validating on df 29
+the portfit margine is  0.01349440358208196
+validating on df 37
+the portfit margine is  -0.0042902812324973625
+validating on df 39
+the portfit margine is  -0.0016847888424774175
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  40601 times (78.34%)
+  Action 1 (100.0% position):  11227 times (21.66%)
+Mean return rate: -0.0099
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.029363607796116208
+validating on df 2
+the portfit margine is  0.04645811242418308
+validating on df 12
+the portfit margine is  -0.06351489161982944
+validating on df 15
+the portfit margine is  -0.05758288422584952
+validating on df 17
+the portfit margine is  -0.003356109901617219
+validating on df 21
+the portfit margine is  -0.005015463701924176
+validating on df 25
+the portfit margine is  -0.03610054369476142
+validating on df 26
+the portfit margine is  0.009811725754015165
+validating on df 27
+the portfit margine is  -0.0034791432086861166
+validating on df 29
+the portfit margine is  0.013447608458008046
+validating on df 37
+the portfit margine is  0.0034453346042484048
+validating on df 39
+the portfit margine is  0.003152219884216914
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  39026 times (75.30%)
+  Action 1 (100.0% position):  12802 times (24.70%)
+Mean return rate: -0.0102
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.009902370316549648, -0.010174803585342706]
+Average validation return rate: -0.010038586950946178
+epoch  22
+[49, 24, 53, 7, 19, 97, 35, 106, 33, 40, 44, 29, 71, 74, 31, 12, 77, 26, 60, 23, 28, 91, 6, 11, 27, 32, 68, 13, 76, 0, 38, 65, 45, 85, 75, 37]
+training with df 49
+the portfit margine is  -0.0470627372504342
+training with df 24
+the portfit margine is  -0.007609283787407277
+training with df 53
+the portfit margine is  -0.09763403066471821
+training with df 7
+the portfit margine is  0.21825523778927028
+training with df 19
+the portfit margine is  -0.06821225930277039
+training with df 97
+the portfit margine is  -0.09007800333012726
+training with df 35
+the portfit margine is  -0.016976545404024858
+training with df 106
+the portfit margine is  -0.07006094936233108
+training with df 33
+the portfit margine is  1.1804491938568344
+training with df 40
+the portfit margine is  -0.02239473963945119
+training with df 44
+the portfit margine is  0.7600008273888675
+training with df 29
+the portfit margine is  -0.017732767477588025
+training with df 71
+the portfit margine is  -0.021377755690200086
+training with df 74
+the portfit margine is  -0.07937886855702286
+training with df 31
+the portfit margine is  -0.07686719464852204
+training with df 12
+the portfit margine is  0.04211526436077707
+training with df 77
+the portfit margine is  0.020361654695147828
+training with df 26
+the portfit margine is  -0.06454189921238569
+training with df 60
+the portfit margine is  -0.021689253671662904
+training with df 23
+the portfit margine is  -0.03307243494274752
+training with df 28
+the portfit margine is  -0.07811321604673613
+training with df 91
+the portfit margine is  0.050145947370546534
+training with df 6
+the portfit margine is  0.09147111344623711
+training with df 11
+the portfit margine is  -0.02134684812081038
+training with df 27
+the portfit margine is  -0.06101978725936757
+training with df 32
+the portfit margine is  0.17116350722044496
+training with df 68
+the portfit margine is  -0.07587307482766138
+training with df 13
+the portfit margine is  -0.04128008446038952
+training with df 76
+the portfit margine is  -0.05662507618661474
+training with df 0
+the portfit margine is  0.13567500349985503
+training with df 38
+the portfit margine is  -0.03673311359459203
+training with df 65
+the portfit margine is  -0.06317315175315119
+training with df 45
+the portfit margine is  0.1298456647800209
+training with df 85
+the portfit margine is  -0.0409315810580317
+training with df 75
+the portfit margine is  -0.024879447316800595
+training with df 37
+the portfit margine is  -0.029741892750809292
+validating on df 1
+the portfit margine is  -0.010925862586463123
+validating on df 2
+the portfit margine is  0.013039210294695047
+validating on df 12
+the portfit margine is  -0.04347650843083033
+validating on df 15
+the portfit margine is  -0.06635853669132712
+validating on df 17
+the portfit margine is  -0.002103826390199891
+validating on df 21
+the portfit margine is  -0.004215054057360048
+validating on df 25
+the portfit margine is  -0.025669333728067782
+validating on df 26
+the portfit margine is  -0.005939049765308922
+validating on df 27
+the portfit margine is  -0.01731011690736839
+validating on df 29
+the portfit margine is  0.01293764932591307
+validating on df 37
+the portfit margine is  -0.009499317696348942
+validating on df 39
+the portfit margine is  0.005150289059042485
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  43397 times (83.73%)
+  Action 1 (100.0% position):   8431 times (16.27%)
+Mean return rate: -0.0129
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.01127452178605964
+validating on df 2
+the portfit margine is  0.01819995733967507
+validating on df 12
+the portfit margine is  -0.04341019674965004
+validating on df 15
+the portfit margine is  -0.07498102439776884
+validating on df 17
+the portfit margine is  -0.003570669385729939
+validating on df 21
+the portfit margine is  -0.0009779019611214378
+validating on df 25
+the portfit margine is  -0.031328712226342675
+validating on df 26
+the portfit margine is  -0.0035664887057711386
+validating on df 27
+the portfit margine is  -0.0265156834927061
+validating on df 29
+the portfit margine is  0.012891123209762594
+validating on df 37
+the portfit margine is  -0.0017975194431210468
+validating on df 39
+the portfit margine is  0.012213864723679338
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  42123 times (81.27%)
+  Action 1 (100.0% position):   9705 times (18.73%)
+Mean return rate: -0.0128
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.012864204797801993, -0.012843147739596154]
+Average validation return rate: -0.012853676268699075
+epoch  23
+[7, 74, 28, 75, 11, 37, 45, 71, 44, 85, 77, 6, 12, 32, 26, 53, 76, 40, 0, 38, 60, 31, 29, 13, 68, 24, 49, 91, 19, 65, 23, 27, 35, 106, 33, 97]
+training with df 7
+the portfit margine is  0.3619948295559665
+training with df 74
+the portfit margine is  -0.03744984396592334
+training with df 28
+the portfit margine is  -0.010513617247022268
+training with df 75
+the portfit margine is  -0.032209488478982404
+training with df 11
+the portfit margine is  0.01892833555115492
+training with df 37
+the portfit margine is  -0.04831512935109636
+training with df 45
+the portfit margine is  0.028314522652329213
+training with df 71
+the portfit margine is  0.030143168001553405
+training with df 44
+the portfit margine is  0.7729877180207494
+training with df 85
+the portfit margine is  -0.051267787984424926
+training with df 77
+the portfit margine is  0.09397270900252042
+training with df 6
+the portfit margine is  0.06259232996746628
+training with df 12
+the portfit margine is  0.026309331768968464
+training with df 32
+the portfit margine is  0.1435577045452722
+training with df 26
+the portfit margine is  -0.06656632935506628
+training with df 53
+the portfit margine is  -0.08168557175365297
+training with df 76
+the portfit margine is  0.01367619574524142
+training with df 40
+the portfit margine is  -0.04028172726029172
+training with df 0
+the portfit margine is  0.13085542466738997
+training with df 38
+the portfit margine is  -0.02903832373269118
+training with df 60
+the portfit margine is  -0.0033157078710839157
+training with df 31
+the portfit margine is  -0.04245177946053627
+training with df 29
+the portfit margine is  -0.04989436734180733
+training with df 13
+the portfit margine is  0.0004026698041520154
+training with df 68
+the portfit margine is  -0.02862888056573144
+training with df 24
+the portfit margine is  -0.04119024470920881
+training with df 49
+the portfit margine is  -0.057456125974626904
+training with df 91
+the portfit margine is  0.021036594216367967
+training with df 19
+the portfit margine is  -0.04088848022905862
+training with df 65
+the portfit margine is  -0.02117775460724276
+training with df 23
+the portfit margine is  -0.05727352395372127
+training with df 27
+the portfit margine is  -0.01332054872378601
+training with df 35
+the portfit margine is  0.017212293623146902
+training with df 106
+the portfit margine is  -0.04304493295153931
+training with df 33
+the portfit margine is  1.1448040207758703
+training with df 97
+the portfit margine is  -0.09235441633325317
+validating on df 1
+the portfit margine is  -0.011260203596195324
+validating on df 2
+the portfit margine is  0.013958762089350603
+validating on df 12
+the portfit margine is  -0.06895355279045318
+validating on df 15
+the portfit margine is  -0.03243967216550091
+validating on df 17
+the portfit margine is  0.004837182782410063
+validating on df 21
+the portfit margine is  -0.003295074644784226
+validating on df 25
+the portfit margine is  -0.0060539404361075935
+validating on df 26
+the portfit margine is  0.0023863736670529778
+validating on df 27
+the portfit margine is  -0.0023176357689292425
+validating on df 29
+the portfit margine is  0.0066380302879091345
+validating on df 37
+the portfit margine is  0.0009842610226929935
+validating on df 39
+the portfit margine is  -0.00653147247917011
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  43181 times (83.32%)
+  Action 1 (100.0% position):   8647 times (16.68%)
+Mean return rate: -0.0085
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.011609495186428115
+validating on df 2
+the portfit margine is  0.023008942387917335
+validating on df 12
+the portfit margine is  -0.0688903203942835
+validating on df 15
+the portfit margine is  -0.04160903387000776
+validating on df 17
+the portfit margine is  0.00559208862678138
+validating on df 21
+the portfit margine is  -7.307594865857722e-05
+validating on df 25
+the portfit margine is  -0.012038523700282982
+validating on df 26
+the portfit margine is  0.004758495934803772
+validating on df 27
+the portfit margine is  -0.011670335715241377
+validating on df 29
+the portfit margine is  0.006591949862942507
+validating on df 37
+the portfit margine is  0.008825039176996806
+validating on df 39
+the portfit margine is  0.0006683877371871648
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  41919 times (80.88%)
+  Action 1 (100.0% position):   9909 times (19.12%)
+Mean return rate: -0.0080
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.008503911835977066, -0.00803715675735611]
+Average validation return rate: -0.008270534296666588
+epoch  24
+[0, 11, 40, 44, 76, 53, 38, 91, 77, 27, 45, 37, 33, 12, 19, 7, 71, 85, 35, 32, 29, 13, 26, 49, 97, 31, 24, 6, 65, 74, 106, 75, 28, 23, 68, 60]
+training with df 0
+the portfit margine is  0.15422539480786301
+training with df 11
+the portfit margine is  -0.022127415722839494
+training with df 40
+the portfit margine is  -0.05776717097111744
+training with df 44
+the portfit margine is  0.6904239594409617
+training with df 76
+the portfit margine is  -0.06846924893312348
+training with df 53
+the portfit margine is  -0.13605806833537962
+training with df 38
+the portfit margine is  -0.021109805964596343
+training with df 91
+the portfit margine is  -0.0013305205484108837
+training with df 77
+the portfit margine is  0.06490942580360899
+training with df 27
+the portfit margine is  -0.042012154841659634
+training with df 45
+the portfit margine is  0.12747603758255924
+training with df 37
+the portfit margine is  -0.09704809623519134
+training with df 33
+the portfit margine is  1.1565046674719348
+training with df 12
+the portfit margine is  -0.006314507371852853
+training with df 19
+the portfit margine is  -0.08678417469361632
+training with df 7
+the portfit margine is  0.3068130222453193
+training with df 71
+the portfit margine is  -0.024638012886094834
+training with df 85
+the portfit margine is  -0.04885083768995864
+training with df 35
+the portfit margine is  -0.026959264588403493
+training with df 32
+the portfit margine is  0.12133858830048846
+training with df 29
+the portfit margine is  -0.05297541933973275
+training with df 13
+the portfit margine is  -0.011320271836238467
+training with df 26
+the portfit margine is  -0.03405510316007353
+training with df 49
+the portfit margine is  -0.04828224615737823
+training with df 97
+the portfit margine is  -0.10667752786260021
+training with df 31
+the portfit margine is  -0.07306816550505878
+training with df 24
+the portfit margine is  -0.06330135289225304
+training with df 6
+the portfit margine is  0.0950040963658278
+training with df 65
+the portfit margine is  -0.035107559920539905
+training with df 74
+the portfit margine is  -0.08575648629779697
+training with df 106
+the portfit margine is  -0.05430845245234028
+training with df 75
+the portfit margine is  -0.06663213247984284
+training with df 28
+the portfit margine is  0.026592885049662507
+training with df 23
+the portfit margine is  -0.018764670440796678
+training with df 68
+the portfit margine is  -0.10534412614397777
+training with df 60
+the portfit margine is  -0.04753530362752914
+validating on df 1
+the portfit margine is  -0.026140422383396453
+validating on df 2
+the portfit margine is  0.021529713486080158
+validating on df 12
+the portfit margine is  -0.06902599756328777
+validating on df 15
+the portfit margine is  -0.08390473045445666
+validating on df 17
+the portfit margine is  -0.00017964763620232334
+validating on df 21
+the portfit margine is  -0.008524826265826284
+validating on df 25
+the portfit margine is  -0.010576680631227667
+validating on df 26
+the portfit margine is  0.023371406123762328
+validating on df 27
+the portfit margine is  -0.003043709902735834
+validating on df 29
+the portfit margine is  -0.005176643822186305
+validating on df 37
+the portfit margine is  -0.013943486436517999
+validating on df 39
+the portfit margine is  0.008245040547650255
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  41899 times (80.84%)
+  Action 1 (100.0% position):   9929 times (19.16%)
+Mean return rate: -0.0139
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.026483345159912124
+validating on df 2
+the portfit margine is  0.03564484100443589
+validating on df 12
+the portfit margine is  -0.06992942207473393
+validating on df 15
+the portfit margine is  -0.08373349941166644
+validating on df 17
+the portfit margine is  -0.002052296414693475
+validating on df 21
+the portfit margine is  -0.00532751147571573
+validating on df 25
+the portfit margine is  -0.016486281118127534
+validating on df 26
+the portfit margine is  0.023336485483146513
+validating on df 27
+the portfit margine is  -0.012384618121452848
+validating on df 29
+the portfit margine is  -0.002596255765144965
+validating on df 37
+the portfit margine is  -0.002961899814933889
+validating on df 39
+the portfit margine is  0.015298804476409151
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  40861 times (78.84%)
+  Action 1 (100.0% position):  10967 times (21.16%)
+Mean return rate: -0.0123
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.013947498744862044, -0.012306249866032445]
+Average validation return rate: -0.013126874305447244
+epoch  25
+[38, 74, 68, 12, 24, 13, 27, 23, 40, 53, 33, 60, 85, 35, 0, 32, 76, 29, 26, 97, 49, 6, 31, 28, 7, 37, 65, 75, 11, 106, 19, 71, 91, 77, 44, 45]
+training with df 38
+the portfit margine is  -0.032251451072476255
+training with df 74
+the portfit margine is  -0.07838689317201024
+training with df 68
+the portfit margine is  -0.04993013106289156
+training with df 12
+the portfit margine is  0.0142316782347722
+training with df 24
+the portfit margine is  -0.019349129852986514
+training with df 13
+the portfit margine is  0.02485020656003026
+training with df 27
+the portfit margine is  -0.061722632193196104
+training with df 23
+the portfit margine is  -0.00476183524708559
+training with df 40
+the portfit margine is  -0.04055186798719298
+training with df 53
+the portfit margine is  -0.1383297678935387
+training with df 33
+the portfit margine is  1.2980942527512485
+training with df 60
+the portfit margine is  -0.04256962195163204
+training with df 85
+the portfit margine is  -0.0327369195874093
+training with df 35
+the portfit margine is  0.027711830022532174
+training with df 0
+the portfit margine is  0.16286313721185236
+training with df 32
+the portfit margine is  0.20710738626046746
+training with df 76
+the portfit margine is  -0.061926761596880445
+training with df 29
+the portfit margine is  -0.06717022590112916
+training with df 26
+the portfit margine is  -0.03402429064878663
+training with df 97
+the portfit margine is  -0.05544309077439102
+training with df 49
+the portfit margine is  -0.13587242860173718
+training with df 6
+the portfit margine is  0.07510295269157131
+training with df 31
+the portfit margine is  -0.05816563291933033
+training with df 28
+the portfit margine is  -0.05102581659829842
+training with df 7
+the portfit margine is  0.27895574150889096
+training with df 37
+the portfit margine is  -0.02403854571697773
+training with df 65
+the portfit margine is  0.002629438134158265
+training with df 75
+the portfit margine is  -0.015557269582229229
+training with df 11
+the portfit margine is  0.015793555696286366
+training with df 106
+the portfit margine is  -0.05763633568455442
+training with df 19
+the portfit margine is  -0.06232573535411471
+training with df 71
+the portfit margine is  -0.02290651469283997
+training with df 91
+the portfit margine is  0.003407968692936206
+training with df 77
+the portfit margine is  0.019611298140940897
+training with df 44
+the portfit margine is  0.900854871611444
+training with df 45
+the portfit margine is  0.022543302856686136
+validating on df 1
+the portfit margine is  -0.02469613301045492
+validating on df 2
+the portfit margine is  0.0020415576599957168
+validating on df 12
+the portfit margine is  -0.020965698029364908
+validating on df 15
+the portfit margine is  -0.09248750340373955
+validating on df 17
+the portfit margine is  0.018797474426949134
+validating on df 21
+the portfit margine is  0.0008493729469513289
+validating on df 25
+the portfit margine is  -0.06927973217892236
+validating on df 26
+the portfit margine is  0.011427225055940893
+validating on df 27
+the portfit margine is  -0.02243734272281394
+validating on df 29
+the portfit margine is  -0.009987672448167673
+validating on df 37
+the portfit margine is  -0.020751104001400598
+validating on df 39
+the portfit margine is  -0.0106375934370352
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  35399 times (68.30%)
+  Action 1 (100.0% position):  16429 times (31.70%)
+Mean return rate: -0.0198
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.025042472847062066
+validating on df 2
+the portfit margine is  0.015253096864053954
+validating on df 12
+the portfit margine is  -0.020897580471647463
+validating on df 15
+the portfit margine is  -0.09231998260417719
+validating on df 17
+the portfit margine is  0.019562868244827173
+validating on df 21
+the portfit margine is  0.004098878141403847
+validating on df 25
+the portfit margine is  -0.07492473590302626
+validating on df 26
+the portfit margine is  0.013846910476155442
+validating on df 27
+the portfit margine is  -0.0315561558383833
+validating on df 29
+the portfit margine is  -0.01003285355990717
+validating on df 37
+the portfit margine is  -0.013149810639602981
+validating on df 39
+the portfit margine is  -0.003932715220450247
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  33998 times (65.60%)
+  Action 1 (100.0% position):  17830 times (34.40%)
+Mean return rate: -0.0183
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.019843929095171842, -0.01825787944648469]
+Average validation return rate: -0.019050904270828267
+epoch  26
+[12, 75, 29, 53, 65, 91, 33, 49, 26, 74, 97, 11, 32, 38, 45, 76, 6, 28, 60, 35, 40, 0, 27, 71, 85, 13, 77, 19, 23, 44, 7, 106, 68, 31, 37, 24]
+training with df 12
+the portfit margine is  -0.016327285386569534
+training with df 75
+the portfit margine is  -0.05518028843069119
+training with df 29
+the portfit margine is  -0.045121478242521884
+training with df 53
+the portfit margine is  -0.11929783746067894
+training with df 65
+the portfit margine is  -0.042512199198894735
+training with df 91
+the portfit margine is  -0.07396019669393136
+training with df 33
+the portfit margine is  1.1987882108751329
+training with df 49
+the portfit margine is  -0.03216717145006957
+training with df 26
+the portfit margine is  -0.08381808876744312
+training with df 74
+the portfit margine is  -0.0848323405156457
+training with df 97
+the portfit margine is  -0.07178539264443279
+training with df 11
+the portfit margine is  -0.016748340905677884
+training with df 32
+the portfit margine is  0.09452157208427686
+training with df 38
+the portfit margine is  -0.06418419578690981
+training with df 45
+the portfit margine is  0.018390685228309396
+training with df 76
+the portfit margine is  -0.028990495171459206
+training with df 6
+the portfit margine is  0.14446899240986413
+training with df 28
+the portfit margine is  -0.06318013400827716
+training with df 60
+the portfit margine is  0.010780903866956135
+training with df 35
+the portfit margine is  0.021366613399086236
+training with df 40
+the portfit margine is  -0.005524821005749157
+training with df 0
+the portfit margine is  0.15511411236440503
+training with df 27
+the portfit margine is  -0.002977956650269136
+training with df 71
+the portfit margine is  -0.005902360262841171
+training with df 85
+the portfit margine is  -0.049650655935420965
+training with df 13
+the portfit margine is  0.031048046714349704
+training with df 77
+the portfit margine is  0.049784576729537434
+training with df 19
+the portfit margine is  -0.045041964991566465
+training with df 23
+the portfit margine is  -0.08684202432992791
+training with df 44
+the portfit margine is  0.7250500821803959
+training with df 7
+the portfit margine is  0.36658526011743126
+training with df 106
+the portfit margine is  -0.019066131331980613
+training with df 68
+the portfit margine is  -0.03957342086114562
+training with df 31
+the portfit margine is  -0.06837618899378842
+training with df 37
+the portfit margine is  -0.056622388141105165
+training with df 24
+the portfit margine is  -0.07322962390988647
+validating on df 1
+the portfit margine is  0.009586768586210229
+validating on df 2
+the portfit margine is  -0.035847879183143215
+validating on df 12
+the portfit margine is  -0.017225273556110005
+validating on df 15
+the portfit margine is  -0.0838531957654081
+validating on df 17
+the portfit margine is  0.029781339845728873
+validating on df 21
+the portfit margine is  -0.0175990255621199
+validating on df 25
+the portfit margine is  -0.05637701485055271
+validating on df 26
+the portfit margine is  -0.008149727603927737
+validating on df 27
+the portfit margine is  -0.007950785288595448
+validating on df 29
+the portfit margine is  0.005548937041782557
+validating on df 37
+the portfit margine is  -0.012725155475165506
+validating on df 39
+the portfit margine is  0.0011075183474331537
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  37712 times (72.76%)
+  Action 1 (100.0% position):  14116 times (27.24%)
+Mean return rate: -0.0161
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  0.00922863425515718
+validating on df 2
+the portfit margine is  -0.022954034425464873
+validating on df 12
+the portfit margine is  -0.013104654544030115
+validating on df 15
+the portfit margine is  -0.08368443877253048
+validating on df 17
+the portfit margine is  0.03055498553200958
+validating on df 21
+the portfit margine is  -0.014425844042456604
+validating on df 25
+the portfit margine is  -0.0620718815788215
+validating on df 26
+the portfit margine is  -0.005767231449633949
+validating on df 27
+the portfit margine is  -0.017179867288630486
+validating on df 29
+the portfit margine is  0.005502450633753815
+validating on df 37
+the portfit margine is  -0.005054762873296234
+validating on df 39
+the portfit margine is  0.007424204641813958
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  36483 times (70.39%)
+  Action 1 (100.0% position):  15345 times (29.61%)
+Mean return rate: -0.0143
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.01614195778865565, -0.014294369992677478]
+Average validation return rate: -0.015218163890666565
+epoch  27
+[45, 6, 74, 32, 38, 7, 53, 77, 11, 13, 44, 97, 71, 60, 0, 26, 35, 24, 27, 40, 12, 19, 28, 49, 106, 76, 75, 31, 68, 65, 91, 37, 33, 23, 85, 29]
+training with df 45
+the portfit margine is  0.012564545275705294
+training with df 6
+the portfit margine is  0.10908984399527855
+training with df 74
+the portfit margine is  -0.044313629623884666
+training with df 32
+the portfit margine is  0.14484810115980357
+training with df 38
+the portfit margine is  0.022631263320629
+training with df 7
+the portfit margine is  0.3165256500270832
+training with df 53
+the portfit margine is  -0.10827753555624337
+training with df 77
+the portfit margine is  0.0900858335907115
+training with df 11
+the portfit margine is  0.025106986998687866
+training with df 13
+the portfit margine is  0.019750925045909598
+training with df 44
+the portfit margine is  0.7850469209967096
+training with df 97
+the portfit margine is  -0.10031949048558565
+training with df 71
+the portfit margine is  0.036850445241258176
+training with df 60
+the portfit margine is  0.03689731036553985
+training with df 0
+the portfit margine is  0.1230724044548039
+training with df 26
+the portfit margine is  -0.06017286014970054
+training with df 35
+the portfit margine is  -0.0186317651791873
+training with df 24
+the portfit margine is  -0.023634401096308134
+training with df 27
+the portfit margine is  -0.04442801992799902
+training with df 40
+the portfit margine is  0.01540862151691368
+training with df 12
+the portfit margine is  0.020738862342299966
+training with df 19
+the portfit margine is  0.010807214912273369
+training with df 28
+the portfit margine is  -0.031445500065942635
+training with df 49
+the portfit margine is  -0.062249571962167155
+training with df 106
+the portfit margine is  -0.016585859616548
+training with df 76
+the portfit margine is  -0.01735659134478123
+training with df 75
+the portfit margine is  0.014469904479085317
+training with df 31
+the portfit margine is  -0.07559293706182332
+training with df 68
+the portfit margine is  -0.0688447283066676
+training with df 65
+the portfit margine is  -0.05309405997031945
+training with df 91
+the portfit margine is  0.054310657562659057
+training with df 37
+the portfit margine is  -0.07433639089811597
+training with df 33
+the portfit margine is  1.258723511665657
+training with df 23
+the portfit margine is  -0.021374620305879825
+training with df 85
+the portfit margine is  -0.05429070391192202
+training with df 29
+the portfit margine is  -0.05161742333043972
+validating on df 1
+the portfit margine is  0.017851800623023127
+validating on df 2
+the portfit margine is  0.009366943684669896
+validating on df 12
+the portfit margine is  -0.042401995809943555
+validating on df 15
+the portfit margine is  -0.053039407863211846
+validating on df 17
+the portfit margine is  0.020316371903409645
+validating on df 21
+the portfit margine is  -0.0030939365495065135
+validating on df 25
+the portfit margine is  -0.03692339242105298
+validating on df 26
+the portfit margine is  0.0005015267744633398
+validating on df 27
+the portfit margine is  -0.010228016873567551
+validating on df 29
+the portfit margine is  0.0012752537517749742
+validating on df 37
+the portfit margine is  -0.03834135683565471
+validating on df 39
+the portfit margine is  -0.0001636751465995473
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  41076 times (79.25%)
+  Action 1 (100.0% position):  10752 times (20.75%)
+Mean return rate: -0.0112
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  0.017490734407547916
+validating on df 2
+the portfit margine is  0.018295582710226545
+validating on df 12
+the portfit margine is  -0.03919572947703889
+validating on df 15
+the portfit margine is  -0.052861308266346274
+validating on df 17
+the portfit margine is  0.021082906826136935
+validating on df 21
+the portfit margine is  0.00011327696654145298
+validating on df 25
+the portfit margine is  -0.04274549453868997
+validating on df 26
+the portfit margine is  0.002899834819213438
+validating on df 27
+the portfit margine is  -0.019458316075377027
+validating on df 29
+the portfit margine is  0.0012291110898805082
+validating on df 37
+the portfit margine is  -0.03739384456952295
+validating on df 39
+the portfit margine is  0.0019754268605470067
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  40402 times (77.95%)
+  Action 1 (100.0% position):  11426 times (22.05%)
+Mean return rate: -0.0107
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.011239990396849642, -0.01071398493724011]
+Average validation return rate: -0.010976987667044875
+epoch  28
+[91, 77, 85, 19, 35, 75, 65, 45, 76, 44, 106, 24, 37, 29, 53, 74, 31, 0, 6, 68, 38, 32, 26, 27, 12, 7, 28, 60, 49, 11, 40, 33, 71, 97, 23, 13]
+training with df 91
+the portfit margine is  -0.04313023272132009
+training with df 77
+the portfit margine is  0.03772375117495325
+training with df 85
+the portfit margine is  -0.07538914529965206
+training with df 19
+the portfit margine is  -0.01487307656201133
+training with df 35
+the portfit margine is  0.016528884028119077
+training with df 75
+the portfit margine is  -0.07356236570981728
+training with df 65
+the portfit margine is  -0.0372076818605799
+training with df 45
+the portfit margine is  0.07889049049588048
+training with df 76
+the portfit margine is  0.01948223065739457
+training with df 44
+the portfit margine is  0.8193118263462815
+training with df 106
+the portfit margine is  -0.0642020184417686
+training with df 24
+the portfit margine is  -0.008714891822887967
+training with df 37
+the portfit margine is  -0.03748777760419073
+training with df 29
+the portfit margine is  -0.03790121458007418
+training with df 53
+the portfit margine is  -0.10843691323812554
+training with df 74
+the portfit margine is  -0.013329024405700924
+training with df 31
+the portfit margine is  -0.06598731425040513
+training with df 0
+the portfit margine is  0.16358911438855867
+training with df 6
+the portfit margine is  0.08816616662112407
+training with df 68
+the portfit margine is  -0.05967843037266586
+training with df 38
+the portfit margine is  -0.02913827726419313
+training with df 32
+the portfit margine is  0.1704782699700637
+training with df 26
+the portfit margine is  -0.048574888706066556
+training with df 27
+the portfit margine is  -0.019910123647786777
+training with df 12
+the portfit margine is  0.02353020196742537
+training with df 7
+the portfit margine is  0.3429285133570037
+training with df 28
+the portfit margine is  -0.0423729309563209
+training with df 60
+the portfit margine is  -0.03360192123660636
+training with df 49
+the portfit margine is  -0.12740474146108638
+training with df 11
+the portfit margine is  -0.0038089535988124774
+training with df 40
+the portfit margine is  -0.06323746529517343
+training with df 33
+the portfit margine is  1.1370552026860472
+training with df 71
+the portfit margine is  -0.020780317021943776
+training with df 97
+the portfit margine is  -0.07712120532281032
+training with df 23
+the portfit margine is  -0.024061764384196577
+training with df 13
+the portfit margine is  -0.04593260995801199
+validating on df 1
+the portfit margine is  0.00526362580664427
+validating on df 2
+the portfit margine is  -0.02499615164874616
+validating on df 12
+the portfit margine is  -0.00017088726727850585
+validating on df 15
+the portfit margine is  -0.04745933212458437
+validating on df 17
+the portfit margine is  0.0011114278094619828
+validating on df 21
+the portfit margine is  0.0020110744328487693
+validating on df 25
+the portfit margine is  -0.027276355338771107
+validating on df 26
+the portfit margine is  0.010137547559714829
+validating on df 27
+the portfit margine is  0.009125920680029194
+validating on df 29
+the portfit margine is  0.024881162889486972
+validating on df 37
+the portfit margine is  -0.017161700491679234
+validating on df 39
+the portfit margine is  -0.015683391023285847
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  40565 times (78.27%)
+  Action 1 (100.0% position):  11263 times (21.73%)
+Mean return rate: -0.0067
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  0.004908900357987816
+validating on df 2
+the portfit margine is  -0.016493096030584138
+validating on df 12
+the portfit margine is  0.003038317348756618
+validating on df 15
+the portfit margine is  -0.0472765118099061
+validating on df 17
+the portfit margine is  0.001863534599168557
+validating on df 21
+the portfit margine is  0.005259396012139538
+validating on df 25
+the portfit margine is  -0.03312178859025321
+validating on df 26
+the portfit margine is  0.01256370963808575
+validating on df 27
+the portfit margine is  -0.0003435222430452867
+validating on df 29
+the portfit margine is  0.022413387206008436
+validating on df 37
+the portfit margine is  -0.016185433546098645
+validating on df 39
+the portfit margine is  -0.008750158528710885
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  39960 times (77.10%)
+  Action 1 (100.0% position):  11868 times (22.90%)
+Mean return rate: -0.0060
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.006684754893013268, -0.006010272132204296]
+Average validation return rate: -0.006347513512608782
+epoch  29
+[0, 31, 38, 77, 76, 45, 33, 68, 6, 28, 74, 53, 19, 12, 23, 13, 75, 106, 40, 11, 26, 37, 65, 27, 7, 60, 49, 85, 24, 29, 97, 35, 44, 32, 91, 71]
+training with df 0
+the portfit margine is  0.21951940332059078
+training with df 31
+the portfit margine is  -0.09109735361309522
+training with df 38
+the portfit margine is  0.028391014628341704
+training with df 77
+the portfit margine is  0.05903405396407785
+training with df 76
+the portfit margine is  -0.0008489775987671785
+training with df 45
+the portfit margine is  0.034288466886569405
+training with df 33
+the portfit margine is  1.2928113746422185
+training with df 68
+the portfit margine is  -0.08352609362225083
+training with df 6
+the portfit margine is  0.0677865741556618
+training with df 28
+the portfit margine is  0.0037785245540396715
+training with df 74
+the portfit margine is  0.01340502551680385
+training with df 53
+the portfit margine is  -0.15039220591208188
+training with df 19
+the portfit margine is  -0.008490469296386784
+training with df 12
+the portfit margine is  0.03445194439904438
+training with df 23
+the portfit margine is  -0.020506096565324834
+training with df 13
+the portfit margine is  -0.024820849381944236
+training with df 75
+the portfit margine is  -0.053592299663473696
+training with df 106
+the portfit margine is  0.012608531869326731
+training with df 40
+the portfit margine is  -0.04638760134243345
+training with df 11
+the portfit margine is  0.0540163167577265
+training with df 26
+the portfit margine is  -0.04672186130650648
+training with df 37
+the portfit margine is  -0.028683357795165298
+training with df 65
+the portfit margine is  -0.07914025940903245
+training with df 27
+the portfit margine is  -0.0316092533386855
+training with df 7
+the portfit margine is  0.325828294661295
+training with df 60
+the portfit margine is  -0.025682647648679374
+training with df 49
+the portfit margine is  -0.12706090511598173
+training with df 85
+the portfit margine is  -0.031141996384912655
+training with df 24
+the portfit margine is  -0.020144495273821304
+training with df 29
+the portfit margine is  -0.05171506664180673
+training with df 97
+the portfit margine is  -0.10217748876590446
+training with df 35
+the portfit margine is  0.023282221789493206
+training with df 44
+the portfit margine is  0.9603998168699391
+training with df 32
+the portfit margine is  0.13477518157897983
+training with df 91
+the portfit margine is  -0.009921240618571903
+training with df 71
+the portfit margine is  0.023259225497000435
+validating on df 1
+the portfit margine is  0.026188280539853438
+validating on df 2
+the portfit margine is  -0.01572347194156945
+validating on df 12
+the portfit margine is  -0.007301040492879032
+validating on df 15
+the portfit margine is  -0.03691946335496972
+validating on df 17
+the portfit margine is  0.019711363315792218
+validating on df 21
+the portfit margine is  -0.019527553211857496
+validating on df 25
+the portfit margine is  -0.06273700222346781
+validating on df 26
+the portfit margine is  0.009033599393166858
+validating on df 27
+the portfit margine is  -0.007764934999670498
+validating on df 29
+the portfit margine is  0.01322553946883399
+validating on df 37
+the portfit margine is  -0.010172378540444492
+validating on df 39
+the portfit margine is  -0.004353879396305129
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  39743 times (76.68%)
+  Action 1 (100.0% position):  12085 times (23.32%)
+Mean return rate: -0.0080
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  0.025823867003245585
+validating on df 2
+the portfit margine is  -0.0031711764728020644
+validating on df 12
+the portfit margine is  -0.004092331966330152
+validating on df 15
+the portfit margine is  -0.036735528669780054
+validating on df 17
+the portfit margine is  0.020477443712625647
+validating on df 21
+the portfit margine is  -0.016360885933157744
+validating on df 25
+the portfit margine is  -0.06838467961970092
+validating on df 26
+the portfit margine is  0.009398762379600339
+validating on df 27
+the portfit margine is  -0.017037736865724865
+validating on df 29
+the portfit margine is  0.0131786333867981
+validating on df 37
+the portfit margine is  -0.008899213627266617
+validating on df 39
+the portfit margine is  0.0014747565108349158
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  39034 times (75.31%)
+  Action 1 (100.0% position):  12794 times (24.69%)
+Mean return rate: -0.0070
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.00802841178695976, -0.00702734084680482]
+Average validation return rate: -0.0075278763168822906
+epoch  30
+[6, 33, 75, 0, 68, 77, 44, 28, 37, 12, 40, 60, 38, 35, 24, 23, 65, 106, 29, 76, 19, 71, 7, 11, 49, 31, 27, 32, 91, 97, 74, 85, 45, 53, 26, 13]
+training with df 6
+the portfit margine is  0.07916170846994594
+training with df 33
+the portfit margine is  1.3851236970687266
+training with df 75
+the portfit margine is  -0.00023479001531339247
+training with df 0
+the portfit margine is  0.15098497000770983
+training with df 68
+the portfit margine is  -0.03731643757017276
+training with df 77
+the portfit margine is  0.09150205081490073
+training with df 44
+the portfit margine is  0.7012830477681053
+training with df 28
+the portfit margine is  0.008263563965281825
+training with df 37
+the portfit margine is  -0.004956973331739698
+training with df 12
+the portfit margine is  -0.003070135131993114
+training with df 40
+the portfit margine is  -0.06533826773765933
+training with df 60
+the portfit margine is  0.034964105879751156
+training with df 38
+the portfit margine is  -0.016143633150912266
+training with df 35
+the portfit margine is  0.038544777953336475
+training with df 24
+the portfit margine is  -0.032471993493631425
+training with df 23
+the portfit margine is  -0.008017264306897344
+training with df 65
+the portfit margine is  -0.04128266431724494
+training with df 106
+the portfit margine is  -0.05073556450109315
+training with df 29
+the portfit margine is  -0.05751362653752343
+training with df 76
+the portfit margine is  -0.03167439454627038
+training with df 19
+the portfit margine is  -0.06709254504046784
+training with df 71
+the portfit margine is  -0.006583474232313503
+training with df 7
+the portfit margine is  0.3703457482228244
+training with df 11
+the portfit margine is  -0.0024664482528998053
+training with df 49
+the portfit margine is  -0.06417660054402625
+training with df 31
+the portfit margine is  -0.08498044799408706
+training with df 27
+the portfit margine is  -0.020369929093346197
+training with df 32
+the portfit margine is  0.060246055512890764
+training with df 91
+the portfit margine is  -0.08750365306691375
+training with df 97
+the portfit margine is  -0.1313435183197066
+training with df 74
+the portfit margine is  -0.06397666753583993
+training with df 85
+the portfit margine is  -0.05853502993219773
+training with df 45
+the portfit margine is  -0.08068963105579864
+training with df 53
+the portfit margine is  -0.10371336165267135
+training with df 26
+the portfit margine is  0.014890929356058992
+training with df 13
+the portfit margine is  -0.0064812610301333735
+validating on df 1
+the portfit margine is  0.014833723046719236
+validating on df 2
+the portfit margine is  -0.0012895054247473582
+validating on df 12
+the portfit margine is  -0.005857828023588494
+validating on df 15
+the portfit margine is  -0.03951925268064658
+validating on df 17
+the portfit margine is  0.005275989999897301
+validating on df 21
+the portfit margine is  -0.010801383106662095
+validating on df 25
+the portfit margine is  -0.01917349245010504
+validating on df 26
+the portfit margine is  -0.007179427473697156
+validating on df 27
+the portfit margine is  0.0028065867386284546
+validating on df 29
+the portfit margine is  0.009837087998827362
+validating on df 37
+the portfit margine is  -0.016329580947742988
+validating on df 39
+the portfit margine is  -0.014005023521098956
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  44046 times (84.98%)
+  Action 1 (100.0% position):   7782 times (15.02%)
+Mean return rate: -0.0068
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  0.011103829059119632
+validating on df 2
+the portfit margine is  0.008307712788058991
+validating on df 12
+the portfit margine is  -0.002649019083695078
+validating on df 15
+the portfit margine is  -0.0393353215734981
+validating on df 17
+the portfit margine is  0.006031225507759091
+validating on df 21
+the portfit margine is  -0.007605966037424994
+validating on df 25
+the portfit margine is  -0.025064638855058705
+validating on df 26
+the portfit margine is  -0.00481267832649382
+validating on df 27
+the portfit margine is  -0.006576928227960408
+validating on df 29
+the portfit margine is  0.007405536419703452
+validating on df 37
+the portfit margine is  -0.015076121284622549
+validating on df 39
+the portfit margine is  -0.008251915732458719
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  43311 times (83.57%)
+  Action 1 (100.0% position):   8517 times (16.43%)
+Mean return rate: -0.0064
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.00678350882035136, -0.0063770237788809345]
+Average validation return rate: -0.006580266299616147
+epoch  31
+[49, 45, 60, 38, 24, 77, 44, 32, 13, 37, 26, 97, 75, 31, 28, 68, 74, 71, 19, 11, 33, 106, 91, 35, 53, 85, 6, 23, 29, 12, 27, 76, 65, 40, 7, 0]
+training with df 49
+the portfit margine is  -0.013141851984172873
+training with df 45
+the portfit margine is  0.04371445946388751
+training with df 60
+the portfit margine is  0.00666310343949098
+training with df 38
+the portfit margine is  -0.01330122387793409
+training with df 24
+the portfit margine is  -0.060781752844629194
+training with df 77
+the portfit margine is  -0.006395856365616972
+training with df 44
+the portfit margine is  0.6988651901633033
+training with df 32
+the portfit margine is  0.15726404171816885
+training with df 13
+the portfit margine is  -0.011764011614790692
+training with df 37
+the portfit margine is  -0.04463366654784168
+training with df 26
+the portfit margine is  -0.05020058277953098
+training with df 97
+the portfit margine is  -0.06519443015917659
+training with df 75
+the portfit margine is  0.01347921470940035
+training with df 31
+the portfit margine is  -0.04566204899374048
+training with df 28
+the portfit margine is  -0.05139849290573479
+training with df 68
+the portfit margine is  -0.09873520767910254
+training with df 74
+the portfit margine is  -0.07834040492911509
+training with df 71
+the portfit margine is  -0.03522673488182427
+training with df 19
+the portfit margine is  -0.04360028234628721
+training with df 11
+the portfit margine is  0.0004892619467220899
+training with df 33
+the portfit margine is  1.317481205883963
+training with df 106
+the portfit margine is  -0.013292470428232186
+training with df 91
+the portfit margine is  0.021889216706906304
+training with df 35
+the portfit margine is  -0.026683623304349337
+training with df 53
+the portfit margine is  -0.16734298689966265
+training with df 85
+the portfit margine is  -0.0590330483958368
+training with df 6
+the portfit margine is  0.10568243721543343
+training with df 23
+the portfit margine is  -0.027344834205006656
+training with df 29
+the portfit margine is  -0.07299604816436044
+training with df 12
+the portfit margine is  0.017384647368520533
+training with df 27
+the portfit margine is  -0.003143441202311289
+training with df 76
+the portfit margine is  -0.033589343170384416
+training with df 65
+the portfit margine is  -0.014498100416624655
+training with df 40
+the portfit margine is  -0.05773338098274911
+training with df 7
+the portfit margine is  0.30138126616910743
+training with df 0
+the portfit margine is  0.07997963197015592
+validating on df 1
+the portfit margine is  0.00820587362602271
+validating on df 2
+the portfit margine is  0.00884683786297572
+validating on df 12
+the portfit margine is  -0.004448410969225188
+validating on df 15
+the portfit margine is  -0.051207330596789453
+validating on df 17
+the portfit margine is  0.016340041232124822
+validating on df 21
+the portfit margine is  0.0007204301839105631
+validating on df 25
+the portfit margine is  -0.022997576151897202
+validating on df 26
+the portfit margine is  0.007406051048598505
+validating on df 27
+the portfit margine is  0.021821225312513362
+validating on df 29
+the portfit margine is  0.020495205965083745
+validating on df 37
+the portfit margine is  -0.015408256666169627
+validating on df 39
+the portfit margine is  -0.013646879824848513
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  44633 times (86.12%)
+  Action 1 (100.0% position):   7195 times (13.88%)
+Mean return rate: -0.0020
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  0.007848229144785654
+validating on df 2
+the portfit margine is  0.02294449725171682
+validating on df 12
+the portfit margine is  -0.0012395039673462468
+validating on df 15
+the portfit margine is  -0.05102556278241457
+validating on df 17
+the portfit margine is  0.014041441838675603
+validating on df 21
+the portfit margine is  0.003964567749998297
+validating on df 25
+the portfit margine is  -0.028934408955978094
+validating on df 26
+the portfit margine is  0.00982565258155808
+validating on df 27
+the portfit margine is  0.012124338692998528
+validating on df 29
+the portfit margine is  0.020447940782250203
+validating on df 37
+the portfit margine is  -0.014429411989011112
+validating on df 39
+the portfit margine is  -0.007887883917358134
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  43707 times (84.33%)
+  Action 1 (100.0% position):   8121 times (15.67%)
+Mean return rate: -0.0010
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.0019893990814750465, -0.001026675297510414]
+Average validation return rate: -0.0015080371894927304
+epoch  32
+[38, 26, 0, 19, 75, 76, 74, 85, 27, 77, 6, 12, 33, 13, 53, 7, 37, 91, 23, 45, 24, 31, 28, 65, 40, 29, 71, 44, 106, 35, 68, 49, 60, 11, 97, 32]
+training with df 38
+the portfit margine is  -0.021257306391448506
+training with df 26
+the portfit margine is  -0.037554365800124
+training with df 0
+the portfit margine is  0.17768064532784858
+training with df 19
+the portfit margine is  -0.009596277136640347
+training with df 75
+the portfit margine is  0.0239665247520775
+training with df 76
+the portfit margine is  -0.013863144667910395
+training with df 74
+the portfit margine is  -0.07198261304003178
+training with df 85
+the portfit margine is  -0.03469505309682246
+training with df 27
+the portfit margine is  0.005985205789511241
+training with df 77
+the portfit margine is  0.1627995514108629
+training with df 6
+the portfit margine is  0.12905929278895237
+training with df 12
+the portfit margine is  0.017578318247937156
+training with df 33
+the portfit margine is  1.2294316692217038
+training with df 13
+the portfit margine is  -0.02247329500555506
+training with df 53
+the portfit margine is  -0.10623445746189301
+training with df 7
+the portfit margine is  0.315504230633978
+training with df 37
+the portfit margine is  -0.05635230825105577
+training with df 91
+the portfit margine is  0.013548701172714544
+training with df 23
+the portfit margine is  -0.013666051402197316
+training with df 45
+the portfit margine is  0.08036918592083868
+training with df 24
+the portfit margine is  -0.030926016996651366
+training with df 31
+the portfit margine is  -0.04649314642356811
+training with df 28
+the portfit margine is  -0.038030345632440704
+training with df 65
+the portfit margine is  -0.02455316798530564
+training with df 40
+the portfit margine is  -0.052758205684569674
+training with df 29
+the portfit margine is  -0.0904426700658933
+training with df 71
+the portfit margine is  0.017539064891694503
+training with df 44
+the portfit margine is  0.8843922216443174
+training with df 106
+the portfit margine is  -0.024871823185350216
+training with df 35
+the portfit margine is  -0.03659378222072146
+training with df 68
+the portfit margine is  -0.08296596712271478
+training with df 49
+the portfit margine is  -0.031561156151642705
+training with df 60
+the portfit margine is  -0.039388415699524185
+training with df 11
+the portfit margine is  0.06613872049793808
+training with df 97
+the portfit margine is  -0.08043083269617038
+training with df 32
+the portfit margine is  0.12685926055372215
+validating on df 1
+the portfit margine is  0.015063229303289656
+validating on df 2
+the portfit margine is  -0.024091339753194246
+validating on df 12
+the portfit margine is  -0.013429692107573917
+validating on df 15
+the portfit margine is  -0.025926259509571583
+validating on df 17
+the portfit margine is  -0.0031591555610544254
+validating on df 21
+the portfit margine is  0.006869921331249856
+validating on df 25
+the portfit margine is  -0.04006035796940394
+validating on df 26
+the portfit margine is  0.016125324939362716
+validating on df 27
+the portfit margine is  0.023948086832798088
+validating on df 29
+the portfit margine is  0.01245528902695504
+validating on df 37
+the portfit margine is  -0.014332305618981397
+validating on df 39
+the portfit margine is  -0.008233611954579036
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  38396 times (74.08%)
+  Action 1 (100.0% position):  13432 times (25.92%)
+Mean return rate: -0.0046
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  0.010956494482499935
+validating on df 2
+the portfit margine is  -0.01062725605535465
+validating on df 12
+the portfit margine is  -0.007979019018494975
+validating on df 15
+the portfit margine is  -0.02573867518091188
+validating on df 17
+the portfit margine is  -0.0024105016437008025
+validating on df 21
+the portfit margine is  0.010122422172008925
+validating on df 25
+the portfit margine is  -0.0458893407441146
+validating on df 26
+the portfit margine is  0.018565868542752013
+validating on df 27
+the portfit margine is  0.014310421580711804
+validating on df 29
+the portfit margine is  0.010298818676130415
+validating on df 37
+the portfit margine is  -0.012741516160741468
+validating on df 39
+the portfit margine is  -0.0015402166746399432
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  37087 times (71.56%)
+  Action 1 (100.0% position):  14741 times (28.44%)
+Mean return rate: -0.0036
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.004564239253391932, -0.0035560416686546015]
+Average validation return rate: -0.004060140461023267
+epoch  33
+[68, 65, 33, 45, 71, 75, 28, 44, 97, 53, 13, 23, 27, 49, 91, 12, 60, 74, 76, 31, 40, 37, 11, 32, 0, 35, 6, 24, 26, 106, 19, 7, 85, 29, 77, 38]
+training with df 68
+the portfit margine is  -0.040692674387754264
+training with df 65
+the portfit margine is  -0.03450159838093176
+training with df 33
+the portfit margine is  1.4232582985534123
+training with df 45
+the portfit margine is  0.050569232480180734
+training with df 71
+the portfit margine is  -0.012134170173730974
+training with df 75
+the portfit margine is  0.10083534316892026
+training with df 28
+the portfit margine is  -0.029648425904665807
+training with df 44
+the portfit margine is  0.7445734061511524
+training with df 97
+the portfit margine is  -0.10770426596569445
+training with df 53
+the portfit margine is  -0.0942039100496404
+training with df 13
+the portfit margine is  -0.015706214483353204
+training with df 23
+the portfit margine is  -0.024918213746004968
+training with df 27
+the portfit margine is  -0.0037704981291555245
+training with df 49
+the portfit margine is  -0.0753237473902086
+training with df 91
+the portfit margine is  -0.03107601647040222
+training with df 12
+the portfit margine is  0.027299663489692295
+training with df 60
+the portfit margine is  -0.020261499782937877
+training with df 74
+the portfit margine is  -0.0832306790716052
+training with df 76
+the portfit margine is  0.023589351015532955
+training with df 31
+the portfit margine is  -0.07301335665612868
+training with df 40
+the portfit margine is  -0.06739673968173925
+training with df 37
+the portfit margine is  0.007785388231780375
+training with df 11
+the portfit margine is  -0.0019171209950735325
+training with df 32
+the portfit margine is  0.0778559930636891
+training with df 0
+the portfit margine is  0.16199498484434996
+training with df 35
+the portfit margine is  0.02171315527890955
+training with df 6
+the portfit margine is  0.16396135765271666
+training with df 24
+the portfit margine is  -0.03474692949332592
+training with df 26
+the portfit margine is  -0.06007236741070047
+training with df 106
+the portfit margine is  -0.04708586951589601
+training with df 19
+the portfit margine is  -0.032764949603633214
+training with df 7
+the portfit margine is  0.2547471093214966
+training with df 85
+the portfit margine is  -0.019535635740453142
+training with df 29
+the portfit margine is  -0.030564461564337304
+training with df 77
+the portfit margine is  0.04328247468377855
+training with df 38
+the portfit margine is  -0.04445247867677381
+validating on df 1
+the portfit margine is  -0.0025694577150875667
+validating on df 2
+the portfit margine is  -0.007690353210870539
+validating on df 12
+the portfit margine is  -0.032430886749870456
+validating on df 15
+the portfit margine is  -0.033989481767266336
+validating on df 17
+the portfit margine is  0.015866151525690667
+validating on df 21
+the portfit margine is  0.0037825271780927545
+validating on df 25
+the portfit margine is  -0.05179883908331376
+validating on df 26
+the portfit margine is  0.0018859350829759744
+validating on df 27
+the portfit margine is  0.03151851520652048
+validating on df 29
+the portfit margine is  0.0014654738306161931
+validating on df 37
+the portfit margine is  -0.031558577277990774
+validating on df 39
+the portfit margine is  -0.02968260125002244
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  30514 times (58.88%)
+  Action 1 (100.0% position):  21314 times (41.12%)
+Mean return rate: -0.0113
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.0029238866250754646
+validating on df 2
+the portfit margine is  0.0018785172774949776
+validating on df 12
+the portfit margine is  -0.02698153569309431
+validating on df 15
+the portfit margine is  -0.03380447434218396
+validating on df 17
+the portfit margine is  0.011236516549795371
+validating on df 21
+the portfit margine is  0.010666975606880978
+validating on df 25
+the portfit margine is  -0.05755654299712697
+validating on df 26
+the portfit margine is  0.0022458821885424944
+validating on df 27
+the portfit margine is  0.021667390533240665
+validating on df 29
+the portfit margine is  -0.0006588546578789735
+validating on df 37
+the portfit margine is  -0.03000156700275709
+validating on df 39
+the portfit margine is  -0.023177560139385458
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  29644 times (57.20%)
+  Action 1 (100.0% position):  22184 times (42.80%)
+Mean return rate: -0.0106
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.011266799519210483, -0.010617428275128979]
+Average validation return rate: -0.01094211389716973
+epoch  34
+[75, 11, 106, 37, 91, 35, 23, 31, 65, 29, 68, 40, 19, 12, 60, 77, 71, 13, 6, 74, 97, 53, 45, 44, 32, 38, 0, 26, 33, 24, 7, 28, 76, 85, 49, 27]
+training with df 75
+the portfit margine is  0.08949939772209656
+training with df 11
+the portfit margine is  -0.027174425897005933
+training with df 106
+the portfit margine is  -0.03382576298700598
+training with df 37
+the portfit margine is  -0.05459686630601343
+training with df 91
+the portfit margine is  -0.020573309564252355
+training with df 35
+the portfit margine is  0.04832073578744032
+training with df 23
+the portfit margine is  -0.016915093815755886
+training with df 31
+the portfit margine is  -0.025706353024835135
+training with df 65
+the portfit margine is  -0.08409338606236565
+training with df 29
+the portfit margine is  -0.042451203573499345
+training with df 68
+the portfit margine is  -0.08957180197617888
+training with df 40
+the portfit margine is  -0.05375375865480092
+training with df 19
+the portfit margine is  -0.0351790179688422
+training with df 12
+the portfit margine is  0.019918136876282383
+training with df 60
+the portfit margine is  -0.0050548697816615775
+training with df 77
+the portfit margine is  0.02734653181254922
+training with df 71
+the portfit margine is  -0.017654445028919347
+training with df 13
+the portfit margine is  -0.023924023195264134
+training with df 6
+the portfit margine is  0.07192026865694447
+training with df 74
+the portfit margine is  -0.08853858597684555
+training with df 97
+the portfit margine is  -0.06763575904382688
+training with df 53
+the portfit margine is  -0.08788272120316705
+training with df 45
+the portfit margine is  0.0639382034026184
+training with df 44
+the portfit margine is  0.7999186078650353
+training with df 32
+the portfit margine is  0.09365901095540832
+training with df 38
+the portfit margine is  0.008244005301164394
+training with df 0
+the portfit margine is  0.16810117176706785
+training with df 26
+the portfit margine is  -0.015876534479293505
+training with df 33
+the portfit margine is  1.3912702100256982
+training with df 24
+the portfit margine is  -0.005907983199566302
+training with df 7
+the portfit margine is  0.36654338840383527
+training with df 28
+the portfit margine is  -0.01046078288727714
+training with df 76
+the portfit margine is  -0.024643263058351655
+training with df 85
+the portfit margine is  -0.010351647766041479
+training with df 49
+the portfit margine is  -0.07236644446341642
+training with df 27
+the portfit margine is  -0.07765805005567536
+validating on df 1
+the portfit margine is  0.01347882639333715
+validating on df 2
+the portfit margine is  -0.030683848216047353
+validating on df 12
+the portfit margine is  -0.008851939582935002
+validating on df 15
+the portfit margine is  -0.0909806930510785
+validating on df 17
+the portfit margine is  0.013645633998769368
+validating on df 21
+the portfit margine is  0.018722234467361626
+validating on df 25
+the portfit margine is  -0.06284811432352813
+validating on df 26
+the portfit margine is  -0.013042408052296646
+validating on df 27
+the portfit margine is  0.0016034139375295455
+validating on df 29
+the portfit margine is  0.004260696310909758
+validating on df 37
+the portfit margine is  -0.02768172675537811
+validating on df 39
+the portfit margine is  -0.02050983415867874
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  38228 times (73.76%)
+  Action 1 (100.0% position):  13600 times (26.24%)
+Mean return rate: -0.0169
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  0.013118315717529798
+validating on df 2
+the portfit margine is  -0.01788400465987353
+validating on df 12
+the portfit margine is  -0.0034009479908973937
+validating on df 15
+the portfit margine is  -0.09030406243690214
+validating on df 17
+the portfit margine is  0.014407157384188157
+validating on df 21
+the portfit margine is  0.025767752716276158
+validating on df 25
+the portfit margine is  -0.0676631460661555
+validating on df 26
+the portfit margine is  -0.012686893751295066
+validating on df 27
+the portfit margine is  0.0013794213118670036
+validating on df 29
+the portfit margine is  0.0021286886235320534
+validating on df 37
+the portfit margine is  -0.026113329353331164
+validating on df 39
+the portfit margine is  -0.013908617082160601
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  37383 times (72.13%)
+  Action 1 (100.0% position):  14445 times (27.87%)
+Mean return rate: -0.0146
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.016907313252669587, -0.014596638798935186]
+Average validation return rate: -0.015751976025802385
+epoch  35
+[13, 26, 106, 40, 37, 91, 60, 32, 65, 24, 77, 6, 27, 33, 0, 76, 71, 11, 28, 74, 23, 12, 35, 53, 31, 29, 44, 19, 49, 45, 85, 75, 7, 38, 97, 68]
+training with df 13
+the portfit margine is  -0.04191735167847386
+training with df 26
+the portfit margine is  -0.020854006630220318
+training with df 106
+the portfit margine is  -0.05485798256685074
+training with df 40
+the portfit margine is  -0.06016203912468812
+training with df 37
+the portfit margine is  -0.03310240633148848
+training with df 91
+the portfit margine is  -0.021849922320548477
+training with df 60
+the portfit margine is  -0.04520074696200559
+training with df 32
+the portfit margine is  0.11779909157631466
+training with df 65
+the portfit margine is  -0.03916915754190134
+training with df 24
+the portfit margine is  -0.05804150255491841
+training with df 77
+the portfit margine is  0.01897095159650627
+training with df 6
+the portfit margine is  0.10862018946249268
+training with df 27
+the portfit margine is  0.002927835953024114
+training with df 33
+the portfit margine is  1.3914015678594531
+training with df 0
+the portfit margine is  0.1789002811719359
+training with df 76
+the portfit margine is  -0.02044162736729033
+training with df 71
+the portfit margine is  0.014826279495253912
+training with df 11
+the portfit margine is  0.029413856523857196
+training with df 28
+the portfit margine is  -0.02103826045409374
+training with df 74
+the portfit margine is  -0.05199309007084732
+training with df 23
+the portfit margine is  -0.03664674156015775
+training with df 12
+the portfit margine is  0.08587554866811178
+training with df 35
+the portfit margine is  0.006807381043364649
+training with df 53
+the portfit margine is  -0.11440655394846301
+training with df 31
+the portfit margine is  -0.04009009239390557
+training with df 29
+the portfit margine is  -0.02072785054049775
+training with df 44
+the portfit margine is  0.8291351419952276
+training with df 19
+the portfit margine is  -0.048649389287179226
+training with df 49
+the portfit margine is  -0.06563054728501745
+training with df 45
+the portfit margine is  0.025298891389565627
+training with df 85
+the portfit margine is  -0.02708651895292202
+training with df 75
+the portfit margine is  0.026444470021756303
+training with df 7
+the portfit margine is  0.3007504669442212
+training with df 38
+the portfit margine is  0.008585044783799251
+training with df 97
+the portfit margine is  -0.13358247965307768
+training with df 68
+the portfit margine is  -0.017970707433311153
+validating on df 1
+the portfit margine is  0.03054299289537631
+validating on df 2
+the portfit margine is  -0.022094055600925283
+validating on df 12
+the portfit margine is  -0.03693282222941346
+validating on df 15
+the portfit margine is  -0.018768110405378867
+validating on df 17
+the portfit margine is  0.016038292878512266
+validating on df 21
+the portfit margine is  -0.002356847771657754
+validating on df 25
+the portfit margine is  -0.06039908445981562
+validating on df 26
+the portfit margine is  -0.0039359885274603615
+validating on df 27
+the portfit margine is  0.008545558864436198
+validating on df 29
+the portfit margine is  -0.0007194520130303516
+validating on df 37
+the portfit margine is  -0.019996691791075546
+validating on df 39
+the portfit margine is  -0.013490111331349792
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  39811 times (76.81%)
+  Action 1 (100.0% position):  12017 times (23.19%)
+Mean return rate: -0.0103
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  0.026723738949889744
+validating on df 2
+the portfit margine is  -0.0172368863573205
+validating on df 12
+the portfit margine is  -0.03372617537179553
+validating on df 15
+the portfit margine is  -0.017995320182238893
+validating on df 17
+the portfit margine is  0.016801613801087176
+validating on df 21
+the portfit margine is  0.0008579976787566845
+validating on df 25
+the portfit margine is  -0.06524892298733069
+validating on df 26
+the portfit margine is  -0.003574817975873469
+validating on df 27
+the portfit margine is  -0.0009732871581644805
+validating on df 29
+the portfit margine is  -0.00284058427592744
+validating on df 37
+the portfit margine is  -0.018747905009677764
+validating on df 39
+the portfit margine is  -0.007730384102498176
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  38937 times (75.13%)
+  Action 1 (100.0% position):  12891 times (24.87%)
+Mean return rate: -0.0103
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [-0.010297193290981855, -0.010307577749257777]
+Average validation return rate: -0.010302385520119816
+
+Best model saved to: ./result/low_level/ETHUSDT/slope/pos_2/1/label_1/seed_12345/best_model.pkl
+Best validation return rate: 0.0020
+happy end

@@ -1,0 +1,6 @@
+# nohup python -u RL/agent/low_level_copy.py --reward_scale 1 --lr 1e-4 --alpha 4 --exp test --clf 'slope' --dataset 'ETHUSDT' --device 'cuda:0' --label label_1 >./logs/low_level/ETHUSDT/slope_1checkpoint.log 2>&1 &
+# nohup python -u RL/agent/low_level_copy.py --reward_scale 1 --lr 1e-4 --alpha 4 --exp test --clf 'slope' --dataset 'ETHUSDT' --device 'cuda:0' --label label_2 >./logs/low_level/ETHUSDT/slope_2checkpoint.log 2>&1 &
+# nohup python -u RL/agent/low_level_copy.py --reward_scale 1 --lr 1e-4 --alpha 4 --exp test --clf 'slope' --dataset 'ETHUSDT' --device 'cuda:0' --label label_3 >./logs/low_level/ETHUSDT/slope_3checkpoint.log 2>&1 &
+# nohup python -u RL/agent/low_level_copy.py --reward_scale 1 --lr 1e-4 --alpha 4 --exp test --clf 'vol' --dataset 'ETHUSDT' --device 'cuda:0' --label label_1 >./logs/low_level/ETHUSDT/vol_1checkpoint.log 2>&1 &
+# nohup python -u RL/agent/low_level_copy.py --reward_scale 1 --lr 1e-4 --alpha 4 --exp test --clf 'vol' --dataset 'ETHUSDT' --device 'cuda:0' --label label_2 >./logs/low_level/ETHUSDT/vol_2checkpoint.log 2>&1 &
+# nohup python -u RL/agent/low_level_copy.py --reward_scale 1 --lr 1e-4 --alpha 4 --exp test --clf 'vol' --dataset 'ETHUSDT' --device 'cuda:0' --label label_3 >./logs/low_level/ETHUSDT/vol_3checkpoint.log 2>&1 &

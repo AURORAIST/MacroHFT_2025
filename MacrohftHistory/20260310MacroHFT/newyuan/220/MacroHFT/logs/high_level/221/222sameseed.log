@@ -1,0 +1,55 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Namespace(buffer_size=1000000, dataset='ETHUSDT', q_value_memorize_freq=10, batch_size=512, eval_update_freq=512, lr=0.0001, epsilon_start=0.7, epsilon_end=0.3, decay_length=5, update_times=10, gamma=0.99, tau=0.005, transcation_cost=0.0002, back_time_length=1, seed=54321, n_step=1, epoch_number=5, device='cuda:0', alpha=0.5, beta=5, exp='222sameseed', num_step=10)
+['./result/low_level/ETHUSDT/220/slope/1/label_1/best_model/best_model.pkl', './result/low_level/ETHUSDT/220/slope/4/label_2/best_model/best_model.pkl', './result/low_level/ETHUSDT/220/slope/0/label_3/best_model/best_model.pkl']
+['./result/low_level/ETHUSDT/220/vol/4/label_1/best_model/best_model.pkl', './result/low_level/ETHUSDT/220/vol/1/label_2/best_model/best_model.pkl', './result/low_level/ETHUSDT/220/vol/1/label_3/best_model/best_model.pkl']
+[train] start_time=2026-02-21 23:38:55.008597
+[train] pid=3896288
+epoch  1
+[update] cnt=1 loss=1.584544 td=0.545133 mem=1.481393 KL=0.059743
+[update_debug] cnt=1 q_current(mean=3.090018,min=1.475418,max=7.425164) q_target(mean=3.202254,min=0.705942,max=7.236675) q_memory(mean=3.202254,min=-2.709712,max=5.790020) qdist_sm(min=0.15293704,max=0.84706289) log_qdist_sm(min=-1.87772882,max=-0.16598034) demo_sm(min=0.01212534,max=0.98787469)
+[w_debug] cnt=1 ent(mean=1.791760,min=1.791760,max=1.791760) w_max(mean=0.166667,p95=0.166667) w(min=0.166667,max=0.166667)
+         w_mean=['0.167', '0.167', '0.167', '0.167', '0.167', '0.167']
+
+[update] cnt=11 loss=1.331762 td=0.496981 mem=1.143244 KL=0.052632
+[update_debug] cnt=11 q_current(mean=3.050072,min=0.933619,max=6.381085) q_target(mean=3.106385,min=1.338320,max=6.401230) q_memory(mean=3.106638,min=-0.296294,max=5.060679) qdist_sm(min=0.13326947,max=0.86673051) log_qdist_sm(min=-2.01538205,max=-0.14302717) demo_sm(min=0.03793977,max=0.96206021)
+[w_debug] cnt=11 ent(mean=1.791606,min=1.791459,max=1.791703) w_max(mean=0.169311,p95=0.170006) w(min=0.159990,max=0.170186)
+         w_mean=['0.169', '0.163', '0.168', '0.163', '0.168', '0.169']
+
+[update] cnt=21 loss=1.266517 td=0.455400 mem=1.086883 KL=0.053535
+[update_debug] cnt=21 q_current(mean=2.955383,min=1.067775,max=6.666313) q_target(mean=3.058003,min=1.173902,max=6.199594) q_memory(mean=3.059591,min=-0.864937,max=5.833895) qdist_sm(min=0.13407987,max=0.86592013) log_qdist_sm(min=-2.00931954,max=-0.14396261) demo_sm(min=0.07229678,max=0.92770320)
+[w_debug] cnt=21 ent(mean=1.791001,min=1.790419,max=1.791401) w_max(mean=0.172743,p95=0.174253) w(min=0.153674,max=0.174720)
+         w_mean=['0.172', '0.158', '0.170', '0.158', '0.171', '0.172']
+
+[update] cnt=31 loss=1.214970 td=0.453395 mem=0.914385 KL=0.060876
+[update_debug] cnt=31 q_current(mean=3.119358,min=1.580511,max=6.327612) q_target(mean=3.190730,min=0.737971,max=7.175437) q_memory(mean=3.192554,min=-0.065853,max=6.486283) qdist_sm(min=0.19221552,max=0.80778444) log_qdist_sm(min=-1.64913797,max=-0.21346004) demo_sm(min=0.05524489,max=0.94475508)
+[w_debug] cnt=31 ent(mean=1.789626,min=1.788215,max=1.790549) w_max(mean=0.176885,p95=0.179118) w(min=0.146359,max=0.179924)
+         w_mean=['0.176', '0.152', '0.172', '0.152', '0.173', '0.176']
+
+[update] cnt=41 loss=1.593854 td=0.582648 mem=1.416108 KL=0.060630
+[update_debug] cnt=41 q_current(mean=3.104590,min=1.114065,max=7.811329) q_target(mean=3.124106,min=0.790712,max=7.172998) q_memory(mean=3.129072,min=-7.152615,max=7.732747) qdist_sm(min=0.20243426,max=0.79756570) log_qdist_sm(min=-1.59733999,max=-0.22619107) demo_sm(min=0.01044817,max=0.98955184)
+[w_debug] cnt=41 ent(mean=1.786979,min=1.784155,max=1.788596) w_max(mean=0.182576,p95=0.184843) w(min=0.137998,max=0.186264)
+         w_mean=['0.181', '0.145', '0.174', '0.144', '0.175', '0.181']
+
+[update] cnt=51 loss=1.313388 td=0.478222 mem=1.059183 KL=0.061115
+[update_debug] cnt=51 q_current(mean=3.092997,min=1.271451,max=6.923790) q_target(mean=3.170531,min=0.423192,max=7.442835) q_memory(mean=3.184697,min=-1.283599,max=5.429572) qdist_sm(min=0.12718676,max=0.87281322) log_qdist_sm(min=-2.06209850,max=-0.13603368) demo_sm(min=0.04446825,max=0.95553172)
+[w_debug] cnt=51 ent(mean=1.782422,min=1.778512,max=1.785052) w_max(mean=0.190152,p95=0.192720) w(min=0.128911,max=0.193587)
+         w_mean=['0.189', '0.136', '0.176', '0.136', '0.176', '0.188']
+
+[update] cnt=61 loss=1.584523 td=0.517185 mem=1.456802 KL=0.067787
+[update_debug] cnt=61 q_current(mean=3.132110,min=1.007622,max=6.668277) q_target(mean=3.145395,min=0.704915,max=7.543560) q_memory(mean=3.170781,min=-2.386209,max=7.516758) qdist_sm(min=0.18571755,max=0.81428242) log_qdist_sm(min=-1.68352818,max=-0.20544803) demo_sm(min=0.01212534,max=0.98787469)
+[w_debug] cnt=61 ent(mean=1.775408,min=1.769547,max=1.780279) w_max(mean=0.198787,p95=0.203129) w(min=0.117177,max=0.204857)
+         w_mean=['0.197', '0.127', '0.178', '0.127', '0.177', '0.195']
+
+[update] cnt=71 loss=1.287184 td=0.483138 mem=1.059645 KL=0.054845
+[update_debug] cnt=71 q_current(mean=3.147708,min=1.503487,max=7.669165) q_target(mean=3.171555,min=0.528659,max=7.544529) q_memory(mean=3.166679,min=-1.722805,max=7.709071) qdist_sm(min=0.25851133,max=0.74148864) log_qdist_sm(min=-1.35281575,max=-0.29909545) demo_sm(min=0.03747899,max=0.96252096)
+[w_debug] cnt=71 ent(mean=1.764474,min=1.751279,max=1.773485) w_max(mean=0.209139,p95=0.216544) w(min=0.102002,max=0.219561)
+         w_mean=['0.206', '0.116', '0.178', '0.116', '0.178', '0.205']
+
+[update] cnt=81 loss=1.434281 td=0.521078 mem=1.252529 KL=0.057388
+[update_debug] cnt=81 q_current(mean=3.170726,min=0.994908,max=7.781106) q_target(mean=3.172094,min=0.922817,max=11.286898) q_memory(mean=3.189865,min=-2.386209,max=7.709071) qdist_sm(min=0.12220404,max=0.87779599) log_qdist_sm(min=-2.10206318,max=-0.13034107) demo_sm(min=0.00645439,max=0.99354559)
+[w_debug] cnt=81 ent(mean=1.751216,min=1.728931,max=1.765228) w_max(mean=0.219762,p95=0.231975) w(min=0.088607,max=0.235114)
+         w_mean=['0.217', '0.106', '0.176', '0.107', '0.180', '0.215']
+

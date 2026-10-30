@@ -1,0 +1,881 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+INFO:root:Namespace(buffer_size=1000000, dataset='ETHUSDT', q_value_memorize_freq=20, batch_size=256, eval_update_freq=50, lr=1e-05, epsilon_start=0.7, epsilon_end=0.1, decay_length=15, update_times=20, gamma=0.99, tau=0.005, transcation_cost=0.0002, back_time_length=1, seed=6234571, n_step=1, epoch_number=5, label='label_1', clf='slope', alpha=1.0, exp='long_action_long_lr1e5alpha', device='cuda:0', action_mode='long', action_size=1, reward_no_action='False')
+2026-02-04 23:16:59,687 INFO: Namespace(buffer_size=1000000, dataset='ETHUSDT', q_value_memorize_freq=20, batch_size=256, eval_update_freq=50, lr=1e-05, epsilon_start=0.7, epsilon_end=0.1, decay_length=15, update_times=20, gamma=0.99, tau=0.005, transcation_cost=0.0002, back_time_length=1, seed=6234571, n_step=1, epoch_number=5, label='label_1', clf='slope', alpha=1.0, exp='long_action_long_lr1e5alpha', device='cuda:0', action_mode='long', action_size=1, reward_no_action='False')
+INFO:root:train_data_path:/home/ustc1958/lxy/newauthor1009/20260106/MacroHFT/data/ETHUSDT/train
+2026-02-04 23:16:59,687 INFO: train_data_path:/home/ustc1958/lxy/newauthor1009/20260106/MacroHFT/data/ETHUSDT/train
+INFO:root:==slope==
+2026-02-04 23:16:59,687 INFO: ==slope==
+INFO:root:self.train_index:[[3, 5, 10, 21, 43, 66, 93], [0, 6, 7, 11, 12, 13, 19, 23, 24, 26, 27, 28, 29, 31, 32, 33, 35, 37, 38, 40, 44, 45, 49, 53, 60, 65, 68, 71, 74, 75, 76, 77, 85, 91, 97, 106], [20, 22, 34, 36, 48, 50, 56, 57, 58, 69, 70, 72, 78, 79, 80, 82, 83, 84, 86, 87, 89, 90, 95, 96, 101, 102, 104, 105, 108, 109, 110, 111, 113, 117, 118, 119], [2, 4, 8, 15, 16, 17, 25, 30, 41, 42, 46, 47, 51, 52, 54, 59, 61, 62, 63, 64, 67, 73, 81, 88, 92, 94, 98, 99, 100, 103, 107, 112, 114, 115, 116, 120], [1, 9, 14, 18, 39, 55]]
+2026-02-04 23:16:59,687 INFO: self.train_index:[[3, 5, 10, 21, 43, 66, 93], [0, 6, 7, 11, 12, 13, 19, 23, 24, 26, 27, 28, 29, 31, 32, 33, 35, 37, 38, 40, 44, 45, 49, 53, 60, 65, 68, 71, 74, 75, 76, 77, 85, 91, 97, 106], [20, 22, 34, 36, 48, 50, 56, 57, 58, 69, 70, 72, 78, 79, 80, 82, 83, 84, 86, 87, 89, 90, 95, 96, 101, 102, 104, 105, 108, 109, 110, 111, 113, 117, 118, 119], [2, 4, 8, 15, 16, 17, 25, 30, 41, 42, 46, 47, 51, 52, 54, 59, 61, 62, 63, 64, 67, 73, 81, 88, 92, 94, 98, 99, 100, 103, 107, 112, 114, 115, 116, 120], [1, 9, 14, 18, 39, 55]]
+INFO:root:self.actions:[[0, 0], [1, 0]]
+2026-02-04 23:16:59,689 INFO: self.actions:[[0, 0], [1, 0]]
+INFO:root:self.n_action:2
+2026-02-04 23:16:59,689 INFO: self.n_action:2
+INFO:root:self.action_type_desc:多头动作模式
+2026-02-04 23:16:59,689 INFO: self.action_type_desc:多头动作模式
+INFO:root:start training 1770218220.3938644
+2026-02-04 23:17:00,393 INFO: start training 1770218220.3938644
+[train] pid=2053563
+INFO:root:验证消费者线程启动
+INFO:root:验证消费者线程已启动
+2026-02-04 23:17:00,394 INFO: 验证消费者线程启动
+2026-02-04 23:17:00,394 INFO: 验证消费者线程已启动
+INFO:root:epoch 1
+2026-02-04 23:17:00,395 INFO: epoch 1
+INFO:root:random_list:[68, 44, 28, 75, 49, 29, 91, 26, 0, 12, 23, 65, 76, 74, 38, 27, 77, 45, 7, 32, 97, 106, 40, 37, 24, 53, 71, 19, 35, 33, 85, 13, 6, 60, 31, 11]
+2026-02-04 23:17:00,395 INFO: random_list:[68, 44, 28, 75, 49, 29, 91, 26, 0, 12, 23, 65, 76, 74, 38, 27, 77, 45, 7, 32, 97, 106, 40, 37, 24, 53, 71, 19, 35, 33, 85, 13, 6, 60, 31, 11]
+INFO:root:epoch 1 start files
+2026-02-04 23:17:00,574 INFO: epoch 1 start files
+INFO:root:training with df 68 4320 1770218220.5743623
+2026-02-04 23:17:00,574 INFO: training with df 68 4320 1770218220.5743623
+INFO:root:training with df 44 4320 1770218240.3662782
+2026-02-04 23:17:20,366 INFO: training with df 44 4320 1770218240.3662782
+INFO:root:training with df 28 4320 1770218260.4328573
+2026-02-04 23:17:40,432 INFO: training with df 28 4320 1770218260.4328573
+INFO:root:training with df 75 4320 1770218280.6763525
+2026-02-04 23:18:00,676 INFO: training with df 75 4320 1770218280.6763525
+INFO:root:training with df 49 4320 1770218300.7552917
+2026-02-04 23:18:20,755 INFO: training with df 49 4320 1770218300.7552917
+INFO:root:training with df 29 4320 1770218320.0216107
+2026-02-04 23:18:40,021 INFO: training with df 29 4320 1770218320.0216107
+INFO:root:training with df 91 4320 1770218339.3496814
+2026-02-04 23:18:59,349 INFO: training with df 91 4320 1770218339.3496814
+INFO:root:training with df 26 4320 1770218358.551664
+2026-02-04 23:19:18,551 INFO: training with df 26 4320 1770218358.551664
+INFO:root:training with df 0 4320 1770218378.0179565
+2026-02-04 23:19:38,017 INFO: training with df 0 4320 1770218378.0179565
+INFO:root:training with df 12 4320 1770218397.178853
+2026-02-04 23:19:57,178 INFO: training with df 12 4320 1770218397.178853
+INFO:root:training with df 23 4320 1770218416.3797286
+2026-02-04 23:20:16,379 INFO: training with df 23 4320 1770218416.3797286
+INFO:root:training with df 65 4320 1770218435.7225385
+2026-02-04 23:20:35,722 INFO: training with df 65 4320 1770218435.7225385
+INFO:root:training with df 76 4320 1770218454.8701298
+2026-02-04 23:20:54,870 INFO: training with df 76 4320 1770218454.8701298
+INFO:root:training with df 74 4320 1770218476.7063782
+2026-02-04 23:21:16,706 INFO: training with df 74 4320 1770218476.7063782
+INFO:root:training with df 38 4320 1770218499.085344
+2026-02-04 23:21:39,085 INFO: training with df 38 4320 1770218499.085344
+INFO:root:training with df 27 4320 1770218520.952002
+2026-02-04 23:22:00,952 INFO: training with df 27 4320 1770218520.952002
+INFO:root:training with df 77 4320 1770218542.3592525
+2026-02-04 23:22:22,359 INFO: training with df 77 4320 1770218542.3592525
+INFO:root:training with df 45 4320 1770218563.7779047
+2026-02-04 23:22:43,777 INFO: training with df 45 4320 1770218563.7779047
+INFO:root:training with df 7 4320 1770218584.8342874
+2026-02-04 23:23:04,834 INFO: training with df 7 4320 1770218584.8342874
+INFO:root:training with df 32 4320 1770218606.1558814
+2026-02-04 23:23:26,155 INFO: training with df 32 4320 1770218606.1558814
+INFO:root:training with df 97 4320 1770218627.2106614
+2026-02-04 23:23:47,210 INFO: training with df 97 4320 1770218627.2106614
+INFO:root:training with df 106 4320 1770218647.29543
+2026-02-04 23:24:07,295 INFO: training with df 106 4320 1770218647.29543
+INFO:root:training with df 40 4320 1770218665.3908565
+2026-02-04 23:24:25,390 INFO: training with df 40 4320 1770218665.3908565
+INFO:root:training with df 37 4320 1770218683.9485075
+2026-02-04 23:24:43,948 INFO: training with df 37 4320 1770218683.9485075
+INFO:root:training with df 24 4320 1770218701.887424
+2026-02-04 23:25:01,887 INFO: training with df 24 4320 1770218701.887424
+INFO:root:training with df 53 4320 1770218719.675423
+2026-02-04 23:25:19,675 INFO: training with df 53 4320 1770218719.675423
+INFO:root:training with df 71 4320 1770218737.7261553
+2026-02-04 23:25:37,726 INFO: training with df 71 4320 1770218737.7261553
+INFO:root:training with df 19 4320 1770218758.7098107
+2026-02-04 23:25:58,709 INFO: training with df 19 4320 1770218758.7098107
+INFO:root:training with df 35 4320 1770218778.9024212
+2026-02-04 23:26:18,902 INFO: training with df 35 4320 1770218778.9024212
+INFO:root:training with df 33 4320 1770218800.0669935
+2026-02-04 23:26:40,067 INFO: training with df 33 4320 1770218800.0669935
+INFO:root:training with df 85 4320 1770218819.8866067
+2026-02-04 23:26:59,886 INFO: training with df 85 4320 1770218819.8866067
+INFO:root:training with df 13 4320 1770218839.5945394
+2026-02-04 23:27:19,594 INFO: training with df 13 4320 1770218839.5945394
+INFO:root:training with df 6 4320 1770218860.8242314
+2026-02-04 23:27:40,824 INFO: training with df 6 4320 1770218860.8242314
+INFO:root:training with df 60 4320 1770218879.1721456
+2026-02-04 23:27:59,172 INFO: training with df 60 4320 1770218879.1721456
+INFO:root:training with df 31 4320 1770218899.7325392
+2026-02-04 23:28:19,732 INFO: training with df 31 4320 1770218899.7325392
+INFO:root:training with df 11 4320 1770218920.5942628
+2026-02-04 23:28:40,594 INFO: training with df 11 4320 1770218920.5942628
+INFO:root:start val epoch 1
+2026-02-04 23:29:01,178 INFO: start val epoch 1
+INFO:root:验证任务已加入队列: epoch 1
+2026-02-04 23:29:01,178 INFO: 验证任务已加入队列: epoch 1
+INFO:root:epoch 2
+2026-02-04 23:29:01,178 INFO: epoch 2
+INFO:root:random_list:[65, 45, 28, 29, 35, 60, 85, 97, 23, 24, 76, 13, 91, 77, 27, 0, 19, 75, 12, 44, 31, 11, 40, 106, 32, 26, 49, 6, 71, 74, 53, 37, 33, 68, 7, 38]
+2026-02-04 23:29:01,178 INFO: random_list:[65, 45, 28, 29, 35, 60, 85, 97, 23, 24, 76, 13, 91, 77, 27, 0, 19, 75, 12, 44, 31, 11, 40, 106, 32, 26, 49, 6, 71, 74, 53, 37, 33, 68, 7, 38]
+INFO:root:epoch 2 start files
+2026-02-04 23:29:01,178 INFO: epoch 2 start files
+INFO:root:training with df 65 4320 1770218941.1788063
+2026-02-04 23:29:01,178 INFO: training with df 65 4320 1770218941.1788063
+INFO:root:training with df 45 4320 1770218961.8828495
+2026-02-04 23:29:21,882 INFO: training with df 45 4320 1770218961.8828495
+INFO:root:training with df 28 4320 1770218982.2417626
+2026-02-04 23:29:42,241 INFO: training with df 28 4320 1770218982.2417626
+INFO:root:training with df 29 4320 1770218999.8168857
+2026-02-04 23:29:59,816 INFO: training with df 29 4320 1770218999.8168857
+INFO:root:验证消费者处理任务: epoch 1
+2026-02-04 23:30:00,954 INFO: 验证消费者处理任务: epoch 1
+INFO:root:异步验证开始: epoch 1
+2026-02-04 23:30:00,954 INFO: 异步验证开始: epoch 1
+INFO:root:Using 3 processes for parallel validation df_list:[1, 2, 12, 15, 17, 21, 25, 26, 27, 29, 37, 39]
+2026-02-04 23:30:00,954 INFO: Using 3 processes for parallel validation df_list:[1, 2, 12, 15, 17, 21, 25, 26, 27, 29, 37, 39]
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-04 23:30:15,314 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: -1.2436923999999863, required_money: 294.356156, commission_fee: 0.34569240000000007, step_times: 4319, trade_id_counter: 6
+2026-02-04 23:30:15,906 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: -1.2436923999999863, required_money: 294.356156, commission_fee: 0.34569240000000007, step_times: 4319, trade_id_counter: 6
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: -26.023076399999923, required_money: 335.06325599999997, commission_fee: 0.2610764, step_times: 4319, trade_id_counter: 3
+2026-02-04 23:30:15,907 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: -26.023076399999923, required_money: 335.06325599999997, commission_fee: 0.2610764, step_times: 4319, trade_id_counter: 3
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: -0.357024000000024, required_money: 362.67252, commission_fee: 0.28502400000000006, step_times: 4319, trade_id_counter: 3
+2026-02-04 23:30:28,055 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: -0.357024000000024, required_money: 362.67252, commission_fee: 0.28502400000000006, step_times: 4319, trade_id_counter: 3
+INFO:root:training with df 35 4320 1770219028.2191188
+2026-02-04 23:30:28,219 INFO: training with df 35 4320 1770219028.2191188
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: 1.8507484000000431, required_money: 358.44967560000003, commission_fee: 0.42325160000000006, step_times: 4319, trade_id_counter: 6
+2026-02-04 23:30:28,358 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: 1.8507484000000431, required_money: 358.44967560000003, commission_fee: 0.42325160000000006, step_times: 4319, trade_id_counter: 6
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: -2.8106204000000616, required_money: 372.9565764000001, commission_fee: 0.1486204, step_times: 4319, trade_id_counter: 2
+2026-02-04 23:30:28,400 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: -2.8106204000000616, required_money: 372.9565764000001, commission_fee: 0.1486204, step_times: 4319, trade_id_counter: 2
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: -10.334833199999935, required_money: 397.2514344, commission_fee: 0.1568332, step_times: 4319, trade_id_counter: 1
+2026-02-04 23:30:40,423 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: -10.334833199999935, required_money: 397.2514344, commission_fee: 0.1568332, step_times: 4319, trade_id_counter: 1
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: -3.9047623999998677, required_money: 386.9393724, commission_fee: 0.7527624000000002, step_times: 4319, trade_id_counter: 10
+2026-02-04 23:30:40,854 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: -3.9047623999998677, required_money: 386.9393724, commission_fee: 0.7527624000000002, step_times: 4319, trade_id_counter: 10
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: 3.339406800000063, required_money: 371.2662384, commission_fee: 0.2985932, step_times: 4319, trade_id_counter: 3
+2026-02-04 23:30:40,879 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: 3.339406800000063, required_money: 371.2662384, commission_fee: 0.2985932, step_times: 4319, trade_id_counter: 3
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: 2.5981720000000337, required_money: 383.27063880000003, commission_fee: 0.15382800000000002, step_times: 4319, trade_id_counter: 2
+2026-02-04 23:30:52,731 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: 2.5981720000000337, required_money: 383.27063880000003, commission_fee: 0.15382800000000002, step_times: 4319, trade_id_counter: 2
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: 5.197748400000023, required_money: 368.0295912, commission_fee: 0.1482516, step_times: 4319, trade_id_counter: 2
+2026-02-04 23:30:53,423 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: 5.197748400000023, required_money: 368.0295912, commission_fee: 0.1482516, step_times: 4319, trade_id_counter: 2
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: -10.609547599999928, required_money: 383.1190308, commission_fee: 0.30354760000000003, step_times: 4319, trade_id_counter: 4
+2026-02-04 23:30:53,506 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 _validate_worker  final_balance: -10.609547599999928, required_money: 383.1190308, commission_fee: 0.30354760000000003, step_times: 4319, trade_id_counter: 4
+Empty DataFrame
+Columns: []
+Index: []
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-03-19 18:50:00  362.672520       0.2      long   buy  1813.00
+1   1 2023-03-19 19:11:00  365.888808       0.2      long  sell  1829.81
+2   2 2023-03-20 22:20:00  350.065999       0.2      long   buy  1749.98
+   id            datetime      amount  quantity direction type    price
+0   0 2023-04-19 08:45:00  397.251434       0.2      long  buy  1985.86
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-04-30 15:09:00  383.270639       0.2      long   buy  1915.97
+1   1 2023-04-30 15:18:00  385.868811       0.2      long  sell  1929.73
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-02-07 10:16:00  329.059799       0.2      long   buy  1644.97
+1   1 2023-02-07 17:46:00  330.641858       0.2      long  sell  1653.54
+2   2 2023-02-08 02:00:00  336.645316       0.2      long   buy  1682.89
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-04-06 12:15:00  372.956576       0.2      long   buy  1864.41
+1   1 2023-04-07 09:00:00  370.145956       0.2      long  sell  1851.10
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-04-23 02:24:00  371.266238       0.2      long   buy  1855.96
+1   1 2023-04-24 00:55:00  374.934998       0.2      long  sell  1875.05
+2   2 2023-04-25 21:03:00  373.546694       0.2      long   buy  1867.36
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-05-29 02:58:00  382.016388       0.2      long   buy  1909.70
+1   1 2023-05-30 03:20:00  381.055774       0.2      long  sell  1905.66
+2   2 2023-05-30 10:31:00  382.158416       0.2      long   buy  1910.41
+3   3 2023-05-31 14:14:00  372.509483       0.2      long  sell  1862.92
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-03-10 16:37:00  285.583105       0.2      long   buy  1427.63
+1   1 2023-03-10 21:50:00  283.241340       0.2      long  sell  1416.49
+2   2 2023-03-11 07:08:00  292.014391       0.2      long   buy  1459.78
+3   3 2023-03-11 08:44:00  289.828023       0.2      long  sell  1449.43
+4   4 2023-03-11 14:43:00  287.255440       0.2      long   buy  1435.99
+5   5 2023-03-11 17:46:00  290.539880       0.2      long  sell  1452.99
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-03-24 09:15:00  358.449676       0.2      long   buy  1791.89
+1   1 2023-03-24 14:00:00  353.049376       0.2      long  sell  1765.60
+2   2 2023-03-25 06:44:00  350.268040       0.2      long   buy  1750.99
+3   3 2023-03-25 13:37:00  350.657854       0.2      long  sell  1753.64
+4   4 2023-03-25 22:14:00  348.485683       0.2      long   buy  1742.08
+5   5 2023-03-26 08:41:00  355.346916       0.2      long  sell  1777.09
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-04-20 00:04:00  386.939372       0.2      long   buy  1934.31
+1   1 2023-04-20 12:30:00  392.677449       0.2      long  sell  1963.78
+2   2 2023-04-21 08:01:00  385.877160       0.2      long   buy  1929.00
+3   3 2023-04-21 17:37:00  374.921001       0.2      long  sell  1874.98
+4   4 2023-04-21 19:07:00  369.035792       0.2      long   buy  1844.81
+5   5 2023-04-22 06:11:00  371.525680       0.2      long  sell  1858.00
+6   6 2023-04-22 06:25:00  370.934172       0.2      long   buy  1854.30
+7   7 2023-04-22 06:27:00  370.925800       0.2      long  sell  1855.00
+8   8 2023-04-22 06:28:00  371.072200       0.2      long   buy  1854.99
+9   9 2023-04-22 07:50:00  369.904004       0.2      long  sell  1849.89
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-05-23 01:35:00  368.029591       0.2      long   buy  1839.78
+1   1 2023-05-23 03:20:00  373.227340       0.2      long  sell  1866.51
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 return_rate_mean:-0.99
+2026-02-04 23:30:53,849 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_1 return_rate_mean:-0.99
+INFO:root:异步验证结束: epoch 1, 验证收益率: -0.9929300737239163 best:-inf
+2026-02-04 23:30:53,851 INFO: 异步验证结束: epoch 1, 验证收益率: -0.9929300737239163 best:-inf
+INFO:root:best model updated to epoch 1.best_return_rate:-0.9929300737239163
+2026-02-04 23:30:53,851 INFO: best model updated to epoch 1.best_return_rate:-0.9929300737239163
+INFO:root:training with df 60 4320 1770219056.141174
+2026-02-04 23:30:56,141 INFO: training with df 60 4320 1770219056.141174
+INFO:root:training with df 85 4320 1770219076.8561473
+2026-02-04 23:31:16,856 INFO: training with df 85 4320 1770219076.8561473
+INFO:root:training with df 97 4320 1770219098.1064024
+2026-02-04 23:31:38,106 INFO: training with df 97 4320 1770219098.1064024
+INFO:root:training with df 23 4320 1770219119.0337102
+2026-02-04 23:31:59,033 INFO: training with df 23 4320 1770219119.0337102
+INFO:root:training with df 24 4320 1770219140.7834005
+2026-02-04 23:32:20,783 INFO: training with df 24 4320 1770219140.7834005
+INFO:root:training with df 76 4320 1770219163.6038687
+2026-02-04 23:32:43,603 INFO: training with df 76 4320 1770219163.6038687
+INFO:root:training with df 13 4320 1770219186.5260985
+2026-02-04 23:33:06,526 INFO: training with df 13 4320 1770219186.5260985
+INFO:root:training with df 91 4320 1770219209.1123111
+2026-02-04 23:33:29,112 INFO: training with df 91 4320 1770219209.1123111
+INFO:root:training with df 77 4320 1770219233.44311
+2026-02-04 23:33:53,443 INFO: training with df 77 4320 1770219233.44311
+INFO:root:training with df 27 4320 1770219255.9209812
+2026-02-04 23:34:15,921 INFO: training with df 27 4320 1770219255.9209812
+INFO:root:training with df 0 4320 1770219279.0168242
+2026-02-04 23:34:39,016 INFO: training with df 0 4320 1770219279.0168242
+INFO:root:training with df 19 4320 1770219301.1227012
+2026-02-04 23:35:01,122 INFO: training with df 19 4320 1770219301.1227012
+INFO:root:training with df 75 4320 1770219325.1715739
+2026-02-04 23:35:25,171 INFO: training with df 75 4320 1770219325.1715739
+INFO:root:training with df 12 4320 1770219350.073325
+2026-02-04 23:35:50,073 INFO: training with df 12 4320 1770219350.073325
+INFO:root:training with df 44 4320 1770219373.6415608
+2026-02-04 23:36:13,641 INFO: training with df 44 4320 1770219373.6415608
+INFO:root:training with df 31 4320 1770219396.6605432
+2026-02-04 23:36:36,660 INFO: training with df 31 4320 1770219396.6605432
+INFO:root:training with df 11 4320 1770219419.9356306
+2026-02-04 23:36:59,935 INFO: training with df 11 4320 1770219419.9356306
+INFO:root:training with df 40 4320 1770219444.5642893
+2026-02-04 23:37:24,564 INFO: training with df 40 4320 1770219444.5642893
+INFO:root:training with df 106 4320 1770219467.4925253
+2026-02-04 23:37:47,492 INFO: training with df 106 4320 1770219467.4925253
+INFO:root:training with df 32 4320 1770219491.2160492
+2026-02-04 23:38:11,216 INFO: training with df 32 4320 1770219491.2160492
+INFO:root:training with df 26 4320 1770219515.7078376
+2026-02-04 23:38:35,707 INFO: training with df 26 4320 1770219515.7078376
+INFO:root:training with df 49 4320 1770219540.6768682
+2026-02-04 23:39:00,676 INFO: training with df 49 4320 1770219540.6768682
+INFO:root:training with df 6 4320 1770219564.482951
+2026-02-04 23:39:24,482 INFO: training with df 6 4320 1770219564.482951
+INFO:root:training with df 71 4320 1770219587.9808712
+2026-02-04 23:39:47,980 INFO: training with df 71 4320 1770219587.9808712
+INFO:root:training with df 74 4320 1770219611.9627712
+2026-02-04 23:40:11,962 INFO: training with df 74 4320 1770219611.9627712
+INFO:root:training with df 53 4320 1770219635.0586143
+2026-02-04 23:40:35,058 INFO: training with df 53 4320 1770219635.0586143
+INFO:root:training with df 37 4320 1770219657.5111916
+2026-02-04 23:40:57,511 INFO: training with df 37 4320 1770219657.5111916
+INFO:root:training with df 33 4320 1770219680.142596
+2026-02-04 23:41:20,142 INFO: training with df 33 4320 1770219680.142596
+INFO:root:training with df 68 4320 1770219704.8552003
+2026-02-04 23:41:44,855 INFO: training with df 68 4320 1770219704.8552003
+INFO:root:training with df 7 4320 1770219728.7435343
+2026-02-04 23:42:08,743 INFO: training with df 7 4320 1770219728.7435343
+INFO:root:training with df 38 4320 1770219752.4064002
+2026-02-04 23:42:32,406 INFO: training with df 38 4320 1770219752.4064002
+INFO:root:start val epoch 2
+2026-02-04 23:42:52,746 INFO: start val epoch 2
+INFO:root:验证任务已加入队列: epoch 2
+2026-02-04 23:42:52,747 INFO: 验证任务已加入队列: epoch 2
+INFO:root:epoch 3
+2026-02-04 23:42:52,747 INFO: epoch 3
+INFO:root:random_list:[74, 26, 53, 0, 71, 76, 40, 11, 6, 33, 97, 29, 28, 91, 77, 31, 35, 44, 12, 38, 7, 13, 49, 19, 75, 27, 85, 45, 32, 106, 65, 68, 60, 37, 24, 23]
+2026-02-04 23:42:52,747 INFO: random_list:[74, 26, 53, 0, 71, 76, 40, 11, 6, 33, 97, 29, 28, 91, 77, 31, 35, 44, 12, 38, 7, 13, 49, 19, 75, 27, 85, 45, 32, 106, 65, 68, 60, 37, 24, 23]
+INFO:root:epoch 3 start files
+2026-02-04 23:42:52,747 INFO: epoch 3 start files
+INFO:root:training with df 74 4320 1770219772.7472496
+2026-02-04 23:42:52,747 INFO: training with df 74 4320 1770219772.7472496
+INFO:root:验证消费者处理任务: epoch 2
+2026-02-04 23:42:54,360 INFO: 验证消费者处理任务: epoch 2
+INFO:root:异步验证开始: epoch 2
+2026-02-04 23:42:54,360 INFO: 异步验证开始: epoch 2
+INFO:root:Using 3 processes for parallel validation df_list:[1, 2, 12, 15, 17, 21, 25, 26, 27, 29, 37, 39]
+2026-02-04 23:42:54,360 INFO: Using 3 processes for parallel validation df_list:[1, 2, 12, 15, 17, 21, 25, 26, 27, 29, 37, 39]
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+2026-02-04 23:43:09,958 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: 0.0, required_money: 0.01, commission_fee: 0.0, step_times: 4319, trade_id_counter: 0
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: 10.833477200000061, required_money: 285.75029199999994, commission_fee: 0.3445228, step_times: 4319, trade_id_counter: 5
+2026-02-04 23:43:10,286 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: 10.833477200000061, required_money: 285.75029199999994, commission_fee: 0.3445228, step_times: 4319, trade_id_counter: 5
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -4.447765599999968, required_money: 329.0597988, commission_fee: 0.2557656, step_times: 4319, trade_id_counter: 3
+2026-02-04 23:43:10,340 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -4.447765599999968, required_money: 329.0597988, commission_fee: 0.2557656, step_times: 4319, trade_id_counter: 3
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -4.495496000000003, required_money: 350.9881836, commission_fee: 0.139496, step_times: 4319, trade_id_counter: 1
+2026-02-04 23:43:24,101 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -4.495496000000003, required_money: 350.9881836, commission_fee: 0.139496, step_times: 4319, trade_id_counter: 1
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -9.344935599999985, required_money: 382.01238720000003, commission_fee: 0.1509356, step_times: 4319, trade_id_counter: 1
+2026-02-04 23:43:24,781 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -9.344935599999985, required_money: 382.01238720000003, commission_fee: 0.1509356, step_times: 4319, trade_id_counter: 1
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -2.75313239999997, required_money: 358.44967560000003, commission_fee: 0.4231324, step_times: 4319, trade_id_counter: 6
+2026-02-04 23:43:24,801 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -2.75313239999997, required_money: 358.44967560000003, commission_fee: 0.4231324, step_times: 4319, trade_id_counter: 6
+INFO:root:training with df 26 4320 1770219804.8948352
+2026-02-04 23:43:24,894 INFO: training with df 26 4320 1770219804.8948352
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -11.064979199999982, required_money: 397.98158040000004, commission_fee: 0.1569792, step_times: 4319, trade_id_counter: 1
+2026-02-04 23:43:37,812 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -11.064979199999982, required_money: 397.98158040000004, commission_fee: 0.1569792, step_times: 4319, trade_id_counter: 1
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -5.114941999999928, required_money: 385.87716, commission_fee: 0.300942, step_times: 4319, trade_id_counter: 4
+2026-02-04 23:43:38,403 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -5.114941999999928, required_money: 385.87716, commission_fee: 0.300942, step_times: 4319, trade_id_counter: 4
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -9.738780399999882, required_money: 382.95612199999994, commission_fee: 0.29678040000000006, step_times: 4319, trade_id_counter: 3
+2026-02-04 23:43:38,456 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -9.738780399999882, required_money: 382.95612199999994, commission_fee: 0.29678040000000006, step_times: 4319, trade_id_counter: 3
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -15.184270799999979, required_money: 383.27063880000003, commission_fee: 0.1502708, step_times: 4319, trade_id_counter: 2
+2026-02-04 23:43:51,585 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -15.184270799999979, required_money: 383.27063880000003, commission_fee: 0.1502708, step_times: 4319, trade_id_counter: 2
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: 4.843819200000041, required_money: 368.0295912, commission_fee: 0.1481808, step_times: 4319, trade_id_counter: 2
+2026-02-04 23:43:52,555 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: 4.843819200000041, required_money: 368.0295912, commission_fee: 0.1481808, step_times: 4319, trade_id_counter: 2
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -7.628228400000012, required_money: 388.5289248, commission_fee: 0.6062284000000001, step_times: 4319, trade_id_counter: 7
+2026-02-04 23:43:52,733 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 _validate_worker  final_balance: -7.628228400000012, required_money: 388.5289248, commission_fee: 0.6062284000000001, step_times: 4319, trade_id_counter: 7
+Empty DataFrame
+Columns: []
+Index: []
+   id            datetime      amount  quantity direction type    price
+0   0 2023-03-20 13:37:00  350.988184       0.2      long  buy  1754.59
+   id            datetime     amount  quantity direction type    price
+0   0 2023-04-19 08:22:00  397.98158       0.2      long  buy  1989.51
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-04-30 15:09:00  383.270639       0.2      long   buy  1915.97
+1   1 2023-05-01 05:42:00  368.086368       0.2      long  sell  1840.80
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-03-09 20:59:00  282.972583       0.2      long   buy  1414.58
+1   1 2023-03-10 13:30:00  282.883412       0.2      long  sell  1414.70
+2   2 2023-03-10 13:49:00  285.661121       0.2      long   buy  1428.02
+3   3 2023-03-11 08:44:00  289.828023       0.2      long  sell  1449.43
+4   4 2023-03-11 14:43:00  287.255440       0.2      long   buy  1435.99
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-03-24 09:15:00  358.449676       0.2      long   buy  1791.89
+1   1 2023-03-24 14:00:00  353.049376       0.2      long  sell  1765.60
+2   2 2023-03-24 14:03:00  352.272440       0.2      long   buy  1761.01
+3   3 2023-03-25 18:33:00  348.058374       0.2      long  sell  1740.64
+4   4 2023-03-25 22:14:00  348.485683       0.2      long   buy  1742.08
+5   5 2023-03-26 08:41:00  355.346916       0.2      long  sell  1777.09
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-04-23 05:32:00  373.274640       0.2      long   buy  1866.00
+1   1 2023-04-25 07:00:00  363.865212       0.2      long  sell  1819.69
+2   2 2023-04-25 21:03:00  373.546694       0.2      long   buy  1867.36
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-05-29 02:58:00  382.016388       0.2      long   buy  1909.70
+1   1 2023-05-30 00:36:00  376.684648       0.2      long  sell  1883.80
+2   2 2023-05-30 10:31:00  382.158416       0.2      long   buy  1910.41
+3   3 2023-05-30 12:32:00  381.401704       0.2      long  sell  1907.39
+4   4 2023-05-30 21:24:00  382.440473       0.2      long   buy  1911.82
+5   5 2023-05-31 02:01:00  379.020181       0.2      long  sell  1895.48
+6   6 2023-05-31 14:08:00  372.770539       0.2      long   buy  1863.48
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-02-07 10:16:00  329.059799       0.2      long   buy  1644.97
+1   1 2023-02-08 20:06:00  328.150357       0.2      long  sell  1641.08
+2   2 2023-02-09 19:31:00  312.578503       0.2      long   buy  1562.58
+   id            datetime      amount  quantity direction type    price
+0   0 2023-04-05 13:45:00  382.012387       0.2      long  buy  1909.68
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-04-21 08:01:00  385.877160       0.2      long   buy  1929.00
+1   1 2023-04-21 17:29:00  376.536678       0.2      long  sell  1883.06
+2   2 2023-04-21 19:07:00  369.035792       0.2      long   buy  1844.81
+3   3 2023-04-22 21:03:00  373.261333       0.2      long  sell  1866.68
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-05-23 01:35:00  368.029591       0.2      long   buy  1839.78
+1   1 2023-05-23 03:21:00  372.873410       0.2      long  sell  1864.74
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 return_rate_mean:-1.11
+2026-02-04 23:43:53,070 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_2 return_rate_mean:-1.11
+INFO:root:异步验证结束: epoch 2, 验证收益率: -1.109447927309063 best:-0.9929300737239163
+2026-02-04 23:43:53,072 INFO: 异步验证结束: epoch 2, 验证收益率: -1.109447927309063 best:-0.9929300737239163
+INFO:root:training with df 53 4320 1770219835.4654186
+2026-02-04 23:43:55,465 INFO: training with df 53 4320 1770219835.4654186
+INFO:root:training with df 0 4320 1770219859.1212783
+2026-02-04 23:44:19,121 INFO: training with df 0 4320 1770219859.1212783
+INFO:root:training with df 71 4320 1770219883.1225004
+2026-02-04 23:44:43,122 INFO: training with df 71 4320 1770219883.1225004
+INFO:root:training with df 76 4320 1770219907.2974756
+2026-02-04 23:45:07,297 INFO: training with df 76 4320 1770219907.2974756
+INFO:root:training with df 40 4320 1770219929.8668315
+2026-02-04 23:45:29,866 INFO: training with df 40 4320 1770219929.8668315
+INFO:root:training with df 11 4320 1770219952.4079678
+2026-02-04 23:45:52,407 INFO: training with df 11 4320 1770219952.4079678
+INFO:root:training with df 6 4320 1770219977.294407
+2026-02-04 23:46:17,294 INFO: training with df 6 4320 1770219977.294407
+INFO:root:training with df 33 4320 1770220002.1711977
+2026-02-04 23:46:42,171 INFO: training with df 33 4320 1770220002.1711977
+INFO:root:training with df 97 4320 1770220025.9850442
+2026-02-04 23:47:05,985 INFO: training with df 97 4320 1770220025.9850442
+INFO:root:training with df 29 4320 1770220048.0347607
+2026-02-04 23:47:28,034 INFO: training with df 29 4320 1770220048.0347607
+INFO:root:training with df 28 4320 1770220070.7981672
+2026-02-04 23:47:50,798 INFO: training with df 28 4320 1770220070.7981672
+INFO:root:training with df 91 4320 1770220094.012885
+2026-02-04 23:48:14,012 INFO: training with df 91 4320 1770220094.012885
+INFO:root:training with df 77 4320 1770220118.551525
+2026-02-04 23:48:38,551 INFO: training with df 77 4320 1770220118.551525
+INFO:root:training with df 31 4320 1770220141.1621082
+2026-02-04 23:49:01,162 INFO: training with df 31 4320 1770220141.1621082
+INFO:root:training with df 35 4320 1770220164.7114756
+2026-02-04 23:49:24,711 INFO: training with df 35 4320 1770220164.7114756
+INFO:root:training with df 44 4320 1770220189.2338765
+2026-02-04 23:49:49,233 INFO: training with df 44 4320 1770220189.2338765
+INFO:root:training with df 12 4320 1770220213.1695468
+2026-02-04 23:50:13,169 INFO: training with df 12 4320 1770220213.1695468
+INFO:root:training with df 38 4320 1770220237.610744
+2026-02-04 23:50:37,610 INFO: training with df 38 4320 1770220237.610744
+INFO:root:training with df 7 4320 1770220262.3502839
+2026-02-04 23:51:02,350 INFO: training with df 7 4320 1770220262.3502839
+INFO:root:training with df 13 4320 1770220285.0105398
+2026-02-04 23:51:25,010 INFO: training with df 13 4320 1770220285.0105398
+INFO:root:training with df 49 4320 1770220308.9071853
+2026-02-04 23:51:48,907 INFO: training with df 49 4320 1770220308.9071853
+INFO:root:training with df 19 4320 1770220331.785386
+2026-02-04 23:52:11,785 INFO: training with df 19 4320 1770220331.785386
+INFO:root:training with df 75 4320 1770220354.2399235
+2026-02-04 23:52:34,239 INFO: training with df 75 4320 1770220354.2399235
+INFO:root:training with df 27 4320 1770220378.4115863
+2026-02-04 23:52:58,411 INFO: training with df 27 4320 1770220378.4115863
+INFO:root:training with df 85 4320 1770220403.514017
+2026-02-04 23:53:23,514 INFO: training with df 85 4320 1770220403.514017
+INFO:root:training with df 45 4320 1770220427.601619
+2026-02-04 23:53:47,601 INFO: training with df 45 4320 1770220427.601619
+INFO:root:training with df 32 4320 1770220451.8622513
+2026-02-04 23:54:11,862 INFO: training with df 32 4320 1770220451.8622513
+INFO:root:training with df 106 4320 1770220476.4805033
+2026-02-04 23:54:36,480 INFO: training with df 106 4320 1770220476.4805033
+INFO:root:training with df 65 4320 1770220501.5315502
+2026-02-04 23:55:01,531 INFO: training with df 65 4320 1770220501.5315502
+INFO:root:training with df 68 4320 1770220526.2888284
+2026-02-04 23:55:26,288 INFO: training with df 68 4320 1770220526.2888284
+INFO:root:training with df 60 4320 1770220549.757879
+2026-02-04 23:55:49,757 INFO: training with df 60 4320 1770220549.757879
+INFO:root:training with df 37 4320 1770220573.8399634
+2026-02-04 23:56:13,839 INFO: training with df 37 4320 1770220573.8399634
+INFO:root:training with df 24 4320 1770220596.887645
+2026-02-04 23:56:36,887 INFO: training with df 24 4320 1770220596.887645
+INFO:root:training with df 23 4320 1770220619.9858608
+2026-02-04 23:56:59,985 INFO: training with df 23 4320 1770220619.9858608
+INFO:root:start val epoch 3
+2026-02-04 23:57:23,729 INFO: start val epoch 3
+INFO:root:验证任务已加入队列: epoch 3
+2026-02-04 23:57:23,729 INFO: 验证任务已加入队列: epoch 3
+INFO:root:epoch 4
+2026-02-04 23:57:23,729 INFO: epoch 4
+INFO:root:random_list:[32, 35, 60, 38, 19, 75, 12, 97, 65, 68, 26, 23, 106, 91, 44, 85, 77, 74, 13, 24, 27, 45, 33, 0, 71, 49, 11, 6, 31, 37, 76, 40, 29, 53, 7, 28]
+2026-02-04 23:57:23,729 INFO: random_list:[32, 35, 60, 38, 19, 75, 12, 97, 65, 68, 26, 23, 106, 91, 44, 85, 77, 74, 13, 24, 27, 45, 33, 0, 71, 49, 11, 6, 31, 37, 76, 40, 29, 53, 7, 28]
+INFO:root:epoch 4 start files
+2026-02-04 23:57:23,729 INFO: epoch 4 start files
+INFO:root:training with df 32 4320 1770220643.729539
+2026-02-04 23:57:23,729 INFO: training with df 32 4320 1770220643.729539
+INFO:root:training with df 35 4320 1770220668.033203
+2026-02-04 23:57:48,033 INFO: training with df 35 4320 1770220668.033203
+INFO:root:验证消费者处理任务: epoch 3
+2026-02-04 23:57:53,825 INFO: 验证消费者处理任务: epoch 3
+INFO:root:异步验证开始: epoch 3
+2026-02-04 23:57:53,826 INFO: 异步验证开始: epoch 3
+INFO:root:Using 3 processes for parallel validation df_list:[1, 2, 12, 15, 17, 21, 25, 26, 27, 29, 37, 39]
+2026-02-04 23:57:53,826 INFO: Using 3 processes for parallel validation df_list:[1, 2, 12, 15, 17, 21, 25, 26, 27, 29, 37, 39]
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -4.987757999999928, required_money: 329.2718412, commission_fee: 0.261758, step_times: 4319, trade_id_counter: 3
+2026-02-04 23:58:09,535 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -4.987757999999928, required_money: 329.2718412, commission_fee: 0.261758, step_times: 4319, trade_id_counter: 3
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -23.22035519999997, required_money: 332.2605348, commission_fee: 0.3843552, step_times: 4319, trade_id_counter: 5
+2026-02-04 23:58:09,657 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -23.22035519999997, required_money: 332.2605348, commission_fee: 0.3843552, step_times: 4319, trade_id_counter: 5
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -10.218846399999904, required_money: 308.50495599999994, commission_fee: 0.4628464, step_times: 4319, trade_id_counter: 7
+2026-02-04 23:58:09,677 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -10.218846399999904, required_money: 308.50495599999994, commission_fee: 0.4628464, step_times: 4319, trade_id_counter: 7
+INFO:root:training with df 60 4320 1770220697.9475548
+2026-02-04 23:58:17,947 INFO: training with df 60 4320 1770220697.9475548
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -2.589826399999936, required_money: 360.8161488, commission_fee: 0.5698264000000002, step_times: 4319, trade_id_counter: 7
+2026-02-04 23:58:23,017 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -2.589826399999936, required_money: 360.8161488, commission_fee: 0.5698264000000002, step_times: 4319, trade_id_counter: 7
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -4.017175199999997, required_money: 361.97915320000004, commission_fee: 0.5611752, step_times: 4319, trade_id_counter: 8
+2026-02-04 23:58:23,120 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -4.017175199999997, required_money: 361.97915320000004, commission_fee: 0.5611752, step_times: 4319, trade_id_counter: 8
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: 0.3797708000000739, required_money: 380.99879640000006, commission_fee: 0.45422920000000006, step_times: 4319, trade_id_counter: 5
+2026-02-04 23:58:23,202 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: 0.3797708000000739, required_money: 380.99879640000006, commission_fee: 0.45422920000000006, step_times: 4319, trade_id_counter: 5
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -23.1896147999999, required_money: 418.2476328, commission_fee: 0.6516148000000002, step_times: 4319, trade_id_counter: 7
+2026-02-04 23:58:37,282 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -23.1896147999999, required_money: 418.2476328, commission_fee: 0.6516148000000002, step_times: 4319, trade_id_counter: 7
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -12.298135600000023, required_money: 386.48928240000004, commission_fee: 0.1521356, step_times: 4319, trade_id_counter: 2
+2026-02-04 23:58:37,313 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -12.298135600000023, required_money: 386.48928240000004, commission_fee: 0.1521356, step_times: 4319, trade_id_counter: 2
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: 5.026048800000069, required_money: 371.2317336, commission_fee: 0.5939512, step_times: 4319, trade_id_counter: 7
+2026-02-04 23:58:37,354 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: 5.026048800000069, required_money: 371.2317336, commission_fee: 0.5939512, step_times: 4319, trade_id_counter: 7
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -12.026351599999998, required_money: 380.49031880000007, commission_fee: 0.4483516000000001, step_times: 4319, trade_id_counter: 5
+2026-02-04 23:58:50,776 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -12.026351599999998, required_money: 380.49031880000007, commission_fee: 0.4483516000000001, step_times: 4319, trade_id_counter: 5
+INFO:root:training with df 38 4320 1770220730.7926564
+2026-02-04 23:58:50,792 INFO: training with df 38 4320 1770220730.7926564
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: 4.379589600000031, required_money: 368.0295912, commission_fee: 0.2924104, step_times: 4319, trade_id_counter: 4
+2026-02-04 23:58:50,831 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: 4.379589600000031, required_money: 368.0295912, commission_fee: 0.2924104, step_times: 4319, trade_id_counter: 4
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -4.415871999999865, required_money: 382.20263079999995, commission_fee: 0.6078720000000001, step_times: 4319, trade_id_counter: 7
+2026-02-04 23:58:50,890 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 _validate_worker  final_balance: -4.415871999999865, required_money: 382.20263079999995, commission_fee: 0.6078720000000001, step_times: 4319, trade_id_counter: 7
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-02-05 12:54:00  329.271841       0.2      long   buy  1646.03
+1   1 2023-02-06 15:57:00  329.176152       0.2      long  sell  1646.21
+2   2 2023-02-06 21:47:00  327.617510       0.2      long   buy  1637.76
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-03-18 00:55:00  360.816149       0.2      long   buy  1803.72
+1   1 2023-03-18 00:56:00  362.557474       0.2      long  sell  1813.15
+2   2 2023-03-18 16:29:00  354.678922       0.2      long   buy  1773.04
+3   3 2023-03-18 17:32:00  353.597266       0.2      long  sell  1768.34
+4   4 2023-03-18 22:43:00  353.706727       0.2      long   buy  1768.18
+5   5 2023-03-19 15:06:00  360.623861       0.2      long  sell  1803.48
+6   6 2023-03-19 23:53:00  356.659318       0.2      long   buy  1782.94
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-04-17 00:36:00  418.247633       0.2      long   buy  2090.82
+1   1 2023-04-18 11:32:00  422.595464       0.2      long  sell  2113.40
+2   2 2023-04-19 02:13:00  418.657715       0.2      long   buy  2092.87
+3   3 2023-04-19 08:11:00  404.934997       0.2      long  sell  2025.08
+4   4 2023-04-19 08:14:00  405.747133       0.2      long   buy  2028.33
+5   5 2023-04-19 08:21:00  402.997384       0.2      long  sell  2015.39
+6   6 2023-04-19 08:22:00  397.981580       0.2      long   buy  1989.51
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-04-29 17:30:00  377.809547       0.2      long   buy  1888.67
+1   1 2023-04-29 19:26:00  380.589867       0.2      long  sell  1903.33
+2   2 2023-04-30 15:09:00  383.270639       0.2      long   buy  1915.97
+3   3 2023-05-01 05:42:00  368.086368       0.2      long  sell  1840.80
+4   4 2023-05-01 15:24:00  365.813148       0.2      long   buy  1828.70
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-03-09 09:12:00  306.533294       0.2      long   buy  1532.36
+1   1 2023-03-10 13:30:00  282.883412       0.2      long  sell  1414.70
+2   2 2023-03-10 17:23:00  280.820153       0.2      long   buy  1403.82
+3   3 2023-03-10 21:57:00  285.284932       0.2      long  sell  1426.71
+4   4 2023-03-11 07:38:00  289.319852       0.2      long   buy  1446.31
+5   5 2023-03-11 08:44:00  289.828023       0.2      long  sell  1449.43
+6   6 2023-03-11 10:48:00  285.553099       0.2      long   buy  1427.48
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-04-05 00:32:00  380.516088       0.2      long   buy  1902.20
+1   1 2023-04-05 00:33:00  381.529679       0.2      long  sell  1908.03
+2   2 2023-04-05 13:45:00  382.012387       0.2      long   buy  1909.68
+3   3 2023-04-05 19:22:00  381.565672       0.2      long  sell  1908.21
+4   4 2023-04-06 12:17:00  372.854556       0.2      long   buy  1863.90
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-04-23 00:34:00  369.947975       0.2      long   buy  1849.37
+1   1 2023-04-23 03:28:00  373.755234       0.2      long  sell  1869.15
+2   2 2023-04-23 11:56:00  375.038993       0.2      long   buy  1874.82
+3   3 2023-04-24 13:38:00  372.861413       0.2      long  sell  1864.68
+4   4 2023-04-24 17:03:00  363.472680       0.2      long   buy  1817.00
+5   5 2023-04-25 19:56:00  367.556474       0.2      long  sell  1838.15
+6   6 2023-04-25 21:02:00  373.904766       0.2      long   buy  1869.15
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-05-29 02:58:00  382.016388       0.2      long   buy  1909.70
+1   1 2023-05-29 10:50:00  379.458093       0.2      long  sell  1897.67
+2   2 2023-05-29 14:35:00  378.541693       0.2      long   buy  1892.33
+3   3 2023-05-30 03:20:00  381.055774       0.2      long  sell  1905.66
+4   4 2023-05-30 10:31:00  382.158416       0.2      long   buy  1910.41
+5   5 2023-05-30 21:25:00  382.307523       0.2      long  sell  1911.92
+6   6 2023-05-31 02:01:00  379.171819       0.2      long   buy  1895.48
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-02-07 10:16:00  329.059799       0.2      long   buy  1644.97
+1   1 2023-02-07 17:48:00  332.657455       0.2      long  sell  1663.62
+2   2 2023-02-08 02:16:00  335.807148       0.2      long   buy  1678.70
+3   3 2023-02-09 21:31:00  307.582471       0.2      long  sell  1538.22
+4   4 2023-02-09 21:49:00  307.633514       0.2      long   buy  1537.86
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-03-24 04:40:00  361.636313       0.2      long   buy  1807.82
+1   1 2023-03-24 14:02:00  351.929600       0.2      long  sell  1760.00
+2   2 2023-03-24 14:03:00  352.272440       0.2      long   buy  1761.01
+3   3 2023-03-24 17:25:00  348.112364       0.2      long  sell  1740.91
+4   4 2023-03-24 17:50:00  345.809148       0.2      long   buy  1728.70
+5   5 2023-03-25 19:02:00  345.540878       0.2      long  sell  1728.05
+6   6 2023-03-25 19:04:00  345.229032       0.2      long   buy  1725.80
+7   7 2023-03-26 08:41:00  355.346916       0.2      long  sell  1777.09
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-04-20 16:05:00  386.489282       0.2      long   buy  1932.06
+1   1 2023-04-22 16:10:00  374.191147       0.2      long  sell  1871.33
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-05-23 01:35:00  368.029591       0.2      long   buy  1839.78
+1   1 2023-05-23 03:21:00  372.873410       0.2      long  sell  1864.74
+2   2 2023-05-24 13:51:00  360.806147       0.2      long   buy  1803.67
+3   3 2023-05-25 12:05:00  360.341917       0.2      long  sell  1802.07
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 return_rate_mean:-2.00
+2026-02-04 23:58:51,242 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_3 return_rate_mean:-2.00
+INFO:root:异步验证结束: epoch 3, 验证收益率: -2.003528732880284 best:-0.9929300737239163
+2026-02-04 23:58:51,244 INFO: 异步验证结束: epoch 3, 验证收益率: -2.003528732880284 best:-0.9929300737239163
+INFO:root:training with df 19 4320 1770220755.1407673
+2026-02-04 23:59:15,140 INFO: training with df 19 4320 1770220755.1407673
+INFO:root:training with df 75 4320 1770220775.8175063
+2026-02-04 23:59:35,817 INFO: training with df 75 4320 1770220775.8175063
+INFO:root:training with df 12 4320 1770220798.2513971
+2026-02-04 23:59:58,251 INFO: training with df 12 4320 1770220798.2513971
+INFO:root:training with df 97 4320 1770220820.9995959
+2026-02-05 00:00:20,999 INFO: training with df 97 4320 1770220820.9995959
+INFO:root:training with df 65 4320 1770220844.5167828
+2026-02-05 00:00:44,516 INFO: training with df 65 4320 1770220844.5167828
+INFO:root:training with df 68 4320 1770220868.0025709
+2026-02-05 00:01:08,002 INFO: training with df 68 4320 1770220868.0025709
+INFO:root:training with df 26 4320 1770220889.1320796
+2026-02-05 00:01:29,132 INFO: training with df 26 4320 1770220889.1320796
+INFO:root:training with df 23 4320 1770220912.3524485
+2026-02-05 00:01:52,352 INFO: training with df 23 4320 1770220912.3524485
+INFO:root:training with df 106 4320 1770220936.0548556
+2026-02-05 00:02:16,054 INFO: training with df 106 4320 1770220936.0548556
+INFO:root:training with df 91 4320 1770220958.3871603
+2026-02-05 00:02:38,387 INFO: training with df 91 4320 1770220958.3871603
+INFO:root:training with df 44 4320 1770220981.4621549
+2026-02-05 00:03:01,462 INFO: training with df 44 4320 1770220981.4621549
+INFO:root:training with df 85 4320 1770221004.3552804
+2026-02-05 00:03:24,355 INFO: training with df 85 4320 1770221004.3552804
+INFO:root:training with df 77 4320 1770221027.08472
+2026-02-05 00:03:47,084 INFO: training with df 77 4320 1770221027.08472
+INFO:root:training with df 74 4320 1770221050.295871
+2026-02-05 00:04:10,295 INFO: training with df 74 4320 1770221050.295871
+INFO:root:training with df 13 4320 1770221072.7214491
+2026-02-05 00:04:32,721 INFO: training with df 13 4320 1770221072.7214491
+INFO:root:training with df 24 4320 1770221095.5445938
+2026-02-05 00:04:55,544 INFO: training with df 24 4320 1770221095.5445938
+INFO:root:training with df 27 4320 1770221118.2271485
+2026-02-05 00:05:18,227 INFO: training with df 27 4320 1770221118.2271485
+INFO:root:training with df 45 4320 1770221141.4287126
+2026-02-05 00:05:41,428 INFO: training with df 45 4320 1770221141.4287126
+INFO:root:training with df 33 4320 1770221165.7027712
+2026-02-05 00:06:05,702 INFO: training with df 33 4320 1770221165.7027712
+INFO:root:training with df 0 4320 1770221186.741169
+2026-02-05 00:06:26,741 INFO: training with df 0 4320 1770221186.741169
+INFO:root:training with df 71 4320 1770221211.5057693
+2026-02-05 00:06:51,505 INFO: training with df 71 4320 1770221211.5057693
+INFO:root:training with df 49 4320 1770221235.6682448
+2026-02-05 00:07:15,668 INFO: training with df 49 4320 1770221235.6682448
+INFO:root:training with df 11 4320 1770221257.7972584
+2026-02-05 00:07:37,797 INFO: training with df 11 4320 1770221257.7972584
+INFO:root:training with df 6 4320 1770221278.6631813
+2026-02-05 00:07:58,663 INFO: training with df 6 4320 1770221278.6631813
+INFO:root:training with df 31 4320 1770221300.661405
+2026-02-05 00:08:20,661 INFO: training with df 31 4320 1770221300.661405
+INFO:root:training with df 37 4320 1770221325.1414611
+2026-02-05 00:08:45,141 INFO: training with df 37 4320 1770221325.1414611
+INFO:root:training with df 76 4320 1770221349.5707939
+2026-02-05 00:09:09,570 INFO: training with df 76 4320 1770221349.5707939
+INFO:root:training with df 40 4320 1770221371.8914673
+2026-02-05 00:09:31,891 INFO: training with df 40 4320 1770221371.8914673
+INFO:root:training with df 29 4320 1770221395.5009556
+2026-02-05 00:09:55,500 INFO: training with df 29 4320 1770221395.5009556
+INFO:root:training with df 53 4320 1770221419.1568005
+2026-02-05 00:10:19,156 INFO: training with df 53 4320 1770221419.1568005
+INFO:root:training with df 7 4320 1770221442.9942844
+2026-02-05 00:10:42,994 INFO: training with df 7 4320 1770221442.9942844
+INFO:root:training with df 28 4320 1770221464.733277
+2026-02-05 00:11:04,733 INFO: training with df 28 4320 1770221464.733277
+INFO:root:start val epoch 4
+2026-02-05 00:11:26,820 INFO: start val epoch 4
+INFO:root:验证任务已加入队列: epoch 4
+2026-02-05 00:11:26,820 INFO: 验证任务已加入队列: epoch 4
+INFO:root:epoch 5
+2026-02-05 00:11:26,820 INFO: epoch 5
+INFO:root:random_list:[53, 60, 12, 32, 45, 37, 0, 74, 23, 97, 71, 29, 38, 11, 26, 24, 106, 6, 13, 49, 68, 19, 91, 28, 7, 40, 85, 33, 65, 35, 76, 27, 75, 44, 77, 31]
+2026-02-05 00:11:26,820 INFO: random_list:[53, 60, 12, 32, 45, 37, 0, 74, 23, 97, 71, 29, 38, 11, 26, 24, 106, 6, 13, 49, 68, 19, 91, 28, 7, 40, 85, 33, 65, 35, 76, 27, 75, 44, 77, 31]
+INFO:root:epoch 5 start files
+2026-02-05 00:11:26,820 INFO: epoch 5 start files
+INFO:root:training with df 53 4320 1770221486.8204384
+2026-02-05 00:11:26,820 INFO: training with df 53 4320 1770221486.8204384
+INFO:root:training with df 60 4320 1770221507.580202
+2026-02-05 00:11:47,580 INFO: training with df 60 4320 1770221507.580202
+INFO:root:验证消费者处理任务: epoch 4
+2026-02-05 00:11:52,021 INFO: 验证消费者处理任务: epoch 4
+INFO:root:异步验证开始: epoch 4
+2026-02-05 00:11:52,022 INFO: 异步验证开始: epoch 4
+INFO:root:Using 3 processes for parallel validation df_list:[1, 2, 12, 15, 17, 21, 25, 26, 27, 29, 37, 39]
+2026-02-05 00:11:52,022 INFO: Using 3 processes for parallel validation df_list:[1, 2, 12, 15, 17, 21, 25, 26, 27, 29, 37, 39]
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: 0.0542804000000956, required_money: 329.2718412, commission_fee: 0.1317196, step_times: 4319, trade_id_counter: 2
+2026-02-05 00:12:07,838 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: 0.0542804000000956, required_money: 329.2718412, commission_fee: 0.1317196, step_times: 4319, trade_id_counter: 2
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -11.341378799999859, required_money: 306.181224, commission_fee: 0.45937880000000003, step_times: 4319, trade_id_counter: 8
+2026-02-05 00:12:08,003 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -11.341378799999859, required_money: 306.181224, commission_fee: 0.45937880000000003, step_times: 4319, trade_id_counter: 8
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -12.789646000000005, required_money: 333.2486364, commission_fee: 0.25564600000000004, step_times: 4319, trade_id_counter: 4
+2026-02-05 00:12:08,021 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -12.789646000000005, required_money: 333.2486364, commission_fee: 0.25564600000000004, step_times: 4319, trade_id_counter: 4
+INFO:root:training with df 12 4320 1770221537.048802
+2026-02-05 00:12:17,048 INFO: training with df 12 4320 1770221537.048802
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -5.283327199999974, required_money: 350.96017800000004, commission_fee: 0.1393272, step_times: 4319, trade_id_counter: 2
+2026-02-05 00:12:21,300 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -5.283327199999974, required_money: 350.96017800000004, commission_fee: 0.1393272, step_times: 4319, trade_id_counter: 2
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -8.18532039999991, required_money: 362.35047319999995, commission_fee: 0.42332040000000004, step_times: 4319, trade_id_counter: 6
+2026-02-05 00:12:21,547 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -8.18532039999991, required_money: 362.35047319999995, commission_fee: 0.42332040000000004, step_times: 4319, trade_id_counter: 6
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -1.2973175999999285, required_money: 380.516088, commission_fee: 0.4533176000000001, step_times: 4319, trade_id_counter: 6
+2026-02-05 00:12:21,734 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -1.2973175999999285, required_money: 380.516088, commission_fee: 0.4533176000000001, step_times: 4319, trade_id_counter: 6
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -6.726386399999853, required_money: 419.93852799999996, commission_fee: 0.6543864, step_times: 4319, trade_id_counter: 8
+2026-02-05 00:12:35,065 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -6.726386399999853, required_money: 419.93852799999996, commission_fee: 0.6543864, step_times: 4319, trade_id_counter: 8
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -7.725593600000025, required_money: 386.48928240000004, commission_fee: 0.44959360000000004, step_times: 4319, trade_id_counter: 5
+2026-02-05 00:12:35,255 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -7.725593600000025, required_money: 386.48928240000004, commission_fee: 0.44959360000000004, step_times: 4319, trade_id_counter: 5
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: 0.13714920000012398, required_money: 375.0389928, commission_fee: 0.4448508, step_times: 4319, trade_id_counter: 5
+2026-02-05 00:12:35,489 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: 0.13714920000012398, required_money: 375.0389928, commission_fee: 0.4448508, step_times: 4319, trade_id_counter: 5
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -13.080476399999952, required_money: 384.15681600000005, commission_fee: 0.4504764, step_times: 4319, trade_id_counter: 6
+2026-02-05 00:12:48,834 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -13.080476399999952, required_money: 384.15681600000005, commission_fee: 0.4504764, step_times: 4319, trade_id_counter: 6
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: 4.843819200000041, required_money: 368.0295912, commission_fee: 0.1481808, step_times: 4319, trade_id_counter: 2
+2026-02-05 00:12:48,931 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: 4.843819200000041, required_money: 368.0295912, commission_fee: 0.1481808, step_times: 4319, trade_id_counter: 2
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -6.388863999999899, required_money: 386.1896796, commission_fee: 0.6048640000000001, step_times: 4319, trade_id_counter: 8
+2026-02-05 00:12:49,049 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 _validate_worker  final_balance: -6.388863999999899, required_money: 386.1896796, commission_fee: 0.6048640000000001, step_times: 4319, trade_id_counter: 8
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-02-05 12:54:00  329.271841       0.2      long   buy  1646.03
+1   1 2023-02-05 12:57:00  329.326122       0.2      long  sell  1646.96
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-03-20 13:36:00  350.960178       0.2      long   buy  1754.45
+1   1 2023-03-20 23:16:00  345.676851       0.2      long  sell  1728.73
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-04-17 00:36:00  418.247633       0.2      long   buy  2090.82
+1   1 2023-04-17 00:41:00  416.392705       0.2      long  sell  2082.38
+2   2 2023-04-17 02:13:00  418.083600       0.2      long   buy  2090.00
+3   3 2023-04-18 11:32:00  422.595464       0.2      long  sell  2113.40
+4   4 2023-04-19 08:14:00  405.747133       0.2      long   buy  2028.33
+5   5 2023-04-19 08:21:00  402.997384       0.2      long  sell  2015.39
+6   6 2023-04-19 08:45:00  397.251434       0.2      long   buy  1985.86
+7   7 2023-04-19 21:22:00  390.617861       0.2      long  sell  1953.48
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-04-30 16:29:00  384.156816       0.2      long   buy  1920.40
+1   1 2023-04-30 19:09:00  381.765632       0.2      long  sell  1909.21
+2   2 2023-04-30 19:20:00  379.457876       0.2      long   buy  1896.91
+3   3 2023-05-01 01:39:00  369.800025       0.2      long  sell  1849.37
+4   4 2023-05-01 01:42:00  369.117809       0.2      long   buy  1845.22
+5   5 2023-05-01 05:42:00  368.086368       0.2      long  sell  1840.80
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-02-07 21:17:00  333.248636       0.2      long   buy  1665.91
+1   1 2023-02-09 03:02:00  324.935000       0.2      long  sell  1625.00
+2   2 2023-02-09 19:32:00  312.262440       0.2      long   buy  1561.00
+3   3 2023-02-09 21:30:00  307.786430       0.2      long  sell  1539.24
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-04-05 00:32:00  380.516088       0.2      long   buy  1902.20
+1   1 2023-04-05 00:33:00  381.529679       0.2      long  sell  1908.03
+2   2 2023-04-05 14:04:00  380.572099       0.2      long   buy  1902.48
+3   3 2023-04-05 19:22:00  381.565672       0.2      long  sell  1908.21
+4   4 2023-04-06 12:17:00  372.854556       0.2      long   buy  1863.90
+5   5 2023-04-07 12:30:00  369.550075       0.2      long  sell  1848.12
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-04-23 11:56:00  375.038993       0.2      long   buy  1874.82
+1   1 2023-04-24 13:38:00  372.861413       0.2      long  sell  1864.68
+2   2 2023-04-24 17:03:00  363.472680       0.2      long   buy  1817.00
+3   3 2023-04-24 21:27:00  366.116762       0.2      long  sell  1830.95
+4   4 2023-04-25 21:03:00  373.546694       0.2      long   buy  1867.36
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-05-29 03:15:00  381.632311       0.2      long   buy  1907.78
+1   1 2023-05-29 10:50:00  379.458093       0.2      long  sell  1897.67
+2   2 2023-05-29 14:35:00  378.541693       0.2      long   buy  1892.33
+3   3 2023-05-30 00:36:00  376.684648       0.2      long  sell  1883.80
+4   4 2023-05-30 10:31:00  382.158416       0.2      long   buy  1910.41
+5   5 2023-05-30 21:25:00  382.307523       0.2      long  sell  1911.92
+6   6 2023-05-31 14:07:00  373.022590       0.2      long   buy  1864.74
+7   7 2023-05-31 14:19:00  370.515882       0.2      long  sell  1852.95
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-03-09 12:21:00  306.181224       0.2      long   buy  1530.60
+1   1 2023-03-09 20:57:00  284.781032       0.2      long  sell  1424.19
+2   2 2023-03-09 20:59:00  282.972583       0.2      long   buy  1414.58
+3   3 2023-03-10 13:30:00  282.883412       0.2      long  sell  1414.70
+4   4 2023-03-10 14:45:00  278.107610       0.2      long   buy  1390.26
+5   5 2023-03-10 21:57:00  285.284932       0.2      long  sell  1426.71
+6   6 2023-03-11 07:51:00  286.857360       0.2      long   buy  1434.00
+7   7 2023-03-11 08:44:00  289.828023       0.2      long  sell  1449.43
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-03-24 04:40:00  361.636313       0.2      long   buy  1807.82
+1   1 2023-03-24 14:01:00  351.931600       0.2      long  sell  1760.01
+2   2 2023-03-24 14:03:00  352.272440       0.2      long   buy  1761.01
+3   3 2023-03-24 17:25:00  348.112364       0.2      long  sell  1740.91
+4   4 2023-03-25 22:14:00  348.485683       0.2      long   buy  1742.08
+5   5 2023-03-26 08:39:00  354.165153       0.2      long  sell  1771.18
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-04-20 16:05:00  386.489282       0.2      long   buy  1932.06
+1   1 2023-04-21 17:29:00  376.536678       0.2      long  sell  1883.06
+2   2 2023-04-21 19:06:00  372.322450       0.2      long   buy  1861.24
+3   3 2023-04-21 19:07:00  368.888208       0.2      long  sell  1844.81
+4   4 2023-04-21 19:09:00  369.035792       0.2      long   buy  1844.81
+   id            datetime      amount  quantity direction  type    price
+0   0 2023-05-23 01:35:00  368.029591       0.2      long   buy  1839.78
+1   1 2023-05-23 03:21:00  372.873410       0.2      long  sell  1864.74
+INFO:root:training with df 32 4320 1770221569.2201455
+2026-02-05 00:12:49,220 INFO: training with df 32 4320 1770221569.2201455
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 return_rate_mean:-1.58
+2026-02-05 00:12:49,353 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5alpha/slope/label_1/1/seed_6234571/epoch_4 return_rate_mean:-1.58
+INFO:root:异步验证结束: epoch 4, 验证收益率: -1.5781726127593738 best:-0.9929300737239163
+2026-02-05 00:12:49,355 INFO: 异步验证结束: epoch 4, 验证收益率: -1.5781726127593738 best:-0.9929300737239163
+INFO:root:training with df 45 4320 1770221593.0598817
+2026-02-05 00:13:13,059 INFO: training with df 45 4320 1770221593.0598817
+INFO:root:training with df 37 4320 1770221617.013415
+2026-02-05 00:13:37,013 INFO: training with df 37 4320 1770221617.013415
+INFO:root:training with df 0 4320 1770221640.7332077
+2026-02-05 00:14:00,733 INFO: training with df 0 4320 1770221640.7332077
+INFO:root:training with df 74 4320 1770221662.781346
+2026-02-05 00:14:22,781 INFO: training with df 74 4320 1770221662.781346
+INFO:root:training with df 23 4320 1770221686.3480432
+2026-02-05 00:14:46,348 INFO: training with df 23 4320 1770221686.3480432
+INFO:root:training with df 97 4320 1770221707.7016845
+2026-02-05 00:15:07,701 INFO: training with df 97 4320 1770221707.7016845
+INFO:root:training with df 71 4320 1770221730.3045409
+2026-02-05 00:15:30,304 INFO: training with df 71 4320 1770221730.3045409
+INFO:root:training with df 29 4320 1770221753.7907176
+2026-02-05 00:15:53,790 INFO: training with df 29 4320 1770221753.7907176
+INFO:root:training with df 38 4320 1770221778.407985
+2026-02-05 00:16:18,408 INFO: training with df 38 4320 1770221778.407985
+INFO:root:training with df 11 4320 1770221802.9339924
+2026-02-05 00:16:42,934 INFO: training with df 11 4320 1770221802.9339924
+INFO:root:training with df 26 4320 1770221826.018292
+2026-02-05 00:17:06,018 INFO: training with df 26 4320 1770221826.018292
+INFO:root:training with df 24 4320 1770221849.1327183
+2026-02-05 00:17:29,132 INFO: training with df 24 4320 1770221849.1327183
+INFO:root:training with df 106 4320 1770221872.1292245
+2026-02-05 00:17:52,129 INFO: training with df 106 4320 1770221872.1292245
+INFO:root:training with df 6 4320 1770221897.1374369
+2026-02-05 00:18:17,137 INFO: training with df 6 4320 1770221897.1374369
+INFO:root:training with df 13 4320 1770221921.8135202
+2026-02-05 00:18:41,813 INFO: training with df 13 4320 1770221921.8135202
+INFO:root:training with df 49 4320 1770221946.4153845
+2026-02-05 00:19:06,415 INFO: training with df 49 4320 1770221946.4153845
+INFO:root:training with df 68 4320 1770221970.3468823
+2026-02-05 00:19:30,346 INFO: training with df 68 4320 1770221970.3468823
+INFO:root:training with df 19 4320 1770221994.6536155
+2026-02-05 00:19:54,653 INFO: training with df 19 4320 1770221994.6536155
+INFO:root:training with df 91 4320 1770222018.663928
+2026-02-05 00:20:18,663 INFO: training with df 91 4320 1770222018.663928
+INFO:root:training with df 28 4320 1770222038.6456983
+2026-02-05 00:20:38,645 INFO: training with df 28 4320 1770222038.6456983
+INFO:root:training with df 7 4320 1770222058.58038
+2026-02-05 00:20:58,580 INFO: training with df 7 4320 1770222058.58038
+INFO:root:training with df 40 4320 1770222079.2853537
+2026-02-05 00:21:19,285 INFO: training with df 40 4320 1770222079.2853537
+INFO:root:training with df 85 4320 1770222103.820106
+2026-02-05 00:21:43,820 INFO: training with df 85 4320 1770222103.820106
+INFO:root:training with df 33 4320 1770222128.8392189
+2026-02-05 00:22:08,839 INFO: training with df 33 4320 1770222128.8392189
+INFO:root:training with df 65 4320 1770222153.0510762
+2026-02-05 00:22:33,051 INFO: training with df 65 4320 1770222153.0510762
+INFO:root:training with df 35 4320 1770222175.2525988
+2026-02-05 00:22:55,252 INFO: training with df 35 4320 1770222175.2525988
+INFO:root:training with df 76 4320 1770222198.3028858
+2026-02-05 00:23:18,302 INFO: training with df 76 4320 1770222198.3028858
+INFO:root:training with df 27 4320 1770222222.0804844
+2026-02-05 00:23:42,080 INFO: training with df 27 4320 1770222222.0804844
+INFO:root:training with df 75 4320 1770222249.8834589
+2026-02-05 00:24:09,883 INFO: training with df 75 4320 1770222249.8834589
+INFO:root:training with df 44 4320 1770222275.798041
+2026-02-05 00:24:35,798 INFO: training with df 44 4320 1770222275.798041
+INFO:root:training with df 77 4320 1770222303.6811829
+2026-02-05 00:25:03,681 INFO: training with df 77 4320 1770222303.6811829
+INFO:root:training with df 31 4320 1770222332.689263
+2026-02-05 00:25:32,689 INFO: training with df 31 4320 1770222332.689263
+INFO:root:start val epoch 5
+2026-02-05 00:26:00,317 INFO: start val epoch 5
+INFO:root:验证任务已加入队列: epoch 5
+2026-02-05 00:26:00,318 INFO: 验证任务已加入队列: epoch 5
+INFO:root:done, 1770222360.3189516 total time: 4139.93 seconds
+2026-02-05 00:26:00,318 INFO: done, 1770222360.3189516 total time: 4139.93 seconds

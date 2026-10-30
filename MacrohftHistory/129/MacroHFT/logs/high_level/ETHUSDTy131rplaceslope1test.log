@@ -1,0 +1,119 @@
+nohup: 忽略输入
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Namespace(buffer_size=1000000, dataset='ETHUSDT', q_value_memorize_freq=10, batch_size=512, eval_update_freq=512, lr=0.0001, epsilon_start=0.7, epsilon_end=0.3, decay_length=5, update_times=10, gamma=0.99, tau=0.005, transcation_cost=0.0002, back_time_length=1, seed=12345, n_step=1, epoch_number=15, device='cuda:0', alpha=0.5, beta=5, exp='131placeslope1test', num_step=10)
+['./result/low_level/ETHUSDT/best_model/slope/1/best_model.pkl', './result/low_level/ETHUSDT/131testbest_model/slope/2/best_model.pkl', './result/low_level/ETHUSDT/131testbest_model/slope/3/best_model.pkl']
+['./result/low_level/ETHUSDT/131testbest_model/vol/1/best_model.pkl', './result/low_level/ETHUSDT/131testbest_model/vol/2/best_model.pkl', './result/low_level/ETHUSDT/131testbest_model/vol/3/best_model.pkl']
+[train] start_time=2026-01-31 21:01:49.958006
+[train] pid=1624808
+epoch  1
+[update] cnt=1 loss=0.621634 td=0.192322 mem=0.213221 KL=0.064540
+[update_debug] cnt=1 q_current(mean=1.785845,min=1.265068,max=3.386220) q_target(mean=1.883226,min=0.400748,max=4.093264) q_memory(mean=1.883226,min=-0.145476,max=4.022635) qdist_sm(min=0.17834294,max=0.82165712) log_qdist_sm(min=-1.72404695,max=-0.19643210) demo_sm(min=0.01212534,max=0.98787469)
+[update] cnt=11 loss=0.572060 td=0.197685 mem=0.236790 KL=0.051196
+[update_debug] cnt=11 q_current(mean=1.820339,min=1.375489,max=2.547779) q_target(mean=1.858103,min=-0.804496,max=4.134977) q_memory(mean=1.859354,min=-1.454802,max=4.022635) qdist_sm(min=0.31638899,max=0.68361098) log_qdist_sm(min=-1.15078282,max=-0.38036627) demo_sm(min=0.03495786,max=0.96504217)
+[update] cnt=21 loss=0.663606 td=0.230762 mem=0.315458 KL=0.055023
+[update_debug] cnt=21 q_current(mean=1.809829,min=1.376237,max=4.691056) q_target(mean=1.848938,min=-0.814250,max=4.125368) q_memory(mean=1.852171,min=-1.568701,max=4.022635) qdist_sm(min=0.19671023,max=0.80328977) log_qdist_sm(min=-1.62602353,max=-0.21903977) demo_sm(min=0.06912766,max=0.93087232)
+[update] cnt=31 loss=0.748854 td=0.249640 mem=0.316219 KL=0.068221
+[update_debug] cnt=31 q_current(mean=1.818819,min=1.315843,max=2.815499) q_target(mean=1.844556,min=-0.445867,max=4.891469) q_memory(mean=1.850475,min=-2.091164,max=4.343062) qdist_sm(min=0.24779992,max=0.75220013) log_qdist_sm(min=-1.39513361,max=-0.28475288) demo_sm(min=0.00619903,max=0.99380094)
+[update] cnt=41 loss=0.593028 td=0.164386 mem=0.234210 KL=0.062307
+[update_debug] cnt=41 q_current(mean=1.826885,min=1.352205,max=2.592644) q_target(mean=1.836552,min=0.247123,max=4.481205) q_memory(mean=1.844085,min=-1.752219,max=4.343062) qdist_sm(min=0.24849039,max=0.75150961) log_qdist_sm(min=-1.39235103,max=-0.28567129) demo_sm(min=0.00619903,max=0.99380094)
+[update] cnt=51 loss=0.809775 td=0.316949 mem=0.358367 KL=0.062729
+[update_debug] cnt=51 q_current(mean=1.820569,min=1.377568,max=3.378257) q_target(mean=1.853400,min=-1.484083,max=7.380197) q_memory(mean=1.862444,min=-2.639694,max=5.484300) qdist_sm(min=0.18478224,max=0.81521779) log_qdist_sm(min=-1.68857718,max=-0.20429997) demo_sm(min=0.01212534,max=0.98787469)
+[update] cnt=61 loss=0.561586 td=0.173235 mem=0.199552 KL=0.057715
+[update_debug] cnt=61 q_current(mean=1.852665,min=1.400191,max=2.726140) q_target(mean=1.883739,min=0.119086,max=3.964170) q_memory(mean=1.894078,min=0.076082,max=3.925594) qdist_sm(min=0.28269595,max=0.71730405) log_qdist_sm(min=-1.26338339,max=-0.33225548) demo_sm(min=0.01212534,max=0.98787469)
+[update] cnt=71 loss=0.666093 td=0.240054 mem=0.291803 KL=0.056027
+[update_debug] cnt=71 q_current(mean=1.851728,min=1.418783,max=4.541281) q_target(mean=1.852846,min=0.294032,max=4.542099) q_memory(mean=1.861181,min=-1.015844,max=4.445450) qdist_sm(min=0.21494356,max=0.78505647) log_qdist_sm(min=-1.53737974,max=-0.24199963) demo_sm(min=0.03107840,max=0.96892154)
+[update] cnt=81 loss=0.645231 td=0.246087 mem=0.223675 KL=0.057461
+[update_debug] cnt=81 q_current(mean=1.848029,min=1.369707,max=2.795002) q_target(mean=1.899630,min=0.110802,max=5.418656) q_memory(mean=1.896193,min=-1.689517,max=3.364103) qdist_sm(min=0.33181155,max=0.66818851) log_qdist_sm(min=-1.10318804,max=-0.40318495) demo_sm(min=0.00770427,max=0.99229574)
+[update] cnt=91 loss=0.838725 td=0.405570 mem=0.216471 KL=0.064984
+[update_debug] cnt=91 q_current(mean=1.862846,min=1.423519,max=3.838037) q_target(mean=1.883974,min=0.028394,max=7.658179) q_memory(mean=1.901407,min=-1.752219,max=4.124025) qdist_sm(min=0.24174780,max=0.75825220) log_qdist_sm(min=-1.41986024,max=-0.27673924) demo_sm(min=0.00620128,max=0.99379867)
+[update] cnt=101 loss=0.639318 td=0.243804 mem=0.218428 KL=0.057260
+[update_debug] cnt=101 q_current(mean=1.876017,min=1.321519,max=3.369602) q_target(mean=1.864136,min=0.036494,max=5.418734) q_memory(mean=1.868706,min=-1.689517,max=3.925594) qdist_sm(min=0.19596413,max=0.80403590) log_qdist_sm(min=-1.62982357,max=-0.21811135) demo_sm(min=0.06317535,max=0.93682462)
+[update] cnt=111 loss=0.573997 td=0.205281 mem=0.205685 KL=0.053175
+[update_debug] cnt=111 q_current(mean=1.877446,min=1.346577,max=2.598265) q_target(mean=1.843764,min=0.155361,max=4.364405) q_memory(mean=1.859079,min=-1.689517,max=3.455337) qdist_sm(min=0.29418904,max=0.70581096) log_qdist_sm(min=-1.22353268,max=-0.34840783) demo_sm(min=0.02727396,max=0.97272599)
+[update] cnt=121 loss=0.675990 td=0.279652 mem=0.230677 KL=0.056200
+[update_debug] cnt=121 q_current(mean=1.867649,min=1.468918,max=3.115130) q_target(mean=1.869325,min=0.101100,max=7.692099) q_memory(mean=1.884929,min=-0.809723,max=4.343062) qdist_sm(min=0.32575616,max=0.67424381) log_qdist_sm(min=-1.12160611,max=-0.39416352) demo_sm(min=0.00620128,max=0.99379867)
+[update] cnt=131 loss=0.529671 td=0.166257 mem=0.169010 KL=0.055782
+[update_debug] cnt=131 q_current(mean=1.869296,min=1.340402,max=3.300344) q_target(mean=1.850719,min=0.321728,max=4.670374) q_memory(mean=1.866279,min=-1.015844,max=4.124025) qdist_sm(min=0.34366253,max=0.65633744) log_qdist_sm(min=-1.06809509,max=-0.42108023) demo_sm(min=0.03240288,max=0.96759707)
+[update] cnt=141 loss=0.539500 td=0.196826 mem=0.200936 KL=0.048441
+[update_debug] cnt=141 q_current(mean=1.882716,min=1.454396,max=2.730241) q_target(mean=1.857858,min=0.031602,max=4.671686) q_memory(mean=1.887743,min=-1.752219,max=4.124025) qdist_sm(min=0.30375454,max=0.69624549) log_qdist_sm(min=-1.19153535,max=-0.36205298) demo_sm(min=0.03432623,max=0.96567374)
+[update] cnt=151 loss=0.524467 td=0.178648 mem=0.162323 KL=0.052931
+[update_debug] cnt=151 q_current(mean=1.891579,min=1.429317,max=2.557421) q_target(mean=1.866141,min=0.131412,max=4.017188) q_memory(mean=1.904898,min=0.076082,max=3.632960) qdist_sm(min=0.31626183,max=0.68373817) log_qdist_sm(min=-1.15118480,max=-0.38018024) demo_sm(min=0.05619000,max=0.94381005)
+[update] cnt=161 loss=0.560407 td=0.184296 mem=0.209186 KL=0.054304
+[update_debug] cnt=161 q_current(mean=1.874628,min=1.325664,max=3.373073) q_target(mean=1.845718,min=-0.826154,max=3.943368) q_memory(mean=1.864551,min=-1.658229,max=3.449520) qdist_sm(min=0.30769545,max=0.69230455) log_qdist_sm(min=-1.17864478,max=-0.36772934) demo_sm(min=0.00678678,max=0.99321318)
+[update] cnt=171 loss=0.568313 td=0.199767 mem=0.173007 KL=0.056408
+[update_debug] cnt=171 q_current(mean=1.867966,min=1.246150,max=4.020006) q_target(mean=1.882236,min=0.237854,max=6.404450) q_memory(mean=1.900065,min=0.162763,max=4.747446) qdist_sm(min=0.28148916,max=0.71851081) log_qdist_sm(min=-1.26766133,max=-0.33057454) demo_sm(min=0.02339387,max=0.97660613)
+[update] cnt=181 loss=0.491693 td=0.157124 mem=0.157781 KL=0.051136
+[update_debug] cnt=181 q_current(mean=1.880557,min=1.160470,max=3.348751) q_target(mean=1.853914,min=0.174898,max=3.170955) q_memory(mean=1.879242,min=-0.809723,max=3.065030) qdist_sm(min=0.22312005,max=0.77687991) log_qdist_sm(min=-1.50004530,max=-0.25246951) demo_sm(min=0.09882312,max=0.90117693)
+[update] cnt=191 loss=0.538611 td=0.192874 mem=0.151288 KL=0.054019
+[update_debug] cnt=191 q_current(mean=1.896185,min=1.483621,max=3.599221) q_target(mean=1.898833,min=-0.799020,max=4.945227) q_memory(mean=1.904894,min=-1.454802,max=3.955359) qdist_sm(min=0.19648682,max=0.80351311) log_qdist_sm(min=-1.62715983,max=-0.21876177) demo_sm(min=0.03537867,max=0.96462137)
+[update] cnt=201 loss=0.577132 td=0.211338 mem=0.166289 KL=0.056530
+[update_debug] cnt=201 q_current(mean=1.887258,min=1.458762,max=2.886733) q_target(mean=1.892974,min=-0.000904,max=5.375284) q_memory(mean=1.878259,min=0.121449,max=4.022635) qdist_sm(min=0.22688466,max=0.77311540) log_qdist_sm(min=-1.48331344,max=-0.25732696) demo_sm(min=0.00826702,max=0.99173295)
+[update] cnt=211 loss=0.544884 td=0.181131 mem=0.177449 KL=0.055006
+[update_debug] cnt=211 q_current(mean=1.882519,min=0.753422,max=4.307787) q_target(mean=1.869805,min=-0.822429,max=4.259747) q_memory(mean=1.885060,min=-1.454802,max=3.405270) qdist_sm(min=0.15269305,max=0.84730691) log_qdist_sm(min=-1.87932551,max=-0.16569230) demo_sm(min=0.02054319,max=0.97945684)
+[update] cnt=221 loss=0.533026 td=0.174990 mem=0.146489 KL=0.056958
+[update_debug] cnt=221 q_current(mean=1.907752,min=1.493497,max=3.046723) q_target(mean=1.877240,min=-1.064115,max=4.546661) q_memory(mean=1.901302,min=-0.586139,max=3.765903) qdist_sm(min=0.30275670,max=0.69724327) log_qdist_sm(min=-1.19482577,max=-0.36062089) demo_sm(min=0.02898082,max=0.97101921)
+[update] cnt=231 loss=0.553344 td=0.189424 mem=0.165210 KL=0.056263
+[update_debug] cnt=231 q_current(mean=1.899164,min=0.860109,max=3.910059) q_target(mean=1.881178,min=-0.607548,max=5.332399) q_memory(mean=1.895477,min=-0.046815,max=3.765903) qdist_sm(min=0.25723878,max=0.74276125) log_qdist_sm(min=-1.35775054,max=-0.29738063) demo_sm(min=0.00826702,max=0.99173295)
+[update] cnt=241 loss=0.571581 td=0.203505 mem=0.160102 KL=0.057605
+[update_debug] cnt=241 q_current(mean=1.923935,min=1.342470,max=3.918170) q_target(mean=1.893463,min=-0.162091,max=4.727244) q_memory(mean=1.899477,min=-0.586139,max=3.322183) qdist_sm(min=0.28938147,max=0.71061850) log_qdist_sm(min=-1.24000955,max=-0.34161955) demo_sm(min=0.02898082,max=0.97101921)
+[update] cnt=251 loss=0.712199 td=0.301803 mem=0.203112 KL=0.061768
+[update_debug] cnt=251 q_current(mean=1.915548,min=0.806480,max=3.402976) q_target(mean=1.945895,min=-0.763629,max=7.851261) q_memory(mean=1.894706,min=-1.101702,max=3.547564) qdist_sm(min=0.15995570,max=0.84004432) log_qdist_sm(min=-1.83285832,max=-0.17430063) demo_sm(min=0.00620128,max=0.99379867)
+[update] cnt=261 loss=0.623384 td=0.252629 mem=0.164830 KL=0.057668
+[update_debug] cnt=261 q_current(mean=1.885412,min=1.362994,max=3.318542) q_target(mean=1.864245,min=-0.879211,max=5.336256) q_memory(mean=1.888119,min=0.058265,max=3.405270) qdist_sm(min=0.23806123,max=0.76193881) log_qdist_sm(min=-1.43522727,max=-0.27188903) demo_sm(min=0.03574064,max=0.96425933)
+[update] cnt=271 loss=0.554137 td=0.187786 mem=0.148608 KL=0.058409
+[update_debug] cnt=271 q_current(mean=1.916873,min=1.458126,max=2.623091) q_target(mean=1.917904,min=0.147606,max=5.349103) q_memory(mean=1.910630,min=-0.177067,max=3.355957) qdist_sm(min=0.32723820,max=0.67276180) log_qdist_sm(min=-1.11706686,max=-0.39636397) demo_sm(min=0.03106292,max=0.96893710)
+[update] cnt=281 loss=0.596401 td=0.208894 mem=0.146433 KL=0.062858
+[update_debug] cnt=281 q_current(mean=1.928972,min=1.399862,max=3.549853) q_target(mean=1.889974,min=0.149222,max=5.431060) q_memory(mean=1.898146,min=-1.568701,max=3.306941) qdist_sm(min=0.17555556,max=0.82444441) log_qdist_sm(min=-1.73979962,max=-0.19304556) demo_sm(min=0.00770427,max=0.99229574)
+[update] cnt=291 loss=0.588531 td=0.213918 mem=0.176826 KL=0.057240
+[update_debug] cnt=291 q_current(mean=1.892146,min=1.396668,max=3.229861) q_target(mean=1.905775,min=-1.380513,max=4.655526) q_memory(mean=1.925683,min=-2.639694,max=3.455337) qdist_sm(min=0.31854469,max=0.68145525) log_qdist_sm(min=-1.14399254,max=-0.38352469) demo_sm(min=0.02460370,max=0.97539628)
+[update] cnt=301 loss=0.534260 td=0.184328 mem=0.141156 KL=0.055871
+[update_debug] cnt=301 q_current(mean=1.926666,min=1.403032,max=3.347229) q_target(mean=1.926206,min=-0.282615,max=4.987474) q_memory(mean=1.906566,min=-0.419717,max=3.133177) qdist_sm(min=0.30430040,max=0.69569957) log_qdist_sm(min=-1.18973994,max=-0.36283737) demo_sm(min=0.03469522,max=0.96530485)
+[update] cnt=311 loss=0.497060 td=0.155611 mem=0.142383 KL=0.054052
+[update_debug] cnt=311 q_current(mean=1.922840,min=1.082221,max=3.511435) q_target(mean=1.907411,min=0.016321,max=4.000554) q_memory(mean=1.901700,min=-0.242217,max=3.259627) qdist_sm(min=0.14039360,max=0.85960639) log_qdist_sm(min=-1.96330523,max=-0.15128069) demo_sm(min=0.03469522,max=0.96530485)
+[update] cnt=321 loss=0.903958 td=0.477631 mem=0.216206 KL=0.063645
+[update_debug] cnt=321 q_current(mean=1.917175,min=1.413940,max=3.535174) q_target(mean=1.871344,min=-8.077196,max=5.929657) q_memory(mean=1.912907,min=-1.689517,max=3.547564) qdist_sm(min=0.29533696,max=0.70466310) log_qdist_sm(min=-1.21963835,max=-0.35003546) demo_sm(min=0.00001689,max=0.99998307)
+[update] cnt=331 loss=0.521028 td=0.160968 mem=0.142829 KL=0.057729
+[update_debug] cnt=331 q_current(mean=1.906924,min=1.391328,max=2.843966) q_target(mean=1.920950,min=0.347355,max=4.741983) q_memory(mean=1.925183,min=-0.809723,max=3.472262) qdist_sm(min=0.31421348,max=0.68578655) log_qdist_sm(min=-1.15768266,max=-0.37718886) demo_sm(min=0.05217602,max=0.94782394)
+[update] cnt=341 loss=0.546066 td=0.192045 mem=0.137152 KL=0.057089
+[update_debug] cnt=341 q_current(mean=1.905029,min=1.414855,max=2.742901) q_target(mean=1.886506,min=-0.875970,max=3.818260) q_memory(mean=1.917129,min=-0.419717,max=3.356241) qdist_sm(min=0.21288539,max=0.78711462) log_qdist_sm(min=-1.54700124,max=-0.23938140) demo_sm(min=0.01710173,max=0.98289824)
+[update] cnt=351 loss=0.587355 td=0.222693 mem=0.145547 KL=0.058378
+[update_debug] cnt=351 q_current(mean=1.919186,min=1.359389,max=2.997365) q_target(mean=1.894637,min=-0.621356,max=4.941788) q_memory(mean=1.896230,min=-2.091164,max=3.074080) qdist_sm(min=0.27171680,max=0.72828323) log_qdist_sm(min=-1.30299497,max=-0.31706527) demo_sm(min=0.00678678,max=0.99321318)
+[update] cnt=361 loss=0.493288 td=0.159797 mem=0.143303 KL=0.052368
+[update_debug] cnt=361 q_current(mean=1.896368,min=0.875424,max=2.681498) q_target(mean=1.879932,min=0.034645,max=3.418302) q_memory(mean=1.855831,min=-0.586756,max=2.910979) qdist_sm(min=0.12402897,max=0.87597108) log_qdist_sm(min=-2.08723998,max=-0.13242221) demo_sm(min=0.04888278,max=0.95111716)
+[update] cnt=371 loss=0.512348 td=0.163701 mem=0.153071 KL=0.054422
+[update_debug] cnt=371 q_current(mean=1.914041,min=1.390523,max=2.610544) q_target(mean=1.925263,min=-0.165426,max=3.989550) q_memory(mean=1.898187,min=-0.700465,max=3.242923) qdist_sm(min=0.20426567,max=0.79573429) log_qdist_sm(min=-1.58833373,max=-0.22848997) demo_sm(min=0.00678678,max=0.99321318)
+[update] cnt=381 loss=0.577196 td=0.230010 mem=0.124771 KL=0.056960
+[update_debug] cnt=381 q_current(mean=1.919060,min=1.207319,max=4.273130) q_target(mean=1.900376,min=0.013746,max=6.642432) q_memory(mean=1.920122,min=-0.037051,max=3.242923) qdist_sm(min=0.29337201,max=0.70662796) log_qdist_sm(min=-1.22631383,max=-0.34725097) demo_sm(min=0.02262351,max=0.97737646)
+[update] cnt=391 loss=0.523860 td=0.186618 mem=0.129674 KL=0.054481
+[update_debug] cnt=391 q_current(mean=1.923387,min=1.430685,max=2.771810) q_target(mean=1.901709,min=-0.962748,max=3.479706) q_memory(mean=1.930404,min=-0.419717,max=3.292089) qdist_sm(min=0.29599342,max=0.70400661) log_qdist_sm(min=-1.21741807,max=-0.35096753) demo_sm(min=0.04075514,max=0.95924491)
+[update] cnt=401 loss=0.546178 td=0.208993 mem=0.140622 KL=0.053375
+[update_debug] cnt=401 q_current(mean=1.920196,min=1.292223,max=3.334275) q_target(mean=1.931574,min=-0.925788,max=5.458849) q_memory(mean=1.920913,min=0.382680,max=4.124025) qdist_sm(min=0.30876219,max=0.69123781) log_qdist_sm(min=-1.17518389,max=-0.36927137) demo_sm(min=0.01471633,max=0.98528373)
+[update] cnt=411 loss=0.556651 td=0.183311 mem=0.179878 KL=0.056680
+[update_debug] cnt=411 q_current(mean=1.916923,min=1.407840,max=3.287919) q_target(mean=1.931318,min=-1.294267,max=5.457192) q_memory(mean=1.924346,min=-2.639694,max=3.418116) qdist_sm(min=0.30311057,max=0.69688940) log_qdist_sm(min=-1.19365764,max=-0.36112857) demo_sm(min=0.04332835,max=0.95667166)
+[update] cnt=421 loss=0.566298 td=0.207961 mem=0.156364 KL=0.056031
+[update_debug] cnt=421 q_current(mean=1.914221,min=1.443542,max=2.761811) q_target(mean=1.920421,min=-0.843792,max=3.608261) q_memory(mean=1.943971,min=-0.809723,max=3.344294) qdist_sm(min=0.31264099,max=0.68735904) log_qdist_sm(min=-1.16269970,max=-0.37489852) demo_sm(min=0.01212534,max=0.98787469)
+[update] cnt=431 loss=0.512540 td=0.182024 mem=0.106641 KL=0.055439
+[update_debug] cnt=431 q_current(mean=1.924537,min=1.454059,max=3.247254) q_target(mean=1.954987,min=-0.744031,max=4.627080) q_memory(mean=1.922815,min=0.755483,max=3.294230) qdist_sm(min=0.23402840,max=0.76597154) log_qdist_sm(min=-1.45231271,max=-0.26661026) demo_sm(min=0.00826702,max=0.99173295)
+[update] cnt=441 loss=0.555136 td=0.207581 mem=0.121190 KL=0.057392
+[update_debug] cnt=441 q_current(mean=1.927784,min=1.471973,max=2.715197) q_target(mean=1.916158,min=-0.228185,max=4.183971) q_memory(mean=1.923779,min=-0.059828,max=3.094441) qdist_sm(min=0.31121597,max=0.68878406) log_qdist_sm(min=-1.16726816,max=-0.37282747) demo_sm(min=0.00581518,max=0.99418479)
+[update] cnt=451 loss=0.556607 td=0.210685 mem=0.091586 KL=0.060026
+[update_debug] cnt=451 q_current(mean=1.916058,min=1.215987,max=2.795096) q_target(mean=1.938244,min=-0.817982,max=6.675788) q_memory(mean=1.950314,min=0.696364,max=2.880048) qdist_sm(min=0.29824132,max=0.70175868) log_qdist_sm(min=-1.20985234,max=-0.35416570) demo_sm(min=0.00581518,max=0.99418479)
+[update] cnt=461 loss=0.519539 td=0.193401 mem=0.110883 KL=0.054139
+[update_debug] cnt=461 q_current(mean=1.933232,min=1.487273,max=2.887037) q_target(mean=1.958322,min=0.277693,max=4.767996) q_memory(mean=1.924052,min=0.686891,max=3.455337) qdist_sm(min=0.32783639,max=0.67216355) log_qdist_sm(min=-1.11524057,max=-0.39725360) demo_sm(min=0.04200898,max=0.95799100)
+[update] cnt=471 loss=0.626421 td=0.267531 mem=0.164996 KL=0.055278
+[update_debug] cnt=471 q_current(mean=1.934050,min=1.476200,max=3.638027) q_target(mean=1.923635,min=-0.814514,max=6.957085) q_memory(mean=1.926328,min=-0.059828,max=4.111478) qdist_sm(min=0.25514895,max=0.74485105) log_qdist_sm(min=-1.36590779,max=-0.29457101) demo_sm(min=0.01571543,max=0.98428464)
+[update] cnt=481 loss=0.533206 td=0.199260 mem=0.120484 KL=0.054741
+[update_debug] cnt=481 q_current(mean=1.939131,min=1.380085,max=2.620449) q_target(mean=1.944234,min=-0.006978,max=4.049030) q_memory(mean=1.905395,min=0.494028,max=3.059168) qdist_sm(min=0.29230213,max=0.70769793) log_qdist_sm(min=-1.22996736,max=-0.34573793) demo_sm(min=0.00581518,max=0.99418479)
+[update] cnt=491 loss=0.530530 td=0.162443 mem=0.141761 KL=0.059441
+[update_debug] cnt=491 q_current(mean=1.921341,min=1.439016,max=2.776189) q_target(mean=1.947182,min=0.249104,max=3.871422) q_memory(mean=1.897630,min=-0.517610,max=3.092037) qdist_sm(min=0.29082665,max=0.70917332) log_qdist_sm(min=-1.23502791,max=-0.34365532) demo_sm(min=0.05264492,max=0.94735515)
+[update] cnt=501 loss=0.583888 td=0.209786 mem=0.137455 KL=0.061075
+[update_debug] cnt=501 q_current(mean=1.925220,min=1.451124,max=4.526739) q_target(mean=1.967484,min=-0.781809,max=4.483522) q_memory(mean=1.919943,min=-0.102267,max=3.405270) qdist_sm(min=0.29406509,max=0.70593494) log_qdist_sm(min=-1.22395420,max=-0.34823221) demo_sm(min=0.01670707,max=0.98329300)
+[update] cnt=511 loss=0.594751 td=0.219141 mem=0.147191 KL=0.060403
+[update_debug] cnt=511 q_current(mean=1.938824,min=1.457506,max=2.808853) q_target(mean=1.974950,min=0.223752,max=4.519601) q_memory(mean=1.931710,min=0.172548,max=3.672204) qdist_sm(min=0.29302150,max=0.70697850) log_qdist_sm(min=-1.22750926,max=-0.34675503) demo_sm(min=0.00678678,max=0.99321318)
+[update] cnt=521 loss=0.563797 td=0.216182 mem=0.114944 KL=0.058029
+[update_debug] cnt=521 q_current(mean=1.947514,min=1.491426,max=3.033718) q_target(mean=1.978341,min=0.548367,max=6.245014) q_memory(mean=1.944081,min=0.091798,max=3.472262) qdist_sm(min=0.23030120,max=0.76969874) log_qdist_sm(min=-1.46836722,max=-0.26175609) demo_sm(min=0.01814524,max=0.98185480)
+[update] cnt=531 loss=0.606386 td=0.238018 mem=0.143175 KL=0.059356
+[update_debug] cnt=531 q_current(mean=1.950170,min=1.418740,max=3.258960) q_target(mean=1.938097,min=-0.857350,max=4.708532) q_memory(mean=1.924961,min=-1.689517,max=3.547564) qdist_sm(min=0.19051521,max=0.80948478) log_qdist_sm(min=-1.65802324,max=-0.21135731) demo_sm(min=0.01753950,max=0.98246044)

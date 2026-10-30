@@ -1,0 +1,92 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Namespace(buffer_size=1000000, dataset='ETHUSDT', q_value_memorize_freq=10, batch_size=512, eval_update_freq=100, lr=1e-05, epsilon_start=0.5, epsilon_end=0.1, decay_length=5, update_times=10, gamma=0.99, tau=0.005, transcation_cost=0.0002, back_time_length=1, seed=12345, n_step=1, epoch_number=15, label='label_1', clf='slope', alpha=0.0, device='cuda:0', n_action=2, exp='exp1', reward_scale=1000, checkpoint='/home/ustc1958/lxy/MacroHFT/result/low_level/ETHUSDT/pos_2/best_modelreward1000epo35/slope/1/best_model.pkl')
+
+============================================================
+多仓位配置信息:
+============================================================
+动作空间大小 (n_action): 2
+动作范围: [0, 1]
+仓位映射: 0→0.0%  1→100.0%
+
+状态空间维度:
+  - 单特征状态 (state): 36 个特征
+  - 趋势特征状态 (state_trend): 9 个特征
+  - 前一动作 (previous_action): 标量 ∈ [0, 1]
+
+网络输出维度: (batch_size, 2)
+ReplayBuffer demo_action 维度: (batch_size, 2)
+============================================================
+
+Using checkpoint for validation: /home/ustc1958/lxy/MacroHFT/result/low_level/ETHUSDT/pos_2/best_modelreward1000epo35/slope/1/best_model.pkl
+validating on df 1
+the portfit margine is  nan
+validating on df 2
+the portfit margine is  nan
+validating on df 12
+the portfit margine is  nan
+validating on df 15
+the portfit margine is  nan
+validating on df 17
+the portfit margine is  nan
+validating on df 21
+the portfit margine is  nan
+validating on df 25
+the portfit margine is  nan
+validating on df 26
+the portfit margine is  nan
+validating on df 27
+the portfit margine is  nan
+validating on df 29
+the portfit margine is  nan
+validating on df 37
+the portfit margine is  -0.018774553365316516
+validating on df 39
+the portfit margine is  -0.02017692516564638
+
+--- Validation Statistics (Initial Position: 0) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  46009 times (88.77%)
+  Action 1 (100.0% position):   5819 times (11.23%)
+Mean return rate: -0.0032
+------------------------------------------------------------
+
+validating on df 1
+the portfit margine is  -0.029798180135347917
+validating on df 2
+the portfit margine is  -0.01651223600443842
+validating on df 12
+the portfit margine is  -0.07163058216029784
+validating on df 15
+the portfit margine is  0.01374411842009612
+validating on df 17
+the portfit margine is  -0.027063752859150685
+validating on df 21
+the portfit margine is  0.01671677314158956
+validating on df 25
+the portfit margine is  -0.0026257139350684367
+validating on df 26
+the portfit margine is  -0.0033483006633952357
+validating on df 27
+the portfit margine is  -0.004103981769568657
+validating on df 29
+the portfit margine is  -0.0013946304892620675
+validating on df 37
+the portfit margine is  -0.006738729818191789
+validating on df 39
+the portfit margine is  -0.019283313966270036
+
+--- Validation Statistics (Initial Position: 1) ---
+Total steps: 51828
+Action distribution:
+  Action 0 (  0.0% position):  24175 times (46.64%)
+  Action 1 (100.0% position):  27653 times (53.36%)
+Mean return rate: -0.0127
+------------------------------------------------------------
+
+Validation return rates for all initial positions: [np.float64(-0.003245956544246908), np.float64(-0.012669877519942115)]
+Average validation return rate: -0.007957917032094511
+happy end

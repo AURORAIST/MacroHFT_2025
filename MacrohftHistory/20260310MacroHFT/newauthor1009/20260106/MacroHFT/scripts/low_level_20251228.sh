@@ -1,0 +1,7 @@
+nohup python -u RL/agent/low_level.py --alpha 4 --exp 'long_action1228' --clf 'vol' --dataset 'ETHUSDT' --device 'cuda:0' --transcation_cost 0.0002 --action_mode long --action_size 1 --label label_1 >./logs/low_level/ETHUSDT/vol_1_long_1228.log 2>&1 &
+nohup python -u RL/agent/low_level.py --alpha 1 --exp 'long_action1228' --clf 'vol' --dataset 'ETHUSDT' --device 'cuda:0' --transcation_cost 0.0002 --action_mode long --action_size 1 --label label_2 >./logs/low_level/ETHUSDT/vol_2_long_1228.log 2>&1 &
+nohup python -u RL/agent/low_level.py --alpha 1 --exp 'long_action1228' --clf 'vol' --dataset 'ETHUSDT' --device 'cuda:0' --transcation_cost 0.0002 --action_mode long --action_size 1 --label label_3 >./logs/low_level/ETHUSDT/vol_3_long_1228.log 2>&1 &
+nohup python -u RL/agent/low_level.py --alpha 1 --exp 'long_action1228' --clf 'slope' --dataset 'ETHUSDT' --device 'cuda:0' --transcation_cost 0.0002 --action_mode long --action_size 1 --label label_1 >./logs/low_level/ETHUSDT/slope_1_long_1228.log 2>&1 &
+nohup python -u RL/agent/low_level.py --alpha 4 --exp 'long_action1228' --clf 'slope' --dataset 'ETHUSDT' --device 'cuda:0' --transcation_cost 0.0002 --action_mode long --action_size 1 --label label_2 >./logs/low_level/ETHUSDT/slope_2_long_1228.log 2>&1 &
+nohup python -u RL/agent/low_level.py --alpha 0 --exp 'long_action1228' --clf 'slope' --dataset 'ETHUSDT' --device 'cuda:0' --transcation_cost 0.0002 --action_mode long --action_size 1 --label label_3 >./logs/low_level/ETHUSDT/slope_3_long_1228.log 2>&1 &
+

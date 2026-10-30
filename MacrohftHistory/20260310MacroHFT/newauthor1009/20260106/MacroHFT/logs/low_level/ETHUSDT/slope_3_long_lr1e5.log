@@ -1,0 +1,797 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+INFO:root:Namespace(buffer_size=1000000, dataset='ETHUSDT', q_value_memorize_freq=20, batch_size=256, eval_update_freq=50, lr=1e-05, epsilon_start=0.7, epsilon_end=0.1, decay_length=15, update_times=20, gamma=0.99, tau=0.005, transcation_cost=0.0002, back_time_length=1, seed=6234571, n_step=1, epoch_number=15, label='label_3', clf='slope', alpha=0.0, exp='long_action_long_lr1e5', device='cuda:0', action_mode='long', action_size=1, reward_no_action='False')
+2026-02-04 18:16:26,275 INFO: Namespace(buffer_size=1000000, dataset='ETHUSDT', q_value_memorize_freq=20, batch_size=256, eval_update_freq=50, lr=1e-05, epsilon_start=0.7, epsilon_end=0.1, decay_length=15, update_times=20, gamma=0.99, tau=0.005, transcation_cost=0.0002, back_time_length=1, seed=6234571, n_step=1, epoch_number=15, label='label_3', clf='slope', alpha=0.0, exp='long_action_long_lr1e5', device='cuda:0', action_mode='long', action_size=1, reward_no_action='False')
+INFO:root:train_data_path:/home/ustc1958/lxy/newauthor1009/20260106/MacroHFT/data/ETHUSDT/train
+2026-02-04 18:16:26,275 INFO: train_data_path:/home/ustc1958/lxy/newauthor1009/20260106/MacroHFT/data/ETHUSDT/train
+INFO:root:==slope==
+2026-02-04 18:16:26,275 INFO: ==slope==
+INFO:root:self.train_index:[[3, 5, 10, 21, 43, 66, 93], [0, 6, 7, 11, 12, 13, 19, 23, 24, 26, 27, 28, 29, 31, 32, 33, 35, 37, 38, 40, 44, 45, 49, 53, 60, 65, 68, 71, 74, 75, 76, 77, 85, 91, 97, 106], [20, 22, 34, 36, 48, 50, 56, 57, 58, 69, 70, 72, 78, 79, 80, 82, 83, 84, 86, 87, 89, 90, 95, 96, 101, 102, 104, 105, 108, 109, 110, 111, 113, 117, 118, 119], [2, 4, 8, 15, 16, 17, 25, 30, 41, 42, 46, 47, 51, 52, 54, 59, 61, 62, 63, 64, 67, 73, 81, 88, 92, 94, 98, 99, 100, 103, 107, 112, 114, 115, 116, 120], [1, 9, 14, 18, 39, 55]]
+2026-02-04 18:16:26,275 INFO: self.train_index:[[3, 5, 10, 21, 43, 66, 93], [0, 6, 7, 11, 12, 13, 19, 23, 24, 26, 27, 28, 29, 31, 32, 33, 35, 37, 38, 40, 44, 45, 49, 53, 60, 65, 68, 71, 74, 75, 76, 77, 85, 91, 97, 106], [20, 22, 34, 36, 48, 50, 56, 57, 58, 69, 70, 72, 78, 79, 80, 82, 83, 84, 86, 87, 89, 90, 95, 96, 101, 102, 104, 105, 108, 109, 110, 111, 113, 117, 118, 119], [2, 4, 8, 15, 16, 17, 25, 30, 41, 42, 46, 47, 51, 52, 54, 59, 61, 62, 63, 64, 67, 73, 81, 88, 92, 94, 98, 99, 100, 103, 107, 112, 114, 115, 116, 120], [1, 9, 14, 18, 39, 55]]
+INFO:root:self.actions:[[0, 0], [1, 0]]
+2026-02-04 18:16:26,276 INFO: self.actions:[[0, 0], [1, 0]]
+INFO:root:self.n_action:2
+2026-02-04 18:16:26,276 INFO: self.n_action:2
+INFO:root:self.action_type_desc:多头动作模式
+2026-02-04 18:16:26,276 INFO: self.action_type_desc:多头动作模式
+INFO:root:start training 1770200187.5146706
+2026-02-04 18:16:27,514 INFO: start training 1770200187.5146706
+[train] pid=2035311
+INFO:root:验证消费者线程启动
+INFO:root:验证消费者线程已启动
+2026-02-04 18:16:27,514 INFO: 验证消费者线程启动
+2026-02-04 18:16:27,515 INFO: 验证消费者线程已启动
+INFO:root:epoch 1
+2026-02-04 18:16:27,515 INFO: epoch 1
+INFO:root:random_list:[98, 67, 47, 103, 81, 51, 115, 42, 2, 16, 30, 94, 107, 100, 63, 46, 112, 73, 8, 54, 116, 120, 64, 62, 41, 88, 99, 25, 61, 59, 114, 17, 4, 92, 52, 15]
+2026-02-04 18:16:27,515 INFO: random_list:[98, 67, 47, 103, 81, 51, 115, 42, 2, 16, 30, 94, 107, 100, 63, 46, 112, 73, 8, 54, 116, 120, 64, 62, 41, 88, 99, 25, 61, 59, 114, 17, 4, 92, 52, 15]
+INFO:root:epoch 1 start files
+2026-02-04 18:16:27,629 INFO: epoch 1 start files
+INFO:root:training with df 98 4320 1770200187.6299207
+2026-02-04 18:16:27,629 INFO: training with df 98 4320 1770200187.6299207
+INFO:root:training with df 67 4320 1770200228.7527018
+2026-02-04 18:17:08,752 INFO: training with df 67 4320 1770200228.7527018
+INFO:root:training with df 47 4320 1770200270.7149622
+2026-02-04 18:17:50,714 INFO: training with df 47 4320 1770200270.7149622
+INFO:root:training with df 103 4320 1770200313.571743
+2026-02-04 18:18:33,571 INFO: training with df 103 4320 1770200313.571743
+INFO:root:training with df 81 4320 1770200355.1615376
+2026-02-04 18:19:15,161 INFO: training with df 81 4320 1770200355.1615376
+INFO:root:training with df 51 4320 1770200397.39422
+2026-02-04 18:19:57,394 INFO: training with df 51 4320 1770200397.39422
+INFO:root:training with df 115 4320 1770200439.4895663
+2026-02-04 18:20:39,489 INFO: training with df 115 4320 1770200439.4895663
+INFO:root:training with df 42 4320 1770200482.0338094
+2026-02-04 18:21:22,033 INFO: training with df 42 4320 1770200482.0338094
+INFO:root:training with df 2 4320 1770200525.1063657
+2026-02-04 18:22:05,106 INFO: training with df 2 4320 1770200525.1063657
+INFO:root:training with df 16 4320 1770200566.692093
+2026-02-04 18:22:46,692 INFO: training with df 16 4320 1770200566.692093
+INFO:root:training with df 30 4320 1770200607.992749
+2026-02-04 18:23:27,992 INFO: training with df 30 4320 1770200607.992749
+INFO:root:training with df 94 4320 1770200650.6227174
+2026-02-04 18:24:10,622 INFO: training with df 94 4320 1770200650.6227174
+INFO:root:training with df 107 4320 1770200692.256933
+2026-02-04 18:24:52,256 INFO: training with df 107 4320 1770200692.256933
+INFO:root:training with df 100 4320 1770200734.7599196
+2026-02-04 18:25:34,759 INFO: training with df 100 4320 1770200734.7599196
+INFO:root:training with df 63 4320 1770200777.9943066
+2026-02-04 18:26:17,994 INFO: training with df 63 4320 1770200777.9943066
+INFO:root:training with df 46 4320 1770200820.0106413
+2026-02-04 18:27:00,010 INFO: training with df 46 4320 1770200820.0106413
+INFO:root:training with df 112 4320 1770200862.889516
+2026-02-04 18:27:42,889 INFO: training with df 112 4320 1770200862.889516
+INFO:root:training with df 73 4320 1770200904.6063952
+2026-02-04 18:28:24,606 INFO: training with df 73 4320 1770200904.6063952
+INFO:root:training with df 8 4320 1770200947.4040997
+2026-02-04 18:29:07,404 INFO: training with df 8 4320 1770200947.4040997
+INFO:root:training with df 54 4320 1770200990.013052
+2026-02-04 18:29:50,013 INFO: training with df 54 4320 1770200990.013052
+INFO:root:training with df 116 4320 1770201032.088341
+2026-02-04 18:30:32,088 INFO: training with df 116 4320 1770201032.088341
+INFO:root:training with df 120 4320 1770201073.8015532
+2026-02-04 18:31:13,801 INFO: training with df 120 4320 1770201073.8015532
+INFO:root:training with df 64 4320 1770201115.4543338
+2026-02-04 18:31:55,454 INFO: training with df 64 4320 1770201115.4543338
+INFO:root:training with df 62 4320 1770201154.930586
+2026-02-04 18:32:34,930 INFO: training with df 62 4320 1770201154.930586
+INFO:root:training with df 41 4320 1770201194.4735734
+2026-02-04 18:33:14,473 INFO: training with df 41 4320 1770201194.4735734
+INFO:root:training with df 88 4320 1770201233.8022678
+2026-02-04 18:33:53,802 INFO: training with df 88 4320 1770201233.8022678
+INFO:root:training with df 99 4320 1770201273.4839444
+2026-02-04 18:34:33,483 INFO: training with df 99 4320 1770201273.4839444
+INFO:root:training with df 25 4320 1770201313.8523555
+2026-02-04 18:35:13,852 INFO: training with df 25 4320 1770201313.8523555
+INFO:root:training with df 61 4320 1770201353.3024578
+2026-02-04 18:35:53,302 INFO: training with df 61 4320 1770201353.3024578
+INFO:root:training with df 59 4320 1770201394.0771785
+2026-02-04 18:36:34,077 INFO: training with df 59 4320 1770201394.0771785
+INFO:root:training with df 114 4320 1770201434.4799037
+2026-02-04 18:37:14,479 INFO: training with df 114 4320 1770201434.4799037
+INFO:root:training with df 17 4320 1770201474.4630737
+2026-02-04 18:37:54,463 INFO: training with df 17 4320 1770201474.4630737
+INFO:root:training with df 4 4320 1770201514.9835422
+2026-02-04 18:38:34,983 INFO: training with df 4 4320 1770201514.9835422
+INFO:root:training with df 92 4320 1770201555.5861812
+2026-02-04 18:39:15,586 INFO: training with df 92 4320 1770201555.5861812
+INFO:root:training with df 52 4320 1770201595.700828
+2026-02-04 18:39:55,700 INFO: training with df 52 4320 1770201595.700828
+INFO:root:training with df 15 4320 1770201635.4667816
+2026-02-04 18:40:35,466 INFO: training with df 15 4320 1770201635.4667816
+INFO:root:start val epoch 1
+2026-02-04 18:41:15,325 INFO: start val epoch 1
+INFO:root:验证任务已加入队列: epoch 1
+2026-02-04 18:41:15,326 INFO: 验证任务已加入队列: epoch 1
+INFO:root:epoch 2
+2026-02-04 18:41:15,326 INFO: epoch 2
+INFO:root:random_list:[94, 73, 47, 51, 61, 92, 114, 116, 30, 41, 107, 17, 115, 112, 46, 2, 25, 103, 16, 67, 52, 15, 64, 120, 54, 42, 81, 4, 99, 100, 88, 62, 59, 98, 8, 63]
+2026-02-04 18:41:15,326 INFO: random_list:[94, 73, 47, 51, 61, 92, 114, 116, 30, 41, 107, 17, 115, 112, 46, 2, 25, 103, 16, 67, 52, 15, 64, 120, 54, 42, 81, 4, 99, 100, 88, 62, 59, 98, 8, 63]
+INFO:root:epoch 2 start files
+2026-02-04 18:41:15,326 INFO: epoch 2 start files
+INFO:root:training with df 94 4320 1770201675.3262722
+2026-02-04 18:41:15,326 INFO: training with df 94 4320 1770201675.3262722
+INFO:root:验证消费者处理任务: epoch 1
+2026-02-04 18:41:28,906 INFO: 验证消费者处理任务: epoch 1
+INFO:root:异步验证开始: epoch 1
+2026-02-04 18:41:28,906 INFO: 异步验证开始: epoch 1
+INFO:root:Using 3 processes for parallel validation df_list:[0, 4, 8, 13, 14, 18, 19, 20, 23, 30, 38]
+2026-02-04 18:41:28,906 INFO: Using 3 processes for parallel validation df_list:[0, 4, 8, 13, 14, 18, 19, 20, 23, 30, 38]
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 36.290912400000195, required_money: 302.880564, commission_fee: 2.8670876, step_times: 4319, trade_id_counter: 45
+2026-02-04 18:42:18,335 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 36.290912400000195, required_money: 302.880564, commission_fee: 2.8670876, step_times: 4319, trade_id_counter: 45
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: -4.736487599999464, required_money: 337.54484999999954, commission_fee: 4.5824876, step_times: 4319, trade_id_counter: 69
+2026-02-04 18:42:18,341 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: -4.736487599999464, required_money: 337.54484999999954, commission_fee: 4.5824876, step_times: 4319, trade_id_counter: 69
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: -1.1368691999998077, required_money: 329.42357999999996, commission_fee: 2.7188692000000003, step_times: 4319, trade_id_counter: 41
+2026-02-04 18:42:18,564 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: -1.1368691999998077, required_money: 329.42357999999996, commission_fee: 2.7188692000000003, step_times: 4319, trade_id_counter: 41
+INFO:root:training with df 73 4320 1770201742.8581736
+2026-02-04 18:42:22,858 INFO: training with df 73 4320 1770201742.8581736
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 45.33242880000063, required_money: 298.2161975999996, commission_fee: 5.451571200000001, step_times: 4319, trade_id_counter: 83
+2026-02-04 18:43:01,101 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 45.33242880000063, required_money: 298.2161975999996, commission_fee: 5.451571200000001, step_times: 4319, trade_id_counter: 83
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 17.421992400000534, required_money: 348.4481540000001, commission_fee: 4.3520076, step_times: 4319, trade_id_counter: 63
+2026-02-04 18:43:01,111 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 17.421992400000534, required_money: 348.4481540000001, commission_fee: 4.3520076, step_times: 4319, trade_id_counter: 63
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 2.880464400000619, required_money: 356.1041299999995, commission_fee: 4.0815356000000005, step_times: 4319, trade_id_counter: 57
+2026-02-04 18:43:01,377 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 2.880464400000619, required_money: 356.1041299999995, commission_fee: 4.0815356000000005, step_times: 4319, trade_id_counter: 57
+    id            datetime      amount  quantity direction  type    price
+0    0 2023-02-13 00:00:00  302.880564       0.2      long   buy  1514.10
+1    1 2023-02-13 09:16:00  298.826223       0.2      long  sell  1494.43
+2    2 2023-02-13 09:19:00  295.569102       0.2      long   buy  1477.55
+3    3 2023-02-13 09:20:00  296.678652       0.2      long  sell  1483.69
+4    4 2023-02-13 09:26:00  296.707330       0.2      long   buy  1483.24
+5    5 2023-02-13 16:33:00  294.343120       0.2      long  sell  1472.01
+6    6 2023-02-13 16:35:00  294.246838       0.2      long   buy  1470.94
+7    7 2023-02-13 22:35:00  298.138360       0.2      long  sell  1490.99
+8    8 2023-02-13 22:40:00  297.931574       0.2      long   buy  1489.36
+9    9 2023-02-14 13:28:00  303.221344       0.2      long  sell  1516.41
+10  10 2023-02-14 13:29:00  303.392666       0.2      long   buy  1516.66
+11  11 2023-02-14 13:32:00  304.053177       0.2      long  sell  1520.57
+12  12 2023-02-14 13:34:00  303.514691       0.2      long   buy  1517.27
+13  13 2023-02-14 14:50:00  309.428102       0.2      long  sell  1547.45
+14  14 2023-02-14 14:53:00  307.951578       0.2      long   buy  1539.45
+15  15 2023-02-14 14:55:00  309.630062       0.2      long  sell  1548.46
+16  16 2023-02-14 14:57:00  311.558299       0.2      long   buy  1557.48
+17  17 2023-02-14 15:03:00  311.759636       0.2      long  sell  1559.11
+18  18 2023-02-14 15:04:00  311.422272       0.2      long   buy  1556.80
+19  19 2023-02-14 18:02:00  309.967994       0.2      long  sell  1550.15
+20  20 2023-02-14 18:04:00  310.066001       0.2      long   buy  1550.02
+21  21 2023-02-14 21:05:00  310.121963       0.2      long  sell  1550.92
+22  22 2023-02-14 21:16:00  310.510090       0.2      long   buy  1552.24
+23  23 2023-02-15 00:12:00  310.143959       0.2      long  sell  1551.03
+24  24 2023-02-15 00:17:00  310.412070       0.2      long   buy  1551.75
+25  25 2023-02-15 02:49:00  308.632261       0.2      long  sell  1543.47
+26  26 2023-02-15 02:53:00  308.815751       0.2      long   buy  1543.77
+27  27 2023-02-15 03:18:00  310.215944       0.2      long  sell  1551.39
+28  28 2023-02-15 03:20:00  309.911970       0.2      long   buy  1549.25
+29  29 2023-02-15 11:40:00  314.831021       0.2      long  sell  1574.47
+30  30 2023-02-15 11:45:00  314.262840       0.2      long   buy  1571.00
+31  31 2023-02-15 12:12:00  316.950597       0.2      long  sell  1585.07
+32  32 2023-02-15 12:13:00  316.767341       0.2      long   buy  1583.52
+33  33 2023-02-15 12:23:00  318.086370       0.2      long  sell  1590.75
+34  34 2023-02-15 12:24:00  317.029393       0.2      long   buy  1584.83
+35  35 2023-02-15 18:45:00  318.264334       0.2      long  sell  1591.64
+36  36 2023-02-15 18:46:00  318.173622       0.2      long   buy  1590.55
+37  37 2023-02-15 19:15:00  321.799627       0.2      long  sell  1609.32
+38  38 2023-02-15 19:18:00  321.898367       0.2      long   buy  1609.17
+39  39 2023-02-15 19:29:00  324.063174       0.2      long  sell  1620.64
+40  40 2023-02-15 19:33:00  324.730933       0.2      long   buy  1623.33
+41  41 2023-02-15 20:20:00  329.246138       0.2      long  sell  1646.56
+42  42 2023-02-15 20:27:00  329.065800       0.2      long   buy  1645.00
+43  43 2023-02-15 20:32:00  332.285530       0.2      long  sell  1661.76
+44  44 2023-02-15 20:39:00  332.750537       0.2      long   buy  1663.42
+    id            datetime      amount  quantity direction  type    price
+0    0 2023-03-12 00:30:00  292.986586       0.2      long   buy  1464.64
+1    1 2023-03-12 07:48:00  290.925803       0.2      long  sell  1454.92
+2    2 2023-03-12 07:50:00  291.270242       0.2      long   buy  1456.06
+3    3 2023-03-12 12:06:00  292.207547       0.2      long  sell  1461.33
+4    4 2023-03-12 12:21:00  291.164221       0.2      long   buy  1455.53
+..  ..                 ...         ...       ...       ...   ...      ...
+78  78 2023-03-14 19:35:00  340.192025       0.2      long   buy  1700.62
+79  79 2023-03-14 21:05:00  336.630660       0.2      long  sell  1683.49
+80  80 2023-03-14 21:09:00  335.857158       0.2      long   buy  1678.95
+81  81 2023-03-14 21:28:00  337.194548       0.2      long  sell  1686.31
+82  82 2023-03-14 21:30:00  338.365660       0.2      long   buy  1691.49
+
+[83 rows x 7 columns]
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 2.6593328000004135, required_money: 362.6487295999999, commission_fee: 4.044667200000001, step_times: 4319, trade_id_counter: 55
+2026-02-04 18:43:39,296 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 2.6593328000004135, required_money: 362.6487295999999, commission_fee: 4.044667200000001, step_times: 4319, trade_id_counter: 55
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 6.028150400000413, required_money: 372.3151499999996, commission_fee: 3.4958496, step_times: 4319, trade_id_counter: 47
+2026-02-04 18:43:39,300 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 6.028150400000413, required_money: 372.3151499999996, commission_fee: 3.4958496, step_times: 4319, trade_id_counter: 47
+    id            datetime      amount  quantity direction  type    price
+0    0 2023-02-25 00:03:00  321.690325       0.2      long   buy  1608.13
+1    1 2023-02-25 02:25:00  319.640059       0.2      long  sell  1598.52
+2    2 2023-02-25 02:32:00  319.687925       0.2      long   buy  1598.12
+3    3 2023-02-25 05:22:00  319.320123       0.2      long  sell  1596.92
+4    4 2023-02-25 05:28:00  319.603908       0.2      long   buy  1597.70
+5    5 2023-02-25 10:24:00  319.654056       0.2      long  sell  1598.59
+6    6 2023-02-25 10:27:00  319.943976       0.2      long   buy  1599.40
+7    7 2023-02-25 15:45:00  318.982191       0.2      long  sell  1595.23
+8    8 2023-02-25 15:47:00  319.077803       0.2      long   buy  1595.07
+9    9 2023-02-25 18:23:00  318.842219       0.2      long  sell  1594.53
+10  10 2023-02-25 18:28:00  319.033794       0.2      long   buy  1594.85
+11  11 2023-02-25 18:32:00  317.938400       0.2      long  sell  1590.01
+12  12 2023-02-25 18:41:00  317.975582       0.2      long   buy  1589.56
+13  13 2023-02-25 20:45:00  312.789430       0.2      long  sell  1564.26
+14  14 2023-02-25 20:54:00  314.710930       0.2      long   buy  1573.24
+15  15 2023-02-25 22:23:00  316.420703       0.2      long  sell  1582.42
+16  16 2023-02-25 22:29:00  317.043396       0.2      long   buy  1584.90
+17  17 2023-02-26 02:51:00  320.311925       0.2      long  sell  1601.88
+18  18 2023-02-26 02:53:00  320.528093       0.2      long   buy  1602.32
+19  19 2023-02-26 18:39:00  322.845418       0.2      long  sell  1614.55
+20  20 2023-02-26 18:47:00  324.750937       0.2      long   buy  1623.43
+21  21 2023-02-26 18:49:00  325.292928       0.2      long  sell  1626.79
+22  22 2023-02-26 18:54:00  326.097206       0.2      long   buy  1630.16
+23  23 2023-02-26 20:33:00  329.102166       0.2      long  sell  1645.84
+24  24 2023-02-26 20:35:00  329.271841       0.2      long   buy  1646.03
+25  25 2023-02-26 20:40:00  328.628261       0.2      long  sell  1643.47
+26  26 2023-02-26 21:13:00  329.351857       0.2      long   buy  1646.43
+27  27 2023-02-26 22:24:00  326.300727       0.2      long  sell  1631.83
+28  28 2023-02-26 22:25:00  326.447276       0.2      long   buy  1631.91
+29  29 2023-02-26 22:26:00  326.242738       0.2      long  sell  1631.54
+30  30 2023-02-26 22:30:00  325.563100       0.2      long   buy  1627.49
+31  31 2023-02-27 13:29:00  330.109965       0.2      long  sell  1650.88
+32  32 2023-02-27 13:30:00  330.916170       0.2      long   buy  1654.25
+33  33 2023-02-27 13:31:00  331.849617       0.2      long  sell  1659.58
+34  34 2023-02-27 13:35:00  332.000387       0.2      long   buy  1659.67
+35  35 2023-02-27 13:36:00  332.517483       0.2      long  sell  1662.92
+36  36 2023-02-27 13:37:00  332.432473       0.2      long   buy  1661.83
+37  37 2023-02-27 15:38:00  329.979991       0.2      long  sell  1650.23
+38  38 2023-02-27 15:43:00  327.925572       0.2      long   buy  1639.30
+39  39 2023-02-27 18:25:00  323.157356       0.2      long  sell  1616.11
+40  40 2023-02-27 18:27:00  323.688725       0.2      long   buy  1618.12
+    id            datetime      amount  quantity direction  type    price
+0    0 2023-03-27 00:00:00  354.900966       0.2      long   buy  1774.15
+1    1 2023-03-27 01:18:00  353.411304       0.2      long  sell  1767.41
+2    2 2023-03-27 01:28:00  353.876761       0.2      long   buy  1769.03
+3    3 2023-03-27 05:14:00  352.065573       0.2      long  sell  1760.68
+4    4 2023-03-27 05:21:00  352.396465       0.2      long   buy  1761.63
+5    5 2023-03-27 05:53:00  350.805825       0.2      long  sell  1754.38
+6    6 2023-03-27 06:06:00  349.731932       0.2      long   buy  1748.31
+7    7 2023-03-27 12:34:00  351.945597       0.2      long  sell  1760.08
+8    8 2023-03-27 12:37:00  352.346455       0.2      long   buy  1761.38
+9    9 2023-03-27 12:46:00  351.351716       0.2      long  sell  1757.11
+10  10 2023-03-27 12:48:00  351.584303       0.2      long   buy  1757.57
+11  11 2023-03-27 13:45:00  352.433499       0.2      long  sell  1762.52
+12  12 2023-03-27 13:48:00  352.344455       0.2      long   buy  1761.37
+13  13 2023-03-27 13:50:00  352.297526       0.2      long  sell  1761.84
+14  14 2023-03-27 13:58:00  350.822150       0.2      long   buy  1753.76
+15  15 2023-03-27 14:17:00  349.434099       0.2      long  sell  1747.52
+16  16 2023-03-27 14:36:00  347.435473       0.2      long   buy  1736.83
+17  17 2023-03-27 15:02:00  340.855815       0.2      long  sell  1704.62
+18  18 2023-03-27 15:14:00  339.745936       0.2      long   buy  1698.39
+19  19 2023-03-27 16:16:00  345.662854       0.2      long  sell  1728.66
+20  20 2023-03-27 16:19:00  345.579102       0.2      long   buy  1727.55
+21  21 2023-03-27 19:38:00  341.763634       0.2      long  sell  1709.16
+22  22 2023-03-27 19:48:00  341.744335       0.2      long   buy  1708.38
+23  23 2023-03-27 21:11:00  342.813424       0.2      long  sell  1714.41
+24  24 2023-03-27 21:13:00  342.430472       0.2      long   buy  1711.81
+25  25 2023-03-28 01:02:00  340.467893       0.2      long  sell  1702.68
+26  26 2023-03-28 01:04:00  341.004187       0.2      long   buy  1704.68
+27  27 2023-03-28 06:02:00  345.898806       0.2      long  sell  1729.84
+28  28 2023-03-28 06:03:00  345.995185       0.2      long   buy  1729.63
+29  29 2023-03-28 06:08:00  346.532680       0.2      long  sell  1733.01
+30  30 2023-03-28 06:09:00  346.583303       0.2      long   buy  1732.57
+31  31 2023-03-28 09:48:00  343.455295       0.2      long  sell  1717.62
+32  32 2023-03-28 09:52:00  344.072801       0.2      long   buy  1720.02
+33  33 2023-03-28 11:49:00  348.864213       0.2      long  sell  1744.67
+34  34 2023-03-28 11:55:00  349.563899       0.2      long   buy  1747.47
+35  35 2023-03-28 14:06:00  349.314123       0.2      long  sell  1746.92
+36  36 2023-03-28 14:08:00  349.531892       0.2      long   buy  1747.31
+37  37 2023-03-28 18:45:00  353.233339       0.2      long  sell  1766.52
+38  38 2023-03-28 18:49:00  355.066999       0.2      long   buy  1774.98
+39  39 2023-03-28 18:50:00  354.455095       0.2      long  sell  1772.63
+40  40 2023-03-28 18:56:00  355.951176       0.2      long   buy  1779.40
+41  41 2023-03-29 01:19:00  357.376510       0.2      long  sell  1787.24
+42  42 2023-03-29 01:51:00  355.497085       0.2      long   buy  1777.13
+43  43 2023-03-29 04:32:00  359.282129       0.2      long  sell  1796.77
+44  44 2023-03-29 04:36:00  359.143814       0.2      long   buy  1795.36
+45  45 2023-03-29 06:27:00  360.687848       0.2      long  sell  1803.80
+46  46 2023-03-29 06:30:00  362.576501       0.2      long   buy  1812.52
+47  47 2023-03-29 06:32:00  362.483489       0.2      long  sell  1812.78
+48  48 2023-03-29 06:36:00  362.082402       0.2      long   buy  1810.05
+49  49 2023-03-29 11:02:00  361.145756       0.2      long  sell  1806.09
+50  50 2023-03-29 11:07:00  361.490284       0.2      long   buy  1807.09
+51  51 2023-03-29 14:38:00  359.270132       0.2      long  sell  1796.71
+52  52 2023-03-29 14:45:00  359.913968       0.2      long   buy  1799.21
+53  53 2023-03-29 15:33:00  361.569672       0.2      long  sell  1808.21
+54  54 2023-03-29 15:34:00  361.372260       0.2      long   buy  1806.50
+55  55 2023-03-29 22:01:00  357.818422       0.2      long  sell  1789.45
+56  56 2023-03-29 22:16:00  357.613508       0.2      long   buy  1787.71
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 11.524356000000637, required_money: 390.5192191999994, commission_fee: 4.943644000000001, step_times: 4319, trade_id_counter: 63
+2026-02-04 18:43:39,764 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 11.524356000000637, required_money: 390.5192191999994, commission_fee: 4.943644000000001, step_times: 4319, trade_id_counter: 63
+INFO:root:training with df 47 4320 1770201824.3732429
+2026-02-04 18:43:44,373 INFO: training with df 47 4320 1770201824.3732429
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 18.67938080000033, required_money: 363.2215971999998, commission_fee: 2.6486191999999997, step_times: 4319, trade_id_counter: 35
+2026-02-04 18:44:16,310 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 18.67938080000033, required_money: 363.2215971999998, commission_fee: 2.6486191999999997, step_times: 4319, trade_id_counter: 35
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 2.4774012000002585, required_money: 373.00965799999955, commission_fee: 3.5885988, step_times: 4319, trade_id_counter: 47
+2026-02-04 18:44:16,311 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 _validate_worker  final_balance: 2.4774012000002585, required_money: 373.00965799999955, commission_fee: 3.5885988, step_times: 4319, trade_id_counter: 47
+    id            datetime      amount  quantity direction  type    price
+0    0 2023-04-11 00:04:00  381.878360       0.2      long   buy  1909.01
+1    1 2023-04-11 00:42:00  383.121360       0.2      long  sell  1915.99
+2    2 2023-04-11 00:51:00  383.182621       0.2      long   buy  1915.53
+3    3 2023-04-11 01:53:00  385.038977       0.2      long  sell  1925.58
+4    4 2023-04-11 02:01:00  385.379060       0.2      long   buy  1926.51
+..  ..                 ...         ...       ...       ...   ...      ...
+58  58 2023-04-13 12:41:00  400.686121       0.2      long   buy  2003.03
+59  59 2023-04-13 17:00:00  400.577868       0.2      long  sell  2003.29
+60  60 2023-04-13 18:31:00  402.012386       0.2      long   buy  2009.66
+61  61 2023-04-13 20:06:00  400.661852       0.2      long  sell  2003.71
+62  62 2023-04-13 20:14:00  400.744133       0.2      long   buy  2003.32
+
+[63 rows x 7 columns]
+    id            datetime      amount  quantity direction  type    price
+0    0 2023-03-30 00:02:00  358.837753       0.2      long   buy  1793.83
+1    1 2023-03-30 00:50:00  357.044577       0.2      long  sell  1785.58
+2    2 2023-03-30 01:01:00  357.775541       0.2      long   buy  1788.52
+3    3 2023-03-30 02:19:00  361.131759       0.2      long  sell  1806.02
+4    4 2023-03-30 02:22:00  362.330452       0.2      long   buy  1811.29
+5    5 2023-03-30 02:27:00  362.359514       0.2      long  sell  1812.16
+6    6 2023-03-30 02:31:00  364.240834       0.2      long   buy  1820.84
+7    7 2023-03-30 02:40:00  365.466892       0.2      long  sell  1827.70
+8    8 2023-03-30 02:41:00  365.189023       0.2      long   buy  1825.58
+9    9 2023-03-30 03:06:00  358.774231       0.2      long  sell  1794.23
+10  10 2023-03-30 03:09:00  357.337453       0.2      long   buy  1786.33
+11  11 2023-03-30 07:35:00  361.847616       0.2      long  sell  1809.60
+12  12 2023-03-30 07:46:00  360.978181       0.2      long   buy  1804.53
+13  13 2023-03-30 08:36:00  360.139958       0.2      long  sell  1801.06
+14  14 2023-03-30 08:43:00  360.045995       0.2      long   buy  1799.87
+15  15 2023-03-30 08:44:00  359.748036       0.2      long  sell  1799.10
+16  16 2023-03-30 08:53:00  360.394064       0.2      long   buy  1801.61
+17  17 2023-03-30 15:27:00  357.692447       0.2      long  sell  1788.82
+18  18 2023-03-30 15:35:00  358.179622       0.2      long   buy  1790.54
+19  19 2023-03-30 17:29:00  355.482889       0.2      long  sell  1777.77
+20  20 2023-03-30 17:39:00  354.464879       0.2      long   buy  1771.97
+21  21 2023-03-30 20:47:00  359.492087       0.2      long  sell  1797.82
+22  22 2023-03-30 20:48:00  359.563898       0.2      long   buy  1797.46
+23  23 2023-03-30 22:48:00  357.456494       0.2      long  sell  1787.64
+24  24 2023-03-30 22:55:00  357.547495       0.2      long   buy  1787.38
+25  25 2023-03-31 00:29:00  360.535878       0.2      long  sell  1803.04
+26  26 2023-03-31 00:31:00  360.312048       0.2      long   buy  1801.20
+27  27 2023-03-31 01:10:00  363.251335       0.2      long  sell  1816.62
+28  28 2023-03-31 01:37:00  361.432272       0.2      long   buy  1806.80
+29  29 2023-03-31 05:52:00  359.314123       0.2      long  sell  1796.93
+30  30 2023-03-31 05:58:00  359.373860       0.2      long   buy  1796.51
+31  31 2023-03-31 07:10:00  358.738238       0.2      long  sell  1794.05
+32  32 2023-03-31 07:16:00  358.653716       0.2      long   buy  1792.91
+33  33 2023-03-31 07:22:00  356.556674       0.2      long  sell  1783.14
+34  34 2023-03-31 07:27:00  357.275441       0.2      long   buy  1786.02
+35  35 2023-03-31 11:25:00  357.892407       0.2      long  sell  1789.82
+36  36 2023-03-31 11:26:00  358.151616       0.2      long   buy  1790.40
+37  37 2023-03-31 12:30:00  361.025780       0.2      long  sell  1805.49
+38  38 2023-03-31 12:33:00  360.786143       0.2      long   buy  1803.57
+39  39 2023-03-31 13:28:00  363.691247       0.2      long  sell  1818.82
+40  40 2023-03-31 13:29:00  363.872760       0.2      long   buy  1819.00
+41  41 2023-03-31 13:30:00  364.031179       0.2      long  sell  1820.52
+42  42 2023-03-31 13:32:00  365.235032       0.2      long   buy  1825.81
+43  43 2023-03-31 13:36:00  367.060573       0.2      long  sell  1835.67
+44  44 2023-03-31 13:43:00  366.255236       0.2      long   buy  1830.91
+45  45 2023-03-31 15:17:00  365.630859       0.2      long  sell  1828.52
+46  46 2023-03-31 15:32:00  365.987183       0.2      long   buy  1829.57
+47  47 2023-03-31 16:32:00  364.429100       0.2      long  sell  1822.51
+48  48 2023-03-31 16:34:00  364.804946       0.2      long   buy  1823.66
+49  49 2023-04-01 06:30:00  363.353315       0.2      long  sell  1817.13
+50  50 2023-04-01 06:38:00  363.628711       0.2      long   buy  1817.78
+51  51 2023-04-01 14:18:00  364.233139       0.2      long  sell  1821.53
+52  52 2023-04-01 14:23:00  364.304846       0.2      long   buy  1821.16
+53  53 2023-04-01 16:53:00  362.561473       0.2      long  sell  1813.17
+54  54 2023-04-01 17:00:00  363.378661       0.2      long   buy  1816.53
+    id            datetime      amount  quantity direction  type    price
+0    0 2023-05-02 00:03:00  365.913168       0.2      long   buy  1829.20
+1    1 2023-05-02 01:48:00  365.480889       0.2      long  sell  1827.77
+2    2 2023-05-02 01:55:00  365.237033       0.2      long   buy  1825.82
+3    3 2023-05-02 07:15:00  367.500485       0.2      long  sell  1837.87
+4    4 2023-05-02 07:17:00  367.373460       0.2      long   buy  1836.50
+5    5 2023-05-02 14:31:00  371.247736       0.2      long  sell  1856.61
+6    6 2023-05-02 14:33:00  370.788143       0.2      long   buy  1853.57
+7    7 2023-05-02 14:35:00  370.317922       0.2      long  sell  1851.96
+8    8 2023-05-02 14:43:00  372.354456       0.2      long   buy  1861.40
+9    9 2023-05-02 18:37:00  374.327120       0.2      long  sell  1872.01
+10  10 2023-05-02 18:44:00  373.912768       0.2      long   buy  1869.19
+11  11 2023-05-02 20:43:00  374.839017       0.2      long  sell  1874.57
+12  12 2023-05-02 20:54:00  373.916768       0.2      long   buy  1869.21
+13  13 2023-05-02 23:28:00  373.941197       0.2      long  sell  1870.08
+14  14 2023-05-02 23:40:00  374.124810       0.2      long   buy  1870.25
+15  15 2023-05-03 02:06:00  371.293726       0.2      long  sell  1856.84
+16  16 2023-05-03 02:11:00  371.928371       0.2      long   buy  1859.27
+17  17 2023-05-03 06:51:00  373.687248       0.2      long  sell  1868.81
+18  18 2023-05-03 07:37:00  373.236632       0.2      long   buy  1865.81
+19  19 2023-05-03 12:44:00  369.806024       0.2      long  sell  1849.40
+20  20 2023-05-03 12:57:00  370.170019       0.2      long   buy  1850.48
+21  21 2023-05-03 14:39:00  369.502085       0.2      long  sell  1847.88
+22  22 2023-05-03 14:43:00  370.376060       0.2      long   buy  1851.51
+23  23 2023-05-03 17:25:00  374.203144       0.2      long  sell  1871.39
+24  24 2023-05-03 17:50:00  376.441273       0.2      long   buy  1881.83
+25  25 2023-05-03 18:00:00  376.306724       0.2      long  sell  1881.91
+26  26 2023-05-03 18:01:00  376.057196       0.2      long   buy  1879.91
+27  27 2023-05-03 18:05:00  375.734838       0.2      long  sell  1879.05
+28  28 2023-05-03 18:10:00  375.999185       0.2      long   buy  1879.62
+29  29 2023-05-03 19:42:00  374.069171       0.2      long  sell  1870.72
+30  30 2023-05-03 19:45:00  374.954976       0.2      long   buy  1874.40
+31  31 2023-05-03 20:37:00  372.307524       0.2      long  sell  1861.91
+32  32 2023-05-03 20:41:00  372.862558       0.2      long   buy  1863.94
+33  33 2023-05-03 21:21:00  379.166152       0.2      long  sell  1896.21
+34  34 2023-05-03 21:22:00  378.259637       0.2      long   buy  1890.92
+35  35 2023-05-03 21:23:00  377.846416       0.2      long  sell  1889.61
+36  36 2023-05-03 21:26:00  378.631711       0.2      long   buy  1892.78
+37  37 2023-05-04 00:35:00  379.300125       0.2      long  sell  1896.88
+38  38 2023-05-04 00:45:00  380.148014       0.2      long   buy  1900.36
+39  39 2023-05-04 12:41:00  379.226140       0.2      long  sell  1896.51
+40  40 2023-05-04 12:47:00  379.543894       0.2      long   buy  1897.34
+41  41 2023-05-04 13:39:00  376.192746       0.2      long  sell  1881.34
+42  42 2023-05-04 13:48:00  376.817348       0.2      long   buy  1883.71
+43  43 2023-05-04 16:03:00  376.380709       0.2      long  sell  1882.28
+44  44 2023-05-04 16:05:00  376.639313       0.2      long   buy  1882.82
+45  45 2023-05-04 18:23:00  374.717042       0.2      long  sell  1873.96
+46  46 2023-05-04 18:30:00  374.570899       0.2      long   buy  1872.48
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 return_rate_mean:3.85
+2026-02-04 18:44:16,662 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_1 return_rate_mean:3.85
+INFO:root:异步验证结束: epoch 1, 验证收益率: 3.8503506974768555 best:-inf
+2026-02-04 18:44:16,664 INFO: 异步验证结束: epoch 1, 验证收益率: 3.8503506974768555 best:-inf
+INFO:root:best model updated to epoch 1.best_return_rate:3.8503506974768555
+2026-02-04 18:44:16,664 INFO: best model updated to epoch 1.best_return_rate:3.8503506974768555
+INFO:root:training with df 51 4320 1770201890.0598562
+2026-02-04 18:44:50,059 INFO: training with df 51 4320 1770201890.0598562
+INFO:root:training with df 61 4320 1770201942.381863
+2026-02-04 18:45:42,381 INFO: training with df 61 4320 1770201942.381863
+INFO:root:training with df 92 4320 1770201992.099377
+2026-02-04 18:46:32,099 INFO: training with df 92 4320 1770201992.099377
+INFO:root:training with df 114 4320 1770202039.939427
+2026-02-04 18:47:19,939 INFO: training with df 114 4320 1770202039.939427
+INFO:root:training with df 116 4320 1770202080.5502417
+2026-02-04 18:48:00,550 INFO: training with df 116 4320 1770202080.5502417
+INFO:root:training with df 30 4320 1770202120.919093
+2026-02-04 18:48:40,919 INFO: training with df 30 4320 1770202120.919093
+INFO:root:training with df 41 4320 1770202161.1969018
+2026-02-04 18:49:21,196 INFO: training with df 41 4320 1770202161.1969018
+INFO:root:training with df 107 4320 1770202200.6839354
+2026-02-04 18:50:00,683 INFO: training with df 107 4320 1770202200.6839354
+INFO:root:training with df 17 4320 1770202240.9789805
+2026-02-04 18:50:40,979 INFO: training with df 17 4320 1770202240.9789805
+INFO:root:training with df 115 4320 1770202281.1194193
+2026-02-04 18:51:21,119 INFO: training with df 115 4320 1770202281.1194193
+INFO:root:training with df 112 4320 1770202321.0645003
+2026-02-04 18:52:01,064 INFO: training with df 112 4320 1770202321.0645003
+INFO:root:training with df 46 4320 1770202361.3379323
+2026-02-04 18:52:41,337 INFO: training with df 46 4320 1770202361.3379323
+INFO:root:training with df 2 4320 1770202401.4407752
+2026-02-04 18:53:21,440 INFO: training with df 2 4320 1770202401.4407752
+INFO:root:training with df 25 4320 1770202441.0866148
+2026-02-04 18:54:01,086 INFO: training with df 25 4320 1770202441.0866148
+INFO:root:training with df 103 4320 1770202481.279336
+2026-02-04 18:54:41,279 INFO: training with df 103 4320 1770202481.279336
+INFO:root:training with df 16 4320 1770202520.78322
+2026-02-04 18:55:20,783 INFO: training with df 16 4320 1770202520.78322
+INFO:root:training with df 67 4320 1770202560.5024002
+2026-02-04 18:56:00,502 INFO: training with df 67 4320 1770202560.5024002
+INFO:root:training with df 52 4320 1770202600.5395355
+2026-02-04 18:56:40,539 INFO: training with df 52 4320 1770202600.5395355
+INFO:root:training with df 15 4320 1770202640.411099
+2026-02-04 18:57:20,411 INFO: training with df 15 4320 1770202640.411099
+INFO:root:training with df 64 4320 1770202680.6890175
+2026-02-04 18:58:00,689 INFO: training with df 64 4320 1770202680.6890175
+INFO:root:training with df 120 4320 1770202720.4497964
+2026-02-04 18:58:40,449 INFO: training with df 120 4320 1770202720.4497964
+INFO:root:training with df 54 4320 1770202760.6144695
+2026-02-04 18:59:20,614 INFO: training with df 54 4320 1770202760.6144695
+INFO:root:training with df 42 4320 1770202801.0867863
+2026-02-04 19:00:01,086 INFO: training with df 42 4320 1770202801.0867863
+INFO:root:training with df 81 4320 1770202839.9287038
+2026-02-04 19:00:39,928 INFO: training with df 81 4320 1770202839.9287038
+INFO:root:training with df 4 4320 1770202878.9088306
+2026-02-04 19:01:18,908 INFO: training with df 4 4320 1770202878.9088306
+INFO:root:training with df 99 4320 1770202918.0489216
+2026-02-04 19:01:58,048 INFO: training with df 99 4320 1770202918.0489216
+INFO:root:training with df 100 4320 1770202956.5072343
+2026-02-04 19:02:36,507 INFO: training with df 100 4320 1770202956.5072343
+INFO:root:training with df 88 4320 1770202995.2138786
+2026-02-04 19:03:15,213 INFO: training with df 88 4320 1770202995.2138786
+INFO:root:training with df 62 4320 1770203033.9595988
+2026-02-04 19:03:53,959 INFO: training with df 62 4320 1770203033.9595988
+INFO:root:training with df 59 4320 1770203072.021728
+2026-02-04 19:04:32,021 INFO: training with df 59 4320 1770203072.021728
+INFO:root:training with df 98 4320 1770203110.419698
+2026-02-04 19:05:10,419 INFO: training with df 98 4320 1770203110.419698
+INFO:root:training with df 8 4320 1770203149.0388393
+2026-02-04 19:05:49,038 INFO: training with df 8 4320 1770203149.0388393
+INFO:root:training with df 63 4320 1770203187.3850021
+2026-02-04 19:06:27,385 INFO: training with df 63 4320 1770203187.3850021
+INFO:root:start val epoch 2
+2026-02-04 19:07:06,693 INFO: start val epoch 2
+INFO:root:验证任务已加入队列: epoch 2
+2026-02-04 19:07:06,693 INFO: 验证任务已加入队列: epoch 2
+INFO:root:epoch 3
+2026-02-04 19:07:06,693 INFO: epoch 3
+INFO:root:random_list:[100, 42, 88, 2, 99, 107, 64, 15, 4, 59, 116, 51, 47, 115, 112, 52, 61, 67, 16, 63, 8, 17, 81, 25, 103, 46, 114, 73, 54, 120, 94, 98, 92, 62, 41, 30]
+2026-02-04 19:07:06,693 INFO: random_list:[100, 42, 88, 2, 99, 107, 64, 15, 4, 59, 116, 51, 47, 115, 112, 52, 61, 67, 16, 63, 8, 17, 81, 25, 103, 46, 114, 73, 54, 120, 94, 98, 92, 62, 41, 30]
+INFO:root:epoch 3 start files
+2026-02-04 19:07:06,693 INFO: epoch 3 start files
+INFO:root:training with df 100 4320 1770203226.6939542
+2026-02-04 19:07:06,693 INFO: training with df 100 4320 1770203226.6939542
+INFO:root:验证消费者处理任务: epoch 2
+2026-02-04 19:07:17,769 INFO: 验证消费者处理任务: epoch 2
+INFO:root:异步验证开始: epoch 2
+2026-02-04 19:07:17,769 INFO: 异步验证开始: epoch 2
+INFO:root:Using 3 processes for parallel validation df_list:[0, 4, 8, 13, 14, 18, 19, 20, 23, 30, 38]
+2026-02-04 19:07:17,769 INFO: Using 3 processes for parallel validation df_list:[0, 4, 8, 13, 14, 18, 19, 20, 23, 30, 38]
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_2 _validate_worker  final_balance: 2.1931804000002444, required_money: 330.4962683999998, commission_fee: 2.2208196, step_times: 4319, trade_id_counter: 33
+2026-02-04 19:07:54,651 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_2 _validate_worker  final_balance: 2.1931804000002444, required_money: 330.4962683999998, commission_fee: 2.2208196, step_times: 4319, trade_id_counter: 33
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_2 _validate_worker  final_balance: 31.72454440000007, required_money: 303.44840759999994, commission_fee: 1.6414556000000002, step_times: 4319, trade_id_counter: 25
+2026-02-04 19:07:54,671 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_2 _validate_worker  final_balance: 31.72454440000007, required_money: 303.44840759999994, commission_fee: 1.6414556000000002, step_times: 4319, trade_id_counter: 25
+INFO:root:val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_2 _validate_worker  final_balance: 3.10390000000001, required_money: 324.68251440000006, commission_fee: 1.0441, step_times: 4319, trade_id_counter: 15
+2026-02-04 19:07:54,823 INFO: val ./result/low_level/ETHUSDT/long_action_long_lr1e5/slope/label_3/0/seed_6234571/epoch_2 _validate_worker  final_balance: 3.10390000000001, required_money: 324.68251440000006, commission_fee: 1.0441, step_times: 4319, trade_id_counter: 15
+INFO:root:training with df 42 4320 1770203286.9667966
+2026-02-04 19:08:06,966 INFO: training with df 42 4320 1770203286.9667966
+Process SpawnPoolWorker-4:
+Traceback (most recent call last):
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header)
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header)
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+    id            datetime      amount  quantity direction  type    price
+0    0 2023-02-01 00:00:00  317.291446       0.2      long   buy  1586.14
+1    1 2023-02-01 06:19:00  315.426902       0.2      long  sell  1577.45
+2    2 2023-02-01 06:22:00  315.809149       0.2      long   buy  1578.73
+3    3 2023-02-01 13:15:00  316.812625       0.2      long  sell  1584.38
+4    4 2023-02-01 13:17:00  316.803348       0.2      long   buy  1583.70
+5    5 2023-02-01 18:59:00  315.882811       0.2      long  sell  1579.73
+6    6 2023-02-01 19:05:00  314.930974       0.2      long   buy  1574.34
+7    7 2023-02-01 19:32:00  312.251537       0.2      long  sell  1561.57
+8    8 2023-02-01 19:36:00  315.487085       0.2      long   buy  1577.12
+9    9 2023-02-01 19:37:00  316.644658       0.2      long  sell  1583.54
+10  10 2023-02-01 19:39:00  317.253438       0.2      long   buy  1585.95
+11  11 2023-02-01 19:41:00  319.088170       0.2      long  sell  1595.76
+12  12 2023-02-01 19:52:00  324.884964       0.2      long   buy  1624.10
+13  13 2023-02-01 19:55:00  324.992988       0.2      long  sell  1625.29
+14  14 2023-02-01 20:17:00  323.384664       0.2      long   buy  1616.60
+15  15 2023-02-02 00:36:00  331.343718       0.2      long  sell  1657.05
+16  16 2023-02-02 00:40:00  335.681123       0.2      long   buy  1678.07
+17  17 2023-02-02 00:41:00  337.310524       0.2      long  sell  1686.89
+18  18 2023-02-02 00:43:00  337.117410       0.2      long   buy  1685.25
+19  19 2023-02-02 00:44:00  338.686249       0.2      long  sell  1693.77
+20  20 2023-02-02 00:55:00  337.863559       0.2      long   buy  1688.98
+21  21 2023-02-02 18:17:00  342.667453       0.2      long  sell  1713.68
+22  22 2023-02-02 18:27:00  340.688124       0.2      long   buy  1703.10
+23  23 2023-02-02 21:30:00  331.077771       0.2      long  sell  1655.72
+24  24 2023-02-02 21:32:00  332.886564       0.2      long   buy  1664.10
+25  25 2023-02-03 00:36:00  326.542678       0.2      long  sell  1633.04
+26  26 2023-02-03 00:38:00  327.507488       0.2      long   buy  1637.21
+27  27 2023-02-03 10:25:00  327.182550       0.2      long  sell  1636.24
+28  28 2023-02-03 10:26:00  327.995586       0.2      long   buy  1639.65
+29  29 2023-02-03 14:46:00  331.769633       0.2      long  sell  1659.18
+30  30 2023-02-03 14:49:00  332.112409       0.2      long   buy  1660.23
+31  31 2023-02-03 22:35:00  332.775432       0.2      long  sell  1664.21
+32  32 2023-02-03 23:17:00  333.254638       0.2      long   buy  1665.94
+    id            datetime      amount  quantity direction  type    price
+0    0 2023-03-12 00:01:00  294.098808       0.2      long   buy  1470.20
+1    1 2023-03-12 17:26:00  302.305527       0.2      long  sell  1511.83
+2    2 2023-03-12 17:34:00  301.674323       0.2      long   buy  1508.07
+3    3 2023-03-12 18:38:00  307.916404       0.2      long  sell  1539.89
+4    4 2023-03-12 18:46:00  307.585505       0.2      long   buy  1537.62
+..  ..                 ...         ...       ...       ...   ...      ...
+66  66 2023-03-14 21:09:00  335.857158       0.2      long   buy  1678.95
+67  67 2023-03-14 21:16:00  332.921402       0.2      long  sell  1664.94
+68  68 2023-03-14 21:18:00  335.577102       0.2      long   buy  1677.55
+69  69 2023-03-14 21:28:00  337.194548       0.2      long  sell  1686.31
+70  70 2023-03-14 21:30:00  338.365660       0.2      long   buy  1691.49
+
+[71 rows x 7 columns]
+Process SpawnPoolWorker-5:
+Traceback (most recent call last):
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header)
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header)
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+    id            datetime      amount  quantity direction  type    price
+0    0 2023-02-13 00:02:00  303.038596       0.2      long   buy  1514.89
+1    1 2023-02-13 09:16:00  298.826223       0.2      long  sell  1494.43
+2    2 2023-02-13 09:17:00  298.869762       0.2      long   buy  1494.05
+3    3 2023-02-14 13:29:00  303.271334       0.2      long  sell  1516.66
+4    4 2023-02-14 13:30:00  299.997988       0.2      long   buy  1499.69
+5    5 2023-02-14 13:32:00  304.053177       0.2      long  sell  1520.57
+6    6 2023-02-14 13:35:00  304.572902       0.2      long   buy  1522.56
+7    7 2023-02-14 14:50:00  309.428102       0.2      long  sell  1547.45
+8    8 2023-02-14 14:57:00  311.558299       0.2      long   buy  1557.48
+9    9 2023-02-14 21:05:00  310.121963       0.2      long  sell  1550.92
+10  10 2023-02-14 21:11:00  310.372062       0.2      long   buy  1551.55
+11  11 2023-02-15 11:40:00  314.831021       0.2      long  sell  1574.47
+12  12 2023-02-15 11:43:00  314.768941       0.2      long   buy  1573.53
+13  13 2023-02-15 12:12:00  316.950597       0.2      long  sell  1585.07
+14  14 2023-02-15 12:17:00  316.349257       0.2      long   buy  1581.43
+15  15 2023-02-15 18:45:00  318.264334       0.2      long  sell  1591.64
+16  16 2023-02-15 18:49:00  317.889565       0.2      long   buy  1589.13
+17  17 2023-02-15 19:15:00  321.799627       0.2      long  sell  1609.32
+18  18 2023-02-15 19:19:00  322.454478       0.2      long   buy  1611.95
+19  19 2023-02-15 19:30:00  325.246938       0.2      long  sell  1626.56
+20  20 2023-02-15 19:32:00  325.313050       0.2      long   buy  1626.24
+21  21 2023-02-15 20:20:00  329.246138       0.2      long  sell  1646.56
+22  22 2023-02-15 20:24:00  328.703728       0.2      long   buy  1643.19
+23  23 2023-02-15 20:32:00  332.285530       0.2      long  sell  1661.76
+24  24 2023-02-15 20:38:00  333.884764       0.2      long   buy  1669.09
+    id            datetime      amount  quantity direction  type    price
+0    0 2023-03-15 00:00:00  340.150016       0.2      long   buy  1700.41
+1    1 2023-03-15 12:31:00  339.200146       0.2      long  sell  1696.34
+2    2 2023-03-15 12:40:00  335.789144       0.2      long   buy  1678.61
+3    3 2023-03-15 16:43:00  323.099367       0.2      long  sell  1615.82
+4    4 2023-03-15 16:48:00  324.318851       0.2      long   buy  1621.27
+5    5 2023-03-15 19:29:00  330.483890       0.2      long  sell  1652.75
+6    6 2023-03-15 19:40:00  328.889765       0.2      long   buy  1644.12
+7    7 2023-03-16 19:24:00  337.730440       0.2      long  sell  1688.99
+8    8 2023-03-16 19:28:00  336.675322       0.2      long   buy  1683.04
+9    9 2023-03-16 20:48:00  332.997387       0.2      long  sell  1665.32
+10  10 2023-03-16 20:50:00  333.544696       0.2      long   buy  1667.39
+11  11 2023-03-17 01:29:00  336.340718       0.2      long  sell  1682.04
+12  12 2023-03-17 01:33:00  335.885164       0.2      long   buy  1679.09
+13  13 2023-03-17 14:29:00  344.443098       0.2      long  sell  1722.56
+14  14 2023-03-17 14:31:00  345.467080       0.2      long   buy  1726.99
+15  15 2023-03-17 19:06:00  347.678450       0.2      long  sell  1738.74
+16  16 2023-03-17 19:09:00  347.027392       0.2      long   buy  1734.79
+17  17 2023-03-17 20:24:00  348.670252       0.2      long  sell  1743.70
+18  18 2023-03-17 20:25:00  349.223831       0.2      long   buy  1745.77
+19  19 2023-03-17 21:42:00  352.901406       0.2      long  sell  1764.86
+20  20 2023-03-17 21:43:00  353.932772       0.2      long   buy  1769.31
+21  21 2023-03-17 21:44:00  353.019382       0.2      long  sell  1765.45
+22  22 2023-03-17 21:45:00  351.144215       0.2      long   buy  1755.37
+Process SpawnPoolWorker-6:
+Traceback (most recent call last):
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header)
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header)
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+    id            datetime      amount  quantity direction  type    price
+0    0 2023-02-25 00:00:00  321.646316       0.2      long   buy  1607.91
+1    1 2023-02-25 18:32:00  317.938400       0.2      long  sell  1590.01
+2    2 2023-02-25 18:41:00  317.975582       0.2      long   buy  1589.56
+3    3 2023-02-26 14:11:00  321.077772       0.2      long  sell  1605.71
+4    4 2023-02-26 14:23:00  321.982384       0.2      long   buy  1609.59
+5    5 2023-02-26 18:43:00  324.009185       0.2      long  sell  1620.37
+6    6 2023-02-26 18:52:00  325.749137       0.2      long   buy  1628.42
+7    7 2023-02-26 20:33:00  329.102166       0.2      long  sell  1645.84
+8    8 2023-02-26 20:42:00  328.909769       0.2      long   buy  1644.22
+9    9 2023-02-27 13:31:00  331.849617       0.2      long  sell  1659.58
+10  10 2023-02-27 13:49:00  332.396466       0.2      long   buy  1661.65
+11  11 2023-02-27 15:26:00  331.971592       0.2      long  sell  1660.19
+12  12 2023-02-27 15:32:00  331.664320       0.2      long   buy  1657.99
+13  13 2023-02-27 15:41:00  329.174152       0.2      long  sell  1646.20
+14  14 2023-02-27 15:47:00  328.373662       0.2      long   buy  1641.54
+    id            datetime      amount  quantity direction  type    price
+0    0 2023-03-27 00:00:00  354.900966       0.2      long   buy  1774.15
+1    1 2023-03-27 01:18:00  353.411304       0.2      long  sell  1767.41
+2    2 2023-03-27 01:19:00  353.476681       0.2      long   buy  1767.03
+3    3 2023-03-27 05:54:00  350.245937       0.2      long  sell  1751.58
+4    4 2023-03-27 06:02:00  350.314049       0.2      long   buy  1751.22
+5    5 2023-03-27 13:45:00  352.433499       0.2      long  sell  1762.52
+6    6 2023-03-27 13:55:00  351.616309       0.2      long   buy  1757.73
+7    7 2023-03-27 14:23:00  347.084569       0.2      long  sell  1735.77
+8    8 2023-03-27 14:27:00  347.739534       0.2      long   buy  1738.35
+9    9 2023-03-27 16:16:00  345.662854       0.2      long  sell  1728.66
+10  10 2023-03-27 16:35:00  344.356858       0.2      long   buy  1721.44
+11  11 2023-03-28 06:02:00  345.898806       0.2      long  sell  1729.84
+12  12 2023-03-28 06:06:00  346.151216       0.2      long   buy  1730.41
+13  13 2023-03-28 06:08:00  346.532680       0.2      long  sell  1733.01
+14  14 2023-03-28 06:13:00  346.057198       0.2      long   buy  1729.94
+15  15 2023-03-28 11:21:00  346.458694       0.2      long  sell  1732.64
+16  16 2023-03-28 11:46:00  346.893365       0.2      long   buy  1734.12
+17  17 2023-03-28 14:06:00  349.314123       0.2      long  sell  1746.92
+18  18 2023-03-28 14:07:00  349.407868       0.2      long   buy  1746.69
+19  19 2023-03-28 15:40:00  348.704245       0.2      long  sell  1743.87
+20  20 2023-03-28 15:41:00  349.103807       0.2      long   buy  1745.17
+21  21 2023-03-28 18:45:00  353.233339       0.2      long  sell  1766.52
+22  22 2023-03-28 18:49:00  355.066999       0.2      long   buy  1774.98
+23  23 2023-03-28 18:50:00  354.455095       0.2      long  sell  1772.63
+24  24 2023-03-28 18:53:00  354.276841       0.2      long   buy  1771.03
+25  25 2023-03-29 01:19:00  357.376510       0.2      long  sell  1787.24
+26  26 2023-03-29 01:22:00  356.833352       0.2      long   buy  1783.81
+27  27 2023-03-29 04:32:00  359.282129       0.2      long  sell  1796.77
+28  28 2023-03-29 04:40:00  358.709728       0.2      long   buy  1793.19
+29  29 2023-03-29 06:28:00  362.069572       0.2      long  sell  1810.71
+30  30 2023-03-29 06:41:00  361.738333       0.2      long   buy  1808.33
+31  31 2023-03-29 08:18:00  363.759234       0.2      long  sell  1819.16
+32  32 2023-03-29 08:20:00  363.600706       0.2      long   buy  1817.64
+33  33 2023-03-29 14:39:00  359.514083       0.2      long  sell  1797.93
+34  34 2023-03-29 14:40:00  359.783942       0.2      long   buy  1798.56
+35  35 2023-03-29 22:02:00  357.440498       0.2      long  sell  1787.56
+36  36 2023-03-29 22:07:00  357.533492       0.2      long   buy  1787.31
+/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

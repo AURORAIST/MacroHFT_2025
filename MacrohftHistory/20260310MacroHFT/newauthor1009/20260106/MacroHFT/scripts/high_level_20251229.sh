@@ -1,0 +1,1 @@
+nohup python -u RL/agent/high_level.py --lr 5e-4 --epoch_number 20 --exp 'long_action_long_205alpha241lr5e4' --dataset 'ETHUSDT' --transcation_cost 0.0002 --action_mode long --action_size 1 --reward_no_action False > ./logs/high_level/ETHUSDT/long_action_long_205alpha241lr5e4.log 2>&1 &

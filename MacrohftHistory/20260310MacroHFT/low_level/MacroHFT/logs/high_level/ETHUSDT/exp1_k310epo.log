@@ -1,0 +1,1420 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Namespace(buffer_size=1000000, dataset='ETHUSDT', q_value_memorize_freq=10, batch_size=512, eval_update_freq=512, lr=0.0001, epsilon_start=0.7, epsilon_end=0.3, decay_length=12, update_times=10, gamma=0.99, tau=0.005, transcation_cost=0.0002, back_time_length=1, seed=12345, n_step=1, epoch_number=10, device='cuda:0', alpha=0.5, beta=3, exp='exp1_k310epo', num_step=10, num_actions=3)
+
+================================================================================
+Starting High-Level Training
+================================================================================
+Dataset: ETHUSDT
+Number of actions: 3
+Environment mode: Multi-position (3-action)
+Alpha (memory error weight): 0.5
+Beta (demonstration KL weight): 3
+Reward function: Restored to original (absolute returns)
+TensorBoard log path: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/log
+Model save path: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345
+🔧 Debug log: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/debug_reward_info.txt
+
+Initializing TensorBoard metrics...
+TensorBoard metrics initialized. Refresh TensorBoard to see the graphs.
+--------------------------------------------------------------------------------
+
+Total epochs: 10
+Number of actions: 3
+Environment: Multi-position compatible (num_actions=3)
+Mode: Extended 3-action mode (multi-position)
+Model path: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345
+Log path: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/log
+================================================================================
+
+
+[Epoch 1/10] Starting...
+  Training environment initialized, starting episode...
+    Step 5120: Updated 90 times
+    Step 10240: Updated 190 times
+    Step 15360: Updated 290 times
+    Step 20480: Updated 390 times
+    Step 25600: Updated 490 times
+    Step 30720: Updated 590 times
+    Step 35840: Updated 690 times
+    Step 40960: Updated 790 times
+    Step 46080: Updated 890 times
+    Step 51200: Updated 990 times
+    Step 56320: Updated 1090 times
+    Step 61440: Updated 1190 times
+    Step 66560: Updated 1290 times
+    Step 71680: Updated 1390 times
+    Step 76800: Updated 1490 times
+    Step 81920: Updated 1590 times
+    Step 87040: Updated 1690 times
+    Step 92160: Updated 1790 times
+    Step 97280: Updated 1890 times
+    Step 102400: Updated 1990 times
+    Step 107520: Updated 2090 times
+    Step 112640: Updated 2190 times
+    Step 117760: Updated 2290 times
+    Step 122880: Updated 2390 times
+    Step 128000: Updated 2490 times
+    Step 133120: Updated 2590 times
+    Step 138240: Updated 2690 times
+    Step 143360: Updated 2790 times
+    Step 148480: Updated 2890 times
+    Step 153600: Updated 2990 times
+    Step 158720: Updated 3090 times
+    Step 163840: Updated 3190 times
+    Step 168960: Updated 3290 times
+    Step 174080: Updated 3390 times
+    Step 179200: Updated 3490 times
+    Step 184320: Updated 3590 times
+    Step 189440: Updated 3690 times
+    Step 194560: Updated 3790 times
+    Step 199680: Updated 3890 times
+    Step 204800: Updated 3990 times
+    Step 209920: Updated 4090 times
+    Step 215040: Updated 4190 times
+    Step 220160: Updated 4290 times
+    Step 225280: Updated 4390 times
+    Step 230400: Updated 4490 times
+    Step 235520: Updated 4590 times
+    Step 240640: Updated 4690 times
+    Step 245760: Updated 4790 times
+    Step 250880: Updated 4890 times
+    Step 256000: Updated 4990 times
+    Step 261120: Updated 5090 times
+    Step 266240: Updated 5190 times
+    Step 271360: Updated 5290 times
+    Step 276480: Updated 5390 times
+    Step 281600: Updated 5490 times
+    Step 286720: Updated 5590 times
+    Step 291840: Updated 5690 times
+    Step 296960: Updated 5790 times
+    Step 302080: Updated 5890 times
+    Step 307200: Updated 5990 times
+    Step 312320: Updated 6090 times
+    Step 317440: Updated 6190 times
+    Step 322560: Updated 6290 times
+    Step 327680: Updated 6390 times
+    Step 332800: Updated 6490 times
+    Step 337920: Updated 6590 times
+    Step 343040: Updated 6690 times
+    Step 348160: Updated 6790 times
+    Step 353280: Updated 6890 times
+    Step 358400: Updated 6990 times
+    Step 363520: Updated 7090 times
+    Step 368640: Updated 7190 times
+    Step 373760: Updated 7290 times
+    Step 378880: Updated 7390 times
+    Step 384000: Updated 7490 times
+    Step 389120: Updated 7590 times
+    Step 394240: Updated 7690 times
+    Step 399360: Updated 7790 times
+    Step 404480: Updated 7890 times
+    Step 409600: Updated 7990 times
+    Step 414720: Updated 8090 times
+    Step 419840: Updated 8190 times
+    Step 424960: Updated 8290 times
+    Step 430080: Updated 8390 times
+    Step 435200: Updated 8490 times
+    Step 440320: Updated 8590 times
+    Step 445440: Updated 8690 times
+    Step 450560: Updated 8790 times
+    Step 455680: Updated 8890 times
+    Step 460800: Updated 8990 times
+    Step 465920: Updated 9090 times
+    Step 471040: Updated 9190 times
+    Step 476160: Updated 9290 times
+    Step 481280: Updated 9390 times
+    Step 486400: Updated 9490 times
+    Step 491520: Updated 9590 times
+    Step 496640: Updated 9690 times
+    Step 501760: Updated 9790 times
+    Step 506880: Updated 9890 times
+    Step 512000: Updated 9990 times
+    Step 517120: Updated 10090 times
+    Step 522240: Updated 10190 times
+the portfit margine is  -0.973255550934063
+  [Epoch 1] Episode completed:
+    Steps: 525239, Updates: 10240
+    Return Rate: -0.9733, Final Balance: -11577.59
+    Required Money: 11895.73, Episode Reward: -11850.6532
+    [Performance Diagnosis - Epoch 1]
+    ⚠️  WARNING: Low return rate (-0.9733) - potential issues:
+        - Check if reward function is working correctly
+        - Verify environment compatibility
+        - Consider adjusting alpha/beta parameters
+    ⚠️  INFO: Large episode reward sum (-11850.6532)
+        - This might be normal for absolute return rewards
+        - Check reward scale in debug log: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/debug_reward_info.txt
+    🔍 INFO: Low capital efficiency (-0.9733)
+    📊 Environment: Multi-position mode (3 actions)
+    ------------------------------------------------------------
+  Model saved to: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/epoch_1
+Starting validation...
+the portfit margine is  -0.05620361313205165
+    [Validation Metrics]
+      Return Rate: -0.0562
+      Final Balance: -23.75
+      Required Money: 422.52
+      Reward Sum: -23.7472
+      Commission Fee: 126.0432
+  Validation completed: return_rate = -0.0562
+    Final balance: -23.75
+    Required money: 422.52
+    Total reward sum: -23.7472
+  ** New best model! Previous best: -inf **
+  Current epsilon: 0.6667
+--------------------------------------------------------------------------------
+
+[Epoch 2/10] Starting...
+  Training environment initialized, starting episode...
+    Step 527360: Updated 10290 times
+    Step 532480: Updated 10390 times
+    Step 537600: Updated 10490 times
+    Step 542720: Updated 10590 times
+    Step 547840: Updated 10690 times
+    Step 552960: Updated 10790 times
+    Step 558080: Updated 10890 times
+    Step 563200: Updated 10990 times
+    Step 568320: Updated 11090 times
+    Step 573440: Updated 11190 times
+    Step 578560: Updated 11290 times
+    Step 583680: Updated 11390 times
+    Step 588800: Updated 11490 times
+    Step 593920: Updated 11590 times
+    Step 599040: Updated 11690 times
+    Step 604160: Updated 11790 times
+    Step 609280: Updated 11890 times
+    Step 614400: Updated 11990 times
+    Step 619520: Updated 12090 times
+    Step 624640: Updated 12190 times
+    Step 629760: Updated 12290 times
+    Step 634880: Updated 12390 times
+    Step 640000: Updated 12490 times
+    Step 645120: Updated 12590 times
+    Step 650240: Updated 12690 times
+    Step 655360: Updated 12790 times
+    Step 660480: Updated 12890 times
+    Step 665600: Updated 12990 times
+    Step 670720: Updated 13090 times
+    Step 675840: Updated 13190 times
+    Step 680960: Updated 13290 times
+    Step 686080: Updated 13390 times
+    Step 691200: Updated 13490 times
+    Step 696320: Updated 13590 times
+    Step 701440: Updated 13690 times
+    Step 706560: Updated 13790 times
+    Step 711680: Updated 13890 times
+    Step 716800: Updated 13990 times
+    Step 721920: Updated 14090 times
+    Step 727040: Updated 14190 times
+    Step 732160: Updated 14290 times
+    Step 737280: Updated 14390 times
+    Step 742400: Updated 14490 times
+    Step 747520: Updated 14590 times
+    Step 752640: Updated 14690 times
+    Step 757760: Updated 14790 times
+    Step 762880: Updated 14890 times
+    Step 768000: Updated 14990 times
+    Step 773120: Updated 15090 times
+    Step 778240: Updated 15190 times
+    Step 783360: Updated 15290 times
+    Step 788480: Updated 15390 times
+    Step 793600: Updated 15490 times
+    Step 798720: Updated 15590 times
+    Step 803840: Updated 15690 times
+    Step 808960: Updated 15790 times
+    Step 814080: Updated 15890 times
+    Step 819200: Updated 15990 times
+    Step 824320: Updated 16090 times
+    Step 829440: Updated 16190 times
+    Step 834560: Updated 16290 times
+    Step 839680: Updated 16390 times
+    Step 844800: Updated 16490 times
+    Step 849920: Updated 16590 times
+    Step 855040: Updated 16690 times
+    Step 860160: Updated 16790 times
+    Step 865280: Updated 16890 times
+    Step 870400: Updated 16990 times
+    Step 875520: Updated 17090 times
+    Step 880640: Updated 17190 times
+    Step 885760: Updated 17290 times
+    Step 890880: Updated 17390 times
+    Step 896000: Updated 17490 times
+    Step 901120: Updated 17590 times
+    Step 906240: Updated 17690 times
+    Step 911360: Updated 17790 times
+    Step 916480: Updated 17890 times
+    Step 921600: Updated 17990 times
+    Step 926720: Updated 18090 times
+    Step 931840: Updated 18190 times
+    Step 936960: Updated 18290 times
+    Step 942080: Updated 18390 times
+    Step 947200: Updated 18490 times
+    Step 952320: Updated 18590 times
+    Step 957440: Updated 18690 times
+    Step 962560: Updated 18790 times
+    Step 967680: Updated 18890 times
+    Step 972800: Updated 18990 times
+    Step 977920: Updated 19090 times
+    Step 983040: Updated 19190 times
+    Step 988160: Updated 19290 times
+    Step 993280: Updated 19390 times
+    Step 998400: Updated 19490 times
+    Step 1003520: Updated 19590 times
+    Step 1008640: Updated 19690 times
+    Step 1013760: Updated 19790 times
+    Step 1018880: Updated 19890 times
+    Step 1024000: Updated 19990 times
+    Step 1029120: Updated 20090 times
+    Step 1034240: Updated 20190 times
+    Step 1039360: Updated 20290 times
+    Step 1044480: Updated 20390 times
+    Step 1049600: Updated 20490 times
+the portfit margine is  -0.9730623157980155
+  [Epoch 2] Episode completed:
+    Steps: 1050478, Updates: 20500
+    Return Rate: -0.9731, Final Balance: -11461.90
+    Required Money: 11779.21, Episode Reward: -11461.9013
+    [Performance Diagnosis - Epoch 2]
+    ⚠️  WARNING: Low return rate (-0.9731) - potential issues:
+        - Check if reward function is working correctly
+        - Verify environment compatibility
+        - Consider adjusting alpha/beta parameters
+    ⚠️  INFO: Large episode reward sum (-11461.9013)
+        - This might be normal for absolute return rewards
+        - Check reward scale in debug log: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/debug_reward_info.txt
+    🔍 INFO: Low capital efficiency (-0.9731)
+    📊 Environment: Multi-position mode (3 actions)
+    ------------------------------------------------------------
+  Model saved to: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/epoch_2
+Starting validation...
+the portfit margine is  0.011150477642983056
+    [Validation Metrics]
+      Return Rate: 0.0112
+      Final Balance: 4.57
+      Required Money: 409.89
+      Reward Sum: 4.5704
+      Commission Fee: 117.8396
+  Validation completed: return_rate = 0.0112
+    Final balance: 4.57
+    Required money: 409.89
+    Total reward sum: 4.5704
+  ** New best model! Previous best: -0.0562 **
+  Current epsilon: 0.6333
+--------------------------------------------------------------------------------
+
+[Epoch 3/10] Starting...
+  Training environment initialized, starting episode...
+    Step 1054720: Updated 20590 times
+    Step 1059840: Updated 20690 times
+    Step 1064960: Updated 20790 times
+    Step 1070080: Updated 20890 times
+    Step 1075200: Updated 20990 times
+    Step 1080320: Updated 21090 times
+    Step 1085440: Updated 21190 times
+    Step 1090560: Updated 21290 times
+    Step 1095680: Updated 21390 times
+    Step 1100800: Updated 21490 times
+    Step 1105920: Updated 21590 times
+    Step 1111040: Updated 21690 times
+    Step 1116160: Updated 21790 times
+    Step 1121280: Updated 21890 times
+    Step 1126400: Updated 21990 times
+    Step 1131520: Updated 22090 times
+    Step 1136640: Updated 22190 times
+    Step 1141760: Updated 22290 times
+    Step 1146880: Updated 22390 times
+    Step 1152000: Updated 22490 times
+    Step 1157120: Updated 22590 times
+    Step 1162240: Updated 22690 times
+    Step 1167360: Updated 22790 times
+    Step 1172480: Updated 22890 times
+    Step 1177600: Updated 22990 times
+    Step 1182720: Updated 23090 times
+    Step 1187840: Updated 23190 times
+    Step 1192960: Updated 23290 times
+    Step 1198080: Updated 23390 times
+    Step 1203200: Updated 23490 times
+    Step 1208320: Updated 23590 times
+    Step 1213440: Updated 23690 times
+    Step 1218560: Updated 23790 times
+    Step 1223680: Updated 23890 times
+    Step 1228800: Updated 23990 times
+    Step 1233920: Updated 24090 times
+    Step 1239040: Updated 24190 times
+    Step 1244160: Updated 24290 times
+    Step 1249280: Updated 24390 times
+    Step 1254400: Updated 24490 times
+    Step 1259520: Updated 24590 times
+    Step 1264640: Updated 24690 times
+    Step 1269760: Updated 24790 times
+    Step 1274880: Updated 24890 times
+    Step 1280000: Updated 24990 times
+    Step 1285120: Updated 25090 times
+    Step 1290240: Updated 25190 times
+    Step 1295360: Updated 25290 times
+    Step 1300480: Updated 25390 times
+    Step 1305600: Updated 25490 times
+    Step 1310720: Updated 25590 times
+    Step 1315840: Updated 25690 times
+    Step 1320960: Updated 25790 times
+    Step 1326080: Updated 25890 times
+    Step 1331200: Updated 25990 times
+    Step 1336320: Updated 26090 times
+    Step 1341440: Updated 26190 times
+    Step 1346560: Updated 26290 times
+    Step 1351680: Updated 26390 times
+    Step 1356800: Updated 26490 times
+    Step 1361920: Updated 26590 times
+    Step 1367040: Updated 26690 times
+    Step 1372160: Updated 26790 times
+    Step 1377280: Updated 26890 times
+    Step 1382400: Updated 26990 times
+    Step 1387520: Updated 27090 times
+    Step 1392640: Updated 27190 times
+    Step 1397760: Updated 27290 times
+    Step 1402880: Updated 27390 times
+    Step 1408000: Updated 27490 times
+    Step 1413120: Updated 27590 times
+    Step 1418240: Updated 27690 times
+    Step 1423360: Updated 27790 times
+    Step 1428480: Updated 27890 times
+    Step 1433600: Updated 27990 times
+    Step 1438720: Updated 28090 times
+    Step 1443840: Updated 28190 times
+    Step 1448960: Updated 28290 times
+    Step 1454080: Updated 28390 times
+    Step 1459200: Updated 28490 times
+    Step 1464320: Updated 28590 times
+    Step 1469440: Updated 28690 times
+    Step 1474560: Updated 28790 times
+    Step 1479680: Updated 28890 times
+    Step 1484800: Updated 28990 times
+    Step 1489920: Updated 29090 times
+    Step 1495040: Updated 29190 times
+    Step 1500160: Updated 29290 times
+    Step 1505280: Updated 29390 times
+    Step 1510400: Updated 29490 times
+    Step 1515520: Updated 29590 times
+    Step 1520640: Updated 29690 times
+    Step 1525760: Updated 29790 times
+    Step 1530880: Updated 29890 times
+    Step 1536000: Updated 29990 times
+    Step 1541120: Updated 30090 times
+    Step 1546240: Updated 30190 times
+    Step 1551360: Updated 30290 times
+    Step 1556480: Updated 30390 times
+    Step 1561600: Updated 30490 times
+    Step 1566720: Updated 30590 times
+    Step 1571840: Updated 30690 times
+the portfit margine is  -0.9711635640654613
+  [Epoch 3] Episode completed:
+    Steps: 1575717, Updates: 30760
+    Return Rate: -0.9712, Final Balance: -10685.47
+    Required Money: 11002.75, Episode Reward: -10958.5326
+    [Performance Diagnosis - Epoch 3]
+    ⚠️  WARNING: Low return rate (-0.9712) - potential issues:
+        - Check if reward function is working correctly
+        - Verify environment compatibility
+        - Consider adjusting alpha/beta parameters
+    ⚠️  INFO: Large episode reward sum (-10958.5326)
+        - This might be normal for absolute return rewards
+        - Check reward scale in debug log: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/debug_reward_info.txt
+    🔍 INFO: Low capital efficiency (-0.9712)
+    📊 Environment: Multi-position mode (3 actions)
+    ------------------------------------------------------------
+  Model saved to: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/epoch_3
+Starting validation...
+the portfit margine is  -0.006382594668969846
+    [Validation Metrics]
+      Return Rate: -0.0064
+      Final Balance: -2.57
+      Required Money: 401.96
+      Reward Sum: -2.5656
+      Commission Fee: 118.6266
+  Validation completed: return_rate = -0.0064
+    Final balance: -2.57
+    Required money: 401.96
+    Total reward sum: -2.5656
+  Current epsilon: 0.6000
+--------------------------------------------------------------------------------
+
+[Epoch 4/10] Starting...
+  Training environment initialized, starting episode...
+    Step 1576960: Updated 30790 times
+    Step 1582080: Updated 30890 times
+    Step 1587200: Updated 30990 times
+    Step 1592320: Updated 31090 times
+    Step 1597440: Updated 31190 times
+    Step 1602560: Updated 31290 times
+    Step 1607680: Updated 31390 times
+    Step 1612800: Updated 31490 times
+    Step 1617920: Updated 31590 times
+    Step 1623040: Updated 31690 times
+    Step 1628160: Updated 31790 times
+    Step 1633280: Updated 31890 times
+    Step 1638400: Updated 31990 times
+    Step 1643520: Updated 32090 times
+    Step 1648640: Updated 32190 times
+    Step 1653760: Updated 32290 times
+    Step 1658880: Updated 32390 times
+    Step 1664000: Updated 32490 times
+    Step 1669120: Updated 32590 times
+    Step 1674240: Updated 32690 times
+    Step 1679360: Updated 32790 times
+    Step 1684480: Updated 32890 times
+    Step 1689600: Updated 32990 times
+    Step 1694720: Updated 33090 times
+    Step 1699840: Updated 33190 times
+    Step 1704960: Updated 33290 times
+    Step 1710080: Updated 33390 times
+    Step 1715200: Updated 33490 times
+    Step 1720320: Updated 33590 times
+    Step 1725440: Updated 33690 times
+    Step 1730560: Updated 33790 times
+    Step 1735680: Updated 33890 times
+    Step 1740800: Updated 33990 times
+    Step 1745920: Updated 34090 times
+    Step 1751040: Updated 34190 times
+    Step 1756160: Updated 34290 times
+    Step 1761280: Updated 34390 times
+    Step 1766400: Updated 34490 times
+    Step 1771520: Updated 34590 times
+    Step 1776640: Updated 34690 times
+    Step 1781760: Updated 34790 times
+    Step 1786880: Updated 34890 times
+    Step 1792000: Updated 34990 times
+    Step 1797120: Updated 35090 times
+    Step 1802240: Updated 35190 times
+    Step 1807360: Updated 35290 times
+    Step 1812480: Updated 35390 times
+    Step 1817600: Updated 35490 times
+    Step 1822720: Updated 35590 times
+    Step 1827840: Updated 35690 times
+    Step 1832960: Updated 35790 times
+    Step 1838080: Updated 35890 times
+    Step 1843200: Updated 35990 times
+    Step 1848320: Updated 36090 times
+    Step 1853440: Updated 36190 times
+    Step 1858560: Updated 36290 times
+    Step 1863680: Updated 36390 times
+    Step 1868800: Updated 36490 times
+    Step 1873920: Updated 36590 times
+    Step 1879040: Updated 36690 times
+    Step 1884160: Updated 36790 times
+    Step 1889280: Updated 36890 times
+    Step 1894400: Updated 36990 times
+    Step 1899520: Updated 37090 times
+    Step 1904640: Updated 37190 times
+    Step 1909760: Updated 37290 times
+    Step 1914880: Updated 37390 times
+    Step 1920000: Updated 37490 times
+    Step 1925120: Updated 37590 times
+    Step 1930240: Updated 37690 times
+    Step 1935360: Updated 37790 times
+    Step 1940480: Updated 37890 times
+    Step 1945600: Updated 37990 times
+    Step 1950720: Updated 38090 times
+    Step 1955840: Updated 38190 times
+    Step 1960960: Updated 38290 times
+    Step 1966080: Updated 38390 times
+    Step 1971200: Updated 38490 times
+    Step 1976320: Updated 38590 times
+    Step 1981440: Updated 38690 times
+    Step 1986560: Updated 38790 times
+    Step 1991680: Updated 38890 times
+    Step 1996800: Updated 38990 times
+    Step 2001920: Updated 39090 times
+    Step 2007040: Updated 39190 times
+    Step 2012160: Updated 39290 times
+    Step 2017280: Updated 39390 times
+    Step 2022400: Updated 39490 times
+    Step 2027520: Updated 39590 times
+    Step 2032640: Updated 39690 times
+    Step 2037760: Updated 39790 times
+    Step 2042880: Updated 39890 times
+    Step 2048000: Updated 39990 times
+    Step 2053120: Updated 40090 times
+    Step 2058240: Updated 40190 times
+    Step 2063360: Updated 40290 times
+    Step 2068480: Updated 40390 times
+    Step 2073600: Updated 40490 times
+    Step 2078720: Updated 40590 times
+    Step 2083840: Updated 40690 times
+    Step 2088960: Updated 40790 times
+    Step 2094080: Updated 40890 times
+    Step 2099200: Updated 40990 times
+the portfit margine is  -0.9687791971469005
+  [Epoch 4] Episode completed:
+    Steps: 2100956, Updates: 41020
+    Return Rate: -0.9688, Final Balance: -9839.57
+    Required Money: 10156.67, Episode Reward: -10112.6340
+    [Performance Diagnosis - Epoch 4]
+    ⚠️  WARNING: Low return rate (-0.9688) - potential issues:
+        - Check if reward function is working correctly
+        - Verify environment compatibility
+        - Consider adjusting alpha/beta parameters
+    ⚠️  INFO: Large episode reward sum (-10112.6340)
+        - This might be normal for absolute return rewards
+        - Check reward scale in debug log: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/debug_reward_info.txt
+    🔍 INFO: Low capital efficiency (-0.9688)
+    📊 Environment: Multi-position mode (3 actions)
+    ------------------------------------------------------------
+  Model saved to: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/epoch_4
+Starting validation...
+the portfit margine is  -0.030423219101222625
+    [Validation Metrics]
+      Return Rate: -0.0304
+      Final Balance: -12.64
+      Required Money: 415.54
+      Reward Sum: -12.6421
+      Commission Fee: 119.4871
+  Validation completed: return_rate = -0.0304
+    Final balance: -12.64
+    Required money: 415.54
+    Total reward sum: -12.6421
+  Current epsilon: 0.5667
+--------------------------------------------------------------------------------
+
+[Epoch 5/10] Starting...
+  Training environment initialized, starting episode...
+    Step 2104320: Updated 41090 times
+    Step 2109440: Updated 41190 times
+    Step 2114560: Updated 41290 times
+    Step 2119680: Updated 41390 times
+    Step 2124800: Updated 41490 times
+    Step 2129920: Updated 41590 times
+    Step 2135040: Updated 41690 times
+    Step 2140160: Updated 41790 times
+    Step 2145280: Updated 41890 times
+    Step 2150400: Updated 41990 times
+    Step 2155520: Updated 42090 times
+    Step 2160640: Updated 42190 times
+    Step 2165760: Updated 42290 times
+    Step 2170880: Updated 42390 times
+    Step 2176000: Updated 42490 times
+    Step 2181120: Updated 42590 times
+    Step 2186240: Updated 42690 times
+    Step 2191360: Updated 42790 times
+    Step 2196480: Updated 42890 times
+    Step 2201600: Updated 42990 times
+    Step 2206720: Updated 43090 times
+    Step 2211840: Updated 43190 times
+    Step 2216960: Updated 43290 times
+    Step 2222080: Updated 43390 times
+    Step 2227200: Updated 43490 times
+    Step 2232320: Updated 43590 times
+    Step 2237440: Updated 43690 times
+    Step 2242560: Updated 43790 times
+    Step 2247680: Updated 43890 times
+    Step 2252800: Updated 43990 times
+    Step 2257920: Updated 44090 times
+    Step 2263040: Updated 44190 times
+    Step 2268160: Updated 44290 times
+    Step 2273280: Updated 44390 times
+    Step 2278400: Updated 44490 times
+    Step 2283520: Updated 44590 times
+    Step 2288640: Updated 44690 times
+    Step 2293760: Updated 44790 times
+    Step 2298880: Updated 44890 times
+    Step 2304000: Updated 44990 times
+    Step 2309120: Updated 45090 times
+    Step 2314240: Updated 45190 times
+    Step 2319360: Updated 45290 times
+    Step 2324480: Updated 45390 times
+    Step 2329600: Updated 45490 times
+    Step 2334720: Updated 45590 times
+    Step 2339840: Updated 45690 times
+    Step 2344960: Updated 45790 times
+    Step 2350080: Updated 45890 times
+    Step 2355200: Updated 45990 times
+    Step 2360320: Updated 46090 times
+    Step 2365440: Updated 46190 times
+    Step 2370560: Updated 46290 times
+    Step 2375680: Updated 46390 times
+    Step 2380800: Updated 46490 times
+    Step 2385920: Updated 46590 times
+    Step 2391040: Updated 46690 times
+    Step 2396160: Updated 46790 times
+    Step 2401280: Updated 46890 times
+    Step 2406400: Updated 46990 times
+    Step 2411520: Updated 47090 times
+    Step 2416640: Updated 47190 times
+    Step 2421760: Updated 47290 times
+    Step 2426880: Updated 47390 times
+    Step 2432000: Updated 47490 times
+    Step 2437120: Updated 47590 times
+    Step 2442240: Updated 47690 times
+    Step 2447360: Updated 47790 times
+    Step 2452480: Updated 47890 times
+    Step 2457600: Updated 47990 times
+    Step 2462720: Updated 48090 times
+    Step 2467840: Updated 48190 times
+    Step 2472960: Updated 48290 times
+    Step 2478080: Updated 48390 times
+    Step 2483200: Updated 48490 times
+    Step 2488320: Updated 48590 times
+    Step 2493440: Updated 48690 times
+    Step 2498560: Updated 48790 times
+    Step 2503680: Updated 48890 times
+    Step 2508800: Updated 48990 times
+    Step 2513920: Updated 49090 times
+    Step 2519040: Updated 49190 times
+    Step 2524160: Updated 49290 times
+    Step 2529280: Updated 49390 times
+    Step 2534400: Updated 49490 times
+    Step 2539520: Updated 49590 times
+    Step 2544640: Updated 49690 times
+    Step 2549760: Updated 49790 times
+    Step 2554880: Updated 49890 times
+    Step 2560000: Updated 49990 times
+    Step 2565120: Updated 50090 times
+    Step 2570240: Updated 50190 times
+    Step 2575360: Updated 50290 times
+    Step 2580480: Updated 50390 times
+    Step 2585600: Updated 50490 times
+    Step 2590720: Updated 50590 times
+    Step 2595840: Updated 50690 times
+    Step 2600960: Updated 50790 times
+    Step 2606080: Updated 50890 times
+    Step 2611200: Updated 50990 times
+    Step 2616320: Updated 51090 times
+    Step 2621440: Updated 51190 times
+the portfit margine is  -0.9687620772725449
+  [Epoch 5] Episode completed:
+    Steps: 2626195, Updates: 51280
+    Return Rate: -0.9688, Final Balance: -9842.42
+    Required Money: 10159.79, Episode Reward: -9842.4210
+    [Performance Diagnosis - Epoch 5]
+    ⚠️  WARNING: Low return rate (-0.9688) - potential issues:
+        - Check if reward function is working correctly
+        - Verify environment compatibility
+        - Consider adjusting alpha/beta parameters
+    ⚠️  INFO: Large episode reward sum (-9842.4210)
+        - This might be normal for absolute return rewards
+        - Check reward scale in debug log: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/debug_reward_info.txt
+    🔍 INFO: Low capital efficiency (-0.9688)
+    📊 Environment: Multi-position mode (3 actions)
+    ------------------------------------------------------------
+  Model saved to: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/epoch_5
+Starting validation...
+the portfit margine is  -0.06567821713378022
+    [Validation Metrics]
+      Return Rate: -0.0657
+      Final Balance: -28.56
+      Required Money: 434.77
+      Reward Sum: -28.5552
+      Commission Fee: 118.7972
+  Validation completed: return_rate = -0.0657
+    Final balance: -28.56
+    Required money: 434.77
+    Total reward sum: -28.5552
+  Current epsilon: 0.5333
+--------------------------------------------------------------------------------
+
+[Epoch 6/10] Starting...
+  Training environment initialized, starting episode...
+    Step 2626560: Updated 51290 times
+    Step 2631680: Updated 51390 times
+    Step 2636800: Updated 51490 times
+    Step 2641920: Updated 51590 times
+    Step 2647040: Updated 51690 times
+    Step 2652160: Updated 51790 times
+    Step 2657280: Updated 51890 times
+    Step 2662400: Updated 51990 times
+    Step 2667520: Updated 52090 times
+    Step 2672640: Updated 52190 times
+    Step 2677760: Updated 52290 times
+    Step 2682880: Updated 52390 times
+    Step 2688000: Updated 52490 times
+    Step 2693120: Updated 52590 times
+    Step 2698240: Updated 52690 times
+    Step 2703360: Updated 52790 times
+    Step 2708480: Updated 52890 times
+    Step 2713600: Updated 52990 times
+    Step 2718720: Updated 53090 times
+    Step 2723840: Updated 53190 times
+    Step 2728960: Updated 53290 times
+    Step 2734080: Updated 53390 times
+    Step 2739200: Updated 53490 times
+    Step 2744320: Updated 53590 times
+    Step 2749440: Updated 53690 times
+    Step 2754560: Updated 53790 times
+    Step 2759680: Updated 53890 times
+    Step 2764800: Updated 53990 times
+    Step 2769920: Updated 54090 times
+    Step 2775040: Updated 54190 times
+    Step 2780160: Updated 54290 times
+    Step 2785280: Updated 54390 times
+    Step 2790400: Updated 54490 times
+    Step 2795520: Updated 54590 times
+    Step 2800640: Updated 54690 times
+    Step 2805760: Updated 54790 times
+    Step 2810880: Updated 54890 times
+    Step 2816000: Updated 54990 times
+    Step 2821120: Updated 55090 times
+    Step 2826240: Updated 55190 times
+    Step 2831360: Updated 55290 times
+    Step 2836480: Updated 55390 times
+    Step 2841600: Updated 55490 times
+    Step 2846720: Updated 55590 times
+    Step 2851840: Updated 55690 times
+    Step 2856960: Updated 55790 times
+    Step 2862080: Updated 55890 times
+    Step 2867200: Updated 55990 times
+    Step 2872320: Updated 56090 times
+    Step 2877440: Updated 56190 times
+    Step 2882560: Updated 56290 times
+    Step 2887680: Updated 56390 times
+    Step 2892800: Updated 56490 times
+    Step 2897920: Updated 56590 times
+    Step 2903040: Updated 56690 times
+    Step 2908160: Updated 56790 times
+    Step 2913280: Updated 56890 times
+    Step 2918400: Updated 56990 times
+    Step 2923520: Updated 57090 times
+    Step 2928640: Updated 57190 times
+    Step 2933760: Updated 57290 times
+    Step 2938880: Updated 57390 times
+    Step 2944000: Updated 57490 times
+    Step 2949120: Updated 57590 times
+    Step 2954240: Updated 57690 times
+    Step 2959360: Updated 57790 times
+    Step 2964480: Updated 57890 times
+    Step 2969600: Updated 57990 times
+    Step 2974720: Updated 58090 times
+    Step 2979840: Updated 58190 times
+    Step 2984960: Updated 58290 times
+    Step 2990080: Updated 58390 times
+    Step 2995200: Updated 58490 times
+    Step 3000320: Updated 58590 times
+    Step 3005440: Updated 58690 times
+    Step 3010560: Updated 58790 times
+    Step 3015680: Updated 58890 times
+    Step 3020800: Updated 58990 times
+    Step 3025920: Updated 59090 times
+    Step 3031040: Updated 59190 times
+    Step 3036160: Updated 59290 times
+    Step 3041280: Updated 59390 times
+    Step 3046400: Updated 59490 times
+    Step 3051520: Updated 59590 times
+    Step 3056640: Updated 59690 times
+    Step 3061760: Updated 59790 times
+    Step 3066880: Updated 59890 times
+    Step 3072000: Updated 59990 times
+    Step 3077120: Updated 60090 times
+    Step 3082240: Updated 60190 times
+    Step 3087360: Updated 60290 times
+    Step 3092480: Updated 60390 times
+    Step 3097600: Updated 60490 times
+    Step 3102720: Updated 60590 times
+    Step 3107840: Updated 60690 times
+    Step 3112960: Updated 60790 times
+    Step 3118080: Updated 60890 times
+    Step 3123200: Updated 60990 times
+    Step 3128320: Updated 61090 times
+    Step 3133440: Updated 61190 times
+    Step 3138560: Updated 61290 times
+    Step 3143680: Updated 61390 times
+    Step 3148800: Updated 61490 times
+the portfit margine is  -0.9669945833093068
+  [Epoch 6] Episode completed:
+    Steps: 3151434, Updates: 61540
+    Return Rate: -0.9670, Final Balance: -9288.50
+    Required Money: 9605.53, Episode Reward: -9288.4972
+    [Performance Diagnosis - Epoch 6]
+    ⚠️  WARNING: Low return rate (-0.9670) - potential issues:
+        - Check if reward function is working correctly
+        - Verify environment compatibility
+        - Consider adjusting alpha/beta parameters
+    ⚠️  INFO: Large episode reward sum (-9288.4972)
+        - This might be normal for absolute return rewards
+        - Check reward scale in debug log: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/debug_reward_info.txt
+    🔍 INFO: Low capital efficiency (-0.9670)
+    📊 Environment: Multi-position mode (3 actions)
+    ------------------------------------------------------------
+  Model saved to: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/epoch_6
+Starting validation...
+the portfit margine is  -0.05846724106441786
+    [Validation Metrics]
+      Return Rate: -0.0585
+      Final Balance: -24.84
+      Required Money: 424.80
+      Reward Sum: -24.8369
+      Commission Fee: 115.4419
+  Validation completed: return_rate = -0.0585
+    Final balance: -24.84
+    Required money: 424.80
+    Total reward sum: -24.8369
+  Current epsilon: 0.5000
+--------------------------------------------------------------------------------
+
+[Epoch 7/10] Starting...
+  Training environment initialized, starting episode...
+    Step 3153920: Updated 61590 times
+    Step 3159040: Updated 61690 times
+    Step 3164160: Updated 61790 times
+    Step 3169280: Updated 61890 times
+    Step 3174400: Updated 61990 times
+    Step 3179520: Updated 62090 times
+    Step 3184640: Updated 62190 times
+    Step 3189760: Updated 62290 times
+    Step 3194880: Updated 62390 times
+    Step 3200000: Updated 62490 times
+    Step 3205120: Updated 62590 times
+    Step 3210240: Updated 62690 times
+    Step 3215360: Updated 62790 times
+    Step 3220480: Updated 62890 times
+    Step 3225600: Updated 62990 times
+    Step 3230720: Updated 63090 times
+    Step 3235840: Updated 63190 times
+    Step 3240960: Updated 63290 times
+    Step 3246080: Updated 63390 times
+    Step 3251200: Updated 63490 times
+    Step 3256320: Updated 63590 times
+    Step 3261440: Updated 63690 times
+    Step 3266560: Updated 63790 times
+    Step 3271680: Updated 63890 times
+    Step 3276800: Updated 63990 times
+    Step 3281920: Updated 64090 times
+    Step 3287040: Updated 64190 times
+    Step 3292160: Updated 64290 times
+    Step 3297280: Updated 64390 times
+    Step 3302400: Updated 64490 times
+    Step 3307520: Updated 64590 times
+    Step 3312640: Updated 64690 times
+    Step 3317760: Updated 64790 times
+    Step 3322880: Updated 64890 times
+    Step 3328000: Updated 64990 times
+    Step 3333120: Updated 65090 times
+    Step 3338240: Updated 65190 times
+    Step 3343360: Updated 65290 times
+    Step 3348480: Updated 65390 times
+    Step 3353600: Updated 65490 times
+    Step 3358720: Updated 65590 times
+    Step 3363840: Updated 65690 times
+    Step 3368960: Updated 65790 times
+    Step 3374080: Updated 65890 times
+    Step 3379200: Updated 65990 times
+    Step 3384320: Updated 66090 times
+    Step 3389440: Updated 66190 times
+    Step 3394560: Updated 66290 times
+    Step 3399680: Updated 66390 times
+    Step 3404800: Updated 66490 times
+    Step 3409920: Updated 66590 times
+    Step 3415040: Updated 66690 times
+    Step 3420160: Updated 66790 times
+    Step 3425280: Updated 66890 times
+    Step 3430400: Updated 66990 times
+    Step 3435520: Updated 67090 times
+    Step 3440640: Updated 67190 times
+    Step 3445760: Updated 67290 times
+    Step 3450880: Updated 67390 times
+    Step 3456000: Updated 67490 times
+    Step 3461120: Updated 67590 times
+    Step 3466240: Updated 67690 times
+    Step 3471360: Updated 67790 times
+    Step 3476480: Updated 67890 times
+    Step 3481600: Updated 67990 times
+    Step 3486720: Updated 68090 times
+    Step 3491840: Updated 68190 times
+    Step 3496960: Updated 68290 times
+    Step 3502080: Updated 68390 times
+    Step 3507200: Updated 68490 times
+    Step 3512320: Updated 68590 times
+    Step 3517440: Updated 68690 times
+    Step 3522560: Updated 68790 times
+    Step 3527680: Updated 68890 times
+    Step 3532800: Updated 68990 times
+    Step 3537920: Updated 69090 times
+    Step 3543040: Updated 69190 times
+    Step 3548160: Updated 69290 times
+    Step 3553280: Updated 69390 times
+    Step 3558400: Updated 69490 times
+    Step 3563520: Updated 69590 times
+    Step 3568640: Updated 69690 times
+    Step 3573760: Updated 69790 times
+    Step 3578880: Updated 69890 times
+    Step 3584000: Updated 69990 times
+    Step 3589120: Updated 70090 times
+    Step 3594240: Updated 70190 times
+    Step 3599360: Updated 70290 times
+    Step 3604480: Updated 70390 times
+    Step 3609600: Updated 70490 times
+    Step 3614720: Updated 70590 times
+    Step 3619840: Updated 70690 times
+    Step 3624960: Updated 70790 times
+    Step 3630080: Updated 70890 times
+    Step 3635200: Updated 70990 times
+    Step 3640320: Updated 71090 times
+    Step 3645440: Updated 71190 times
+    Step 3650560: Updated 71290 times
+    Step 3655680: Updated 71390 times
+    Step 3660800: Updated 71490 times
+    Step 3665920: Updated 71590 times
+    Step 3671040: Updated 71690 times
+    Step 3676160: Updated 71790 times
+the portfit margine is  -0.9641791682509168
+  [Epoch 7] Episode completed:
+    Steps: 3676673, Updates: 71800
+    Return Rate: -0.9642, Final Balance: -8560.15
+    Required Money: 8878.17, Episode Reward: -8560.1491
+    [Performance Diagnosis - Epoch 7]
+    ⚠️  WARNING: Low return rate (-0.9642) - potential issues:
+        - Check if reward function is working correctly
+        - Verify environment compatibility
+        - Consider adjusting alpha/beta parameters
+    ⚠️  INFO: Large episode reward sum (-8560.1491)
+        - This might be normal for absolute return rewards
+        - Check reward scale in debug log: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/debug_reward_info.txt
+    🔍 INFO: Low capital efficiency (-0.9642)
+    📊 Environment: Multi-position mode (3 actions)
+    ------------------------------------------------------------
+  Model saved to: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/epoch_7
+Starting validation...
+the portfit margine is  -0.14719409906095818
+    [Validation Metrics]
+      Return Rate: -0.1472
+      Final Balance: -68.40
+      Required Money: 464.70
+      Reward Sum: -68.4007
+      Commission Fee: 112.9487
+  Validation completed: return_rate = -0.1472
+    Final balance: -68.40
+    Required money: 464.70
+    Total reward sum: -68.4007
+  Current epsilon: 0.4667
+--------------------------------------------------------------------------------
+
+[Epoch 8/10] Starting...
+  Training environment initialized, starting episode...
+    Step 3681280: Updated 71890 times
+    Step 3686400: Updated 71990 times
+    Step 3691520: Updated 72090 times
+    Step 3696640: Updated 72190 times
+    Step 3701760: Updated 72290 times
+    Step 3706880: Updated 72390 times
+    Step 3712000: Updated 72490 times
+    Step 3717120: Updated 72590 times
+    Step 3722240: Updated 72690 times
+    Step 3727360: Updated 72790 times
+    Step 3732480: Updated 72890 times
+    Step 3737600: Updated 72990 times
+    Step 3742720: Updated 73090 times
+    Step 3747840: Updated 73190 times
+    Step 3752960: Updated 73290 times
+    Step 3758080: Updated 73390 times
+    Step 3763200: Updated 73490 times
+    Step 3768320: Updated 73590 times
+    Step 3773440: Updated 73690 times
+    Step 3778560: Updated 73790 times
+    Step 3783680: Updated 73890 times
+    Step 3788800: Updated 73990 times
+    Step 3793920: Updated 74090 times
+    Step 3799040: Updated 74190 times
+    Step 3804160: Updated 74290 times
+    Step 3809280: Updated 74390 times
+    Step 3814400: Updated 74490 times
+    Step 3819520: Updated 74590 times
+    Step 3824640: Updated 74690 times
+    Step 3829760: Updated 74790 times
+    Step 3834880: Updated 74890 times
+    Step 3840000: Updated 74990 times
+    Step 3845120: Updated 75090 times
+    Step 3850240: Updated 75190 times
+    Step 3855360: Updated 75290 times
+    Step 3860480: Updated 75390 times
+    Step 3865600: Updated 75490 times
+    Step 3870720: Updated 75590 times
+    Step 3875840: Updated 75690 times
+    Step 3880960: Updated 75790 times
+    Step 3886080: Updated 75890 times
+    Step 3891200: Updated 75990 times
+    Step 3896320: Updated 76090 times
+    Step 3901440: Updated 76190 times
+    Step 3906560: Updated 76290 times
+    Step 3911680: Updated 76390 times
+    Step 3916800: Updated 76490 times
+    Step 3921920: Updated 76590 times
+    Step 3927040: Updated 76690 times
+    Step 3932160: Updated 76790 times
+    Step 3937280: Updated 76890 times
+    Step 3942400: Updated 76990 times
+    Step 3947520: Updated 77090 times
+    Step 3952640: Updated 77190 times
+    Step 3957760: Updated 77290 times
+    Step 3962880: Updated 77390 times
+    Step 3968000: Updated 77490 times
+    Step 3973120: Updated 77590 times
+    Step 3978240: Updated 77690 times
+    Step 3983360: Updated 77790 times
+    Step 3988480: Updated 77890 times
+    Step 3993600: Updated 77990 times
+    Step 3998720: Updated 78090 times
+    Step 4003840: Updated 78190 times
+    Step 4008960: Updated 78290 times
+    Step 4014080: Updated 78390 times
+    Step 4019200: Updated 78490 times
+    Step 4024320: Updated 78590 times
+    Step 4029440: Updated 78690 times
+    Step 4034560: Updated 78790 times
+    Step 4039680: Updated 78890 times
+    Step 4044800: Updated 78990 times
+    Step 4049920: Updated 79090 times
+    Step 4055040: Updated 79190 times
+    Step 4060160: Updated 79290 times
+    Step 4065280: Updated 79390 times
+    Step 4070400: Updated 79490 times
+    Step 4075520: Updated 79590 times
+    Step 4080640: Updated 79690 times
+    Step 4085760: Updated 79790 times
+    Step 4090880: Updated 79890 times
+    Step 4096000: Updated 79990 times
+    Step 4101120: Updated 80090 times
+    Step 4106240: Updated 80190 times
+    Step 4111360: Updated 80290 times
+    Step 4116480: Updated 80390 times
+    Step 4121600: Updated 80490 times
+    Step 4126720: Updated 80590 times
+    Step 4131840: Updated 80690 times
+    Step 4136960: Updated 80790 times
+    Step 4142080: Updated 80890 times
+    Step 4147200: Updated 80990 times
+    Step 4152320: Updated 81090 times
+    Step 4157440: Updated 81190 times
+    Step 4162560: Updated 81290 times
+    Step 4167680: Updated 81390 times
+    Step 4172800: Updated 81490 times
+    Step 4177920: Updated 81590 times
+    Step 4183040: Updated 81690 times
+    Step 4188160: Updated 81790 times
+    Step 4193280: Updated 81890 times
+    Step 4198400: Updated 81990 times
+the portfit margine is  -0.9631295643259818
+  [Epoch 8] Episode completed:
+    Steps: 4201912, Updates: 82050
+    Return Rate: -0.9631, Final Balance: -8299.52
+    Required Money: 8617.25, Episode Reward: -8299.5235
+    [Performance Diagnosis - Epoch 8]
+    ⚠️  WARNING: Low return rate (-0.9631) - potential issues:
+        - Check if reward function is working correctly
+        - Verify environment compatibility
+        - Consider adjusting alpha/beta parameters
+    ⚠️  INFO: Large episode reward sum (-8299.5235)
+        - This might be normal for absolute return rewards
+        - Check reward scale in debug log: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/debug_reward_info.txt
+    🔍 INFO: Low capital efficiency (-0.9631)
+    📊 Environment: Multi-position mode (3 actions)
+    ------------------------------------------------------------
+  Model saved to: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/epoch_8
+Starting validation...
+the portfit margine is  -0.04572106118043347
+    [Validation Metrics]
+      Return Rate: -0.0457
+      Final Balance: -20.12
+      Required Money: 440.07
+      Reward Sum: -20.1203
+      Commission Fee: 108.0403
+  Validation completed: return_rate = -0.0457
+    Final balance: -20.12
+    Required money: 440.07
+    Total reward sum: -20.1203
+  Current epsilon: 0.4333
+--------------------------------------------------------------------------------
+
+[Epoch 9/10] Starting...
+  Training environment initialized, starting episode...
+    Step 4203520: Updated 82090 times
+    Step 4208640: Updated 82190 times
+    Step 4213760: Updated 82290 times
+    Step 4218880: Updated 82390 times
+    Step 4224000: Updated 82490 times
+    Step 4229120: Updated 82590 times
+    Step 4234240: Updated 82690 times
+    Step 4239360: Updated 82790 times
+    Step 4244480: Updated 82890 times
+    Step 4249600: Updated 82990 times
+    Step 4254720: Updated 83090 times
+    Step 4259840: Updated 83190 times
+    Step 4264960: Updated 83290 times
+    Step 4270080: Updated 83390 times
+    Step 4275200: Updated 83490 times
+    Step 4280320: Updated 83590 times
+    Step 4285440: Updated 83690 times
+    Step 4290560: Updated 83790 times
+    Step 4295680: Updated 83890 times
+    Step 4300800: Updated 83990 times
+    Step 4305920: Updated 84090 times
+    Step 4311040: Updated 84190 times
+    Step 4316160: Updated 84290 times
+    Step 4321280: Updated 84390 times
+    Step 4326400: Updated 84490 times
+    Step 4331520: Updated 84590 times
+    Step 4336640: Updated 84690 times
+    Step 4341760: Updated 84790 times
+    Step 4346880: Updated 84890 times
+    Step 4352000: Updated 84990 times
+    Step 4357120: Updated 85090 times
+    Step 4362240: Updated 85190 times
+    Step 4367360: Updated 85290 times
+    Step 4372480: Updated 85390 times
+    Step 4377600: Updated 85490 times
+    Step 4382720: Updated 85590 times
+    Step 4387840: Updated 85690 times
+    Step 4392960: Updated 85790 times
+    Step 4398080: Updated 85890 times
+    Step 4403200: Updated 85990 times
+    Step 4408320: Updated 86090 times
+    Step 4413440: Updated 86190 times
+    Step 4418560: Updated 86290 times
+    Step 4423680: Updated 86390 times
+    Step 4428800: Updated 86490 times
+    Step 4433920: Updated 86590 times
+    Step 4439040: Updated 86690 times
+    Step 4444160: Updated 86790 times
+    Step 4449280: Updated 86890 times
+    Step 4454400: Updated 86990 times
+    Step 4459520: Updated 87090 times
+    Step 4464640: Updated 87190 times
+    Step 4469760: Updated 87290 times
+    Step 4474880: Updated 87390 times
+    Step 4480000: Updated 87490 times
+    Step 4485120: Updated 87590 times
+    Step 4490240: Updated 87690 times
+    Step 4495360: Updated 87790 times
+    Step 4500480: Updated 87890 times
+    Step 4505600: Updated 87990 times
+    Step 4510720: Updated 88090 times
+    Step 4515840: Updated 88190 times
+    Step 4520960: Updated 88290 times
+    Step 4526080: Updated 88390 times
+    Step 4531200: Updated 88490 times
+    Step 4536320: Updated 88590 times
+    Step 4541440: Updated 88690 times
+    Step 4546560: Updated 88790 times
+    Step 4551680: Updated 88890 times
+    Step 4556800: Updated 88990 times
+    Step 4561920: Updated 89090 times
+    Step 4567040: Updated 89190 times
+    Step 4572160: Updated 89290 times
+    Step 4577280: Updated 89390 times
+    Step 4582400: Updated 89490 times
+    Step 4587520: Updated 89590 times
+    Step 4592640: Updated 89690 times
+    Step 4597760: Updated 89790 times
+    Step 4602880: Updated 89890 times
+    Step 4608000: Updated 89990 times
+    Step 4613120: Updated 90090 times
+    Step 4618240: Updated 90190 times
+    Step 4623360: Updated 90290 times
+    Step 4628480: Updated 90390 times
+    Step 4633600: Updated 90490 times
+    Step 4638720: Updated 90590 times
+    Step 4643840: Updated 90690 times
+    Step 4648960: Updated 90790 times
+    Step 4654080: Updated 90890 times
+    Step 4659200: Updated 90990 times
+    Step 4664320: Updated 91090 times
+    Step 4669440: Updated 91190 times
+    Step 4674560: Updated 91290 times
+    Step 4679680: Updated 91390 times
+    Step 4684800: Updated 91490 times
+    Step 4689920: Updated 91590 times
+    Step 4695040: Updated 91690 times
+    Step 4700160: Updated 91790 times
+    Step 4705280: Updated 91890 times
+    Step 4710400: Updated 91990 times
+    Step 4715520: Updated 92090 times
+    Step 4720640: Updated 92190 times
+    Step 4725760: Updated 92290 times
+the portfit margine is  -0.958762226821806
+  [Epoch 9] Episode completed:
+    Steps: 4727151, Updates: 92310
+    Return Rate: -0.9588, Final Balance: -7390.30
+    Required Money: 7708.17, Episode Reward: -7390.3044
+    [Performance Diagnosis - Epoch 9]
+    ⚠️  WARNING: Low return rate (-0.9588) - potential issues:
+        - Check if reward function is working correctly
+        - Verify environment compatibility
+        - Consider adjusting alpha/beta parameters
+    ⚠️  INFO: Large episode reward sum (-7390.3044)
+        - This might be normal for absolute return rewards
+        - Check reward scale in debug log: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/debug_reward_info.txt
+    🔍 INFO: Low capital efficiency (-0.9588)
+    📊 Environment: Multi-position mode (3 actions)
+    ------------------------------------------------------------
+  Model saved to: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/epoch_9
+Starting validation...
+the portfit margine is  -0.032998789809145314
+    [Validation Metrics]
+      Return Rate: -0.0330
+      Final Balance: -14.25
+      Required Money: 431.68
+      Reward Sum: -14.2451
+      Commission Fee: 104.0921
+  Validation completed: return_rate = -0.0330
+    Final balance: -14.25
+    Required money: 431.68
+    Total reward sum: -14.2451
+  Current epsilon: 0.4000
+--------------------------------------------------------------------------------
+
+[Epoch 10/10] Starting...
+  Training environment initialized, starting episode...
+    Step 4730880: Updated 92390 times
+    Step 4736000: Updated 92490 times
+    Step 4741120: Updated 92590 times
+    Step 4746240: Updated 92690 times
+    Step 4751360: Updated 92790 times
+    Step 4756480: Updated 92890 times
+    Step 4761600: Updated 92990 times
+    Step 4766720: Updated 93090 times
+    Step 4771840: Updated 93190 times
+    Step 4776960: Updated 93290 times
+    Step 4782080: Updated 93390 times
+    Step 4787200: Updated 93490 times
+    Step 4792320: Updated 93590 times
+    Step 4797440: Updated 93690 times
+    Step 4802560: Updated 93790 times
+    Step 4807680: Updated 93890 times
+    Step 4812800: Updated 93990 times
+    Step 4817920: Updated 94090 times
+    Step 4823040: Updated 94190 times
+    Step 4828160: Updated 94290 times
+    Step 4833280: Updated 94390 times
+    Step 4838400: Updated 94490 times
+    Step 4843520: Updated 94590 times
+    Step 4848640: Updated 94690 times
+    Step 4853760: Updated 94790 times
+    Step 4858880: Updated 94890 times
+    Step 4864000: Updated 94990 times
+    Step 4869120: Updated 95090 times
+    Step 4874240: Updated 95190 times
+    Step 4879360: Updated 95290 times
+    Step 4884480: Updated 95390 times
+    Step 4889600: Updated 95490 times
+    Step 4894720: Updated 95590 times
+    Step 4899840: Updated 95690 times
+    Step 4904960: Updated 95790 times
+    Step 4910080: Updated 95890 times
+    Step 4915200: Updated 95990 times
+    Step 4920320: Updated 96090 times
+    Step 4925440: Updated 96190 times
+    Step 4930560: Updated 96290 times
+    Step 4935680: Updated 96390 times
+    Step 4940800: Updated 96490 times
+    Step 4945920: Updated 96590 times
+    Step 4951040: Updated 96690 times
+    Step 4956160: Updated 96790 times
+    Step 4961280: Updated 96890 times
+    Step 4966400: Updated 96990 times
+    Step 4971520: Updated 97090 times
+    Step 4976640: Updated 97190 times
+    Step 4981760: Updated 97290 times
+    Step 4986880: Updated 97390 times
+    Step 4992000: Updated 97490 times
+    Step 4997120: Updated 97590 times
+    Step 5002240: Updated 97690 times
+    Step 5007360: Updated 97790 times
+    Step 5012480: Updated 97890 times
+    Step 5017600: Updated 97990 times
+    Step 5022720: Updated 98090 times
+    Step 5027840: Updated 98190 times
+    Step 5032960: Updated 98290 times
+    Step 5038080: Updated 98390 times
+    Step 5043200: Updated 98490 times
+    Step 5048320: Updated 98590 times
+    Step 5053440: Updated 98690 times
+    Step 5058560: Updated 98790 times
+    Step 5063680: Updated 98890 times
+    Step 5068800: Updated 98990 times
+    Step 5073920: Updated 99090 times
+    Step 5079040: Updated 99190 times
+    Step 5084160: Updated 99290 times
+    Step 5089280: Updated 99390 times
+    Step 5094400: Updated 99490 times
+    Step 5099520: Updated 99590 times
+    Step 5104640: Updated 99690 times
+    Step 5109760: Updated 99790 times
+    Step 5114880: Updated 99890 times
+    Step 5120000: Updated 99990 times
+    Step 5125120: Updated 100090 times
+    Step 5130240: Updated 100190 times
+    Step 5135360: Updated 100290 times
+    Step 5140480: Updated 100390 times
+    Step 5145600: Updated 100490 times
+    Step 5150720: Updated 100590 times
+    Step 5155840: Updated 100690 times
+    Step 5160960: Updated 100790 times
+    Step 5166080: Updated 100890 times
+    Step 5171200: Updated 100990 times
+    Step 5176320: Updated 101090 times
+    Step 5181440: Updated 101190 times
+    Step 5186560: Updated 101290 times
+    Step 5191680: Updated 101390 times
+    Step 5196800: Updated 101490 times
+    Step 5201920: Updated 101590 times
+    Step 5207040: Updated 101690 times
+    Step 5212160: Updated 101790 times
+    Step 5217280: Updated 101890 times
+    Step 5222400: Updated 101990 times
+    Step 5227520: Updated 102090 times
+    Step 5232640: Updated 102190 times
+    Step 5237760: Updated 102290 times
+    Step 5242880: Updated 102390 times
+    Step 5248000: Updated 102490 times
+the portfit margine is  -0.9545869485548036
+  [Epoch 10] Episode completed:
+    Steps: 5252390, Updates: 102570
+    Return Rate: -0.9546, Final Balance: -6668.33
+    Required Money: 6985.57, Episode Reward: -6941.3988
+    [Performance Diagnosis - Epoch 10]
+    ⚠️  WARNING: Low return rate (-0.9546) - potential issues:
+        - Check if reward function is working correctly
+        - Verify environment compatibility
+        - Consider adjusting alpha/beta parameters
+    ⚠️  INFO: Large episode reward sum (-6941.3988)
+        - This might be normal for absolute return rewards
+        - Check reward scale in debug log: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/debug_reward_info.txt
+    🔍 INFO: Low capital efficiency (-0.9546)
+    📊 Environment: Multi-position mode (3 actions)
+    ------------------------------------------------------------
+  Model saved to: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/epoch_10
+Starting validation...
+the portfit margine is  -0.03014195993385621
+    [Validation Metrics]
+      Return Rate: -0.0301
+      Final Balance: -12.84
+      Required Money: 426.06
+      Reward Sum: -12.8423
+      Commission Fee: 103.3803
+  Validation completed: return_rate = -0.0301
+    Final balance: -12.84
+    Required money: 426.06
+    Total reward sum: -12.8423
+  Current epsilon: 0.3667
+--------------------------------------------------------------------------------
+
+================================================================================
+Training completed!
+Best model saved to: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/best_model.pkl
+Training summary saved to: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/training_summary.md
+Training summary: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/training_summary.md
+================================================================================
+
+Starting final test...
+  Loading model from: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/best_model.pkl
+the portfit margine is  -0.15692588772516297
+  [Test Metrics]
+    Return Rate: -0.1569
+    Final Balance: -68.17
+    Required Money: 434.43
+    Reward Sum: -68.1729
+    Commission Fee: 96.8939
+Test completed!
+================================================================================
+
+Debug info saved to: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/debug_reward_info.txt
+Training summary saved to: ./result/high_level/ETHUSDT/exp1_k310epo/pos_3/seed_12345/training_summary.md

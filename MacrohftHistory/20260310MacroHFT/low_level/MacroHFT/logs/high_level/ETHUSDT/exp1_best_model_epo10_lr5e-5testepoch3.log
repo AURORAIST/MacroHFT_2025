@@ -1,0 +1,26 @@
+nohup: 忽略输入
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Namespace(buffer_size=1000000, dataset='ETHUSDT', q_value_memorize_freq=10, batch_size=512, eval_update_freq=512, lr=5e-05, epsilon_start=0.7, epsilon_end=0.3, decay_length=5, update_times=10, gamma=0.99, tau=0.005, transcation_cost=0.0002, back_time_length=1, seed=12345, n_step=1, epoch_number=2, device='cuda:0', alpha=0.5, beta=5, exp='exp1_best_model_epo10_lr5e-5testepoch3', num_step=10, num_actions=2, reward_scale=1000)
+the portfit margine is  -0.021412319753965573
+
+测试集结果:
+  最终余额: -8.39
+  所需资金: 392.03
+  收益率: -0.0214
+  手续费: 1.85
+  动作分布:
+    动作 0 (仓位 0.0%): 68559 次 (31.17%)
+    动作 1 (仓位 100.0%): 151400 次 (68.83%)
+Traceback (most recent call last):
+  File "/home/ustc1958/lxy/MacrohftHistory/MacroHFT/RL/agent/high_leveltest.py", line 681, in <module>
+    agent.train()
+  File "/home/ustc1958/lxy/MacrohftHistory/MacroHFT/RL/agent/high_leveltest.py", line 528, in train
+    test_return_rate = self.test_cluster('/home/ustc1958/lxy/MacrohftHistory/MacroHFT/result/high_level/ETHUSDT/exp1_best_model_epo10_lr5e-5/seed_12345/epoch_5/trained_model.pkl', 
+  File "/home/ustc1958/lxy/MacrohftHistory/MacroHFT/RL/agent/high_leveltest.py", line 663, in test_cluster
+    np.save(os.path.join(save_path, "action.npy"), action_list)
+  File "/home/ustc1958/miniconda3/envs/macrohft/lib/python3.9/site-packages/numpy/lib/npyio.py", line 542, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ustc1958/lxy/MacrohftHistory/MacroHFT/result/high_level/ETHUSDT/exp1_best_model_epo10_lr5e-5/seed_12345/testepoch1/action.npy'
